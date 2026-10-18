@@ -52,6 +52,12 @@
     <Compile Include="FrmBitacora.Designer.cs">
       <DependentUpon>FrmBitacora.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalendario.Designer.cs">
+      <DependentUpon>FrmCalendario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCTRLPermiso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,12 @@
     <Compile Include="FrmLogIn.Designer.cs">
       <DependentUpon>FrmLogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPresupuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPresupuesto.Designer.cs">
+      <DependentUpon>FrmPresupuesto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +118,9 @@
     <EmbeddedResource Include="FrmBitacora.resx">
       <DependentUpon>FrmBitacora.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCalendario.resx">
+      <DependentUpon>FrmCalendario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCTRLPermiso.resx">
       <DependentUpon>FrmCTRLPermiso.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogIn.resx">
       <DependentUpon>FrmLogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPresupuesto.resx">
+      <DependentUpon>FrmPresupuesto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProducto.resx">
       <DependentUpon>FrmProducto.cs</DependentUpon>

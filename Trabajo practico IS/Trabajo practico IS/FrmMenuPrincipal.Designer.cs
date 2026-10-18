@@ -43,6 +43,7 @@
             this.LBLbienvenida = new System.Windows.Forms.Label();
             this.CBXidiomas = new System.Windows.Forms.ComboBox();
             this.LBLidioma = new System.Windows.Forms.Label();
+            this.BtnFrmCalendario = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             this.BtnCerrarSesion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCerrarSesion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtnCerrarSesion.Location = new System.Drawing.Point(606, 386);
-            this.BtnCerrarSesion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnCerrarSesion.Margin = new System.Windows.Forms.Padding(4);
             this.BtnCerrarSesion.Name = "BtnCerrarSesion";
             this.BtnCerrarSesion.Size = new System.Drawing.Size(145, 33);
             this.BtnCerrarSesion.TabIndex = 0;
@@ -83,13 +84,13 @@
             this.historialDeCambiosToolStripMenuItem,
             this.productosToolStripMenuItem});
             this.AdministracionMenuItem.Name = "AdministracionMenuItem";
-            this.AdministracionMenuItem.Size = new System.Drawing.Size(116, 21);
+            this.AdministracionMenuItem.Size = new System.Drawing.Size(128, 24);
             this.AdministracionMenuItem.Text = "Administración";
             // 
             // controlDeUsuariosToolStripMenuItem
             // 
             this.controlDeUsuariosToolStripMenuItem.Name = "controlDeUsuariosToolStripMenuItem";
-            this.controlDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.controlDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
             this.controlDeUsuariosToolStripMenuItem.Tag = "ABM_USUARIO";
             this.controlDeUsuariosToolStripMenuItem.Text = "Control de usuarios";
             this.controlDeUsuariosToolStripMenuItem.Click += new System.EventHandler(this.controlDeUsuariosToolStripMenuItem_Click);
@@ -97,7 +98,7 @@
             // controlDePermisosToolStripMenuItem
             // 
             this.controlDePermisosToolStripMenuItem.Name = "controlDePermisosToolStripMenuItem";
-            this.controlDePermisosToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.controlDePermisosToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
             this.controlDePermisosToolStripMenuItem.Tag = "ABM_PERMISOS";
             this.controlDePermisosToolStripMenuItem.Text = "Control de permisos";
             this.controlDePermisosToolStripMenuItem.Click += new System.EventHandler(this.controlDePermisosToolStripMenuItem_Click);
@@ -105,7 +106,7 @@
             // controlDeIdiomasToolStripMenuItem
             // 
             this.controlDeIdiomasToolStripMenuItem.Name = "controlDeIdiomasToolStripMenuItem";
-            this.controlDeIdiomasToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.controlDeIdiomasToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
             this.controlDeIdiomasToolStripMenuItem.Tag = "ABM_IDIOMAS";
             this.controlDeIdiomasToolStripMenuItem.Text = "Control de idiomas";
             this.controlDeIdiomasToolStripMenuItem.Click += new System.EventHandler(this.controlDeIdiomasToolStripMenuItem_Click);
@@ -113,7 +114,7 @@
             // restauracionDeBaseToolStripMenuItem
             // 
             this.restauracionDeBaseToolStripMenuItem.Name = "restauracionDeBaseToolStripMenuItem";
-            this.restauracionDeBaseToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.restauracionDeBaseToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
             this.restauracionDeBaseToolStripMenuItem.Tag = "RESTAURACION_BASE";
             this.restauracionDeBaseToolStripMenuItem.Text = "Control de restauracion";
             this.restauracionDeBaseToolStripMenuItem.Click += new System.EventHandler(this.restauracionDeBaseToolStripMenuItem_Click);
@@ -121,7 +122,7 @@
             // historialDeCambiosToolStripMenuItem
             // 
             this.historialDeCambiosToolStripMenuItem.Name = "historialDeCambiosToolStripMenuItem";
-            this.historialDeCambiosToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.historialDeCambiosToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
             this.historialDeCambiosToolStripMenuItem.Tag = "HISTORIAL_CAMBIOS";
             this.historialDeCambiosToolStripMenuItem.Text = "Historial de cambios";
             this.historialDeCambiosToolStripMenuItem.Click += new System.EventHandler(this.historialDeCambiosToolStripMenuItem_Click);
@@ -129,7 +130,7 @@
             // productosToolStripMenuItem
             // 
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(230, 22);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
             this.productosToolStripMenuItem.Tag = "ABM_PRODUCTOS";
             this.productosToolStripMenuItem.Text = "Productos";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
@@ -137,7 +138,7 @@
             // BitacoraToolStripMenuItem
             // 
             this.BitacoraToolStripMenuItem.Name = "BitacoraToolStripMenuItem";
-            this.BitacoraToolStripMenuItem.Size = new System.Drawing.Size(74, 21);
+            this.BitacoraToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
             this.BitacoraToolStripMenuItem.Tag = "BITACORA";
             this.BitacoraToolStripMenuItem.Text = "Bitacora";
             this.BitacoraToolStripMenuItem.Click += new System.EventHandler(this.BitacoraToolStripMenuItem_Click);
@@ -164,7 +165,7 @@
             this.CBXidiomas.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CBXidiomas.FormattingEnabled = true;
             this.CBXidiomas.Location = new System.Drawing.Point(607, 64);
-            this.CBXidiomas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CBXidiomas.Margin = new System.Windows.Forms.Padding(4);
             this.CBXidiomas.Name = "CBXidiomas";
             this.CBXidiomas.Size = new System.Drawing.Size(140, 25);
             this.CBXidiomas.TabIndex = 10;
@@ -181,12 +182,26 @@
             this.LBLidioma.TabIndex = 11;
             this.LBLidioma.Text = "Idiomas";
             // 
+            // BtnFrmCalendario
+            // 
+            this.BtnFrmCalendario.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.BtnFrmCalendario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnFrmCalendario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtnFrmCalendario.Location = new System.Drawing.Point(13, 139);
+            this.BtnFrmCalendario.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnFrmCalendario.Name = "BtnFrmCalendario";
+            this.BtnFrmCalendario.Size = new System.Drawing.Size(176, 55);
+            this.BtnFrmCalendario.TabIndex = 12;
+            this.BtnFrmCalendario.Text = "Calendario";
+            this.BtnFrmCalendario.UseVisualStyleBackColor = false;
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(762, 428);
+            this.Controls.Add(this.BtnFrmCalendario);
             this.Controls.Add(this.LBLidioma);
             this.Controls.Add(this.CBXidiomas);
             this.Controls.Add(this.LBLbienvenida);
@@ -194,7 +209,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bibliotech";
@@ -224,6 +239,7 @@
         private System.Windows.Forms.ToolStripMenuItem restauracionDeBaseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historialDeCambiosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
+        private System.Windows.Forms.Button BtnFrmCalendario;
     }
 }
 

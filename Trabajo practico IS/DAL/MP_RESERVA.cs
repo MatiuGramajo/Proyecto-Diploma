@@ -19,7 +19,7 @@ namespace DAL
             parametros.Add(acceso.CrearParametro("@Fecha_Evento", fecha));
 
             // El diagrama exige acceso.Leer() que retorna DataTable
-            DataTable dt = acceso.Leer("VERIFICAR_ESTADO_FECHA", parametros);
+            DataTable dt = acceso.Leer("VERIFICAR_DISPONIBILIDAD_FECHA", parametros);
             acceso.Cerrar();
 
             // Si la tabla vuelve vacía, la fecha está libre

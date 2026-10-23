@@ -98,15 +98,19 @@ namespace DAL
 
             try
             {
-                cmd.ExecuteNonQuery();
+               filas= cmd.ExecuteNonQuery();
             }
                 catch (Exception ex)
             {
-                filas = -1;
+                throw new Exception("Error en la base de datos : " + ex.Message);
+            }
+            finally
+            {
+
+                cmd.Parameters.Clear();
+                cmd = null;
             }
 
-            cmd.Parameters.Clear();
-            cmd = null;
             return filas;
         }
 

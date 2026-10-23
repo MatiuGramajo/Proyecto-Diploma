@@ -194,6 +194,7 @@
             this.BtnFrmCalendario.TabIndex = 12;
             this.BtnFrmCalendario.Text = "Calendario";
             this.BtnFrmCalendario.UseVisualStyleBackColor = false;
+            this.BtnFrmCalendario.Click += new System.EventHandler(this.BtnFrmCalendario_Click);
             // 
             // FrmMenuPrincipal
             // 

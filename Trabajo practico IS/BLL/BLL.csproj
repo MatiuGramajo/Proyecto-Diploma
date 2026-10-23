@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AUDITORIA.cs" />
     <Compile Include="BITACORA.cs" />
+    <Compile Include="CLIENTE.cs" />
     <Compile Include="DIGITO_VERIFICADOR.cs" />
     <Compile Include="FICHA_TECNICA.cs" />
     <Compile Include="HISTORIAL_PRODUCTO.cs" />

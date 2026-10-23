@@ -234,6 +234,14 @@ namespace Trabajo_practico_IS
         {
             ActualizarIdioma();
         }
+
+        private void BtnFrmCalendario_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmCalendario frmCalendario = new FrmCalendario();
+            frmCalendario.ShowDialog();
+            this.Show();
+        }
     }
 }
 

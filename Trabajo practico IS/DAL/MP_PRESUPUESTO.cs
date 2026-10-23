@@ -31,9 +31,12 @@ namespace DAL
             acceso.Abrir();
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(acceso.CrearParametro("@Id_Cliente", obj.Id_Cliente));
-            parametros.Add(acceso.CrearParametro("@Cantidad_Invitados", obj.Cantidad_Invitados_Estimada));
+            parametros.Add(acceso.CrearParametro("@Cantidad_Invitados_Estimada", obj.Cantidad_Invitados_Estimada));
             parametros.Add(acceso.CrearParametro("@Tipo_Evento", obj.Tipo_Evento));
             parametros.Add(acceso.CrearParametro("@Subtotal", obj.Subtotal));
+            parametros.Add(acceso.CrearParametro("@Id_Usuario", obj.Id_Usuario));
+            parametros.Add(acceso.CrearParametro("@Estado", obj.Estado));
+ 
 
             // El diagrama exige acceso.Escribir() retornando void
             acceso.Escribir("INSERTAR_PRESUPUESTO", parametros);

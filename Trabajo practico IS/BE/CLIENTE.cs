@@ -38,5 +38,13 @@ namespace BE
 			set { email = value; }
 		}
 
+		private int dni;
+
+		public int Dni
+		{
+			get { return dni; }
+			set { dni = value; }
+		}
+
 	}
 }

@@ -15,6 +15,7 @@ namespace Trabajo_practico_IS
         private BLL.PRESUPUESTO gestorPresupuesto;
         private DateTime fechaSeleccionada;
         private decimal subtotalCalculado = 0;
+        private BLL.CLIENTE gestorCliente = new BLL.CLIENTE();
         public FrmPresupuesto(DateTime fechaDelEvento)
         {
             InitializeComponent();
@@ -57,6 +58,65 @@ namespace Trabajo_practico_IS
                 MessageBox.Show(ex.Message, "Validación de Negocio", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 BtnGeneralCotizacionFormal.Enabled = false;
                 lblSubottal.Text = "$ 0.00";
+            }
+        }
+
+        private void BtnGeneralCotizacionFormal_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BE.PRESUPUESTO nuevoPresupuesto = new BE.PRESUPUESTO();
+                nuevoPresupuesto.Cantidad_Invitados_Estimada = int.Parse(textBox1.Text);
+                nuevoPresupuesto.Tipo_Evento = comboBox1.SelectedItem.ToString();
+                nuevoPresupuesto.Subtotal = subtotalCalculado;
+                nuevoPresupuesto.Estado = "Pendiente";
+                nuevoPresupuesto.Id_Cliente = 1;
+                nuevoPresupuesto.Id_Usuario = 1;
+                gestorPresupuesto.GuardarPresupuesto(nuevoPresupuesto);
+                MessageBox.Show("Presupuesto realizado con éxito.", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al registrar el presupuesto en el sistema: " + ex.Message, "Error Crítico", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void BTNnuevoCliente_Click(object sender, EventArgs e)
+        {
+            using (FrmRegistrarCliente frmAlta = new FrmRegistrarCliente())
+            {
+                if (frmAlta.ShowDialog() == DialogResult.OK)
+                {
+                    CargarClientesEnCombo();
+                    BE.CLIENTE clienteNuevo = frmAlta.ClienteGenerado;
+                    if(clienteNuevo !=null)
+                    {
+                        cbxclientes.SelectedIndex = cbxclientes.FindStringExact(clienteNuevo.Nombre_Completo);
+                    }
+                    
+                }
+            }
+        }
+
+        private void FrmPresupuesto_Load(object sender, EventArgs e)
+        {
+            CargarTiposDeEvento();
+            CargarClientesEnCombo();
+        }
+
+        private void CargarClientesEnCombo()
+        {
+            try
+            {
+                cbxclientes.DataSource = null;
+                cbxclientes.DataSource = gestorCliente.Listar();
+                cbxclientes.DisplayMember = "Nombre_Completo";
+                cbxclientes.ValueMember = "Id_Cliente";
+                cbxclientes.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar la lista de clientes: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

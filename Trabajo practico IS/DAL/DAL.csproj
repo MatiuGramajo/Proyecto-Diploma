@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ACCESO.cs" />
+    <Compile Include="MP_CLIENTE.cs" />
     <Compile Include="MP_INVENTARIO.cs" />
     <Compile Include="MAPPER.cs" />
     <Compile Include="MP_BACKUP.cs" />

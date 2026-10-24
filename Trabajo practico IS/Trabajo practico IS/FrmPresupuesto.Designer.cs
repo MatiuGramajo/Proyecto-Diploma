@@ -38,8 +38,8 @@
             this.lblclienteseleccionado = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -90,7 +90,6 @@
             // 
             // BTNnuevoCliente
             // 
-            this.BTNnuevoCliente.Enabled = false;
             this.BTNnuevoCliente.Location = new System.Drawing.Point(148, 40);
             this.BTNnuevoCliente.Name = "BTNnuevoCliente";
             this.BTNnuevoCliente.Size = new System.Drawing.Size(24, 23);
@@ -143,15 +142,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cotizar";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Cantidad de invitados";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -160,6 +150,15 @@
             this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Tipo de evento";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Cantidad de invitados";
             // 
             // FrmPresupuesto
             // 

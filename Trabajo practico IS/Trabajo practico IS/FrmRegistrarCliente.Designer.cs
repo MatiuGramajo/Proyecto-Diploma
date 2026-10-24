@@ -28,44 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
+            this.txtdni = new System.Windows.Forms.TextBox();
+            this.txttelefono = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
             this.BtnGuardarCliente = new System.Windows.Forms.Button();
-            this.txtnombre = new System.Windows.Forms.Label();
-            this.txtdni = new System.Windows.Forms.Label();
-            this.txttelefono = new System.Windows.Forms.Label();
-            this.txtemail = new System.Windows.Forms.Label();
+            this.lblnombre = new System.Windows.Forms.Label();
+            this.lbldni = new System.Windows.Forms.Label();
+            this.lbltelefono = new System.Windows.Forms.Label();
+            this.lblemail = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtnombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(234, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtnombre.Location = new System.Drawing.Point(12, 60);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(234, 20);
+            this.txtnombre.TabIndex = 0;
             // 
-            // textBox2
+            // txtdni
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 108);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(234, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtdni.Location = new System.Drawing.Point(12, 108);
+            this.txtdni.Name = "txtdni";
+            this.txtdni.Size = new System.Drawing.Size(234, 20);
+            this.txtdni.TabIndex = 1;
             // 
-            // textBox3
+            // txttelefono
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 153);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(234, 20);
-            this.textBox3.TabIndex = 2;
+            this.txttelefono.Location = new System.Drawing.Point(12, 153);
+            this.txttelefono.Name = "txttelefono";
+            this.txttelefono.Size = new System.Drawing.Size(234, 20);
+            this.txttelefono.TabIndex = 2;
             // 
-            // textBox4
+            // txtemail
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 201);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(234, 20);
-            this.textBox4.TabIndex = 3;
+            this.txtemail.Location = new System.Drawing.Point(12, 201);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(234, 20);
+            this.txtemail.TabIndex = 3;
             // 
             // BtnGuardarCliente
             // 
@@ -77,56 +77,56 @@
             this.BtnGuardarCliente.UseVisualStyleBackColor = true;
             this.BtnGuardarCliente.Click += new System.EventHandler(this.BtnGuardarCliente_Click);
             // 
-            // txtnombre
+            // lblnombre
             // 
-            this.txtnombre.AutoSize = true;
-            this.txtnombre.Location = new System.Drawing.Point(12, 44);
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(90, 13);
-            this.txtnombre.TabIndex = 5;
-            this.txtnombre.Text = "Nombre completo";
+            this.lblnombre.AutoSize = true;
+            this.lblnombre.Location = new System.Drawing.Point(12, 44);
+            this.lblnombre.Name = "lblnombre";
+            this.lblnombre.Size = new System.Drawing.Size(90, 13);
+            this.lblnombre.TabIndex = 5;
+            this.lblnombre.Text = "Nombre completo";
             // 
-            // txtdni
+            // lbldni
             // 
-            this.txtdni.AutoSize = true;
-            this.txtdni.Location = new System.Drawing.Point(12, 92);
-            this.txtdni.Name = "txtdni";
-            this.txtdni.Size = new System.Drawing.Size(26, 13);
-            this.txtdni.TabIndex = 6;
-            this.txtdni.Text = "DNI";
+            this.lbldni.AutoSize = true;
+            this.lbldni.Location = new System.Drawing.Point(12, 92);
+            this.lbldni.Name = "lbldni";
+            this.lbldni.Size = new System.Drawing.Size(26, 13);
+            this.lbldni.TabIndex = 6;
+            this.lbldni.Text = "DNI";
             // 
-            // txttelefono
+            // lbltelefono
             // 
-            this.txttelefono.AutoSize = true;
-            this.txttelefono.Location = new System.Drawing.Point(9, 137);
-            this.txttelefono.Name = "txttelefono";
-            this.txttelefono.Size = new System.Drawing.Size(49, 13);
-            this.txttelefono.TabIndex = 7;
-            this.txttelefono.Text = "Telefono";
+            this.lbltelefono.AutoSize = true;
+            this.lbltelefono.Location = new System.Drawing.Point(9, 137);
+            this.lbltelefono.Name = "lbltelefono";
+            this.lbltelefono.Size = new System.Drawing.Size(49, 13);
+            this.lbltelefono.TabIndex = 7;
+            this.lbltelefono.Text = "Telefono";
             // 
-            // txtemail
+            // lblemail
             // 
-            this.txtemail.AutoSize = true;
-            this.txtemail.Location = new System.Drawing.Point(12, 185);
-            this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(32, 13);
-            this.txtemail.TabIndex = 8;
-            this.txtemail.Text = "Email";
+            this.lblemail.AutoSize = true;
+            this.lblemail.Location = new System.Drawing.Point(12, 185);
+            this.lblemail.Name = "lblemail";
+            this.lblemail.Size = new System.Drawing.Size(32, 13);
+            this.lblemail.TabIndex = 8;
+            this.lblemail.Text = "Email";
             // 
             // FrmRegistrarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblemail);
+            this.Controls.Add(this.lbltelefono);
+            this.Controls.Add(this.lbldni);
+            this.Controls.Add(this.lblnombre);
+            this.Controls.Add(this.BtnGuardarCliente);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.txttelefono);
             this.Controls.Add(this.txtdni);
             this.Controls.Add(this.txtnombre);
-            this.Controls.Add(this.BtnGuardarCliente);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Name = "FrmRegistrarCliente";
             this.Text = "FrmRegistrarCliente";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmRegistrarCliente_FormClosing);
@@ -138,14 +138,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtnombre;
+        private System.Windows.Forms.TextBox txtdni;
+        private System.Windows.Forms.TextBox txttelefono;
+        private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Button BtnGuardarCliente;
-        private System.Windows.Forms.Label txtnombre;
-        private System.Windows.Forms.Label txtdni;
-        private System.Windows.Forms.Label txttelefono;
-        private System.Windows.Forms.Label txtemail;
+        private System.Windows.Forms.Label lblnombre;
+        private System.Windows.Forms.Label lbldni;
+        private System.Windows.Forms.Label lbltelefono;
+        private System.Windows.Forms.Label lblemail;
     }
 }

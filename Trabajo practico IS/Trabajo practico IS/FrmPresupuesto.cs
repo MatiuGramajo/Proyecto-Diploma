@@ -65,12 +65,18 @@ namespace Trabajo_practico_IS
         {
             try
             {
+                if (cbxclientes.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Por favor, seleccione un cliente antes de generar el presupuesto.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
                 BE.PRESUPUESTO nuevoPresupuesto = new BE.PRESUPUESTO();
                 nuevoPresupuesto.Cantidad_Invitados_Estimada = int.Parse(textBox1.Text);
                 nuevoPresupuesto.Tipo_Evento = comboBox1.SelectedItem.ToString();
                 nuevoPresupuesto.Subtotal = subtotalCalculado;
                 nuevoPresupuesto.Estado = "Pendiente";
-                nuevoPresupuesto.Id_Cliente = 1;
+                nuevoPresupuesto.Id_Cliente = Convert.ToInt32(cbxclientes.SelectedValue); 
                 nuevoPresupuesto.Id_Usuario = 1;
                 gestorPresupuesto.GuardarPresupuesto(nuevoPresupuesto);
                 MessageBox.Show("Presupuesto realizado con éxito.", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);

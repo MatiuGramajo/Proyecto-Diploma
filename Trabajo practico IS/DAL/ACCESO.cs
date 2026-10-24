@@ -90,7 +90,14 @@ namespace DAL
 
             return param;
         }
-
+        public SqlParameter CrearParametro(string nombre, long valor)
+        {
+            SqlParameter param = new SqlParameter();
+            param.DbType = System.Data.DbType.Int64; 
+            param.Value = valor;
+            param.ParameterName = nombre;
+            return param;
+        }
         public int Escribir(string query, List<SqlParameter> parametros = null)
         {
             SqlCommand cmd = CrearComando(query, parametros);

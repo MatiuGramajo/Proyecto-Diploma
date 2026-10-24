@@ -23,9 +23,9 @@ namespace BE
 			get { return nombre_Completo; }
 			set { nombre_Completo = value; }
 		}
-		private int telefono;
+		private long telefono;
 
-		public int Telefono
+		public long Telefono
 		{
 			get { return telefono; }
 			set { telefono = value; }

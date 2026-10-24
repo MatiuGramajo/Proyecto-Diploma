@@ -39,7 +39,22 @@ namespace DAL
 
         public override List<CLIENTE> Listar()
         {
-            throw new NotImplementedException();
+            acceso.Abrir();
+            DataTable dt = acceso.Leer("LISTAR_CLIENTES");
+            acceso.Cerrar();
+
+            List<BE.CLIENTE> clientes = new List<BE.CLIENTE>();
+            foreach (DataRow row in dt.Rows)
+            {
+                BE.CLIENTE cli = new BE.CLIENTE();
+                cli.Id_Cliente = Convert.ToInt32(row["Id_Cliente"]);
+                cli.Nombre_Completo = row["Nombre_Completo"].ToString();
+                cli.Dni = Convert.ToInt32(row["Dni"]);
+                cli.Telefono = Convert.ToInt64(row["Telefono"]);
+                cli.Email = row["Email"].ToString();
+                clientes.Add(cli);
+            }
+            return clientes;
         }
 
         public override void Modificar(CLIENTE obj)

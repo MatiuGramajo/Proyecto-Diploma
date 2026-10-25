@@ -16,6 +16,7 @@ namespace Trabajo_practico_IS
         private DateTime fechaSeleccionada;
         private decimal subtotalCalculado = 0;
         private BLL.CLIENTE gestorCliente = new BLL.CLIENTE();
+        private BE.PRESUPUESTO presupuestoGenerrado = null;
         public FrmPresupuesto(DateTime fechaDelEvento)
         {
             InitializeComponent();
@@ -78,7 +79,9 @@ namespace Trabajo_practico_IS
                 nuevoPresupuesto.Estado = "Pendiente";
                 nuevoPresupuesto.Id_Cliente = Convert.ToInt32(cbxclientes.SelectedValue); 
                 nuevoPresupuesto.Id_Usuario = 1;
+                nuevoPresupuesto.Fecha_Evento = this.fechaSeleccionada;
                 gestorPresupuesto.GuardarPresupuesto(nuevoPresupuesto);
+                this.presupuestoGenerrado = nuevoPresupuesto;
                 MessageBox.Show("Presupuesto realizado con éxito.", "Guardado", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -123,6 +126,24 @@ namespace Trabajo_practico_IS
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar la lista de clientes: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void BTNcobrarsenia_Click(object sender, EventArgs e)
+        {
+            if(this.presupuestoGenerrado!=null)
+            {
+                using (FrmRegistrarPago frmPago = new FrmRegistrarPago(this.presupuestoGenerrado))
+                {
+                    if(frmPago.ShowDialog() == DialogResult.OK)
+                    {
+                        this.Close();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Primero debe hacer clic en 'Generar Cotización Formal' para guardar el presupuesto.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

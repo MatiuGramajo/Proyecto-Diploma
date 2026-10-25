@@ -36,10 +36,11 @@ namespace DAL
             parametros.Add(acceso.CrearParametro("@Subtotal", obj.Subtotal));
             parametros.Add(acceso.CrearParametro("@Id_Usuario", obj.Id_Usuario));
             parametros.Add(acceso.CrearParametro("@Estado", obj.Estado));
- 
-
-            // El diagrama exige acceso.Escribir() retornando void
-            acceso.Escribir("INSERTAR_PRESUPUESTO", parametros);
+            parametros.Add(acceso.CrearParametro("@Fecha_Evento", obj.Fecha_Evento));
+            int idGenerado = acceso.LeerEscalar("INSERTAR_PRESUPUESTO", parametros);
+            obj.Id_Presupuesto = idGenerado;
+            //// El diagrama exige acceso.Escribir() retornando void
+            //acceso.Escribir("INSERTAR_PRESUPUESTO", parametros);
             acceso.Cerrar();
         }
 
@@ -48,11 +49,44 @@ namespace DAL
             throw new NotImplementedException();
         }
 
-        public override List<PRESUPUESTO> Listar()
+        public List<BE.PRESUPUESTO> ListarPresupuestosPendientes()
+        {
+            acceso.Abrir();
+            DataTable dt = acceso.Leer("LISTAR_PRESUPUESTOS_PENDIENTES");
+            acceso.Cerrar();
+
+            List<BE.PRESUPUESTO> lista = new List<BE.PRESUPUESTO>();
+            foreach (DataRow row in dt.Rows)
+            {
+                BE.PRESUPUESTO presu = new BE.PRESUPUESTO();
+                presu.Id_Presupuesto = Convert.ToInt32(row["Id_Presupuesto"]);
+                presu.Id_Cliente = Convert.ToInt32(row["Id_Cliente"]);
+                presu.Cantidad_Invitados_Estimada = Convert.ToInt32(row["Cantidad_Invitados_Estimada"]);
+                presu.Tipo_Evento = row["Tipo_Evento"].ToString();
+                presu.Subtotal = Convert.ToDecimal(row["Subtotal"]);
+                presu.Estado = row["Estado"].ToString();
+                presu.Fecha_Evento = Convert.ToDateTime(row["Fecha_Evento"]);
+
+                lista.Add(presu);
+            }
+            return lista;
+        }
+        public override List<BE.PRESUPUESTO> Listar()
         {
             throw new NotImplementedException();
+
         }
 
+        public void ModificarEstado(int idPresupuesto, string nuevoEstado)
+        {
+            acceso.Abrir();
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(acceso.CrearParametro("@Id_Presupuesto", idPresupuesto));
+            parametros.Add(acceso.CrearParametro("@Estado", nuevoEstado));
+
+            acceso.Escribir("ACTUALIZAR_ESTADO_PRESUPUESTO", parametros);
+            acceso.Cerrar();
+        }
         public override void Modificar(PRESUPUESTO obj)
         {
             throw new NotImplementedException();

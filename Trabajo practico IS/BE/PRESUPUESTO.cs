@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -63,6 +64,13 @@ namespace BE
 		{
 			get { return estado; }
 			set { estado = value; }
+		}
+		private DateTime fecha_Evento;
+
+		public DateTime Fecha_Evento
+		{
+			get { return fecha_Evento; }
+			set { fecha_Evento = value; }
 		}
 
 	}

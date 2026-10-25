@@ -30,5 +30,13 @@ namespace BLL
         {
             mpPresupuesto.Alta(presupuesto);
         }
+        public List<BE.PRESUPUESTO> ObtenerPresupuestosPendientes()
+        {
+            return mpPresupuesto.ListarPresupuestosPendientes();
+        }
+        public void ActualizarEstado(int idPresupuesto, string estado)
+        {
+            mpPresupuesto.ModificarEstado(idPresupuesto, estado);
+        }
     }
 }

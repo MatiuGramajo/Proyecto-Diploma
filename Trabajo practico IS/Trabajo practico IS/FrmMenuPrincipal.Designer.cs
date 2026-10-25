@@ -44,6 +44,7 @@
             this.CBXidiomas = new System.Windows.Forms.ComboBox();
             this.LBLidioma = new System.Windows.Forms.Label();
             this.BtnFrmCalendario = new System.Windows.Forms.Button();
+            this.registrarCobroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +83,8 @@
             this.controlDeIdiomasToolStripMenuItem,
             this.restauracionDeBaseToolStripMenuItem,
             this.historialDeCambiosToolStripMenuItem,
-            this.productosToolStripMenuItem});
+            this.productosToolStripMenuItem,
+            this.registrarCobroToolStripMenuItem});
             this.AdministracionMenuItem.Name = "AdministracionMenuItem";
             this.AdministracionMenuItem.Size = new System.Drawing.Size(128, 24);
             this.AdministracionMenuItem.Text = "Administración";
@@ -196,6 +198,13 @@
             this.BtnFrmCalendario.UseVisualStyleBackColor = false;
             this.BtnFrmCalendario.Click += new System.EventHandler(this.BtnFrmCalendario_Click);
             // 
+            // registrarCobroToolStripMenuItem
+            // 
+            this.registrarCobroToolStripMenuItem.Name = "registrarCobroToolStripMenuItem";
+            this.registrarCobroToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
+            this.registrarCobroToolStripMenuItem.Text = "Registrar Cobro";
+            this.registrarCobroToolStripMenuItem.Click += new System.EventHandler(this.registrarCobroToolStripMenuItem_Click);
+            // 
             // FrmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -241,6 +250,7 @@
         private System.Windows.Forms.ToolStripMenuItem historialDeCambiosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
         private System.Windows.Forms.Button BtnFrmCalendario;
+        private System.Windows.Forms.ToolStripMenuItem registrarCobroToolStripMenuItem;
     }
 }
 

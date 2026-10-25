@@ -40,6 +40,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BTNcobrarsenia = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -160,11 +161,22 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Cantidad de invitados";
             // 
+            // BTNcobrarsenia
+            // 
+            this.BTNcobrarsenia.Location = new System.Drawing.Point(555, 342);
+            this.BTNcobrarsenia.Name = "BTNcobrarsenia";
+            this.BTNcobrarsenia.Size = new System.Drawing.Size(133, 42);
+            this.BTNcobrarsenia.TabIndex = 7;
+            this.BTNcobrarsenia.Text = "Cobrar Seña";
+            this.BTNcobrarsenia.UseVisualStyleBackColor = true;
+            this.BTNcobrarsenia.Click += new System.EventHandler(this.BTNcobrarsenia_Click);
+            // 
             // FrmPresupuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BTNcobrarsenia);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmPresupuesto";
@@ -192,5 +204,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BTNcobrarsenia;
     }
 }

@@ -9,7 +9,7 @@ namespace BLL
     public class RESERVA
     {
         private DAL.MP_RESERVA mpReserva = new DAL.MP_RESERVA();
-
+        private BLL.PRESUPUESTO gestorPresupuesto = new BLL.PRESUPUESTO();
         public bool ConsultarDisponibilidad(DateTime fecha)
         {
             // Devuelve true si la fecha está disponible, false si está ocupada
@@ -20,6 +20,13 @@ namespace BLL
         public List<DateTime> ConsultarFechasCercanas(DateTime fecha)
         {
             return mpReserva.ObtenerFechasAlternativas(fecha);
+        }
+        public void RegistrarReserva(BE.RESERVA nuevaReserva, BE.PRESUPUESTO presupuestoSeleccionado)
+        {
+            nuevaReserva.Estado = "Confirmada"; 
+            mpReserva.Alta(nuevaReserva);
+
+            gestorPresupuesto.ActualizarEstado(presupuestoSeleccionado.Id_Presupuesto, "Aprobado");
         }
     }
 }

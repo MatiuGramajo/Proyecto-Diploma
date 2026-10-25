@@ -64,7 +64,16 @@ namespace DAL
 
         public override void Alta(RESERVA obj)
         {
-            throw new NotImplementedException();
+            acceso.Abrir();
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(acceso.CrearParametro("@Id_Cliente", obj.Id_Cliente));
+            parametros.Add(acceso.CrearParametro("@Id_Presupuesto", obj.Id_Presupuesto));
+            parametros.Add(acceso.CrearParametro("@Id_Usuario", obj.Id_Usuario));
+            parametros.Add(acceso.CrearParametro("@Fecha_Evento", obj.Fecha_Evento));
+            parametros.Add(acceso.CrearParametro("@Monto_Senia", obj.Monto_Senia));
+            parametros.Add(acceso.CrearParametro("@Estado", obj.Estado));
+            acceso.Escribir("INSERTAR_RESERVA", parametros);
+            acceso.Cerrar();
         }
     }
 }

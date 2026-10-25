@@ -242,6 +242,14 @@ namespace Trabajo_practico_IS
             frmCalendario.ShowDialog();
             this.Show();
         }
+
+        private void registrarCobroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmRegistrarPago frmregistrarpago= new FrmRegistrarPago();
+            frmregistrarpago.ShowDialog();
+            this.Show();
+        }
     }
 }
 

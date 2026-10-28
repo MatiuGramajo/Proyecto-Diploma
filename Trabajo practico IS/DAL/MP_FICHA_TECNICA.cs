@@ -24,13 +24,38 @@ namespace DAL
             acceso.Escribir("INSERTAR_FICHA_TECNICA", paramFicha);
 
             // SEGUNDO ESCRIBIR(): Iterar e insertar proveedores / actualizar estados[cite: 9]
-            foreach (var proveedor in datosFicha.ProveedoresAsignados)
+            foreach (var prestador in datosFicha.PrestadoresAsignados)
+            {
+                List<SqlParameter> paramPrest = new List<SqlParameter>();
+                paramPrest.Add(acceso.CrearParametro("@Id_Ficha", datosFicha.Id_Ficha));
+                paramPrest.Add(acceso.CrearParametro("@Id_Prestador", prestador.Id_Prestador));
+
+                acceso.Escribir("ASIGNAR_PRESTADOR_FICHA", paramPrest);
+            }
+
+            acceso.Cerrar();
+        }
+
+        public void RegistrarDetalles(BE.FICHA_TECNICA datosFicha)
+        {
+            acceso.Abrir();
+
+            List<SqlParameter> paramFicha = new List<SqlParameter>();
+            paramFicha.Add(acceso.CrearParametro("@Id_Reserva", datosFicha.Id_Reserva));
+            paramFicha.Add(acceso.CrearParametro("@Id_Usuario", datosFicha.Id_Usuario));
+            paramFicha.Add(acceso.CrearParametro("@Id_Servicio", datosFicha.Id_Servicio));
+            paramFicha.Add(acceso.CrearParametro("@Cantidad_Invitados_Final", datosFicha.Cantidad_Invitados_Final));
+            paramFicha.Add(acceso.CrearParametro("@Tipo_Evento", datosFicha.Tipo_Evento));
+
+            datosFicha.Id_Ficha = acceso.LeerEscalar("INSERTAR_FICHA_TECNICA", paramFicha);
+
+            foreach (var prestador in datosFicha.PrestadoresAsignados)
             {
                 List<SqlParameter> paramProv = new List<SqlParameter>();
                 paramProv.Add(acceso.CrearParametro("@Id_Ficha", datosFicha.Id_Ficha));
-                paramProv.Add(acceso.CrearParametro("@Id_Proveedor", proveedor.Id_Proveedor));
+                paramProv.Add(acceso.CrearParametro("@Id_Prestador", prestador.Id_Prestador));
 
-                acceso.Escribir("ASIGNAR_PROVEEDOR_FICHA", paramProv);
+                acceso.Escribir("ASIGNAR_PRESTADOR_FICHA", paramProv);
             }
 
             acceso.Cerrar();

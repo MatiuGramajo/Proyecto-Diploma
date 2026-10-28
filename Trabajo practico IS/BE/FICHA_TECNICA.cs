@@ -50,12 +50,12 @@ namespace BE
 			get { return cateringAsociado; }
 			set { cateringAsociado = value; }
 		}
-		private List<PROVEEDOR_EXTERNO> proveedoresAsignados = new List<PROVEEDOR_EXTERNO>();	
+		private List<PRESTADOR_SERVICIO> prestadoresAsignados = new List<PRESTADOR_SERVICIO>();	
 
-		public List<PROVEEDOR_EXTERNO> ProveedoresAsignados 
+		public List<PRESTADOR_SERVICIO> PrestadoresAsignados 
 		{
-			get { return proveedoresAsignados; }
-			set { proveedoresAsignados = value; }
+			get { return prestadoresAsignados; }
+			set { prestadoresAsignados = value; }
 		}
 		private int cantidad_Invitados_Final;
 
@@ -71,15 +71,20 @@ namespace BE
 			get { return tipo_Evento; }
 			set { tipo_Evento = value; }
 		}
-		private string observaciones;
 
-		public string Observaciones
-		{
-			get { return observaciones; }
-			set { observaciones = value; }
-		}
+        private decimal costo_Total_Real;
+        public decimal Costo_Total_Real
+        {
+            get { return costo_Total_Real; }
+            set { costo_Total_Real = value; }
+        }
 
+        private decimal saldo_Pendiente;
+        public decimal Saldo_Pendiente
+        {
+            get { return saldo_Pendiente; }
+            set { saldo_Pendiente = value; }
+        }
 
-
-	}
+    }
 }

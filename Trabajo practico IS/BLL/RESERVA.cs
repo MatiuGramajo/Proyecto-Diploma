@@ -16,6 +16,10 @@ namespace BLL
             return mpReserva.VerificarEstado(fecha);
         }
 
+        public List<BE.RESERVA> ListarReservasConfirmadas()
+        {
+            return mpReserva.ListarConfirmadas();
+        }
         // Diagrama CU-01: ConsultarFechasCercanas(fecha) (Flujo Alternativo)
         public List<DateTime> ConsultarFechasCercanas(DateTime fecha)
         {
@@ -27,6 +31,14 @@ namespace BLL
             mpReserva.Alta(nuevaReserva);
 
             gestorPresupuesto.ActualizarEstado(presupuestoSeleccionado.Id_Presupuesto, "Aprobado");
+        }
+        public List<DateTime> ListarFechasOcupadas()
+        {
+            return mpReserva.ObtenerFechasOcupadas();
+        }
+        public void ActualizarCostosyEstadoReserva(int idReserva, decimal costoTotal, decimal saldoPendiente, string estado)
+        {
+            mpReserva.ActualizarCostosyEstado(idReserva, costoTotal, saldoPendiente, estado);
         }
     }
 }

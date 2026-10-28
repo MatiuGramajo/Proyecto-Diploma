@@ -9,7 +9,7 @@ namespace BLL
     public class ORDEN_COMPRA
     {
         private DAL.MP_ORDEN_COMPRA mpOrdenCompra = new DAL.MP_ORDEN_COMPRA();
-        private DAL.MP_PROVEEDOR_EXTERNO mpProveedor = new DAL.MP_PROVEEDOR_EXTERNO();
+        private DAL.MP_PRESTADOR_SERVICIO mpProveedor = new DAL.MP_PRESTADOR_SERVICIO();
 
         public List<string> CalcularFaltantes(int idEvento)
         {

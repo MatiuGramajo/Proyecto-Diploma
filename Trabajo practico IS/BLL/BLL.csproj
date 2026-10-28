@@ -49,6 +49,8 @@
     <Compile Include="HISTORIAL_PRODUCTO.cs" />
     <Compile Include="HISTORIAL_USUARIO.cs" />
     <Compile Include="IDIOMA.cs" />
+    <Compile Include="PRESTADOR_SERVICIO.cs" />
+    <Compile Include="SERVICIO_CATERING.cs" />
     <Compile Include="ORDEN_COMPRA.cs" />
     <Compile Include="PAGO_SEÑA.cs" />
     <Compile Include="PERMISO.cs" />

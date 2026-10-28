@@ -57,7 +57,7 @@
     <Compile Include="PERMISO_SIMPLE.cs" />
     <Compile Include="PRESUPUESTO.cs" />
     <Compile Include="PRODUCTO.cs" />
-    <Compile Include="PROVEEDOR_EXTERNO.cs" />
+    <Compile Include="PRESTADOR_SERVICIO.cs" />
     <Compile Include="RESERVA.cs" />
     <Compile Include="SERVICIO_CATERING.cs" />
     <Compile Include="TRADUCCION.cs" />

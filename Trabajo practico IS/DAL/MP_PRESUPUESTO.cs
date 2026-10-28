@@ -39,8 +39,6 @@ namespace DAL
             parametros.Add(acceso.CrearParametro("@Fecha_Evento", obj.Fecha_Evento));
             int idGenerado = acceso.LeerEscalar("INSERTAR_PRESUPUESTO", parametros);
             obj.Id_Presupuesto = idGenerado;
-            //// El diagrama exige acceso.Escribir() retornando void
-            //acceso.Escribir("INSERTAR_PRESUPUESTO", parametros);
             acceso.Cerrar();
         }
 

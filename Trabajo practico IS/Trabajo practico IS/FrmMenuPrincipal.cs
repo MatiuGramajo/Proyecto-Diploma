@@ -250,6 +250,14 @@ namespace Trabajo_practico_IS
             frmregistrarpago.ShowDialog();
             this.Show();
         }
+
+        private void fichaTecnicaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmFichaTecnica frmfichatecnica = new FrmFichaTecnica();
+            frmfichatecnica.ShowDialog();
+            this.Show();
+        }
     }
 }
 

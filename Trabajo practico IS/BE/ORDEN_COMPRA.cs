@@ -29,9 +29,9 @@ namespace BE
 			get { return id_Proveedor; }
 			set { id_Proveedor = value; }
 		}
-		private PROVEEDOR_EXTERNO proveedorAsociado;
+		private PRESTADOR_SERVICIO proveedorAsociado;
 
-		public PROVEEDOR_EXTERNO ProveedorAsociado
+		public PRESTADOR_SERVICIO ProveedorAsociado
 		{
 			get { return proveedorAsociado; }
 			set { proveedorAsociado = value; }

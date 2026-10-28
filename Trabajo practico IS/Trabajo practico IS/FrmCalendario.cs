@@ -59,18 +59,8 @@ namespace Trabajo_practico_IS
         {
             try
             {
-                monthCalendar1.RemoveAllBoldedDates();
-                monthCalendar1.AddBoldedDate(fechaSolicitada);
-                monthCalendar1.UpdateBoldedDates();
-                if (libre)
-                {
-                    monthCalendar1.TitleBackColor = Color.Green;
-
-                }
-                else
-                {
-                    monthCalendar1.TitleBackColor = Color.Red;
-                }
+                List<DateTime> fechasOcupadas = gestorReserva.ListarFechasOcupadas();
+                ResaltarEnNegrita(fechasOcupadas);
             }
             catch (Exception ex)
             {
@@ -109,6 +99,30 @@ namespace Trabajo_practico_IS
                 MessageBox.Show("No se pudo iniciar el presupuesto: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
+        }
+
+        private void FrmCalendario_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                List<DateTime> fechasOcupadas = gestorReserva.ListarFechasOcupadas();
+                ResaltarEnNegrita(fechasOcupadas);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar las fechas ocupadas: " + ex.Message);
+            }
+
+        }
+
+        private void ResaltarEnNegrita(List<DateTime> fechasOcupadas)
+        {
+            monthCalendar1.RemoveAllBoldedDates();
+            foreach(DateTime fecha in fechasOcupadas)
+            {
+                monthCalendar1.AddBoldedDate(fecha);
+            }
+            monthCalendar1.UpdateBoldedDates();
         }
     }
 }

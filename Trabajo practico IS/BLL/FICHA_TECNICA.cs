@@ -13,10 +13,8 @@ namespace BLL
 
         public void ConsolidarFicha(BE.FICHA_TECNICA datosFicha)
         {
-            // 1. Guardar detalles
             mpFicha.RegistrarDetalles(datosFicha);
 
-            // 2. Realizar los cálculos auto-llamados
             CalcularCostoYSaldo(datosFicha);
         }
 
@@ -24,18 +22,23 @@ namespace BLL
         {
             decimal costoCatering = datosFicha.Cantidad_Invitados_Final * datosFicha.CateringAsociado.Precio_Por_Persona;
 
-            // 2. Suma de los honorarios de cada proveedor seleccionado
             decimal costoProveedores = 0;
             foreach (var prov in datosFicha.PrestadoresAsignados)
             {
                 costoProveedores += prov.Precio_Servicio;
             }
 
-            // 3. Costo Total Real y Saldo Pendiente
             decimal costoTotal = costoCatering + costoProveedores;
             decimal saldoPendiente = costoTotal - datosFicha.ReservaAsociada.Monto_Senia;
+            datosFicha.Costo_Total_Real = costoTotal;
+            datosFicha.Saldo_Pendiente = saldoPendiente;
 
-            // 4. Actualización en la base de datos a través de la BLL de Reserva
+            if(datosFicha.ReservaAsociada!=null)
+            {
+                datosFicha.ReservaAsociada.Costo_Total_Real = costoTotal;
+                datosFicha.ReservaAsociada.Saldo_Pendiente = saldoPendiente;
+                datosFicha.ReservaAsociada.Estado = "Planificado";
+            }
             gestorReserva.ActualizarCostosyEstadoReserva(datosFicha.Id_Reserva, costoTotal, saldoPendiente, "Planificado");
         }
     }

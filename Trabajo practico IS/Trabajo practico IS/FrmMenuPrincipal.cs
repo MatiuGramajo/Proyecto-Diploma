@@ -258,6 +258,14 @@ namespace Trabajo_practico_IS
             frmfichatecnica.ShowDialog();
             this.Show();
         }
+
+        private void liquidacionFinalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmLiquidacionFinal frmliquidacionfinal = new FrmLiquidacionFinal();
+            frmliquidacionfinal.ShowDialog();
+            this.Show();
+        }
     }
 }
 

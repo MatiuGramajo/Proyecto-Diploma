@@ -73,6 +73,34 @@ namespace DAL
             }
             return lista;
         }
+        public List<BE.RESERVA> ListarEventosPlanificados()
+        {
+            acceso.Abrir();
+            DataTable dt = acceso.Leer("LISTAR_EVENTOS_PLANIFICADOS");
+            acceso.Cerrar();
+
+            List<BE.RESERVA> lista = new List<BE.RESERVA>();
+            foreach (DataRow row in dt.Rows)
+            {
+                BE.RESERVA res = new BE.RESERVA();
+                res.Id_Reserva = Convert.ToInt32(row["Id_Reserva"]);
+                res.Id_Cliente = Convert.ToInt32(row["Id_Cliente"]);
+                res.Id_Presupuesto = Convert.ToInt32(row["Id_Presupuesto"]);
+                res.Id_Usuario = Convert.ToInt32(row["Id_Usuario"]);
+                res.Fecha_Evento = Convert.ToDateTime(row["Fecha_Evento"]);
+                res.Monto_Senia = Convert.ToDecimal(row["Monto_Senia"]);
+
+                // Mapeo de los campos de liquidación final
+                res.Costo_Total_Real = row["Costo_Total_Real"] != DBNull.Value ? Convert.ToDecimal(row["Costo_Total_Real"]) : 0;
+                res.Saldo_Pendiente = row["Saldo_Pendiente"] != DBNull.Value ? Convert.ToDecimal(row["Saldo_Pendiente"]) : 0;
+
+                res.Estado = row["Estado"].ToString();
+
+                lista.Add(res);
+            }
+            return lista;
+        }
+
         public List<DateTime> ObtenerFechasAlternativas(DateTime fecha)
         {
             acceso.Abrir();
@@ -100,6 +128,14 @@ namespace DAL
             parametros.Add(acceso.CrearParametro("@Estado", estado));
 
             acceso.Escribir("ACTUALIZAR_SALDOS_ESTADO_RESERVA", parametros);
+            acceso.Cerrar();
+        }
+        public void SaldarReserva(int idReserva)
+        {
+            acceso.Abrir();
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(acceso.CrearParametro("@Id_Reserva", idReserva));
+            acceso.Escribir("SALDAR_RESERVA", parametros);
             acceso.Cerrar();
         }
         public override void Baja(RESERVA obj)

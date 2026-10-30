@@ -10,9 +10,9 @@ namespace BLL
     {
         private DAL.MP_RESERVA mpReserva = new DAL.MP_RESERVA();
         private BLL.PRESUPUESTO gestorPresupuesto = new BLL.PRESUPUESTO();
+        private Servicios.GESTOR_PDF gestorPDF= new Servicios.GESTOR_PDF();
         public bool ConsultarDisponibilidad(DateTime fecha)
         {
-            // Devuelve true si la fecha está disponible, false si está ocupada
             return mpReserva.VerificarEstado(fecha);
         }
 
@@ -20,7 +20,6 @@ namespace BLL
         {
             return mpReserva.ListarConfirmadas();
         }
-        // Diagrama CU-01: ConsultarFechasCercanas(fecha) (Flujo Alternativo)
         public List<DateTime> ConsultarFechasCercanas(DateTime fecha)
         {
             return mpReserva.ObtenerFechasAlternativas(fecha);
@@ -39,6 +38,19 @@ namespace BLL
         public void ActualizarCostosyEstadoReserva(int idReserva, decimal costoTotal, decimal saldoPendiente, string estado)
         {
             mpReserva.ActualizarCostosyEstado(idReserva, costoTotal, saldoPendiente, estado);
+        }
+        public List<BE.RESERVA> ObtenerEventosPlanificados()
+        {
+            return mpReserva.ListarEventosPlanificados();
+        }
+        public void RegistrarLiquidacion(BE.RESERVA reservaSeleccionada, string metodoPago)
+        {
+            mpReserva.SaldarReserva(reservaSeleccionada.Id_Reserva);
+
+            reservaSeleccionada.Saldo_Pendiente = 0;
+            reservaSeleccionada.Estado = "Saldado";
+
+            gestorPDF.GenerarComprobantePDF(reservaSeleccionada);
         }
     }
 }

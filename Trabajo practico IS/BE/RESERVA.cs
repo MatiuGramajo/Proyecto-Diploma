@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -71,6 +72,21 @@ namespace BE
 			get { return estado; }
 			set { estado = value; }
 		}
+		private decimal costo_Total_Real;
+
+		public decimal Costo_Total_Real
+		{
+			get { return costo_Total_Real; }
+			set { costo_Total_Real = value; }
+		}
+		private decimal saldo_Pendiente;
+
+		public decimal Saldo_Pendiente
+		{
+			get { return saldo_Pendiente; }
+			set { saldo_Pendiente = value; }
+		}
+
 
 	}
 }

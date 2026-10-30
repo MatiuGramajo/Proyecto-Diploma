@@ -88,6 +88,12 @@
     <Compile Include="FrmIdioma.Designer.cs">
       <DependentUpon>FrmIdioma.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLiquidacionFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLiquidacionFinal.Designer.cs">
+      <DependentUpon>FrmLiquidacionFinal.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIdioma.resx">
       <DependentUpon>FrmIdioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLiquidacionFinal.resx">
+      <DependentUpon>FrmLiquidacionFinal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>

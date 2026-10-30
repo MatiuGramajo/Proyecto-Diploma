@@ -39,13 +39,14 @@
             this.historialDeCambiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarCobroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fichaTecnicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.LBLbienvenida = new System.Windows.Forms.Label();
             this.CBXidiomas = new System.Windows.Forms.ComboBox();
             this.LBLidioma = new System.Windows.Forms.Label();
             this.BtnFrmCalendario = new System.Windows.Forms.Button();
-            this.fichaTecnicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.liquidacionFinalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +87,8 @@
             this.historialDeCambiosToolStripMenuItem,
             this.productosToolStripMenuItem,
             this.registrarCobroToolStripMenuItem,
-            this.fichaTecnicaToolStripMenuItem});
+            this.fichaTecnicaToolStripMenuItem,
+            this.liquidacionFinalToolStripMenuItem});
             this.AdministracionMenuItem.Name = "AdministracionMenuItem";
             this.AdministracionMenuItem.Size = new System.Drawing.Size(128, 24);
             this.AdministracionMenuItem.Text = "Administración";
@@ -145,6 +147,13 @@
             this.registrarCobroToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
             this.registrarCobroToolStripMenuItem.Text = "Registrar Cobro";
             this.registrarCobroToolStripMenuItem.Click += new System.EventHandler(this.registrarCobroToolStripMenuItem_Click);
+            // 
+            // fichaTecnicaToolStripMenuItem
+            // 
+            this.fichaTecnicaToolStripMenuItem.Name = "fichaTecnicaToolStripMenuItem";
+            this.fichaTecnicaToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
+            this.fichaTecnicaToolStripMenuItem.Text = "Ficha Tecnica";
+            this.fichaTecnicaToolStripMenuItem.Click += new System.EventHandler(this.fichaTecnicaToolStripMenuItem_Click);
             // 
             // BitacoraToolStripMenuItem
             // 
@@ -207,12 +216,12 @@
             this.BtnFrmCalendario.UseVisualStyleBackColor = false;
             this.BtnFrmCalendario.Click += new System.EventHandler(this.BtnFrmCalendario_Click);
             // 
-            // fichaTecnicaToolStripMenuItem
+            // liquidacionFinalToolStripMenuItem
             // 
-            this.fichaTecnicaToolStripMenuItem.Name = "fichaTecnicaToolStripMenuItem";
-            this.fichaTecnicaToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
-            this.fichaTecnicaToolStripMenuItem.Text = "Ficha Tecnica";
-            this.fichaTecnicaToolStripMenuItem.Click += new System.EventHandler(this.fichaTecnicaToolStripMenuItem_Click);
+            this.liquidacionFinalToolStripMenuItem.Name = "liquidacionFinalToolStripMenuItem";
+            this.liquidacionFinalToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
+            this.liquidacionFinalToolStripMenuItem.Text = "Liquidacion Final";
+            this.liquidacionFinalToolStripMenuItem.Click += new System.EventHandler(this.liquidacionFinalToolStripMenuItem_Click);
             // 
             // FrmMenuPrincipal
             // 
@@ -261,6 +270,7 @@
         private System.Windows.Forms.Button BtnFrmCalendario;
         private System.Windows.Forms.ToolStripMenuItem registrarCobroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fichaTecnicaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem liquidacionFinalToolStripMenuItem;
     }
 }
 

@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="ACCESO.cs" />
     <Compile Include="MP_CLIENTE.cs" />
+    <Compile Include="MP_RECETARIO.cs" />
+    <Compile Include="MP_INSUMO.cs" />
     <Compile Include="MP_INVENTARIO.cs" />
     <Compile Include="MAPPER.cs" />
     <Compile Include="MP_BACKUP.cs" />
@@ -58,6 +60,7 @@
     <Compile Include="MP_PRESUPUESTO.cs" />
     <Compile Include="MP_PRODUCTO.cs" />
     <Compile Include="MP_PRESTADOR_SERVICIO.cs" />
+    <Compile Include="MP_PROVEEDOR_INSUMO.cs" />
     <Compile Include="MP_RESERVA.cs" />
     <Compile Include="MP_SERVICIO_CATERING.cs" />
     <Compile Include="MP_USUARIO.cs" />

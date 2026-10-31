@@ -40,13 +40,17 @@
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarCobroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fichaTecnicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.liquidacionFinalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.LBLbienvenida = new System.Windows.Forms.Label();
             this.CBXidiomas = new System.Windows.Forms.ComboBox();
             this.LBLidioma = new System.Windows.Forms.Label();
             this.BtnFrmCalendario = new System.Windows.Forms.Button();
-            this.liquidacionFinalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionProveedoresDeInsumosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionCatalogoDeInsumosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionRecetarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +73,8 @@
             this.menuStrip1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.AdministracionMenuItem,
-            this.BitacoraToolStripMenuItem});
+            this.BitacoraToolStripMenuItem,
+            this.stockToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
@@ -155,6 +160,13 @@
             this.fichaTecnicaToolStripMenuItem.Text = "Ficha Tecnica";
             this.fichaTecnicaToolStripMenuItem.Click += new System.EventHandler(this.fichaTecnicaToolStripMenuItem_Click);
             // 
+            // liquidacionFinalToolStripMenuItem
+            // 
+            this.liquidacionFinalToolStripMenuItem.Name = "liquidacionFinalToolStripMenuItem";
+            this.liquidacionFinalToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
+            this.liquidacionFinalToolStripMenuItem.Text = "Liquidacion Final";
+            this.liquidacionFinalToolStripMenuItem.Click += new System.EventHandler(this.liquidacionFinalToolStripMenuItem_Click);
+            // 
             // BitacoraToolStripMenuItem
             // 
             this.BitacoraToolStripMenuItem.Name = "BitacoraToolStripMenuItem";
@@ -216,12 +228,36 @@
             this.BtnFrmCalendario.UseVisualStyleBackColor = false;
             this.BtnFrmCalendario.Click += new System.EventHandler(this.BtnFrmCalendario_Click);
             // 
-            // liquidacionFinalToolStripMenuItem
+            // stockToolStripMenuItem
             // 
-            this.liquidacionFinalToolStripMenuItem.Name = "liquidacionFinalToolStripMenuItem";
-            this.liquidacionFinalToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
-            this.liquidacionFinalToolStripMenuItem.Text = "Liquidacion Final";
-            this.liquidacionFinalToolStripMenuItem.Click += new System.EventHandler(this.liquidacionFinalToolStripMenuItem_Click);
+            this.stockToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gestionProveedoresDeInsumosToolStripMenuItem,
+            this.gestionCatalogoDeInsumosToolStripMenuItem,
+            this.gestionRecetarioToolStripMenuItem});
+            this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
+            this.stockToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.stockToolStripMenuItem.Text = "Stock";
+            // 
+            // gestionProveedoresDeInsumosToolStripMenuItem
+            // 
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Name = "gestionProveedoresDeInsumosToolStripMenuItem";
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Text = "Gestion Proveedores de Insumos";
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Click += new System.EventHandler(this.gestionProveedoresDeInsumosToolStripMenuItem_Click);
+            // 
+            // gestionCatalogoDeInsumosToolStripMenuItem
+            // 
+            this.gestionCatalogoDeInsumosToolStripMenuItem.Name = "gestionCatalogoDeInsumosToolStripMenuItem";
+            this.gestionCatalogoDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
+            this.gestionCatalogoDeInsumosToolStripMenuItem.Text = "Gestion Catalogo de Insumos";
+            this.gestionCatalogoDeInsumosToolStripMenuItem.Click += new System.EventHandler(this.gestionCatalogoDeInsumosToolStripMenuItem_Click);
+            // 
+            // gestionRecetarioToolStripMenuItem
+            // 
+            this.gestionRecetarioToolStripMenuItem.Name = "gestionRecetarioToolStripMenuItem";
+            this.gestionRecetarioToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
+            this.gestionRecetarioToolStripMenuItem.Text = "Gestion Recetario";
+            this.gestionRecetarioToolStripMenuItem.Click += new System.EventHandler(this.gestionRecetarioToolStripMenuItem_Click);
             // 
             // FrmMenuPrincipal
             // 
@@ -271,6 +307,10 @@
         private System.Windows.Forms.ToolStripMenuItem registrarCobroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fichaTecnicaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem liquidacionFinalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stockToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionProveedoresDeInsumosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionCatalogoDeInsumosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionRecetarioToolStripMenuItem;
     }
 }
 

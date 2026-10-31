@@ -57,7 +57,7 @@ Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: de
 [Run]
 Filename: "{tmp}\SQL2025-SSEI-Expr.exe"; Parameters: "/QS /IACCEPTSQLSERVERLICENSETERMS /ACTION=Install /FEATURES=SQLEngine /INSTANCENAME=SQLEXPRESS01 /SQLSVCACCOUNT=""NT AUTHORITY\Network Service"" /SQLSYSADMINACCOUNTS=""BUILTIN\ADMINISTRATORS"""; Check: NeedsSQLServer; StatusMsg: "Instalando motor de Base de Datos (Esto puede demorar unos minutardos)..."
 Filename: "{cmd}"; Parameters: "/C net start MSSQL$SQLEXPRESS01"; Flags: runhidden; StatusMsg: "Iniciando servicio de base de datos..."
-Filename: "sqlcmd.exe"; Parameters: "-S .\SQLEXPRESS01 -E -b -i ""{app}\InstalacionDB.sql"""; StatusMsg: "Configurando base de datos..."; Flags: runhidden waituntilterminated runascurrentuser
+Filename: "sqlcmd.exe"; Parameters: "-S .\SQLEXPRESS -E -b -i ""{app}\InstalacionDB.sql"""; StatusMsg: "Configurando base de datos..."; Flags: runhidden waituntilterminated runascurrentuser
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
 [Code]
@@ -65,8 +65,7 @@ function NeedsSQLServer(): Boolean;
 var
   sqlInstalled: Cardinal;
 begin
-  if RegQueryDWordValue(HKLM, 'SOFTWARE\Microsoft\Microsoft SQL Server\SQLEXPRESS01\MSSQLServer\CurrentVersion', 'CurrentMajorVersionNumber', sqlInstalled) then
-  begin
+if RegQueryDWordValue(HKLM, 'SOFTWARE\Microsoft\Microsoft SQL Server\SQLEXPRESS\MSSQLServer\CurrentVersion', 'CurrentMajorVersionNumber', sqlInstalled) then  begin
     Result := False; 
   end
   else

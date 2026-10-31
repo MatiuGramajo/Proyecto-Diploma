@@ -266,6 +266,30 @@ namespace Trabajo_practico_IS
             frmliquidacionfinal.ShowDialog();
             this.Show();
         }
+
+        private void gestionProveedoresDeInsumosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmGestionProveedorInsumo frmgestionprov= new FrmGestionProveedorInsumo();
+            frmgestionprov.ShowDialog();
+            this.Show();
+        }
+
+        private void gestionCatalogoDeInsumosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmGestionarInsumo frmgestioninsumo = new FrmGestionarInsumo();
+            frmgestioninsumo.ShowDialog();
+            this.Show();
+        }
+
+        private void gestionRecetarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmGestionRecetario frmgestionrecetario= new FrmGestionRecetario();
+            frmgestionrecetario.ShowDialog();
+            this.Show();
+        }
     }
 }
 

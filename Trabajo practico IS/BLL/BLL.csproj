@@ -44,12 +44,15 @@
     <Compile Include="AUDITORIA.cs" />
     <Compile Include="BITACORA.cs" />
     <Compile Include="CLIENTE.cs" />
+    <Compile Include="RECETARIO.cs" />
     <Compile Include="DIGITO_VERIFICADOR.cs" />
     <Compile Include="FICHA_TECNICA.cs" />
     <Compile Include="HISTORIAL_PRODUCTO.cs" />
     <Compile Include="HISTORIAL_USUARIO.cs" />
     <Compile Include="IDIOMA.cs" />
+    <Compile Include="INSUMO.cs" />
     <Compile Include="PRESTADOR_SERVICIO.cs" />
+    <Compile Include="PROVEEDOR_INSUMO.cs" />
     <Compile Include="SERVICIO_CATERING.cs" />
     <Compile Include="ORDEN_COMPRA.cs" />
     <Compile Include="PAGO_SEÑA.cs" />

@@ -29,6 +29,21 @@ namespace BE
 			get { return precio_Por_Persona; }
 			set { precio_Por_Persona = value; }
 		}
+		private string nombre_Servicio;
+
+		public string Nombre_Servicio
+		{
+			get { return nombre_Servicio; }
+			set { nombre_Servicio = value; }
+		}
+		private string descripcion;
+
+		public string Descripcion
+		{
+			get { return descripcion; }
+			set { descripcion = value; }
+		}
+
 
 	}
 }

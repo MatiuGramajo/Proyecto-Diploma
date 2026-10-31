@@ -33,6 +33,8 @@ namespace DAL
                 cat.Id_Servicio = Convert.ToInt32(row["Id_Servicio"]);
                 cat.Tipo_Menu = row["Tipo_Menu"].ToString();
                 cat.Precio_Por_Persona = Convert.ToDecimal(row["Precio_Por_Persona"]);
+                cat.Nombre_Servicio = row["Nombre_Servicio"].ToString();
+                cat.Descripcion = row["Descripcion"].ToString();
                 lista.Add(cat);
             }
             return lista;

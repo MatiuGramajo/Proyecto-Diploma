@@ -53,6 +53,7 @@
     <Compile Include="INSUMO.cs" />
     <Compile Include="PRESTADOR_SERVICIO.cs" />
     <Compile Include="PROVEEDOR_INSUMO.cs" />
+    <Compile Include="REQUERIMIENTO.cs" />
     <Compile Include="SERVICIO_CATERING.cs" />
     <Compile Include="ORDEN_COMPRA.cs" />
     <Compile Include="PAGO_SEÑA.cs" />

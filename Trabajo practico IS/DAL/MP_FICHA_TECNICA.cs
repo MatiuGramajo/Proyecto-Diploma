@@ -1,6 +1,7 @@
 ﻿using BE;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -36,6 +37,26 @@ namespace DAL
             acceso.Cerrar();
         }
 
+        public BE.FICHA_TECNICA ObtenerPorReserva(int idReserva)
+        {
+            acceso.Abrir();
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(acceso.CrearParametro("@Id_Reserva", idReserva));
+
+            DataTable dt = acceso.Leer("OBTENER_FICHA_TECNICA_POR_RESERVA", parametros);
+            acceso.Cerrar();
+
+            if (dt.Rows.Count > 0)
+            {
+                BE.FICHA_TECNICA ficha = new BE.FICHA_TECNICA();
+                ficha.Id_Ficha = Convert.ToInt32(dt.Rows[0]["Id_Ficha"]);
+                ficha.Id_Reserva = Convert.ToInt32(dt.Rows[0]["Id_Reserva"]);
+                ficha.Id_Servicio = Convert.ToInt32(dt.Rows[0]["Id_Servicio"]);
+                ficha.Cantidad_Invitados_Final = Convert.ToInt32(dt.Rows[0]["Cantidad_Invitados_Final"]);
+                return ficha;
+            }
+            return null;
+        }
         public void RegistrarDetalles(BE.FICHA_TECNICA datosFicha)
         {
             acceso.Abrir();

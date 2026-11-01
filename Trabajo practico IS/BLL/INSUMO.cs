@@ -15,8 +15,10 @@ namespace BLL
         {
             return mpInsumo.Listar();
         }
-
-        
+        public void ActualizarStock(string nombreInsumo, decimal cantidadRecibida)
+        {
+            mpInsumo.IncrementaStock(nombreInsumo, cantidadRecibida);
+        }
         public void Guardar(BE.INSUMO insumo)
         {
             if (mpInsumo.ExisteNombre(insumo.Nombre, insumo.Id_Insumo))

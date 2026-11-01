@@ -290,6 +290,38 @@ namespace Trabajo_practico_IS
             frmgestionrecetario.ShowDialog();
             this.Show();
         }
+
+        private void consultarFaltantesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmConsultarFaltantes frmConsultarFaltantes = new FrmConsultarFaltantes();
+            frmConsultarFaltantes.ShowDialog();
+            this.Show();
+        }
+
+        private void registrarOrdenDeCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmRegistrarOrdenCompra frmregistrarordendecompra = new FrmRegistrarOrdenCompra();
+            frmregistrarordendecompra.ShowDialog();
+            this.Show();
+        }
+
+        private void anularReasignarOrdenDeCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmAnularReasignarOrdenCompra frmreasig = new FrmAnularReasignarOrdenCompra();
+            frmreasig.ShowDialog();
+            this.Show();
+        }
+
+        private void registrarRecepcionDeMercaderiaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmRegistrarRecepcionMercaderia frmregis = new FrmRegistrarRecepcionMercaderia();
+            frmregis.ShowDialog();
+            this.Show();
+        }
     }
 }
 

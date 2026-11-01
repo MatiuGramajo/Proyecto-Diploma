@@ -15,13 +15,13 @@ namespace BE
 			get { return id_OrdenCompra; }
 			set { id_OrdenCompra = value; }
 		}
-		private int id_Ficha;
+		//private int id_Ficha;
 
-		public int Id_Ficha
-		{
-			get { return id_Ficha; }
-			set { id_Ficha = value; }
-		}
+		//public int Id_Ficha
+		//{
+		//	get { return id_Ficha; }
+		//	set { id_Ficha = value; }
+		//}
 		private int id_Proveedor;
 
 		public int Id_Proveedor
@@ -29,27 +29,19 @@ namespace BE
 			get { return id_Proveedor; }
 			set { id_Proveedor = value; }
 		}
-		private PRESTADOR_SERVICIO proveedorAsociado;
+		private List<DETALLE_ORDEN_COMPRA> detalles= new List<DETALLE_ORDEN_COMPRA>() ;
 
-		public PRESTADOR_SERVICIO ProveedorAsociado
-		{
-			get { return proveedorAsociado; }
-			set { proveedorAsociado = value; }
-
-		}
-		private List<DETALLE_OC> detalles= new List<DETALLE_OC>() ;
-
-		public List<DETALLE_OC> Detalles
+		public List<DETALLE_ORDEN_COMPRA> Detalles
 		{
 			get { return detalles; }
 			set { detalles  = value; }
 		}
-		private DateTime fecha;
+		private DateTime fecha_Emision;
 
-		public DateTime Fecha
+		public DateTime Fecha_Emision
 		{
-			get { return fecha; }
-			set { fecha = value; }
+			get { return fecha_Emision; }
+			set { fecha_Emision = value; }
 		}
 		private string estado;
 
@@ -58,7 +50,8 @@ namespace BE
 			get { return estado; }
 			set { estado = value; }
 		}
-		
+
+
 
 	}
 }

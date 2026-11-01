@@ -44,7 +44,7 @@
     <Compile Include="BITACORA.cs" />
     <Compile Include="CLIENTE.cs" />
     <Compile Include="COMPONENTE.cs" />
-    <Compile Include="DETALLE_OC.cs" />
+    <Compile Include="DETALLE_ORDEN_COMPRA.cs" />
     <Compile Include="DETALLE_RECETARIO.cs" />
     <Compile Include="FICHA_TECNICA.cs" />
     <Compile Include="HISTORIAL_PRODUCTO.cs" />
@@ -61,6 +61,7 @@
     <Compile Include="PRODUCTO.cs" />
     <Compile Include="PRESTADOR_SERVICIO.cs" />
     <Compile Include="PROVEEDOR_INSUMO.cs" />
+    <Compile Include="REQUERIMIENTO_INSUMO.cs" />
     <Compile Include="RESERVA.cs" />
     <Compile Include="SERVICIO_CATERING.cs" />
     <Compile Include="TRADUCCION.cs" />

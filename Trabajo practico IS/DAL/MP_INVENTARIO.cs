@@ -10,7 +10,7 @@ namespace DAL
 {
     public class MP_INVENTARIO : MAPPER<BE.INVENTARIO>
     {
-        public void ActualizarStock(List<BE.DETALLE_OC> listaDetallesRecibidos)
+        public void ActualizarStock(List<BE.DETALLE_ORDEN_COMPRA> listaDetallesRecibidos)
         {
             acceso.Abrir();
             foreach (var detalle in listaDetallesRecibidos)

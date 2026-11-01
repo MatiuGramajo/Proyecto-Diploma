@@ -42,15 +42,19 @@
             this.fichaTecnicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.liquidacionFinalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.BitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionProveedoresDeInsumosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionCatalogoDeInsumosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionRecetarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarFaltantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.LBLbienvenida = new System.Windows.Forms.Label();
             this.CBXidiomas = new System.Windows.Forms.ComboBox();
             this.LBLidioma = new System.Windows.Forms.Label();
             this.BtnFrmCalendario = new System.Windows.Forms.Button();
-            this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestionProveedoresDeInsumosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestionCatalogoDeInsumosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestionRecetarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarOrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.anularReasignarOrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -175,6 +179,48 @@
             this.BitacoraToolStripMenuItem.Text = "Bitacora";
             this.BitacoraToolStripMenuItem.Click += new System.EventHandler(this.BitacoraToolStripMenuItem_Click);
             // 
+            // stockToolStripMenuItem
+            // 
+            this.stockToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gestionProveedoresDeInsumosToolStripMenuItem,
+            this.gestionCatalogoDeInsumosToolStripMenuItem,
+            this.gestionRecetarioToolStripMenuItem,
+            this.consultarFaltantesToolStripMenuItem,
+            this.registrarOrdenDeCompraToolStripMenuItem,
+            this.anularReasignarOrdenDeCompraToolStripMenuItem,
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem});
+            this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
+            this.stockToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.stockToolStripMenuItem.Text = "Stock";
+            // 
+            // gestionProveedoresDeInsumosToolStripMenuItem
+            // 
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Name = "gestionProveedoresDeInsumosToolStripMenuItem";
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Text = "Gestion Proveedores de Insumos";
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Click += new System.EventHandler(this.gestionProveedoresDeInsumosToolStripMenuItem_Click);
+            // 
+            // gestionCatalogoDeInsumosToolStripMenuItem
+            // 
+            this.gestionCatalogoDeInsumosToolStripMenuItem.Name = "gestionCatalogoDeInsumosToolStripMenuItem";
+            this.gestionCatalogoDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
+            this.gestionCatalogoDeInsumosToolStripMenuItem.Text = "Gestion Catalogo de Insumos";
+            this.gestionCatalogoDeInsumosToolStripMenuItem.Click += new System.EventHandler(this.gestionCatalogoDeInsumosToolStripMenuItem_Click);
+            // 
+            // gestionRecetarioToolStripMenuItem
+            // 
+            this.gestionRecetarioToolStripMenuItem.Name = "gestionRecetarioToolStripMenuItem";
+            this.gestionRecetarioToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
+            this.gestionRecetarioToolStripMenuItem.Text = "Gestion Recetario";
+            this.gestionRecetarioToolStripMenuItem.Click += new System.EventHandler(this.gestionRecetarioToolStripMenuItem_Click);
+            // 
+            // consultarFaltantesToolStripMenuItem
+            // 
+            this.consultarFaltantesToolStripMenuItem.Name = "consultarFaltantesToolStripMenuItem";
+            this.consultarFaltantesToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
+            this.consultarFaltantesToolStripMenuItem.Text = "Consultar Faltantes";
+            this.consultarFaltantesToolStripMenuItem.Click += new System.EventHandler(this.consultarFaltantesToolStripMenuItem_Click);
+            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
@@ -228,36 +274,26 @@
             this.BtnFrmCalendario.UseVisualStyleBackColor = false;
             this.BtnFrmCalendario.Click += new System.EventHandler(this.BtnFrmCalendario_Click);
             // 
-            // stockToolStripMenuItem
+            // registrarOrdenDeCompraToolStripMenuItem
             // 
-            this.stockToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gestionProveedoresDeInsumosToolStripMenuItem,
-            this.gestionCatalogoDeInsumosToolStripMenuItem,
-            this.gestionRecetarioToolStripMenuItem});
-            this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
-            this.stockToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
-            this.stockToolStripMenuItem.Text = "Stock";
+            this.registrarOrdenDeCompraToolStripMenuItem.Name = "registrarOrdenDeCompraToolStripMenuItem";
+            this.registrarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
+            this.registrarOrdenDeCompraToolStripMenuItem.Text = "Registrar Orden de Compra";
+            this.registrarOrdenDeCompraToolStripMenuItem.Click += new System.EventHandler(this.registrarOrdenDeCompraToolStripMenuItem_Click);
             // 
-            // gestionProveedoresDeInsumosToolStripMenuItem
+            // anularReasignarOrdenDeCompraToolStripMenuItem
             // 
-            this.gestionProveedoresDeInsumosToolStripMenuItem.Name = "gestionProveedoresDeInsumosToolStripMenuItem";
-            this.gestionProveedoresDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
-            this.gestionProveedoresDeInsumosToolStripMenuItem.Text = "Gestion Proveedores de Insumos";
-            this.gestionProveedoresDeInsumosToolStripMenuItem.Click += new System.EventHandler(this.gestionProveedoresDeInsumosToolStripMenuItem_Click);
+            this.anularReasignarOrdenDeCompraToolStripMenuItem.Name = "anularReasignarOrdenDeCompraToolStripMenuItem";
+            this.anularReasignarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.anularReasignarOrdenDeCompraToolStripMenuItem.Text = "Anular/Reasignar Orden de Compra";
+            this.anularReasignarOrdenDeCompraToolStripMenuItem.Click += new System.EventHandler(this.anularReasignarOrdenDeCompraToolStripMenuItem_Click);
             // 
-            // gestionCatalogoDeInsumosToolStripMenuItem
+            // registrarRecepcionDeMercaderiaToolStripMenuItem
             // 
-            this.gestionCatalogoDeInsumosToolStripMenuItem.Name = "gestionCatalogoDeInsumosToolStripMenuItem";
-            this.gestionCatalogoDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
-            this.gestionCatalogoDeInsumosToolStripMenuItem.Text = "Gestion Catalogo de Insumos";
-            this.gestionCatalogoDeInsumosToolStripMenuItem.Click += new System.EventHandler(this.gestionCatalogoDeInsumosToolStripMenuItem_Click);
-            // 
-            // gestionRecetarioToolStripMenuItem
-            // 
-            this.gestionRecetarioToolStripMenuItem.Name = "gestionRecetarioToolStripMenuItem";
-            this.gestionRecetarioToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
-            this.gestionRecetarioToolStripMenuItem.Text = "Gestion Recetario";
-            this.gestionRecetarioToolStripMenuItem.Click += new System.EventHandler(this.gestionRecetarioToolStripMenuItem_Click);
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Name = "registrarRecepcionDeMercaderiaToolStripMenuItem";
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Text = "Registrar Recepcion de Mercaderia";
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Click += new System.EventHandler(this.registrarRecepcionDeMercaderiaToolStripMenuItem_Click);
             // 
             // FrmMenuPrincipal
             // 
@@ -311,6 +347,10 @@
         private System.Windows.Forms.ToolStripMenuItem gestionProveedoresDeInsumosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionCatalogoDeInsumosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gestionRecetarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarFaltantesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarOrdenDeCompraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem anularReasignarOrdenDeCompraToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarRecepcionDeMercaderiaToolStripMenuItem;
     }
 }
 

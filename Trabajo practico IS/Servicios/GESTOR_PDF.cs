@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,78 @@ namespace Servicios
 {
     public class GESTOR_PDF
     {
+        public void GenerarComprobantePDF(BE.ORDEN_COMPRA orden)
+        {
+            try
+            {
+                // Crear carpeta de salida en el Escritorio si no existe
+                string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "OrdenesDeCompra");
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath);
+                }
+
+                string filePath = Path.Combine(folderPath, $"OrdenCompra_{orden.Id_OrdenCompra}_{DateTime.Now:yyyyMMdd_HHmmss}.pdf");
+
+                Document doc = new Document(PageSize.A4, 25, 25, 30, 30);
+                PdfWriter.GetInstance(doc, new FileStream(filePath, FileMode.Create));
+
+                doc.Open();
+
+                // Definición de fuentes
+                Font tituloFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 16, BaseColor.BLACK);
+                Font subTituloFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 11, BaseColor.DARK_GRAY);
+                Font textoFont = FontFactory.GetFont(FontFactory.HELVETICA, 10, BaseColor.BLACK);
+                Font textoBold = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 10, BaseColor.BLACK);
+
+                // Cabecera del Documento
+                doc.Add(new Paragraph("ORDEN DE COMPRA", tituloFont) { Alignment = Element.ALIGN_CENTER });
+                doc.Add(new Paragraph($"N°: OC-{orden.Id_OrdenCompra:D6}", subTituloFont) { Alignment = Element.ALIGN_CENTER });
+                doc.Add(new Paragraph($"Fecha de Emisión: {orden.Fecha_Emision:dd/MM/yyyy HH:mm}", textoFont) { Alignment = Element.ALIGN_CENTER });
+                doc.Add(new Paragraph($"Estado: {orden.Estado}", textoFont) { Alignment = Element.ALIGN_CENTER });
+                doc.Add(new Chunk("\n"));
+
+                // Datos del Proveedor
+                doc.Add(new Paragraph($"Código Proveedor: {orden.Id_Proveedor}", textoFont));
+                doc.Add(new Chunk("\n"));
+
+                // Tabla de Detalle de Insumos
+                PdfPTable table = new PdfPTable(3);
+                table.WidthPercentage = 100;
+                table.SetWidths(new float[] { 20f, 60f, 20f });
+
+                // Encabezados de Tabla
+                PdfPCell cell1 = new PdfPCell(new Phrase("Cód. Insumo", textoBold)) { HorizontalAlignment = Element.ALIGN_CENTER, BackgroundColor = BaseColor.LIGHT_GRAY };
+                PdfPCell cell2 = new PdfPCell(new Phrase("Insumo", textoBold)) { HorizontalAlignment = Element.ALIGN_LEFT, BackgroundColor = BaseColor.LIGHT_GRAY };
+                PdfPCell cell3 = new PdfPCell(new Phrase("Cant. Solicitada", textoBold)) { HorizontalAlignment = Element.ALIGN_CENTER, BackgroundColor = BaseColor.LIGHT_GRAY };
+
+                table.AddCell(cell1);
+                table.AddCell(cell2);
+                table.AddCell(cell3);
+
+                // Filas de la grilla
+                foreach (var det in orden.Detalles)
+                {
+                    table.AddCell(new PdfPCell(new Phrase(det.Id_Insumo.ToString(), textoFont)) { HorizontalAlignment = Element.ALIGN_CENTER });
+                    table.AddCell(new PdfPCell(new Phrase(det.Nombre_Insumo ?? "Insumo " + det.Id_Insumo, textoFont)) { HorizontalAlignment = Element.ALIGN_LEFT });
+                    table.AddCell(new PdfPCell(new Phrase(det.Cantidad_Solicitada.ToString(), textoFont)) { HorizontalAlignment = Element.ALIGN_CENTER });
+                }
+
+                doc.Add(table);
+                doc.Close();
+
+                // Intentar abrir el archivo generado automáticamente
+                try
+                {
+                    Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
+                }
+                catch { }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al generar el comprobante PDF: " + ex.Message);
+            }
+        }
 
         public void GenerarComprobantePDF(BE.RESERVA reserva)
         {

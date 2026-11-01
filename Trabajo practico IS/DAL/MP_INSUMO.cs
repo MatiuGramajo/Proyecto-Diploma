@@ -11,6 +11,7 @@ namespace DAL
 {
     public class MP_INSUMO : MAPPER<BE.INSUMO>
     {
+
         public override void Alta(INSUMO obj)
         {
             acceso.Abrir();
@@ -25,7 +26,22 @@ namespace DAL
             acceso.Escribir("INSERTAR_INSUMO", parametros);
             acceso.Cerrar();
         }
+        public List<BE.INSUMO> ListarInsumos()
+        {
+            return Listar();
+        }
+        public void IncrementaStock(string nombreInsumo, decimal cantidadRecibida)
+        {
+            acceso.Abrir();
 
+            List<SqlParameter> parametros = new List<SqlParameter>();
+            parametros.Add(acceso.CrearParametro("@Nombre_Insumo", nombreInsumo));
+            parametros.Add(acceso.CrearParametro("@Cantidad_Recibida", cantidadRecibida));
+
+            acceso.Escribir("INCREMENTAR_STOCK_INSUMO", parametros);
+
+            acceso.Cerrar();
+        }
         public override void Baja(INSUMO obj)
         {
             acceso.Abrir();

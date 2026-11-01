@@ -39,9 +39,9 @@ namespace BLL
         {
             mpReserva.ActualizarCostosyEstado(idReserva, costoTotal, saldoPendiente, estado);
         }
-        public List<BE.RESERVA> ObtenerEventosPlanificados()
+        public List<BE.RESERVA> ObtenerEventosPlanificados(DateTime? fechaDesde = null, DateTime? fechaHasta = null)
         {
-            return mpReserva.ListarEventosPlanificados();
+            return mpReserva.ListarEventosPlanificados(fechaDesde, fechaHasta);
         }
         public void RegistrarLiquidacion(BE.RESERVA reservaSeleccionada, string metodoPago)
         {

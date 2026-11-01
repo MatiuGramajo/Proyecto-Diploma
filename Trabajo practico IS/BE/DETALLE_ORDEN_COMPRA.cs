@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BE
 {
-    public class DETALLE_OC
+    public class DETALLE_ORDEN_COMPRA
     {
 		private int id_Detalle;
 
@@ -37,6 +37,14 @@ namespace BE
 			get { return cantidad_Solicitada; }
 			set { cantidad_Solicitada = value; }
 		}
+		private string nombre_Insumo;
+
+		public string Nombre_Insumo
+		{
+			get { return nombre_Insumo; }
+			set { nombre_Insumo = value; }
+		}
+
 		private int cantidad_Recibida;
 
 		public int Cantidad_Recibida

@@ -224,10 +224,7 @@ namespace Trabajo_practico_IS
 
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmProducto frmProducto = new FrmProducto();
-            frmProducto.ShowDialog();
-            this.Show();
+
         }
 
         private void FrmMenuPrincipal_Activated(object sender, EventArgs e)
@@ -344,6 +341,14 @@ namespace Trabajo_practico_IS
             this.Hide();
             FrmCalibrarRatios frmcalibrar = new FrmCalibrarRatios();    
             frmcalibrar.ShowDialog();
+            this.Show();
+        }
+
+        private void gestionarPersonalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmGestionarPersonal frmgestionarpersonal = new FrmGestionarPersonal(); 
+            frmgestionarpersonal.ShowDialog();
             this.Show();
         }
     }

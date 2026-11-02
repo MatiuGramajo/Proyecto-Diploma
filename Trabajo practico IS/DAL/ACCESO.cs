@@ -18,6 +18,8 @@ namespace DAL
             conexion.ConnectionString = "Initial Catalog=BASE;Data Source=.;Integrated Security=SSPI";
             //conexion.ConnectionString = @"Data Source=.\SQLEXPRESS01;Initial Catalog=BASE;Integrated Security=True;TrustServerCertificate=True;MultipleActiveResultSets=True;";
             //conexion.ConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=BASE;Integrated Security=True;TrustServerCertificate=True;";
+            //conexion.ConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=BASE;Integrated Security=True;TrustServerCertificate=True;";
+            //conexion.ConnectionString = @"Data Source=.;Initial Catalog=BASE;Integrated Security=True;TrustServerCertificate=True;";
             conexion.Open();
         }
         public void Cerrar()

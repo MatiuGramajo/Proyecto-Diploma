@@ -112,38 +112,9 @@ namespace Trabajo_practico_IS
 
                 else if (entidadSeleccionada == "Productos")
                 {
-                    BE.HISTORIAL_PRODUCTO versionSeleccionada = (BE.HISTORIAL_PRODUCTO)DGVHistorial.CurrentRow.DataBoundItem;
+                 
 
-                    if (versionSeleccionada.Activo == false)
-                    {
-                        MessageBox.Show("No se puede restaurar una versión donde el producto estaba dado de baja.", "Versión Invalida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        return;
-                    }
-
-                    BLL.PRODUCTO gestorProd = new BLL.PRODUCTO();
-                    BE.PRODUCTO productoActual = gestorProd.Listar().FirstOrDefault(p => p.Id == versionSeleccionada.IdProducto);
-
-                    if (productoActual != null && productoActual.Activo == false)
-                    {
-                        MessageBox.Show("Operación denegada.\n\nNo se puede restaurar información de un producto que se encuentra dado de baja (Inactivo).", "Registro Inactivo", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                        return;
-                    }
-
-                    var r = MessageBox.Show(
-                        $"¿Está seguro de que desea restaurar los datos de este producto al estado exacto del día {versionSeleccionada.FechaCambio}?",
-                        "Confirmar Restauración de Producto",
-                        MessageBoxButtons.YesNo,
-                        MessageBoxIcon.Warning);
-
-                    if (r == DialogResult.Yes)
-                    {
-                        BLL.HISTORIAL_PRODUCTO gestorHistProd = new BLL.HISTORIAL_PRODUCTO();
-                        gestorHistProd.RestaurarProducto(versionSeleccionada.IdHistorial);
-
-                        MessageBox.Show("El producto ha sido restaurado con éxito.", "Operación Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                        CBX_Filtro_SelectedIndexChanged(null, null);
-                    }
+                 
                 }
             }
             catch (Exception ex)
@@ -216,10 +187,7 @@ namespace Trabajo_practico_IS
             }
             else if (entidadSeleccionada == "Productos")
             {
-                BLL.PRODUCTO gestorProd = new BLL.PRODUCTO();
-                CBX_Filtro.DataSource = gestorProd.Listar();
-                CBX_Filtro.DisplayMember = "Nombre";
-                CBX_Filtro.ValueMember = "Id";
+
             }
 
             CBX_Filtro.SelectedIndex = -1;
@@ -241,10 +209,8 @@ namespace Trabajo_practico_IS
                 }
                 else if (entidad == "Productos")
                 {
-                    BLL.HISTORIAL_PRODUCTO gestorHistProd = new BLL.HISTORIAL_PRODUCTO();
-                    List<BE.HISTORIAL_PRODUCTO> listaProductos = gestorHistProd.Listar();
+                  
 
-                    DGVHistorial.DataSource = listaProductos;
                 }
 
                 DGVHistorial.ReadOnly = true;
@@ -280,13 +246,7 @@ namespace Trabajo_practico_IS
                 }
                 else if (entidadActiva == "Productos")
                 {
-                    BLL.HISTORIAL_PRODUCTO gestorHistProd = new BLL.HISTORIAL_PRODUCTO();
-                    var historialCompleto = gestorHistProd.Listar();
-
-                    var historialFiltrado = historialCompleto.Where(h => h.IdProducto == idSeleccionado).ToList();
-
-                    DGVHistorial.DataSource = null;
-                    DGVHistorial.DataSource = historialFiltrado;
+                   
                 }
                 AplicarFormatoGrilla(entidadActiva);
                 ActualizarEstadoBotonRestaurar();
@@ -334,17 +294,7 @@ namespace Trabajo_practico_IS
             }
             else if (entidadSeleccionada == "Productos")
             {
-                if (DGVHistorial.CurrentRow.DataBoundItem is BE.HISTORIAL_PRODUCTO version)
-                {
-                    BLL.PRODUCTO gestorProd = new BLL.PRODUCTO();
-                    BE.PRODUCTO prodActual = gestorProd.Listar().FirstOrDefault(p => p.Id == version.IdProducto);
-
-                    BTNrestaurar.Enabled = (prodActual != null && prodActual.Activo == true);
-                }
-                else
-                {
-                    BTNrestaurar.Enabled = false;
-                }
+               
             }
         }
         private void AplicarFormatoGrilla(string entidadSeleccionada)

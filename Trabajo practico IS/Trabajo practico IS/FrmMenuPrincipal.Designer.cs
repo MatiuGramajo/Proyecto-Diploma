@@ -37,7 +37,6 @@
             this.controlDeIdiomasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restauracionDeBaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historialDeCambiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarCobroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fichaTecnicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.liquidacionFinalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,14 +49,15 @@
             this.registrarOrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.anularReasignarOrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarRecepcionDeMercaderiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignarPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarEvaluacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calibrarRatiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.LBLbienvenida = new System.Windows.Forms.Label();
             this.CBXidiomas = new System.Windows.Forms.ComboBox();
             this.LBLidioma = new System.Windows.Forms.Label();
             this.BtnFrmCalendario = new System.Windows.Forms.Button();
-            this.asignarPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarEvaluacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calibrarRatiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionarPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,7 +97,6 @@
             this.controlDeIdiomasToolStripMenuItem,
             this.restauracionDeBaseToolStripMenuItem,
             this.historialDeCambiosToolStripMenuItem,
-            this.productosToolStripMenuItem,
             this.registrarCobroToolStripMenuItem,
             this.fichaTecnicaToolStripMenuItem,
             this.liquidacionFinalToolStripMenuItem});
@@ -145,14 +144,6 @@
             this.historialDeCambiosToolStripMenuItem.Text = "Historial de cambios";
             this.historialDeCambiosToolStripMenuItem.Click += new System.EventHandler(this.historialDeCambiosToolStripMenuItem_Click);
             // 
-            // productosToolStripMenuItem
-            // 
-            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
-            this.productosToolStripMenuItem.Tag = "ABM_PRODUCTOS";
-            this.productosToolStripMenuItem.Text = "Productos";
-            this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
-            // 
             // registrarCobroToolStripMenuItem
             // 
             this.registrarCobroToolStripMenuItem.Name = "registrarCobroToolStripMenuItem";
@@ -194,7 +185,8 @@
             this.registrarRecepcionDeMercaderiaToolStripMenuItem,
             this.asignarPersonalToolStripMenuItem,
             this.registrarEvaluacionToolStripMenuItem,
-            this.calibrarRatiosToolStripMenuItem});
+            this.calibrarRatiosToolStripMenuItem,
+            this.gestionarPersonalToolStripMenuItem});
             this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
             this.stockToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
             this.stockToolStripMenuItem.Text = "Stock";
@@ -247,6 +239,27 @@
             this.registrarRecepcionDeMercaderiaToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
             this.registrarRecepcionDeMercaderiaToolStripMenuItem.Text = "Registrar Recepcion de Mercaderia";
             this.registrarRecepcionDeMercaderiaToolStripMenuItem.Click += new System.EventHandler(this.registrarRecepcionDeMercaderiaToolStripMenuItem_Click);
+            // 
+            // asignarPersonalToolStripMenuItem
+            // 
+            this.asignarPersonalToolStripMenuItem.Name = "asignarPersonalToolStripMenuItem";
+            this.asignarPersonalToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.asignarPersonalToolStripMenuItem.Text = "Asignar Personal";
+            this.asignarPersonalToolStripMenuItem.Click += new System.EventHandler(this.asignarPersonalToolStripMenuItem_Click);
+            // 
+            // registrarEvaluacionToolStripMenuItem
+            // 
+            this.registrarEvaluacionToolStripMenuItem.Name = "registrarEvaluacionToolStripMenuItem";
+            this.registrarEvaluacionToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.registrarEvaluacionToolStripMenuItem.Text = "Registrar Evaluacion";
+            this.registrarEvaluacionToolStripMenuItem.Click += new System.EventHandler(this.registrarEvaluacionToolStripMenuItem_Click);
+            // 
+            // calibrarRatiosToolStripMenuItem
+            // 
+            this.calibrarRatiosToolStripMenuItem.Name = "calibrarRatiosToolStripMenuItem";
+            this.calibrarRatiosToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.calibrarRatiosToolStripMenuItem.Text = "Calibrar Ratios";
+            this.calibrarRatiosToolStripMenuItem.Click += new System.EventHandler(this.calibrarRatiosToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -301,26 +314,12 @@
             this.BtnFrmCalendario.UseVisualStyleBackColor = false;
             this.BtnFrmCalendario.Click += new System.EventHandler(this.BtnFrmCalendario_Click);
             // 
-            // asignarPersonalToolStripMenuItem
+            // gestionarPersonalToolStripMenuItem
             // 
-            this.asignarPersonalToolStripMenuItem.Name = "asignarPersonalToolStripMenuItem";
-            this.asignarPersonalToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
-            this.asignarPersonalToolStripMenuItem.Text = "Asignar Personal";
-            this.asignarPersonalToolStripMenuItem.Click += new System.EventHandler(this.asignarPersonalToolStripMenuItem_Click);
-            // 
-            // registrarEvaluacionToolStripMenuItem
-            // 
-            this.registrarEvaluacionToolStripMenuItem.Name = "registrarEvaluacionToolStripMenuItem";
-            this.registrarEvaluacionToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
-            this.registrarEvaluacionToolStripMenuItem.Text = "Registrar Evaluacion";
-            this.registrarEvaluacionToolStripMenuItem.Click += new System.EventHandler(this.registrarEvaluacionToolStripMenuItem_Click);
-            // 
-            // calibrarRatiosToolStripMenuItem
-            // 
-            this.calibrarRatiosToolStripMenuItem.Name = "calibrarRatiosToolStripMenuItem";
-            this.calibrarRatiosToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
-            this.calibrarRatiosToolStripMenuItem.Text = "Calibrar Ratios";
-            this.calibrarRatiosToolStripMenuItem.Click += new System.EventHandler(this.calibrarRatiosToolStripMenuItem_Click);
+            this.gestionarPersonalToolStripMenuItem.Name = "gestionarPersonalToolStripMenuItem";
+            this.gestionarPersonalToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.gestionarPersonalToolStripMenuItem.Text = "Gestionar Personal";
+            this.gestionarPersonalToolStripMenuItem.Click += new System.EventHandler(this.gestionarPersonalToolStripMenuItem_Click);
             // 
             // FrmMenuPrincipal
             // 
@@ -365,7 +364,6 @@
         private System.Windows.Forms.ToolStripMenuItem controlDeIdiomasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem restauracionDeBaseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem historialDeCambiosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem productosToolStripMenuItem;
         private System.Windows.Forms.Button BtnFrmCalendario;
         private System.Windows.Forms.ToolStripMenuItem registrarCobroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fichaTecnicaToolStripMenuItem;
@@ -381,6 +379,7 @@
         private System.Windows.Forms.ToolStripMenuItem asignarPersonalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarEvaluacionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calibrarRatiosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gestionarPersonalToolStripMenuItem;
     }
 }
 

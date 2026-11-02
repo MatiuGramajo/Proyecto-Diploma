@@ -54,14 +54,12 @@
     <Compile Include="MP_BITACORA.cs" />
     <Compile Include="MP_DIGITO_VERIFICADOR.cs" />
     <Compile Include="MP_FICHA_TECNICA.cs" />
-    <Compile Include="MP_HISTORIAL_PRODUCTO.cs" />
     <Compile Include="MP_HISTORIAL_USUARIO.cs" />
     <Compile Include="MP_IDIOMA.cs" />
     <Compile Include="MP_ORDEN_COMPRA.cs" />
     <Compile Include="MP_PAGO_SEÑA.cs" />
     <Compile Include="MP_PERMISO.cs" />
     <Compile Include="MP_PRESUPUESTO.cs" />
-    <Compile Include="MP_PRODUCTO.cs" />
     <Compile Include="MP_PRESTADOR_SERVICIO.cs" />
     <Compile Include="MP_PROVEEDOR_INSUMO.cs" />
     <Compile Include="MP_RESERVA.cs" />

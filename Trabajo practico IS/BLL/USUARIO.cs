@@ -212,11 +212,7 @@ namespace BLL
                 gestorBitacora.RegistrarEvento("Seguridad", "Intento de acceso de cuenta bloqueada: ", 4, nombreUsuario);
                 throw new Exception("El usuario se encuentra bloqueado. Contacte al administrador.");
             }
-            //if (usuariovalido.Activo == false)  //VER ESTO, CAPAZ NO DEBERIA AVISAR QUE EL USUARIO ESTA INACTIVO
-            //{
-            //    gestorBitacora.RegistrarEvento("Seguridad", "Intento de acceso de cuenta inactiva: ", 4, nombreUsuario);
-            //    throw new Exception("Esta cuenta ha sido dada de baja del sistema. Contacte al administrador.");
-            //}
+
 
             if (usuariovalido.Contraseña != hashingresado)
             {

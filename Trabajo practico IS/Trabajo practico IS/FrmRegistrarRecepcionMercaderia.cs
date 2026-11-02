@@ -32,7 +32,6 @@ namespace Trabajo_practico_IS
                 ordenSeleccionada = null;
                 dgvDetalleOrden.DataSource = null;
 
-                // Carga de Órdenes de Compra Emitidas
                 CargarOrdenesEmitidas();
             }
             catch (Exception ex)
@@ -80,12 +79,10 @@ namespace Trabajo_practico_IS
         {
             if (dgvDetalleOrden.Columns.Count == 0) return;
 
-            // Ocultar columnas técnicas
             if (dgvDetalleOrden.Columns["Id_Detalle"] != null) dgvDetalleOrden.Columns["Id_Detalle"].Visible = false;
             if (dgvDetalleOrden.Columns["Id_OrdenCompra"] != null) dgvDetalleOrden.Columns["Id_OrdenCompra"].Visible = false;
             if (dgvDetalleOrden.Columns["Id_Insumo"] != null) dgvDetalleOrden.Columns["Id_Insumo"].HeaderText = "Cód. Insumo";
 
-            // Configuración de visualización y edición
             if (dgvDetalleOrden.Columns["Nombre_Insumo"] != null)
             {
                 dgvDetalleOrden.Columns["Nombre_Insumo"].HeaderText = "Insumo";
@@ -98,7 +95,6 @@ namespace Trabajo_practico_IS
                 dgvDetalleOrden.Columns["Cantidad_Solicitada"].ReadOnly = true;
             }
 
-            // Permitir edición de la Cantidad Recibida
             if (dgvDetalleOrden.Columns["Cantidad_Recibida"] != null)
             {
                 dgvDetalleOrden.Columns["Cantidad_Recibida"].HeaderText = "Cant. Recibida";
@@ -108,17 +104,14 @@ namespace Trabajo_practico_IS
 
         private void btnRegistrarREcepcion_Click(object sender, EventArgs e)
         {
-            // Validar Flujo Alternativo 4.1: Sin Orden de Compra seleccionada
             if (ordenSeleccionada == null || ordenSeleccionada.Detalles == null || ordenSeleccionada.Detalles.Count == 0)
             {
                 MessageBox.Show("Debe seleccionar una orden de compra e ingresar cantidades validas recibidas.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Forzar cierre de edición en el DataGridView
             dgvDetalleOrden.EndEdit();
 
-            // Validar Flujo Alternativo 4.1: Ninguna cantidad recibida válida ingresada (> 0)
             bool poseeCantidadesValidas = ordenSeleccionada.Detalles.Any(d => d.Cantidad_Recibida > 0);
             if (!poseeCantidadesValidas)
             {
@@ -126,7 +119,6 @@ namespace Trabajo_practico_IS
                 return;
             }
 
-            // Validar Flujo Alternativo 4.1.1: Cantidad recibida supera a la solicitada o es negativa
             foreach (var detalle in ordenSeleccionada.Detalles)
             {
                 if (detalle.Cantidad_Recibida < 0 || detalle.Cantidad_Recibida > detalle.Cantidad_Solicitada)
@@ -138,12 +130,11 @@ namespace Trabajo_practico_IS
 
             try
             {
-                // Invocación a BLL según Diagrama de Secuencia
                 bllOrdenCompra.RegistrarRecepcion(ordenSeleccionada);
 
                 MessageBox.Show("Recepción de mercadería registrada y stock actualizado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                MostrarFormulario(); // Reinicia pantalla
+                MostrarFormulario(); 
             }
             catch (Exception ex)
             {
@@ -154,6 +145,18 @@ namespace Trabajo_practico_IS
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             MostrarFormulario();
+        }
+
+        private void btnVolverAlMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("¿Desea volver al menu principal?", "Atención",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+
+            }
         }
     }
 }

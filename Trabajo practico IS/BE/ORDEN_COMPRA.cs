@@ -15,13 +15,7 @@ namespace BE
 			get { return id_OrdenCompra; }
 			set { id_OrdenCompra = value; }
 		}
-		//private int id_Ficha;
 
-		//public int Id_Ficha
-		//{
-		//	get { return id_Ficha; }
-		//	set { id_Ficha = value; }
-		//}
 		private int id_Proveedor;
 
 		public int Id_Proveedor

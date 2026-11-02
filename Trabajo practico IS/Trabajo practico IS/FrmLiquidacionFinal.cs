@@ -26,7 +26,6 @@ namespace Trabajo_practico_IS
 
             reservaSeleccionada = (BE.RESERVA)dataGridView1.CurrentRow.DataBoundItem;
 
-            // Muestra los valores financieros formateados
             LBLcostototal.Text = $"Costo Total Real: {reservaSeleccionada.Costo_Total_Real:C}";
             LBLsenia.Text = $"Seña Pagada: {reservaSeleccionada.Monto_Senia:C}";
             LBLsaldopendiente.Text = $"Saldo Pendiente: {reservaSeleccionada.Saldo_Pendiente:C}";
@@ -48,7 +47,6 @@ namespace Trabajo_practico_IS
                 return;
             }
 
-            // --- FLUJO ALTERNATIVO 5.1 DEL DIAGRAMA DE SECUENCIA ---
             if (CBXmetododepago.SelectedIndex == -1 || string.IsNullOrWhiteSpace(CBXmetododepago.Text))
             {
                 MessageBox.Show("Primero seleccione un metodo de pago.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -104,12 +102,11 @@ namespace Trabajo_practico_IS
         {
             try
             {
-                List<BE.RESERVA> lista = gestorReserva.ObtenerEventosPlanificados();
+                List<BE.RESERVA> lista = gestorReserva.ListarReservasPlanificadas();
 
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = lista;
 
-                // Ocultar objetos complejos en la grilla si no es necesario verlos
                 if (dataGridView1.Columns["ClienteAsociado"] != null)
                     dataGridView1.Columns["ClienteAsociado"].Visible = false;
                 if (dataGridView1.Columns["PresupuestoAsociado"] != null)
@@ -118,6 +115,18 @@ namespace Trabajo_practico_IS
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar los eventos planificados: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void BTNvolveralmenuprincipal_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("¿Desea volver al menu principal?", "Atención",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+
             }
         }
     }

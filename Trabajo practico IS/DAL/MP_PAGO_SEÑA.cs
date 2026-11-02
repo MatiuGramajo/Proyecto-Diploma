@@ -17,7 +17,6 @@ namespace DAL
             parametros.Add(acceso.CrearParametro("@Id_Reserva", datosPago.Id_Reserva));
             parametros.Add(acceso.CrearParametro("@Monto", datosPago.Monto_Senia));
 
-            // Retorna void() según el diagrama[cite: 8]
             acceso.Escribir("REGISTRAR_COBRO", parametros);
             acceso.Cerrar();
         }

@@ -40,7 +40,6 @@ namespace Trabajo_practico_IS
                     return;
                 }
 
-                // 1. Limpiamos cualquier símbolo extra (incluso paréntesis y signos más)
                 string dniLimpio = txtdni.Text.Replace(".", "").Replace(" ", "");
                 string telLimpio = txttelefono.Text.Replace("-", "").Replace(" ", "").Replace("(", "").Replace(")", "").Replace("+", "");
 
@@ -55,7 +54,6 @@ namespace Trabajo_practico_IS
                 nuevoCliente.Nombre_Completo = txtnombre.Text;
                 nuevoCliente.Dni = dni;
 
-                // 3. ASIGNAMOS DIRECTAMENTE EL LONG (Sin el (int) adelante)
                 nuevoCliente.Telefono = telefonoLargo;
 
                 nuevoCliente.Email = txtemail.Text;
@@ -76,6 +74,18 @@ namespace Trabajo_practico_IS
         private void FrmRegistrarCliente_FormClosing(object sender, FormClosingEventArgs e)
         {
             Servicios.IDIOMAS.GetInstancia().Desuscribir(this);
+        }
+
+        private void btnVolverAlMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("¿Desea volver al menu principal?", "Atención",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+
+            }
         }
     }
 }

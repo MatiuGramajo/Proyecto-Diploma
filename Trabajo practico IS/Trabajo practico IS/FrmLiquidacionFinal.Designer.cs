@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CBXmetododepago = new System.Windows.Forms.ComboBox();
+            this.LBLmetodopago = new System.Windows.Forms.Label();
+            this.LBLsaldopendiente = new System.Windows.Forms.Label();
+            this.LBLsenia = new System.Windows.Forms.Label();
+            this.LBLcostototal = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.LBLcostototal = new System.Windows.Forms.Label();
-            this.LBLsenia = new System.Windows.Forms.Label();
-            this.LBLsaldopendiente = new System.Windows.Forms.Label();
-            this.LBLmetodopago = new System.Windows.Forms.Label();
-            this.CBXmetododepago = new System.Windows.Forms.ComboBox();
             this.BTNconfirmarliquidacion = new System.Windows.Forms.Button();
             this.BTNvolveralmenuprincipal = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -56,6 +56,56 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles financieros";
+            // 
+            // CBXmetododepago
+            // 
+            this.CBXmetododepago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBXmetododepago.FormattingEnabled = true;
+            this.CBXmetododepago.Items.AddRange(new object[] {
+            "Efectivo",
+            "Transferencia Bancaria",
+            "Tarjeta de Credito",
+            "Tarjeta de Debito"});
+            this.CBXmetododepago.Location = new System.Drawing.Point(18, 194);
+            this.CBXmetododepago.Name = "CBXmetododepago";
+            this.CBXmetododepago.Size = new System.Drawing.Size(164, 21);
+            this.CBXmetododepago.TabIndex = 4;
+            // 
+            // LBLmetodopago
+            // 
+            this.LBLmetodopago.AutoSize = true;
+            this.LBLmetodopago.Location = new System.Drawing.Point(15, 162);
+            this.LBLmetodopago.Name = "LBLmetodopago";
+            this.LBLmetodopago.Size = new System.Drawing.Size(86, 13);
+            this.LBLmetodopago.TabIndex = 3;
+            this.LBLmetodopago.Text = "Metodo de Pago";
+            // 
+            // LBLsaldopendiente
+            // 
+            this.LBLsaldopendiente.AutoSize = true;
+            this.LBLsaldopendiente.Location = new System.Drawing.Point(15, 77);
+            this.LBLsaldopendiente.Name = "LBLsaldopendiente";
+            this.LBLsaldopendiente.Size = new System.Drawing.Size(118, 13);
+            this.LBLsaldopendiente.TabIndex = 2;
+            this.LBLsaldopendiente.Text = "Saldo Pendiente: $0,00";
+            // 
+            // LBLsenia
+            // 
+            this.LBLsenia.AutoSize = true;
+            this.LBLsenia.Location = new System.Drawing.Point(15, 118);
+            this.LBLsenia.Name = "LBLsenia";
+            this.LBLsenia.Size = new System.Drawing.Size(105, 13);
+            this.LBLsenia.TabIndex = 1;
+            this.LBLsenia.Text = "Seña Pagada: $0,00";
+            // 
+            // LBLcostototal
+            // 
+            this.LBLcostototal.AutoSize = true;
+            this.LBLcostototal.Location = new System.Drawing.Point(15, 37);
+            this.LBLcostototal.Name = "LBLcostototal";
+            this.LBLcostototal.Size = new System.Drawing.Size(119, 13);
+            this.LBLcostototal.TabIndex = 0;
+            this.LBLcostototal.Text = "Costo Total Real: $0,00";
             // 
             // groupBox2
             // 
@@ -80,56 +130,6 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // LBLcostototal
-            // 
-            this.LBLcostototal.AutoSize = true;
-            this.LBLcostototal.Location = new System.Drawing.Point(15, 37);
-            this.LBLcostototal.Name = "LBLcostototal";
-            this.LBLcostototal.Size = new System.Drawing.Size(119, 13);
-            this.LBLcostototal.TabIndex = 0;
-            this.LBLcostototal.Text = "Costo Total Real: $0,00";
-            // 
-            // LBLsenia
-            // 
-            this.LBLsenia.AutoSize = true;
-            this.LBLsenia.Location = new System.Drawing.Point(15, 118);
-            this.LBLsenia.Name = "LBLsenia";
-            this.LBLsenia.Size = new System.Drawing.Size(105, 13);
-            this.LBLsenia.TabIndex = 1;
-            this.LBLsenia.Text = "Seña Pagada: $0,00";
-            // 
-            // LBLsaldopendiente
-            // 
-            this.LBLsaldopendiente.AutoSize = true;
-            this.LBLsaldopendiente.Location = new System.Drawing.Point(15, 77);
-            this.LBLsaldopendiente.Name = "LBLsaldopendiente";
-            this.LBLsaldopendiente.Size = new System.Drawing.Size(118, 13);
-            this.LBLsaldopendiente.TabIndex = 2;
-            this.LBLsaldopendiente.Text = "Saldo Pendiente: $0,00";
-            // 
-            // LBLmetodopago
-            // 
-            this.LBLmetodopago.AutoSize = true;
-            this.LBLmetodopago.Location = new System.Drawing.Point(15, 162);
-            this.LBLmetodopago.Name = "LBLmetodopago";
-            this.LBLmetodopago.Size = new System.Drawing.Size(86, 13);
-            this.LBLmetodopago.TabIndex = 3;
-            this.LBLmetodopago.Text = "Metodo de Pago";
-            // 
-            // CBXmetododepago
-            // 
-            this.CBXmetododepago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBXmetododepago.FormattingEnabled = true;
-            this.CBXmetododepago.Items.AddRange(new object[] {
-            "Efectivo",
-            "Transferencia Bancaria",
-            "Tarjeta de Credito",
-            "Tarjeta de Debito"});
-            this.CBXmetododepago.Location = new System.Drawing.Point(18, 194);
-            this.CBXmetododepago.Name = "CBXmetododepago";
-            this.CBXmetododepago.Size = new System.Drawing.Size(164, 21);
-            this.CBXmetododepago.TabIndex = 4;
-            // 
             // BTNconfirmarliquidacion
             // 
             this.BTNconfirmarliquidacion.Enabled = false;
@@ -150,6 +150,7 @@
             this.BTNvolveralmenuprincipal.TabIndex = 3;
             this.BTNvolveralmenuprincipal.Text = "Volver al menu principal";
             this.BTNvolveralmenuprincipal.UseVisualStyleBackColor = true;
+            this.BTNvolveralmenuprincipal.Click += new System.EventHandler(this.BTNvolveralmenuprincipal_Click);
             // 
             // FrmLiquidacionFinal
             // 

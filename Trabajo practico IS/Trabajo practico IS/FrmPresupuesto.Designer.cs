@@ -41,6 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BTNcobrarsenia = new System.Windows.Forms.Button();
+            this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -171,11 +172,22 @@
             this.BTNcobrarsenia.UseVisualStyleBackColor = true;
             this.BTNcobrarsenia.Click += new System.EventHandler(this.BTNcobrarsenia_Click);
             // 
+            // btnVolverAlMenuPrincipal
+            // 
+            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(817, 401);
+            this.btnVolverAlMenuPrincipal.Name = "btnVolverAlMenuPrincipal";
+            this.btnVolverAlMenuPrincipal.Size = new System.Drawing.Size(107, 37);
+            this.btnVolverAlMenuPrincipal.TabIndex = 10;
+            this.btnVolverAlMenuPrincipal.Text = "Volver al Menu Principal";
+            this.btnVolverAlMenuPrincipal.UseVisualStyleBackColor = true;
+            this.btnVolverAlMenuPrincipal.Click += new System.EventHandler(this.btnVolverAlMenuPrincipal_Click);
+            // 
             // FrmPresupuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(947, 450);
+            this.Controls.Add(this.btnVolverAlMenuPrincipal);
             this.Controls.Add(this.BTNcobrarsenia);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -205,5 +217,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BTNcobrarsenia;
+        private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
     }
 }

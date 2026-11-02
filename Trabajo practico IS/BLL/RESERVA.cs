@@ -39,7 +39,7 @@ namespace BLL
         {
             mpReserva.ActualizarCostosyEstado(idReserva, costoTotal, saldoPendiente, estado);
         }
-        public List<BE.RESERVA> ObtenerEventosPlanificados(DateTime? fechaDesde = null, DateTime? fechaHasta = null)
+        public List<BE.RESERVA> ListarReservasPlanificadas(DateTime? fechaDesde = null, DateTime? fechaHasta = null)
         {
             return mpReserva.ListarEventosPlanificados(fechaDesde, fechaHasta);
         }
@@ -51,6 +51,30 @@ namespace BLL
             reservaSeleccionada.Estado = "Saldado";
 
             gestorPDF.GenerarComprobantePDF(reservaSeleccionada);
+        }
+        public List<BE.RESERVA> ListarPendientesEvaluacion()
+        {
+            return mpReserva.ListarPendientesEvaluacion();
+        }
+
+        public List<BE.PERSONAL> ObtenerPersonalAsignado(int idReserva)
+        {
+            return mpReserva.ObtenerPersonalAsignado(idReserva);
+        }
+
+        public void GuardarEvaluacion(BE.RESERVA objReserva)
+        {
+            if (objReserva == null)
+            {
+                throw new Exception("No se ha seleccionado ninguna reserva.");
+            }
+
+            if (!objReserva.Evaluacion_Personal.HasValue)
+            {
+                throw new Exception("Debe seleccionar un resultado de evaluación antes de guardarlo.");
+            }
+
+            mpReserva.GuardarEvaluacion(objReserva);
         }
     }
 }

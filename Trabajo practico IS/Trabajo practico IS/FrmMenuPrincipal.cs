@@ -322,6 +322,30 @@ namespace Trabajo_practico_IS
             frmregis.ShowDialog();
             this.Show();
         }
+
+        private void asignarPersonalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmAsignarPersonal frmasignar = new FrmAsignarPersonal();
+            frmasignar.ShowDialog();
+            this.Show();    
+        }
+
+        private void registrarEvaluacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmRegistrarEvaluacion frmRegistrarEvaluacion = new FrmRegistrarEvaluacion();
+            frmRegistrarEvaluacion.ShowDialog();
+            this.Show();
+        }
+
+        private void calibrarRatiosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmCalibrarRatios frmcalibrar = new FrmCalibrarRatios();    
+            frmcalibrar.ShowDialog();
+            this.Show();
+        }
     }
 }
 

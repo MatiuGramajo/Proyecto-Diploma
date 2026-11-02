@@ -32,6 +32,9 @@
             this.CBXcatering = new System.Windows.Forms.ComboBox();
             this.CLBprestadores = new System.Windows.Forms.CheckedListBox();
             this.GBseleccionarevento = new System.Windows.Forms.GroupBox();
+            this.LBLseñapagada2 = new System.Windows.Forms.Label();
+            this.LBLtipoevento = new System.Windows.Forms.Label();
+            this.LBLnombre = new System.Windows.Forms.Label();
             this.GBplanificarevento = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,9 +50,6 @@
             this.BTNguardarficha = new System.Windows.Forms.Button();
             this.BTNvolverAlMenuPrincipal = new System.Windows.Forms.Button();
             this.BTNarrmarfichatecnica = new System.Windows.Forms.Button();
-            this.LBLnombre = new System.Windows.Forms.Label();
-            this.LBLtipoevento = new System.Windows.Forms.Label();
-            this.LBLseñapagada2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.GBseleccionarevento.SuspendLayout();
             this.GBplanificarevento.SuspendLayout();
@@ -95,6 +95,33 @@
             this.GBseleccionarevento.TabIndex = 3;
             this.GBseleccionarevento.TabStop = false;
             this.GBseleccionarevento.Text = "Seleccionar Evento";
+            // 
+            // LBLseñapagada2
+            // 
+            this.LBLseñapagada2.AutoSize = true;
+            this.LBLseñapagada2.Location = new System.Drawing.Point(14, 309);
+            this.LBLseñapagada2.Name = "LBLseñapagada2";
+            this.LBLseñapagada2.Size = new System.Drawing.Size(72, 13);
+            this.LBLseñapagada2.TabIndex = 8;
+            this.LBLseñapagada2.Text = "Seña Pagada";
+            // 
+            // LBLtipoevento
+            // 
+            this.LBLtipoevento.AutoSize = true;
+            this.LBLtipoevento.Location = new System.Drawing.Point(14, 264);
+            this.LBLtipoevento.Name = "LBLtipoevento";
+            this.LBLtipoevento.Size = new System.Drawing.Size(80, 13);
+            this.LBLtipoevento.TabIndex = 2;
+            this.LBLtipoevento.Text = "Tipo de Evento";
+            // 
+            // LBLnombre
+            // 
+            this.LBLnombre.AutoSize = true;
+            this.LBLnombre.Location = new System.Drawing.Point(14, 227);
+            this.LBLnombre.Name = "LBLnombre";
+            this.LBLnombre.Size = new System.Drawing.Size(44, 13);
+            this.LBLnombre.TabIndex = 1;
+            this.LBLnombre.Text = "Nombre";
             // 
             // GBplanificarevento
             // 
@@ -232,6 +259,7 @@
             this.BTNvolverAlMenuPrincipal.TabIndex = 8;
             this.BTNvolverAlMenuPrincipal.Text = "Volver al menu principal";
             this.BTNvolverAlMenuPrincipal.UseVisualStyleBackColor = true;
+            this.BTNvolverAlMenuPrincipal.Click += new System.EventHandler(this.BTNvolverAlMenuPrincipal_Click);
             // 
             // BTNarrmarfichatecnica
             // 
@@ -242,33 +270,6 @@
             this.BTNarrmarfichatecnica.Text = "Armar Ficha Tecnica";
             this.BTNarrmarfichatecnica.UseVisualStyleBackColor = true;
             this.BTNarrmarfichatecnica.Click += new System.EventHandler(this.BTNarrmarfichatecnica_Click);
-            // 
-            // LBLnombre
-            // 
-            this.LBLnombre.AutoSize = true;
-            this.LBLnombre.Location = new System.Drawing.Point(14, 227);
-            this.LBLnombre.Name = "LBLnombre";
-            this.LBLnombre.Size = new System.Drawing.Size(44, 13);
-            this.LBLnombre.TabIndex = 1;
-            this.LBLnombre.Text = "Nombre";
-            // 
-            // LBLtipoevento
-            // 
-            this.LBLtipoevento.AutoSize = true;
-            this.LBLtipoevento.Location = new System.Drawing.Point(14, 264);
-            this.LBLtipoevento.Name = "LBLtipoevento";
-            this.LBLtipoevento.Size = new System.Drawing.Size(80, 13);
-            this.LBLtipoevento.TabIndex = 2;
-            this.LBLtipoevento.Text = "Tipo de Evento";
-            // 
-            // LBLseñapagada2
-            // 
-            this.LBLseñapagada2.AutoSize = true;
-            this.LBLseñapagada2.Location = new System.Drawing.Point(14, 309);
-            this.LBLseñapagada2.Name = "LBLseñapagada2";
-            this.LBLseñapagada2.Size = new System.Drawing.Size(72, 13);
-            this.LBLseñapagada2.TabIndex = 8;
-            this.LBLseñapagada2.Text = "Seña Pagada";
             // 
             // FrmFichaTecnica
             // 

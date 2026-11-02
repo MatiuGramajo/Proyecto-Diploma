@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,11 +119,22 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Insumos";
             // 
+            // btnVolverAlMenuPrincipal
+            // 
+            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(754, 390);
+            this.btnVolverAlMenuPrincipal.Name = "btnVolverAlMenuPrincipal";
+            this.btnVolverAlMenuPrincipal.Size = new System.Drawing.Size(110, 35);
+            this.btnVolverAlMenuPrincipal.TabIndex = 9;
+            this.btnVolverAlMenuPrincipal.Text = "Volver al Menu Principal";
+            this.btnVolverAlMenuPrincipal.UseVisualStyleBackColor = true;
+            this.btnVolverAlMenuPrincipal.Click += new System.EventHandler(this.btnVolverAlMenuPrincipal_Click);
+            // 
             // FrmRegistrarOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(876, 450);
+            this.Controls.Add(this.btnVolverAlMenuPrincipal);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -152,5 +164,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
     }
 }

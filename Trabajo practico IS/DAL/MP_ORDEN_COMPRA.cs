@@ -15,7 +15,6 @@ namespace DAL
         {
             acceso.Abrir();
 
-            // 1. Guardar Cabecera de la Orden de Compra
             List<SqlParameter> paramCabecera = new List<SqlParameter>();
             paramCabecera.Add(acceso.CrearParametro("@Id_Proveedor", obj.Id_Proveedor));
             paramCabecera.Add(acceso.CrearParametro("@Fecha_Emision", obj.Fecha_Emision));
@@ -24,7 +23,6 @@ namespace DAL
             int idOrdenGenerado = acceso.LeerEscalar("INSERTAR_ORDEN_COMPRA", paramCabecera);
             obj.Id_OrdenCompra = idOrdenGenerado;
 
-            // 2. Loop: Guardar cada detalle en la tabla DETALLE_OC
             foreach (BE.DETALLE_ORDEN_COMPRA detalle in obj.Detalles)
             {
                 List<SqlParameter> paramDetalle = new List<SqlParameter>();
@@ -42,13 +40,11 @@ namespace DAL
         {
             acceso.Abrir();
 
-            // 1. Actualizar el estado de la Orden de Compra a 'Recibida'
             List<SqlParameter> paramCabecera = new List<SqlParameter>();
             paramCabecera.Add(acceso.CrearParametro("@Id_OrdenCompra", ordenSeleccionada.Id_OrdenCompra));
 
             acceso.Escribir("REGISTRAR_RECEPCION_ORDEN_COMPRA", paramCabecera);
 
-            // 2. Loop Por cada detalle de la orden de compra para guardar la Cantidad_Recibida
             foreach (BE.DETALLE_ORDEN_COMPRA detalle in ordenSeleccionada.Detalles)
             {
                 List<SqlParameter> paramDetalle = new List<SqlParameter>();
@@ -79,7 +75,6 @@ namespace DAL
                     Estado = row["Estado"].ToString()
                 };
 
-                // Carga del detalle asociado para cada orden
                 orden.Detalles = CargarDetallesPorOrden(orden.Id_OrdenCompra);
                 lista.Add(orden);
             }

@@ -47,14 +47,17 @@
             this.gestionCatalogoDeInsumosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionRecetarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarFaltantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarOrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.anularReasignarOrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.LBLbienvenida = new System.Windows.Forms.Label();
             this.CBXidiomas = new System.Windows.Forms.ComboBox();
             this.LBLidioma = new System.Windows.Forms.Label();
             this.BtnFrmCalendario = new System.Windows.Forms.Button();
-            this.registrarOrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.anularReasignarOrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarRecepcionDeMercaderiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignarPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarEvaluacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calibrarRatiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -188,7 +191,10 @@
             this.consultarFaltantesToolStripMenuItem,
             this.registrarOrdenDeCompraToolStripMenuItem,
             this.anularReasignarOrdenDeCompraToolStripMenuItem,
-            this.registrarRecepcionDeMercaderiaToolStripMenuItem});
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem,
+            this.asignarPersonalToolStripMenuItem,
+            this.registrarEvaluacionToolStripMenuItem,
+            this.calibrarRatiosToolStripMenuItem});
             this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
             this.stockToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
             this.stockToolStripMenuItem.Text = "Stock";
@@ -196,30 +202,51 @@
             // gestionProveedoresDeInsumosToolStripMenuItem
             // 
             this.gestionProveedoresDeInsumosToolStripMenuItem.Name = "gestionProveedoresDeInsumosToolStripMenuItem";
-            this.gestionProveedoresDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
             this.gestionProveedoresDeInsumosToolStripMenuItem.Text = "Gestion Proveedores de Insumos";
             this.gestionProveedoresDeInsumosToolStripMenuItem.Click += new System.EventHandler(this.gestionProveedoresDeInsumosToolStripMenuItem_Click);
             // 
             // gestionCatalogoDeInsumosToolStripMenuItem
             // 
             this.gestionCatalogoDeInsumosToolStripMenuItem.Name = "gestionCatalogoDeInsumosToolStripMenuItem";
-            this.gestionCatalogoDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
+            this.gestionCatalogoDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
             this.gestionCatalogoDeInsumosToolStripMenuItem.Text = "Gestion Catalogo de Insumos";
             this.gestionCatalogoDeInsumosToolStripMenuItem.Click += new System.EventHandler(this.gestionCatalogoDeInsumosToolStripMenuItem_Click);
             // 
             // gestionRecetarioToolStripMenuItem
             // 
             this.gestionRecetarioToolStripMenuItem.Name = "gestionRecetarioToolStripMenuItem";
-            this.gestionRecetarioToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
+            this.gestionRecetarioToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
             this.gestionRecetarioToolStripMenuItem.Text = "Gestion Recetario";
             this.gestionRecetarioToolStripMenuItem.Click += new System.EventHandler(this.gestionRecetarioToolStripMenuItem_Click);
             // 
             // consultarFaltantesToolStripMenuItem
             // 
             this.consultarFaltantesToolStripMenuItem.Name = "consultarFaltantesToolStripMenuItem";
-            this.consultarFaltantesToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
+            this.consultarFaltantesToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
             this.consultarFaltantesToolStripMenuItem.Text = "Consultar Faltantes";
             this.consultarFaltantesToolStripMenuItem.Click += new System.EventHandler(this.consultarFaltantesToolStripMenuItem_Click);
+            // 
+            // registrarOrdenDeCompraToolStripMenuItem
+            // 
+            this.registrarOrdenDeCompraToolStripMenuItem.Name = "registrarOrdenDeCompraToolStripMenuItem";
+            this.registrarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.registrarOrdenDeCompraToolStripMenuItem.Text = "Registrar Orden de Compra";
+            this.registrarOrdenDeCompraToolStripMenuItem.Click += new System.EventHandler(this.registrarOrdenDeCompraToolStripMenuItem_Click);
+            // 
+            // anularReasignarOrdenDeCompraToolStripMenuItem
+            // 
+            this.anularReasignarOrdenDeCompraToolStripMenuItem.Name = "anularReasignarOrdenDeCompraToolStripMenuItem";
+            this.anularReasignarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.anularReasignarOrdenDeCompraToolStripMenuItem.Text = "Anular/Reasignar Orden de Compra";
+            this.anularReasignarOrdenDeCompraToolStripMenuItem.Click += new System.EventHandler(this.anularReasignarOrdenDeCompraToolStripMenuItem_Click);
+            // 
+            // registrarRecepcionDeMercaderiaToolStripMenuItem
+            // 
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Name = "registrarRecepcionDeMercaderiaToolStripMenuItem";
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Text = "Registrar Recepcion de Mercaderia";
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Click += new System.EventHandler(this.registrarRecepcionDeMercaderiaToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -274,26 +301,26 @@
             this.BtnFrmCalendario.UseVisualStyleBackColor = false;
             this.BtnFrmCalendario.Click += new System.EventHandler(this.BtnFrmCalendario_Click);
             // 
-            // registrarOrdenDeCompraToolStripMenuItem
+            // asignarPersonalToolStripMenuItem
             // 
-            this.registrarOrdenDeCompraToolStripMenuItem.Name = "registrarOrdenDeCompraToolStripMenuItem";
-            this.registrarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(319, 24);
-            this.registrarOrdenDeCompraToolStripMenuItem.Text = "Registrar Orden de Compra";
-            this.registrarOrdenDeCompraToolStripMenuItem.Click += new System.EventHandler(this.registrarOrdenDeCompraToolStripMenuItem_Click);
+            this.asignarPersonalToolStripMenuItem.Name = "asignarPersonalToolStripMenuItem";
+            this.asignarPersonalToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.asignarPersonalToolStripMenuItem.Text = "Asignar Personal";
+            this.asignarPersonalToolStripMenuItem.Click += new System.EventHandler(this.asignarPersonalToolStripMenuItem_Click);
             // 
-            // anularReasignarOrdenDeCompraToolStripMenuItem
+            // registrarEvaluacionToolStripMenuItem
             // 
-            this.anularReasignarOrdenDeCompraToolStripMenuItem.Name = "anularReasignarOrdenDeCompraToolStripMenuItem";
-            this.anularReasignarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
-            this.anularReasignarOrdenDeCompraToolStripMenuItem.Text = "Anular/Reasignar Orden de Compra";
-            this.anularReasignarOrdenDeCompraToolStripMenuItem.Click += new System.EventHandler(this.anularReasignarOrdenDeCompraToolStripMenuItem_Click);
+            this.registrarEvaluacionToolStripMenuItem.Name = "registrarEvaluacionToolStripMenuItem";
+            this.registrarEvaluacionToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.registrarEvaluacionToolStripMenuItem.Text = "Registrar Evaluacion";
+            this.registrarEvaluacionToolStripMenuItem.Click += new System.EventHandler(this.registrarEvaluacionToolStripMenuItem_Click);
             // 
-            // registrarRecepcionDeMercaderiaToolStripMenuItem
+            // calibrarRatiosToolStripMenuItem
             // 
-            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Name = "registrarRecepcionDeMercaderiaToolStripMenuItem";
-            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
-            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Text = "Registrar Recepcion de Mercaderia";
-            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Click += new System.EventHandler(this.registrarRecepcionDeMercaderiaToolStripMenuItem_Click);
+            this.calibrarRatiosToolStripMenuItem.Name = "calibrarRatiosToolStripMenuItem";
+            this.calibrarRatiosToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.calibrarRatiosToolStripMenuItem.Text = "Calibrar Ratios";
+            this.calibrarRatiosToolStripMenuItem.Click += new System.EventHandler(this.calibrarRatiosToolStripMenuItem_Click);
             // 
             // FrmMenuPrincipal
             // 
@@ -351,6 +378,9 @@
         private System.Windows.Forms.ToolStripMenuItem registrarOrdenDeCompraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem anularReasignarOrdenDeCompraToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarRecepcionDeMercaderiaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem asignarPersonalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarEvaluacionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calibrarRatiosToolStripMenuItem;
     }
 }
 

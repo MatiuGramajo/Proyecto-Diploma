@@ -86,7 +86,8 @@ namespace BE
 			get { return saldo_Pendiente; }
 			set { saldo_Pendiente = value; }
 		}
-
-
-	}
+        public System.Collections.Generic.List<PERSONAL> PersonalAsignado { get; set; } = new System.Collections.Generic.List<PERSONAL>();
+        public int? Evaluacion_Personal { get; set; } 
+        public string Observaciones_Personal { get; set; }
+    }
 }

@@ -22,7 +22,6 @@ namespace DAL
 
             if (dt.Rows.Count > 0)
             {
-                // Si el estado es 1 o 'Activo', retorna true.
                 return dt.Rows[0]["Estado"].ToString().Equals("Activo", StringComparison.OrdinalIgnoreCase);
             }
             return false;
@@ -52,7 +51,6 @@ namespace DAL
                 prov.Rubro = row["Rubro"].ToString();
                 prov.Estado = row["Estado"].ToString();
                 prov.Precio_Servicio = Convert.ToInt32(row["Precio_Servicio"]);
-                // Asumimos que tienes "Estado" en tu BD para los proveedores
                 lista.Add(prov);
             }
             return lista;

@@ -42,6 +42,7 @@
             this.BTNguardarrecetario = new System.Windows.Forms.Button();
             this.BTNquitarinsumo = new System.Windows.Forms.Button();
             this.DGVrecetario = new System.Windows.Forms.DataGridView();
+            this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -191,11 +192,22 @@
             this.DGVrecetario.Size = new System.Drawing.Size(441, 150);
             this.DGVrecetario.TabIndex = 0;
             // 
+            // btnVolverAlMenuPrincipal
+            // 
+            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(964, 434);
+            this.btnVolverAlMenuPrincipal.Name = "btnVolverAlMenuPrincipal";
+            this.btnVolverAlMenuPrincipal.Size = new System.Drawing.Size(99, 38);
+            this.btnVolverAlMenuPrincipal.TabIndex = 3;
+            this.btnVolverAlMenuPrincipal.Text = "Volver Al Menu Principal";
+            this.btnVolverAlMenuPrincipal.UseVisualStyleBackColor = true;
+            this.btnVolverAlMenuPrincipal.Click += new System.EventHandler(this.btnVolverAlMenuPrincipal_Click);
+            // 
             // FrmGestionRecetario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1007, 450);
+            this.ClientSize = new System.Drawing.Size(1075, 484);
+            this.Controls.Add(this.btnVolverAlMenuPrincipal);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -228,5 +240,6 @@
         private System.Windows.Forms.DataGridView DGVrecetario;
         private System.Windows.Forms.Button BTNguardarrecetario;
         private System.Windows.Forms.Button BTNquitarinsumo;
+        private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
     }
 }

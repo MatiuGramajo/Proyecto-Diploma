@@ -30,7 +30,6 @@ namespace Trabajo_practico_IS
             txtRubro.Text = insumoSeleccionado.Rubro;
             txtUnidadMedida.Text = insumoSeleccionado.Unidad_Medida;
 
-            // Formato de texto para los TextBox de stock
             txtStockActual.Text = insumoSeleccionado.Stock_Actual.ToString("0.00");
             txtStockMinimo.Text = insumoSeleccionado.Stock_Minimo.ToString("0.00");
 
@@ -185,6 +184,18 @@ namespace Trabajo_practico_IS
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             LimpiarCampos();
+        }
+
+        private void btnVolverAlMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("¿Desea volver al menu principal?", "Atención",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+
+            }
         }
     }
 }

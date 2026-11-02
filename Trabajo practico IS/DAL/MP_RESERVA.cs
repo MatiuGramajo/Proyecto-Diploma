@@ -18,11 +18,9 @@ namespace DAL
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(acceso.CrearParametro("@Fecha_Evento", fecha));
 
-            // El diagrama exige acceso.Leer() que retorna DataTable
             DataTable dt = acceso.Leer("VERIFICAR_DISPONIBILIDAD_FECHA", parametros);
             acceso.Cerrar();
 
-            // Si la tabla vuelve vacía, la fecha está libre
             return dt.Rows.Count == 0;
         }
         public List<DateTime> ObtenerFechasOcupadas()
@@ -56,7 +54,6 @@ namespace DAL
                 res.Monto_Senia = Convert.ToDecimal(row["Monto_Senia"]);
                 res.Estado = row["Estado"].ToString();
 
-                // Mapeamos los objetos asociados para mostrarlos en la grilla
                 res.ClienteAsociado = new BE.CLIENTE
                 {
                     Id_Cliente = res.Id_Cliente,
@@ -78,8 +75,6 @@ namespace DAL
             acceso.Abrir();
 
             List<SqlParameter> parametros = new List<SqlParameter>();
-
-            // Instanciación directa con SqlParameter
             parametros.Add(new SqlParameter("@FechaDesde", (object)fechaDesde ?? DBNull.Value));
             parametros.Add(new SqlParameter("@FechaHasta", (object)fechaHasta ?? DBNull.Value));
 
@@ -99,38 +94,139 @@ namespace DAL
 
                 res.Costo_Total_Real = row["Costo_Total_Real"] != DBNull.Value ? Convert.ToDecimal(row["Costo_Total_Real"]) : 0;
                 res.Saldo_Pendiente = row["Saldo_Pendiente"] != DBNull.Value ? Convert.ToDecimal(row["Saldo_Pendiente"]) : 0;
-
                 res.Estado = row["Estado"].ToString();
+
+                if (dt.Columns.Contains("ClienteNombre") && row["ClienteNombre"] != DBNull.Value)
+                {
+                    res.ClienteAsociado = new BE.CLIENTE
+                    {
+                        Id_Cliente = res.Id_Cliente,
+                        Nombre_Completo = row["ClienteNombre"].ToString()
+                    };
+                }
+
+                int invitados = 0;
+                if (dt.Columns.Contains("Cantidad_Invitados") && row["Cantidad_Invitados"] != DBNull.Value)
+                {
+                    invitados = Convert.ToInt32(row["Cantidad_Invitados"]);
+                }
+                else if (dt.Columns.Contains("Cantidad_Invitados_Estimada") && row["Cantidad_Invitados_Estimada"] != DBNull.Value)
+                {
+                    invitados = Convert.ToInt32(row["Cantidad_Invitados_Estimada"]);
+                }
+
+                res.PresupuestoAsociado = new BE.PRESUPUESTO
+                {
+                    Id_Presupuesto = res.Id_Presupuesto,
+                    Cantidad_Invitados_Estimada = invitados,
+                    Tipo_Evento = dt.Columns.Contains("Tipo_Evento") ? row["Tipo_Evento"].ToString() : ""
+                };
+
+                lista.Add(res);
+             }
+            return lista;
+            }
+
+        public List<BE.RESERVA> ListarPendientesEvaluacion()
+        {
+            acceso.Abrir();
+            DataTable dt = acceso.Leer("LISTAR_PENDIENTES_EVALUACION");
+            acceso.Cerrar();
+
+            List<BE.RESERVA> lista = new List<BE.RESERVA>();
+            foreach (DataRow row in dt.Rows)
+            {
+                BE.RESERVA res = new BE.RESERVA();
+                res.Id_Reserva = Convert.ToInt32(row["Id_Reserva"]);
+                res.Id_Cliente = Convert.ToInt32(row["Id_Cliente"]);
+                res.Id_Presupuesto = Convert.ToInt32(row["Id_Presupuesto"]);
+                res.Id_Usuario = Convert.ToInt32(row["Id_Usuario"]);
+                res.Fecha_Evento = Convert.ToDateTime(row["Fecha_Evento"]);
+                res.Monto_Senia = Convert.ToDecimal(row["Monto_Senia"]);
+                res.Costo_Total_Real = row["Costo_Total_Real"] != DBNull.Value ? Convert.ToDecimal(row["Costo_Total_Real"]) : 0;
+                res.Saldo_Pendiente = row["Saldo_Pendiente"] != DBNull.Value ? Convert.ToDecimal(row["Saldo_Pendiente"]) : 0;
+                res.Estado = row["Estado"].ToString();
+
+                res.ClienteAsociado = new BE.CLIENTE
+                {
+                    Id_Cliente = res.Id_Cliente,
+                    Nombre_Completo = row["ClienteNombre"].ToString()
+                };
+
+                int invitados = dt.Columns.Contains("Cantidad_Invitados") && row["Cantidad_Invitados"] != DBNull.Value
+                    ? Convert.ToInt32(row["Cantidad_Invitados"]) : 0;
+
+                res.PresupuestoAsociado = new BE.PRESUPUESTO
+                {
+                    Id_Presupuesto = res.Id_Presupuesto,
+                    Cantidad_Invitados_Estimada = invitados,
+                    Tipo_Evento = row["Tipo_Evento"].ToString()
+                };
 
                 lista.Add(res);
             }
             return lista;
-            //acceso.Abrir();
-            //DataTable dt = acceso.Leer("LISTAR_EVENTOS_PLANIFICADOS");
-            //acceso.Cerrar();
-
-            //List<BE.RESERVA> lista = new List<BE.RESERVA>();
-            //foreach (DataRow row in dt.Rows)
-            //{
-            //    BE.RESERVA res = new BE.RESERVA();
-            //    res.Id_Reserva = Convert.ToInt32(row["Id_Reserva"]);
-            //    res.Id_Cliente = Convert.ToInt32(row["Id_Cliente"]);
-            //    res.Id_Presupuesto = Convert.ToInt32(row["Id_Presupuesto"]);
-            //    res.Id_Usuario = Convert.ToInt32(row["Id_Usuario"]);
-            //    res.Fecha_Evento = Convert.ToDateTime(row["Fecha_Evento"]);
-            //    res.Monto_Senia = Convert.ToDecimal(row["Monto_Senia"]);
-
-            //    // Mapeo de los campos de liquidación final
-            //    res.Costo_Total_Real = row["Costo_Total_Real"] != DBNull.Value ? Convert.ToDecimal(row["Costo_Total_Real"]) : 0;
-            //    res.Saldo_Pendiente = row["Saldo_Pendiente"] != DBNull.Value ? Convert.ToDecimal(row["Saldo_Pendiente"]) : 0;
-
-            //    res.Estado = row["Estado"].ToString();
-
-            //    lista.Add(res);
-            //}
-            //return lista;
         }
+        public List<BE.RESERVA> ListarEvaluados()
+        {
+            acceso.Abrir();
+            DataTable dt = acceso.Leer("LISTAR_EVALUADOS");
+            acceso.Cerrar();
 
+            List<BE.RESERVA> lista = new List<BE.RESERVA>();
+            foreach (DataRow row in dt.Rows)
+            {
+                BE.RESERVA res = new BE.RESERVA
+                {
+                    Id_Reserva = Convert.ToInt32(row["Id_Reserva"]),
+                    Fecha_Evento = Convert.ToDateTime(row["Fecha_Evento"]),
+                    Estado = row["Estado"].ToString(),
+                    Evaluacion_Personal = Convert.ToInt32(row["Evaluacion_Personal"]),
+                    Observaciones_Personal = row["Observaciones_Personal"] != DBNull.Value ? row["Observaciones_Personal"].ToString() : ""
+                };
+                lista.Add(res);
+            }
+            return lista;
+        }
+        public List<BE.PERSONAL> ObtenerPersonalAsignado(int idReserva)
+        {
+            acceso.Abrir();
+            List<SqlParameter> parametros = new List<SqlParameter>
+            {
+                new SqlParameter("@Id_Reserva", idReserva)
+            };
+
+            DataTable dt = acceso.Leer("OBTENER_PERSONAL_ASIGNADO", parametros);
+            acceso.Cerrar();
+
+            List<BE.PERSONAL> lista = new List<BE.PERSONAL>();
+            foreach (DataRow row in dt.Rows)
+            {
+                BE.PERSONAL p = new BE.PERSONAL
+                {
+                    Id_Personal = Convert.ToInt32(row["Id_Personal"]),
+                    Dni = row["DNI"].ToString(),
+                    Nombre = row["Nombre"].ToString(),
+                    Apellido = row["Apellido"].ToString(),
+                    Categoria = row["Categoria"].ToString()
+                };
+                lista.Add(p);
+            }
+            return lista;
+        }
+        public void GuardarEvaluacion(BE.RESERVA objReserva)
+        {
+            acceso.Abrir();
+            List<SqlParameter> parametros = new List<SqlParameter>
+            {
+                new SqlParameter("@Id_Reserva", objReserva.Id_Reserva),
+                new SqlParameter("@Resultado", objReserva.Evaluacion_Personal.Value),
+                new SqlParameter("@Observaciones", (object)objReserva.Observaciones_Personal ?? DBNull.Value)
+            };
+
+            acceso.Escribir("REGISTRAR_EVALUACION_Y_FINALIZAR", parametros);
+            acceso.Cerrar();
+        }
         public List<DateTime> ObtenerFechasAlternativas(DateTime fecha)
         {
             acceso.Abrir();

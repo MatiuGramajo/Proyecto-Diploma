@@ -114,7 +114,6 @@ namespace Trabajo_practico_IS
 
             BE.RESERVA nuevaSeleccion = (BE.RESERVA)dataGridView1.CurrentRow.DataBoundItem;
 
-            // Si la sección ya estaba activa y elegimos un evento DISTINTO
             if (GBplanificarevento.Enabled && reservaSeleccionada != null && nuevaSeleccion.Id_Reserva != reservaSeleccionada.Id_Reserva)
             {
                 DialogResult respuesta = MessageBox.Show(
@@ -134,7 +133,6 @@ namespace Trabajo_practico_IS
                 }
             }
 
-            // Asignación de la reserva y habilitación del botón
             reservaSeleccionada = nuevaSeleccion;
             LBLseñapagada.Text = $"Seña Pagada: {reservaSeleccionada.Monto_Senia:C}";
             BTNarrmarfichatecnica.Enabled = true;
@@ -275,6 +273,18 @@ namespace Trabajo_practico_IS
             CargarCatering();
             CargarPrestadores();
             HabilitarSeccionPlanificacion();
+        }
+
+        private void BTNvolverAlMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("¿Desea volver al menu principal?", "Atención",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+
+            }
         }
     }
 }

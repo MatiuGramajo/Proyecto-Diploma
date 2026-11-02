@@ -31,14 +31,12 @@ namespace Trabajo_practico_IS
         {
             try
             {
-                // Carga de Proveedores en ComboBox
                 cmbProveedores.DataSource = null;
                 cmbProveedores.DataSource = bllProveedorInsumo.ListarProveedores();
                 cmbProveedores.DisplayMember = "Razon_Social";
                 cmbProveedores.ValueMember = "Id_Proveedor";
                 cmbProveedores.SelectedIndex = -1;
 
-                // Carga del Catálogo de Insumos
                 cmbInsumos.DataSource = null;
                 cmbInsumos.DataSource = bllInsumo.ListarInsumos();
                 cmbInsumos.DisplayMember = "Nombre";
@@ -58,13 +56,11 @@ namespace Trabajo_practico_IS
         {
             if (dgvDetalle.Columns.Count == 0) return;
 
-            // Oculta columnas de claves primarias e información de recepción
             if (dgvDetalle.Columns["Id_Detalle"] != null) dgvDetalle.Columns["Id_Detalle"].Visible = false;
             if (dgvDetalle.Columns["Id_Orden"] != null) dgvDetalle.Columns["Id_Orden"].Visible = false;
             if (dgvDetalle.Columns["Id_OrdenCompra"] != null) dgvDetalle.Columns["Id_OrdenCompra"].Visible = false;
             if (dgvDetalle.Columns["Cantidad_Recibida"] != null) dgvDetalle.Columns["Cantidad_Recibida"].Visible = false;
 
-            // Nombres amigables para los encabezados
             if (dgvDetalle.Columns["Id_Insumo"] != null) dgvDetalle.Columns["Id_Insumo"].HeaderText = "Cód. Insumo";
             if (dgvDetalle.Columns["Nombre_Insumo"] != null) dgvDetalle.Columns["Nombre_Insumo"].HeaderText = "Insumo";
             if (dgvDetalle.Columns["Cantidad_Solicitada"] != null) dgvDetalle.Columns["Cantidad_Solicitada"].HeaderText = "Cant. Solicitada";
@@ -92,7 +88,6 @@ namespace Trabajo_practico_IS
 
             BE.INSUMO insumoSeleccionado = (BE.INSUMO)cmbInsumos.SelectedItem;
 
-            // Consolidación: Si el insumo ya existe en la lista, se acumula la cantidad
             BE.DETALLE_ORDEN_COMPRA existente = listaDetalles.FirstOrDefault(d => d.Id_Insumo == insumoSeleccionado.Id_Insumo);
             if (existente != null)
             {
@@ -105,25 +100,23 @@ namespace Trabajo_practico_IS
                     Id_Insumo = insumoSeleccionado.Id_Insumo,
                     Nombre_Insumo = insumoSeleccionado.Nombre,
                     Cantidad_Solicitada = cantidad,
-                    Cantidad_Recibida = 0 // Inicializa en cero para el futuro CU de recepción
+                    Cantidad_Recibida = 0 
                 });
             }
 
-            txtCantidad.Text = ""; // Limpia la caja de texto
-            cmbInsumos.SelectedIndex = -1; // Desselecciona el insumo
+            txtCantidad.Text = ""; 
+            cmbInsumos.SelectedIndex = -1; 
             ActualizarGrilla();
         }
 
         private void btnEmitirOrden_Click(object sender, EventArgs e)
         {
-            // Validar Bloque Alt 4.1: Proveedor no seleccionado
             if (cmbProveedores.SelectedItem == null)
             {
                 MessageBox.Show("Debe seleccionar un proveedor para emitir la Orden de Compra.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Validar Bloque Alt 4.1.1: Grilla vacía o cantidades <= 0
             if (listaDetalles == null || listaDetalles.Count == 0 || listaDetalles.Any(d => d.Cantidad_Solicitada <= 0))
             {
                 MessageBox.Show("Ingrese al menos un insumo con cantidad valida mayor a cero.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -140,17 +133,27 @@ namespace Trabajo_practico_IS
                     Detalles = listaDetalles
                 };
 
-                // Invocación a BLL según el Diagrama de Secuencia
                 bllOrdenCompra.RegistrarOrdenCompra(nuevaOrden);
 
-                // Mensaje final de éxito
                 MessageBox.Show("Orden de Compra emitida con éxito!", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                MostrarFormulario(); // Reinicia el formulario
+                MostrarFormulario(); 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Ocurrió un error al emitir la Orden de Compra: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnVolverAlMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("¿Desea volver al menu principal?", "Atención",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+
             }
         }
     }

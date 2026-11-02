@@ -42,6 +42,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.CBXIdiomas = new System.Windows.Forms.ComboBox();
+            this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DGVPresupuestosPendientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,16 +158,27 @@
             // CBXIdiomas
             // 
             this.CBXIdiomas.FormattingEnabled = true;
-            this.CBXIdiomas.Location = new System.Drawing.Point(846, 39);
+            this.CBXIdiomas.Location = new System.Drawing.Point(835, 39);
             this.CBXIdiomas.Name = "CBXIdiomas";
             this.CBXIdiomas.Size = new System.Drawing.Size(121, 21);
             this.CBXIdiomas.TabIndex = 13;
+            // 
+            // btnVolverAlMenuPrincipal
+            // 
+            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(846, 380);
+            this.btnVolverAlMenuPrincipal.Name = "btnVolverAlMenuPrincipal";
+            this.btnVolverAlMenuPrincipal.Size = new System.Drawing.Size(110, 35);
+            this.btnVolverAlMenuPrincipal.TabIndex = 14;
+            this.btnVolverAlMenuPrincipal.Text = "Volver al Menu Principal";
+            this.btnVolverAlMenuPrincipal.UseVisualStyleBackColor = true;
+            this.btnVolverAlMenuPrincipal.Click += new System.EventHandler(this.btnVolverAlMenuPrincipal_Click);
             // 
             // FrmRegistrarPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1023, 450);
+            this.ClientSize = new System.Drawing.Size(975, 450);
+            this.Controls.Add(this.btnVolverAlMenuPrincipal);
             this.Controls.Add(this.CBXIdiomas);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -207,5 +219,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox CBXIdiomas;
+        private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
     }
 }

@@ -31,12 +31,10 @@ namespace Trabajo_practico_IS
         {
             try
             {
-                // Reset de controles
                 rbAnular.Checked = true;
                 txtMotivo.Text = string.Empty;
                 ordenSeleccionada = null;
 
-                // Carga de Proveedores para la reasignación
                 cmbProveedores.DataSource = null;
                 cmbProveedores.DataSource = bllProveedorInsumo.ListarProveedores();
                 cmbProveedores.DisplayMember = "Razon_Social";
@@ -45,7 +43,6 @@ namespace Trabajo_practico_IS
 
                 ActualizarEstadoControles();
 
-                // Carga de Órdenes de Compra Emitidas
                 CargarOrdenesEmitidas();
             }
             catch (Exception ex)
@@ -125,14 +122,14 @@ namespace Trabajo_practico_IS
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            // Validar que se haya seleccionado una orden de la grilla
+   
             if (ordenSeleccionada == null)
             {
                 MessageBox.Show("Seleccione una Orden de Compra de la grilla superior.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Validar Flujo Alternativo 4.1: Motivo sin ingresar
+
             if (string.IsNullOrWhiteSpace(txtMotivo.Text))
             {
                 MessageBox.Show("Debe ingresar el motivo de la anulación/reasignación para continuar.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -145,14 +142,14 @@ namespace Trabajo_practico_IS
             {
                 if (rbAnular.Checked)
                 {
-                    // Invocación a BLL según Diagrama de Secuencia (Acción: Anular)
+
                     bllOrdenCompra.AnularOrdenCompra(ordenSeleccionada.Id_OrdenCompra, motivo);
 
                     MessageBox.Show("Orden de Compra anulada con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if (rbReasignar.Checked)
                 {
-                    // Validar Flujo Alternativo 4.1.1: Proveedor no seleccionado o igual al original
+
                     if (cmbProveedores.SelectedItem == null)
                     {
                         MessageBox.Show("Debe seleccionar un proveedor distinto al original para reasignar orden de compra.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -167,13 +164,13 @@ namespace Trabajo_practico_IS
                         return;
                     }
 
-                    // Invocación a BLL según Diagrama de Secuencia (Acción: Reasignar)
+
                     bllOrdenCompra.ReasignarOrdenCompra(ordenSeleccionada, nuevoProveedor.Id_Proveedor, motivo);
 
                     MessageBox.Show("Orden de Compra reasignada con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
-                // Refrescar pantalla tras procesar la orden
+
                 MostrarFormulario();
             }
             catch (Exception ex)
@@ -185,6 +182,19 @@ namespace Trabajo_practico_IS
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             MostrarFormulario();
+        }
+
+        private void btnVolverAlMenu_Click_1(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("¿Desea volver al menu principal?", "Atención",
+        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+
+            }
+
         }
     }
 }

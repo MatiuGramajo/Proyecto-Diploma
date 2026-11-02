@@ -146,5 +146,17 @@ namespace Trabajo_practico_IS
                 MessageBox.Show("Primero debe hacer clic en 'Generar Cotización Formal' para guardar el presupuesto.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        private void btnVolverAlMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("¿Desea volver al menu principal?", "Atención",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+
+            }
+        }
     }
 }

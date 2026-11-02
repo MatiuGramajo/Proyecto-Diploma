@@ -37,6 +37,7 @@
             this.lbldni = new System.Windows.Forms.Label();
             this.lbltelefono = new System.Windows.Forms.Label();
             this.lblemail = new System.Windows.Forms.Label();
+            this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtnombre
@@ -113,11 +114,22 @@
             this.lblemail.TabIndex = 8;
             this.lblemail.Text = "Email";
             // 
+            // btnVolverAlMenuPrincipal
+            // 
+            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(459, 404);
+            this.btnVolverAlMenuPrincipal.Name = "btnVolverAlMenuPrincipal";
+            this.btnVolverAlMenuPrincipal.Size = new System.Drawing.Size(122, 34);
+            this.btnVolverAlMenuPrincipal.TabIndex = 9;
+            this.btnVolverAlMenuPrincipal.Text = "Volver Al Menu Principal";
+            this.btnVolverAlMenuPrincipal.UseVisualStyleBackColor = true;
+            this.btnVolverAlMenuPrincipal.Click += new System.EventHandler(this.btnVolverAlMenuPrincipal_Click);
+            // 
             // FrmRegistrarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(593, 450);
+            this.Controls.Add(this.btnVolverAlMenuPrincipal);
             this.Controls.Add(this.lblemail);
             this.Controls.Add(this.lbltelefono);
             this.Controls.Add(this.lbldni);
@@ -147,5 +159,6 @@
         private System.Windows.Forms.Label lbldni;
         private System.Windows.Forms.Label lbltelefono;
         private System.Windows.Forms.Label lblemail;
+        private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
     }
 }

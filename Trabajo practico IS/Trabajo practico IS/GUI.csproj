@@ -52,6 +52,12 @@
     <Compile Include="FrmAnularReasignarOrdenCompra.Designer.cs">
       <DependentUpon>FrmAnularReasignarOrdenCompra.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAsignarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsignarPersonal.Designer.cs">
+      <DependentUpon>FrmAsignarPersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmBitacora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,12 @@
     </Compile>
     <Compile Include="FrmCalendario.Designer.cs">
       <DependentUpon>FrmCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCalibrarRatios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCalibrarRatios.Designer.cs">
+      <DependentUpon>FrmCalibrarRatios.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmConsultarFaltantes.cs">
       <SubType>Form</SubType>
@@ -93,6 +105,12 @@
     </Compile>
     <Compile Include="FrmGestionarInsumo.Designer.cs">
       <DependentUpon>FrmGestionarInsumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionarPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionarPersonal.Designer.cs">
+      <DependentUpon>FrmGestionarPersonal.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmGestionProveedorInsumo.cs">
       <SubType>Form</SubType>
@@ -154,6 +172,12 @@
     <Compile Include="FrmRegistrarCliente.Designer.cs">
       <DependentUpon>FrmRegistrarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRegistrarEvaluacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistrarEvaluacion.Designer.cs">
+      <DependentUpon>FrmRegistrarEvaluacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRegistrarOrdenCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,11 +208,17 @@
     <EmbeddedResource Include="FrmAnularReasignarOrdenCompra.resx">
       <DependentUpon>FrmAnularReasignarOrdenCompra.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsignarPersonal.resx">
+      <DependentUpon>FrmAsignarPersonal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmBitacora.resx">
       <DependentUpon>FrmBitacora.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCalendario.resx">
       <DependentUpon>FrmCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCalibrarRatios.resx">
+      <DependentUpon>FrmCalibrarRatios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultarFaltantes.resx">
       <DependentUpon>FrmConsultarFaltantes.cs</DependentUpon>
@@ -204,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGestionarInsumo.resx">
       <DependentUpon>FrmGestionarInsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionarPersonal.resx">
+      <DependentUpon>FrmGestionarPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGestionProveedorInsumo.resx">
       <DependentUpon>FrmGestionProveedorInsumo.cs</DependentUpon>
@@ -234,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarCliente.resx">
       <DependentUpon>FrmRegistrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistrarEvaluacion.resx">
+      <DependentUpon>FrmRegistrarEvaluacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarOrdenCompra.resx">
       <DependentUpon>FrmRegistrarOrdenCompra.cs</DependentUpon>

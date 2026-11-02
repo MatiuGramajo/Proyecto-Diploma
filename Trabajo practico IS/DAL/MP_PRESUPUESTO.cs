@@ -17,7 +17,6 @@ namespace DAL
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(acceso.CrearParametro("@Tipo_Evento", tipoEvento));
 
-            // El diagrama exige acceso.Leer() retornando DataTable
             DataTable dt = acceso.Leer("OBTENER_TARIFA_EVENTO", parametros);
             acceso.Cerrar();
 

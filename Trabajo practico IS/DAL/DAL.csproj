@@ -42,7 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ACCESO.cs" />
+    <Compile Include="MP_ASIGNACION_PERSONAL.cs" />
     <Compile Include="MP_CLIENTE.cs" />
+    <Compile Include="MP_PARAMETRO_RATIO.cs" />
+    <Compile Include="MP_PERSONAL.cs" />
     <Compile Include="MP_RECETARIO.cs" />
     <Compile Include="MP_INSUMO.cs" />
     <Compile Include="MP_INVENTARIO.cs" />

@@ -23,7 +23,6 @@ namespace DAL
 
         public List<BE.TRADUCCION>ListarTraduccionesDetalle(int idIdioma)
         {
-            //log.Usuario = registro["USUARIO"].ToString();
             acceso.Abrir();
             List<SqlParameter>parametros = new List<SqlParameter>();
             parametros.Add(acceso.CrearParametro("@id_idioma", idIdioma));

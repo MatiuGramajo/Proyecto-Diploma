@@ -15,16 +15,13 @@ namespace DAL
         {
             acceso.Abrir();
 
-            // PRIMER ESCRIBIR(): Guardar la cabecera de la ficha técnica[cite: 9]
             List<SqlParameter> paramFicha = new List<SqlParameter>();
             paramFicha.Add(acceso.CrearParametro("@Id_Reserva", datosFicha.Id_Reserva));
             paramFicha.Add(acceso.CrearParametro("@Cantidad_Invitados_Final", datosFicha.Cantidad_Invitados_Final));
             paramFicha.Add(acceso.CrearParametro("@Tipo_Evento", datosFicha.Tipo_Evento));
 
-            // Asumimos que este SP no devuelve ID para mantener el void() del diagrama
             acceso.Escribir("INSERTAR_FICHA_TECNICA", paramFicha);
 
-            // SEGUNDO ESCRIBIR(): Iterar e insertar proveedores / actualizar estados[cite: 9]
             foreach (var prestador in datosFicha.PrestadoresAsignados)
             {
                 List<SqlParameter> paramPrest = new List<SqlParameter>();

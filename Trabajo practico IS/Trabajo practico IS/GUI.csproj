@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -93,6 +94,12 @@
     </Compile>
     <Compile Include="FrmCTRLUsuario.Designer.cs">
       <DependentUpon>FrmCTRLUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDashboardUnificado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDashboardUnificado.Designer.cs">
+      <DependentUpon>FrmDashboardUnificado.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmFichaTecnica.cs">
       <SubType>Form</SubType>
@@ -222,6 +229,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCTRLUsuario.resx">
       <DependentUpon>FrmCTRLUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDashboardUnificado.resx">
+      <DependentUpon>FrmDashboardUnificado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFichaTecnica.resx">
       <DependentUpon>FrmFichaTecnica.cs</DependentUpon>

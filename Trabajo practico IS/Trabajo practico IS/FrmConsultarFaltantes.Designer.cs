@@ -43,6 +43,8 @@
             this.dgvRequerimientos = new System.Windows.Forms.DataGridView();
             this.chkSoloFaltantes = new System.Windows.Forms.CheckBox();
             this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
+            this.LBLidiomas = new System.Windows.Forms.Label();
+            this.CBXidiomas = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEventosPlanificados)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -213,16 +215,37 @@
             this.btnVolverAlMenuPrincipal.UseVisualStyleBackColor = true;
             this.btnVolverAlMenuPrincipal.Click += new System.EventHandler(this.btnVolverAlMenuPrincipal_Click);
             // 
+            // LBLidiomas
+            // 
+            this.LBLidiomas.AutoSize = true;
+            this.LBLidiomas.Location = new System.Drawing.Point(1131, 20);
+            this.LBLidiomas.Name = "LBLidiomas";
+            this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
+            this.LBLidiomas.TabIndex = 13;
+            this.LBLidiomas.Text = "Idiomas";
+            // 
+            // CBXidiomas
+            // 
+            this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBXidiomas.FormattingEnabled = true;
+            this.CBXidiomas.Location = new System.Drawing.Point(1131, 36);
+            this.CBXidiomas.Name = "CBXidiomas";
+            this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
+            this.CBXidiomas.TabIndex = 12;
+            // 
             // FrmConsultarFaltantes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 434);
+            this.Controls.Add(this.LBLidiomas);
+            this.Controls.Add(this.CBXidiomas);
             this.Controls.Add(this.btnVolverAlMenuPrincipal);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmConsultarFaltantes";
             this.Text = "FrmConsultarFaltantes";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmConsultarFaltantes_FormClosed);
             this.Load += new System.EventHandler(this.FrmConsultarFaltantes_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -231,6 +254,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -250,5 +274,7 @@
         private System.Windows.Forms.DataGridView dgvEventosPlanificados;
         private System.Windows.Forms.Button btnFiltrar;
         private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
+        private System.Windows.Forms.Label LBLidiomas;
+        private System.Windows.Forms.ComboBox CBXidiomas;
     }
 }

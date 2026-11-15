@@ -39,6 +39,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnVolverAlMenu = new System.Windows.Forms.Button();
+            this.CBXidiomas = new System.Windows.Forms.ComboBox();
+            this.LBLidiomas = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrdenesEmitidas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleOrden)).BeginInit();
             this.SuspendLayout();
@@ -48,6 +50,7 @@
             this.dgvOrdenesEmitidas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOrdenesEmitidas.Location = new System.Drawing.Point(12, 48);
             this.dgvOrdenesEmitidas.Name = "dgvOrdenesEmitidas";
+            this.dgvOrdenesEmitidas.ReadOnly = true;
             this.dgvOrdenesEmitidas.Size = new System.Drawing.Size(367, 126);
             this.dgvOrdenesEmitidas.TabIndex = 0;
             this.dgvOrdenesEmitidas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOrdenesEmitidas_CellClick);
@@ -57,6 +60,7 @@
             this.dgvDetalleOrden.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalleOrden.Location = new System.Drawing.Point(431, 48);
             this.dgvDetalleOrden.Name = "dgvDetalleOrden";
+            this.dgvDetalleOrden.ReadOnly = true;
             this.dgvDetalleOrden.Size = new System.Drawing.Size(367, 126);
             this.dgvDetalleOrden.TabIndex = 1;
             // 
@@ -86,6 +90,7 @@
             // 
             // cmbProveedores
             // 
+            this.cmbProveedores.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProveedores.FormattingEnabled = true;
             this.cmbProveedores.Location = new System.Drawing.Point(220, 284);
             this.cmbProveedores.Name = "cmbProveedores";
@@ -148,11 +153,31 @@
             this.btnVolverAlMenu.UseVisualStyleBackColor = true;
             this.btnVolverAlMenu.Click += new System.EventHandler(this.btnVolverAlMenu_Click_1);
             // 
+            // CBXidiomas
+            // 
+            this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBXidiomas.FormattingEnabled = true;
+            this.CBXidiomas.Location = new System.Drawing.Point(890, 48);
+            this.CBXidiomas.Name = "CBXidiomas";
+            this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
+            this.CBXidiomas.TabIndex = 11;
+            // 
+            // LBLidiomas
+            // 
+            this.LBLidiomas.AutoSize = true;
+            this.LBLidiomas.Location = new System.Drawing.Point(890, 29);
+            this.LBLidiomas.Name = "LBLidiomas";
+            this.LBLidiomas.Size = new System.Drawing.Size(38, 13);
+            this.LBLidiomas.TabIndex = 12;
+            this.LBLidiomas.Text = "Idioma";
+            // 
             // FrmAnularReasignarOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 450);
+            this.ClientSize = new System.Drawing.Size(1010, 450);
+            this.Controls.Add(this.LBLidiomas);
+            this.Controls.Add(this.CBXidiomas);
             this.Controls.Add(this.btnVolverAlMenu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -166,6 +191,7 @@
             this.Controls.Add(this.dgvOrdenesEmitidas);
             this.Name = "FrmAnularReasignarOrdenCompra";
             this.Text = "FrmAnularReasignarOrdenCompra";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmAnularReasignarOrdenCompra_FormClosed);
             this.Load += new System.EventHandler(this.FrmAnularReasignarOrdenCompra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrdenesEmitidas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleOrden)).EndInit();
@@ -187,5 +213,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnVolverAlMenu;
+        private System.Windows.Forms.ComboBox CBXidiomas;
+        private System.Windows.Forms.Label LBLidiomas;
     }
 }

@@ -1,4 +1,3 @@
-
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 ; Non-commercial use only
 
@@ -12,12 +11,9 @@
 #define MyAppAssocKey StringChange(MyAppAssocName, " ", "") + MyAppAssocExt
 
 [Setup]
-; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
-; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
 AppId={{8FFB4ED1-0B7C-4766-9374-C55B9DFCCF15}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
-;AppVerName={#MyAppName} {#MyAppVersion}
 AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
@@ -26,23 +22,25 @@ DefaultDirName={autopf}\{#MyAppName}
 UninstallDisplayIcon={app}\{#MyAppExeName}
 ChangesAssociations=yes
 DisableProgramGroupPage=yes
-; Privilegios de administrador requeridos para que SQL Server no tire error de permisos
 PrivilegesRequired=admin
 OutputBaseFilename=mysetup
 SolidCompression=yes
 WizardStyle=modern dynamic
 
+[Messages]
+SetupAppTitle=JMASolution Setup
+SetupWindowTitle=JMASolution Setup
 [Languages]
-Name: "english"; MessagesFile: "compiler:Default.isl"
+Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"
 
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
+
 
 [Files]
 Source: "C:\Users\matias\OneDrive\Escritorio\Proyecto Diploma\Proyecto-Diploma\Trabajo practico IS\Trabajo practico IS\bin\Release\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\matias\OneDrive\Escritorio\Proyecto Diploma\Proyecto-Diploma\Trabajo practico IS\Trabajo practico IS\bin\Release\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "C:\Users\matias\OneDrive\Escritorio\Proyecto Diploma\Proyecto-Diploma\Trabajo practico IS\InstalacionDB.sql"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\matias\OneDrive\Escritorio\Proyecto Diploma\Proyecto-Diploma\Trabajo practico IS\SQL2025-SSEI-Expr.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall
 
 [Registry]
 Root: HKA; Subkey: "Software\Classes\{#MyAppAssocExt}\OpenWithProgids"; ValueType: string; ValueName: "{#MyAppAssocKey}"; ValueData: ""; Flags: uninsdeletevalue
@@ -55,21 +53,39 @@ Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"
 Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: desktopicon
 
 [Run]
-Filename: "{tmp}\SQL2025-SSEI-Expr.exe"; Parameters: "/QS /IACCEPTSQLSERVERLICENSETERMS /ACTION=Install /FEATURES=SQLEngine /INSTANCENAME=SQLEXPRESS01 /SQLSVCACCOUNT=""NT AUTHORITY\Network Service"" /SQLSYSADMINACCOUNTS=""BUILTIN\ADMINISTRATORS"""; Check: NeedsSQLServer; StatusMsg: "Instalando motor de Base de Datos (Esto puede demorar unos minutardos)..."
-Filename: "{cmd}"; Parameters: "/C net start MSSQL$SQLEXPRESS01"; Flags: runhidden; StatusMsg: "Iniciando servicio de base de datos..."
-Filename: "sqlcmd.exe"; Parameters: "-S .\SQLEXPRESS -E -b -i ""{app}\InstalacionDB.sql"""; StatusMsg: "Configurando base de datos..."; Flags: runhidden waituntilterminated runascurrentuser
+; Si el usuario decide continuar aunque no tenga SQL, estas líneas intentarán crear la base de datos asumiendo que configurará algo manual después
+Filename: "{cmd}"; Parameters: "/C net start MSSQL$SQLEXPRESS"; Flags: runhidden; StatusMsg: "Iniciando servicio de base de datos..."
+Filename: "sqlcmd.exe"; Parameters: "-S .\SQLEXPRESS -E -b -i ""{app}\InstalacionDB.sql"""; StatusMsg: "Configurando base de datos..."; Flags: runhidden waituntilterminated runascurrentuser skipifdoesntexist
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
 
 [Code]
-function NeedsSQLServer(): Boolean;
+function InitializeSetup(): Boolean;
 var
-  sqlInstalled: Cardinal;
+  Mensaje: String;
+  Respuesta: Integer;
 begin
-if RegQueryDWordValue(HKLM, 'SOFTWARE\Microsoft\Microsoft SQL Server\SQLEXPRESS\MSSQLServer\CurrentVersion', 'CurrentMajorVersionNumber', sqlInstalled) then  begin
-    Result := False; 
+  // Buscamos si existe el servicio base de SQL Server en la PC.
+  // Esta clave de servicio se crea siempre que se instala una instancia (como MSSQLSERVER o SQLEXPRESS).
+  if RegKeyExists(HKLM, 'SYSTEM\CurrentControlSet\Services\MSSQLSERVER') or 
+     RegKeyExists(HKLM, 'SYSTEM\CurrentControlSet\Services\MSSQL$SQLEXPRESS') or
+     RegKeyExists(HKLM, 'SYSTEM\CurrentControlSet\Services\MSSQL$SQLEXPRESS01') then
+  begin
+    // Si encuentra algún servicio de SQL Server, avanzamos.
+    Result := True;
   end
   else
   begin
-    Result := True;
+    // Si NO hay instancias reales, mostramos la advertencia
+    Mensaje := 'Atención: No se ha detectado ninguna instancia de Microsoft SQL Server en este equipo.' + #13#10 + #13#10 +
+               'El sistema JMA Solutions requiere este motor de base de datos para funcionar correctamente.' + #13#10 +
+               'Puedes descargar SQL Server Express gratuitamente desde: https://www.microsoft.com/es-es/sql-server/sql-server-downloads' + #13#10 + #13#10 +
+               '¿Deseas continuar con la instalación de todas formas?';
+               
+    Respuesta := MsgBox(Mensaje, mbInformation, MB_YESNO);
+    
+    if Respuesta = IDYES then
+      Result := True
+    else
+      Result := False;
   end;
 end;

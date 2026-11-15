@@ -351,6 +351,14 @@ namespace Trabajo_practico_IS
             frmgestionarpersonal.ShowDialog();
             this.Show();
         }
+
+        private void metricasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmDashboardUnificado frmdashboard = new FrmDashboardUnificado();
+            frmdashboard.ShowDialog();
+            this.Show();    
+        }
     }
 }
 

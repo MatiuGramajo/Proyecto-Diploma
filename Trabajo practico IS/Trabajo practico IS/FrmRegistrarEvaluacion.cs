@@ -10,10 +10,11 @@ using System.Windows.Forms;
 
 namespace Trabajo_practico_IS
 {
-    public partial class FrmRegistrarEvaluacion : Form
+    public partial class FrmRegistrarEvaluacion : Form, BE.IObserver
     {
         private BLL.RESERVA gestorReserva = new BLL.RESERVA();
         private BE.RESERVA reservaSeleccionada;
+        private BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
         public FrmRegistrarEvaluacion()
         {
             InitializeComponent();
@@ -29,16 +30,17 @@ namespace Trabajo_practico_IS
             CargarComboResultado();
             CargarEventosPendientes();
             LimpiarYDeshabilitarCampos();
+            InicializarIdioma();
         }
 
         private void LimpiarYDeshabilitarCampos()
         {
             reservaSeleccionada = null;
 
-            lblClienteInfo.Text = "-";
-            lblFechaInfo.Text = "-";
-            lblTipoEventoInfo.Text = "-";
-            lblInvitadosInfo.Text = "-";
+            lblClienteInfo.Text = "Nombre: -";
+            lblFechaInfo.Text = "Fecha: -";
+            lblTipoEventoInfo.Text = "Tipo de Evento: -";
+            lblInvitadosInfo.Text = "Invitados: -";
 
             cmbResultado.SelectedIndex = -1;
             cmbResultado.Enabled = false;
@@ -49,6 +51,7 @@ namespace Trabajo_practico_IS
             btnGuardarEvaluacion.Enabled = false;
 
             dgvPersonal.DataSource = null;
+            dgvPersonal.Columns.Clear();
 
             if (dgvEventos.Rows.Count > 0)
             {
@@ -63,16 +66,70 @@ namespace Trabajo_practico_IS
                 List<BE.RESERVA> listaPendientes = gestorReserva.ListarPendientesEvaluacion();
 
                 dgvEventos.DataSource = null;
-                dgvEventos.DataSource = listaPendientes;
+                dgvEventos.Columns.Clear();
+                dgvEventos.DataSource = new BindingSource { DataSource = listaPendientes };
 
-                if (dgvEventos.Columns["ClienteAsociado"] != null)
-                    dgvEventos.Columns["ClienteAsociado"].Visible = false;
-                if (dgvEventos.Columns["PresupuestoAsociado"] != null)
-                    dgvEventos.Columns["PresupuestoAsociado"].Visible = false;
-                if (dgvEventos.Columns["Evaluacion_Personal"] != null)
-                    dgvEventos.Columns["Evaluacion_Personal"].Visible = false;
-                if (dgvEventos.Columns["Observaciones_Personal"] != null)
-                    dgvEventos.Columns["Observaciones_Personal"].Visible = false;
+                if (dgvEventos.Columns.Count > 0)
+                {
+                    dgvEventos.ReadOnly = true;
+                    dgvEventos.AllowUserToAddRows = false;
+                    dgvEventos.AllowUserToDeleteRows = false;
+                    dgvEventos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                    dgvEventos.MultiSelect = false;
+                    dgvEventos.RowHeadersVisible = false;
+                    dgvEventos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                    foreach (DataGridViewColumn col in dgvEventos.Columns)
+                        col.Visible = false;
+
+                    dgvEventos.Columns.Add("ColCliente", "Cliente");
+                    dgvEventos.Columns.Add("ColEvento", "Tipo de Evento");
+
+                    if (dgvEventos.Columns.Contains("Id_Reserva"))
+                    {
+                        var col = dgvEventos.Columns["Id_Reserva"];
+                        col.Visible = true;
+                        col.HeaderText = "Nro.";
+                        col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                        col.Width = 45;
+                        col.DisplayIndex = 0;
+                    }
+
+                    var colCliente = dgvEventos.Columns["ColCliente"];
+                    colCliente.Visible = true;
+                    colCliente.DisplayIndex = 1; 
+
+                    var colEvento = dgvEventos.Columns["ColEvento"];
+                    colEvento.Visible = true;
+                    colEvento.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                    colEvento.Width = 105;
+                    colEvento.DisplayIndex = 2;
+
+                    if (dgvEventos.Columns.Contains("Fecha_Evento"))
+                    {
+                        var col = dgvEventos.Columns["Fecha_Evento"];
+                        col.Visible = true;
+                        col.HeaderText = "Fecha";
+                        col.DefaultCellStyle.Format = "dd/MM/yyyy";
+                        col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                        col.Width = 80;
+                        col.DisplayIndex = 3;
+                    }
+
+                    foreach (DataGridViewRow row in dgvEventos.Rows)
+                    {
+                        if (row.DataBoundItem is BE.RESERVA res)
+                        {
+                            row.Cells["ColCliente"].Value = res.ClienteAsociado != null
+                                ? res.ClienteAsociado.Nombre_Completo
+                                : $"Cliente #{res.Id_Cliente}";
+
+                            row.Cells["ColEvento"].Value = res.PresupuestoAsociado != null
+                                ? res.PresupuestoAsociado.Tipo_Evento
+                                : "Evento";
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -93,10 +150,10 @@ namespace Trabajo_practico_IS
 
             reservaSeleccionada = (BE.RESERVA)dgvEventos.CurrentRow.DataBoundItem;
 
-            lblClienteInfo.Text = reservaSeleccionada.ClienteAsociado?.Nombre_Completo ?? "N/A";
-            lblFechaInfo.Text = reservaSeleccionada.Fecha_Evento.ToShortDateString();
-            lblTipoEventoInfo.Text = reservaSeleccionada.PresupuestoAsociado?.Tipo_Evento ?? "N/A";
-            lblInvitadosInfo.Text = reservaSeleccionada.PresupuestoAsociado?.Cantidad_Invitados_Estimada.ToString() ?? "0";
+            lblClienteInfo.Text = $"Nombre: {reservaSeleccionada.ClienteAsociado?.Nombre_Completo ?? "N/A"}";
+            lblFechaInfo.Text = $"Fecha: {reservaSeleccionada.Fecha_Evento:dd/MM/yyyy}";
+            lblTipoEventoInfo.Text = $"Tipo de Evento: {reservaSeleccionada.PresupuestoAsociado?.Tipo_Evento ?? "N/A"}";
+            lblInvitadosInfo.Text = $"Invitados: {reservaSeleccionada.PresupuestoAsociado?.Cantidad_Invitados_Estimada ?? 0}";
 
             CargarPersonalAsignado(reservaSeleccionada.Id_Reserva);
 
@@ -113,8 +170,60 @@ namespace Trabajo_practico_IS
             try
             {
                 List<BE.PERSONAL> personalAsignado = gestorReserva.ObtenerPersonalAsignado(id_Reserva);
+
                 dgvPersonal.DataSource = null;
-                dgvPersonal.DataSource = personalAsignado;
+                dgvPersonal.Columns.Clear();
+                dgvPersonal.DataSource = new BindingSource { DataSource = personalAsignado };
+
+                if (dgvPersonal.Columns.Count > 0)
+                {
+                    dgvPersonal.ReadOnly = true;
+                    dgvPersonal.AllowUserToAddRows = false;
+                    dgvPersonal.AllowUserToDeleteRows = false;
+                    dgvPersonal.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                    dgvPersonal.MultiSelect = false;
+                    dgvPersonal.RowHeadersVisible = false;
+                    dgvPersonal.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                    foreach (DataGridViewColumn col in dgvPersonal.Columns)
+                        col.Visible = false;
+
+                    if (dgvPersonal.Columns.Contains("Nombre"))
+                    {
+                        var col = dgvPersonal.Columns["Nombre"];
+                        col.Visible = true;
+                        col.HeaderText = "Nombre";
+                        col.DisplayIndex = 0;
+                    }
+
+                    if (dgvPersonal.Columns.Contains("Apellido"))
+                    {
+                        var col = dgvPersonal.Columns["Apellido"];
+                        col.Visible = true;
+                        col.HeaderText = "Apellido";
+                        col.DisplayIndex = 1;
+                    }
+
+                    if (dgvPersonal.Columns.Contains("Dni"))
+                    {
+                        var col = dgvPersonal.Columns["Dni"];
+                        col.Visible = true;
+                        col.HeaderText = "DNI";
+                        col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                        col.Width = 75;
+                        col.DisplayIndex = 2;
+                    }
+
+                    if (dgvPersonal.Columns.Contains("Categoria"))
+                    {
+                        var col = dgvPersonal.Columns["Categoria"];
+                        col.Visible = true;
+                        col.HeaderText = "Categoría";
+                        col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                        col.Width = 95;
+                        col.DisplayIndex = 3;
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -163,6 +272,76 @@ namespace Trabajo_practico_IS
                 this.Close();
 
             }
+        }
+        private void InicializarIdioma()
+        {
+            Servicios.IDIOMAS.GetInstancia().Suscribir(this);
+
+            CBXidiomas.SelectedIndexChanged -= CBXidiomas_SelectedIndexChanged;
+            CBXidiomas.DataSource = GestorIdioma.Listar();
+            CBXidiomas.DisplayMember = "Nombre";
+            CBXidiomas.ValueMember = "Id";
+            CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
+            CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
+
+            ActualizarIdioma();
+        }
+
+        public void ActualizarIdioma()
+        {
+            var traducciones = Servicios.IDIOMAS.GetInstancia().Traducciones;
+            TraducirControles(this.Controls, traducciones);
+
+            if (traducciones.TryGetValue($"{this.Name}_Titulo", out string textoTitulo))
+                this.Text = textoTitulo;
+
+            if (CBXidiomas.Items.Count > 0)
+            {
+                CBXidiomas.SelectedIndexChanged -= CBXidiomas_SelectedIndexChanged;
+                CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
+                CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
+            }
+        }
+
+        private void TraducirControles(Control.ControlCollection controles, Dictionary<string, string> traducciones)
+        {
+            foreach (Control control in controles)
+            {
+                string clave = $"{this.Name}_{control.Name}";
+                if (traducciones.TryGetValue(clave, out string textoTraducido))
+                    control.Text = textoTraducido;
+
+                if (control.HasChildren)
+                    TraducirControles(control.Controls, traducciones);
+            }
+        }
+
+        private void CBXidiomas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CBXidiomas.SelectedValue != null && int.TryParse(CBXidiomas.SelectedValue.ToString(), out int idIdioma))
+                {
+                    var traducciones = GestorIdioma.ObtenerTraducciones(idIdioma);
+                    Servicios.IDIOMAS.GetInstancia().CambiarIdioma(idIdioma, traducciones);
+
+                    if (Servicios.SESION.GetInstancia().usuactual != null)
+                    {
+                        BLL.USUARIO gestorUsu = new BLL.USUARIO();
+                        gestorUsu.ActualizarIdiomaUsuario(Servicios.SESION.GetInstancia().usuactual, idIdioma);
+                        Servicios.SESION.GetInstancia().usuactual.IdIdioma = idIdioma;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cambiar el idioma: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void FrmRegistrarEvaluacion_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Servicios.IDIOMAS.GetInstancia().Desuscribir(this);
         }
     }
     

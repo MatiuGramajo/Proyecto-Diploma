@@ -44,6 +44,9 @@
     <Compile Include="ACCESO.cs" />
     <Compile Include="MP_ASIGNACION_PERSONAL.cs" />
     <Compile Include="MP_CLIENTE.cs" />
+    <Compile Include="MP_DASHBOARD_DEMANDA.cs" />
+    <Compile Include="MP_DASHBOARD_FINANCIERO.cs" />
+    <Compile Include="MP_DASHBOARD_PERSONAL.cs" />
     <Compile Include="MP_PARAMETRO_RATIO.cs" />
     <Compile Include="MP_PERSONAL.cs" />
     <Compile Include="MP_RECETARIO.cs" />

@@ -45,6 +45,9 @@
     <Compile Include="AUDITORIA.cs" />
     <Compile Include="BITACORA.cs" />
     <Compile Include="CLIENTE.cs" />
+    <Compile Include="DASHBOARD_DEMANDA.cs" />
+    <Compile Include="DASHBOARD_PERSONAL.cs" />
+    <Compile Include="DASHBOARD_FINANCIERO.cs" />
     <Compile Include="PARAMETRO_RATIO.cs" />
     <Compile Include="PERSONAL.cs" />
     <Compile Include="RECETARIO.cs" />

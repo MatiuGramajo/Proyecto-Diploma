@@ -42,6 +42,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BTNcobrarsenia = new System.Windows.Forms.Button();
             this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
+            this.LBLidiomas = new System.Windows.Forms.Label();
+            this.CBXidiomas = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -182,23 +184,45 @@
             this.btnVolverAlMenuPrincipal.UseVisualStyleBackColor = true;
             this.btnVolverAlMenuPrincipal.Click += new System.EventHandler(this.btnVolverAlMenuPrincipal_Click);
             // 
+            // LBLidiomas
+            // 
+            this.LBLidiomas.AutoSize = true;
+            this.LBLidiomas.Location = new System.Drawing.Point(803, 21);
+            this.LBLidiomas.Name = "LBLidiomas";
+            this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
+            this.LBLidiomas.TabIndex = 12;
+            this.LBLidiomas.Text = "Idiomas";
+            // 
+            // CBXidiomas
+            // 
+            this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBXidiomas.FormattingEnabled = true;
+            this.CBXidiomas.Location = new System.Drawing.Point(803, 37);
+            this.CBXidiomas.Name = "CBXidiomas";
+            this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
+            this.CBXidiomas.TabIndex = 11;
+            // 
             // FrmPresupuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(947, 450);
+            this.Controls.Add(this.LBLidiomas);
+            this.Controls.Add(this.CBXidiomas);
             this.Controls.Add(this.btnVolverAlMenuPrincipal);
             this.Controls.Add(this.BTNcobrarsenia);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmPresupuesto";
             this.Text = "FrmPresupuesto";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmPresupuesto_FormClosed);
             this.Load += new System.EventHandler(this.FrmPresupuesto_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -218,5 +242,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BTNcobrarsenia;
         private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
+        private System.Windows.Forms.Label LBLidiomas;
+        private System.Windows.Forms.ComboBox CBXidiomas;
     }
 }

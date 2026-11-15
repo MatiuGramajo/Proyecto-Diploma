@@ -38,6 +38,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.BTNconfirmarliquidacion = new System.Windows.Forms.Button();
             this.BTNvolveralmenuprincipal = new System.Windows.Forms.Button();
+            this.LBLidiomas = new System.Windows.Forms.Label();
+            this.CBXidiomas = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -133,7 +135,7 @@
             // BTNconfirmarliquidacion
             // 
             this.BTNconfirmarliquidacion.Enabled = false;
-            this.BTNconfirmarliquidacion.Location = new System.Drawing.Point(579, 386);
+            this.BTNconfirmarliquidacion.Location = new System.Drawing.Point(685, 386);
             this.BTNconfirmarliquidacion.Name = "BTNconfirmarliquidacion";
             this.BTNconfirmarliquidacion.Size = new System.Drawing.Size(137, 39);
             this.BTNconfirmarliquidacion.TabIndex = 2;
@@ -144,7 +146,7 @@
             // BTNvolveralmenuprincipal
             // 
             this.BTNvolveralmenuprincipal.Enabled = false;
-            this.BTNvolveralmenuprincipal.Location = new System.Drawing.Point(817, 386);
+            this.BTNvolveralmenuprincipal.Location = new System.Drawing.Point(970, 386);
             this.BTNvolveralmenuprincipal.Name = "BTNvolveralmenuprincipal";
             this.BTNvolveralmenuprincipal.Size = new System.Drawing.Size(104, 39);
             this.BTNvolveralmenuprincipal.TabIndex = 3;
@@ -152,23 +154,45 @@
             this.BTNvolveralmenuprincipal.UseVisualStyleBackColor = true;
             this.BTNvolveralmenuprincipal.Click += new System.EventHandler(this.BTNvolveralmenuprincipal_Click);
             // 
+            // LBLidiomas
+            // 
+            this.LBLidiomas.AutoSize = true;
+            this.LBLidiomas.Location = new System.Drawing.Point(953, 19);
+            this.LBLidiomas.Name = "LBLidiomas";
+            this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
+            this.LBLidiomas.TabIndex = 9;
+            this.LBLidiomas.Text = "Idiomas";
+            // 
+            // CBXidiomas
+            // 
+            this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBXidiomas.FormattingEnabled = true;
+            this.CBXidiomas.Location = new System.Drawing.Point(953, 35);
+            this.CBXidiomas.Name = "CBXidiomas";
+            this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
+            this.CBXidiomas.TabIndex = 8;
+            // 
             // FrmLiquidacionFinal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(990, 450);
+            this.ClientSize = new System.Drawing.Size(1086, 450);
+            this.Controls.Add(this.LBLidiomas);
+            this.Controls.Add(this.CBXidiomas);
             this.Controls.Add(this.BTNvolveralmenuprincipal);
             this.Controls.Add(this.BTNconfirmarliquidacion);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmLiquidacionFinal";
             this.Text = "FrmLiquidacionFinal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmLiquidacionFinal_FormClosed);
             this.Load += new System.EventHandler(this.FrmLiquidacionFinal_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -184,5 +208,7 @@
         private System.Windows.Forms.Label LBLcostototal;
         private System.Windows.Forms.Button BTNconfirmarliquidacion;
         private System.Windows.Forms.Button BTNvolveralmenuprincipal;
+        private System.Windows.Forms.Label LBLidiomas;
+        private System.Windows.Forms.ComboBox CBXidiomas;
     }
 }

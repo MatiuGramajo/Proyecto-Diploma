@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Trabajo_practico_IS
 {
-    public partial class FrmGestionRecetario : Form
+    public partial class FrmGestionRecetario : Form,BE.IObserver
     {
         private BLL.RECETARIO gestorRecetario = new BLL.RECETARIO();
         private List<BE.SERVICIO_CATERING> listaServicios = new List<BE.SERVICIO_CATERING>();
@@ -19,6 +19,7 @@ namespace Trabajo_practico_IS
         private List<BE.DETALLE_RECETARIO> recetarioLocal = new List<BE.DETALLE_RECETARIO>();
         private BE.SERVICIO_CATERING servicioSeleccionado = null;
         private List<BE.INSUMO> listaInsumosActivos = new List<BE.INSUMO>();
+        private BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
         public FrmGestionRecetario()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace Trabajo_practico_IS
         private void FrmGestionRecetario_Load(object sender, EventArgs e)
         {
             MostrarFormulario();
+            InicializarIdioma();
         }
 
         private void MostrarFormulario()
@@ -70,6 +72,7 @@ namespace Trabajo_practico_IS
         private void ActualizarGrillaRecetario()
         {
             DGVrecetario.DataSource = null;
+            DGVrecetario.Columns.Clear();
 
             var listaPresentacion = recetarioLocal.Select(d => new
             {
@@ -80,7 +83,64 @@ namespace Trabajo_practico_IS
                 Unidad_Medida = d.InsumoAsociado != null ? d.InsumoAsociado.Unidad_Medida : ""
             }).ToList();
 
-            DGVrecetario.DataSource = listaPresentacion;
+            DGVrecetario.DataSource = new BindingSource { DataSource = listaPresentacion };
+
+            FormatearGrillaRecetario();
+        }
+
+        private void FormatearGrillaRecetario()
+        {
+            if (DGVrecetario.Columns.Count == 0) return;
+
+            // 1. Configuración visual y de solo lectura
+            DGVrecetario.ReadOnly = true;
+            DGVrecetario.AllowUserToAddRows = false;
+            DGVrecetario.AllowUserToDeleteRows = false;
+            DGVrecetario.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            DGVrecetario.MultiSelect = false;
+            DGVrecetario.RowHeadersVisible = false;
+            DGVrecetario.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // 2. Ocultar el ID interno (se mantiene en DataBoundItem para el botón Quitar)
+            if (DGVrecetario.Columns.Contains("Id_Insumo"))
+                DGVrecetario.Columns["Id_Insumo"].Visible = false;
+
+            // 3. Encabezados prolijos sin guiones bajos y anchos equilibrados
+            if (DGVrecetario.Columns.Contains("Insumo"))
+            {
+                var col = DGVrecetario.Columns["Insumo"];
+                col.HeaderText = "Insumo";
+                col.DisplayIndex = 0; // Ocupa todo el ancho libre (Fill)
+            }
+
+            if (DGVrecetario.Columns.Contains("Rubro"))
+            {
+                var col = DGVrecetario.Columns["Rubro"];
+                col.HeaderText = "Rubro";
+                col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                col.Width = 80;
+                col.DisplayIndex = 1;
+            }
+
+            if (DGVrecetario.Columns.Contains("Cantidad_Por_Persona"))
+            {
+                var col = DGVrecetario.Columns["Cantidad_Por_Persona"];
+                col.HeaderText = "Cant. x Persona";
+                col.DefaultCellStyle.Format = "N2";
+                col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                col.Width = 100;
+                col.DisplayIndex = 2;
+            }
+
+            if (DGVrecetario.Columns.Contains("Unidad_Medida"))
+            {
+                var col = DGVrecetario.Columns["Unidad_Medida"];
+                col.HeaderText = "Unidad";
+                col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                col.Width = 65;
+                col.DisplayIndex = 3;
+            }
         }
 
         private void CBXserviciocatering_SelectedIndexChanged(object sender, EventArgs e)
@@ -224,6 +284,75 @@ namespace Trabajo_practico_IS
                 this.Close();
 
             }
+        }
+        private void InicializarIdioma()
+        {
+            Servicios.IDIOMAS.GetInstancia().Suscribir(this);
+
+            CBXidiomas.SelectedIndexChanged -= CBXidiomas_SelectedIndexChanged;
+            CBXidiomas.DataSource = GestorIdioma.Listar();
+            CBXidiomas.DisplayMember = "Nombre";
+            CBXidiomas.ValueMember = "Id";
+            CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
+            CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
+
+            ActualizarIdioma();
+        }
+
+        public void ActualizarIdioma()
+        {
+            var traducciones = Servicios.IDIOMAS.GetInstancia().Traducciones;
+            TraducirControles(this.Controls, traducciones);
+
+            if (traducciones.TryGetValue($"{this.Name}_Titulo", out string textoTitulo))
+                this.Text = textoTitulo;
+
+            if (CBXidiomas.Items.Count > 0)
+            {
+                CBXidiomas.SelectedIndexChanged -= CBXidiomas_SelectedIndexChanged;
+                CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
+                CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
+            }
+        }
+
+        private void TraducirControles(Control.ControlCollection controles, Dictionary<string, string> traducciones)
+        {
+            foreach (Control control in controles)
+            {
+                string clave = $"{this.Name}_{control.Name}";
+                if (traducciones.TryGetValue(clave, out string textoTraducido))
+                    control.Text = textoTraducido;
+
+                if (control.HasChildren)
+                    TraducirControles(control.Controls, traducciones);
+            }
+        }
+
+        private void CBXidiomas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CBXidiomas.SelectedValue != null && int.TryParse(CBXidiomas.SelectedValue.ToString(), out int idIdioma))
+                {
+                    var traducciones = GestorIdioma.ObtenerTraducciones(idIdioma);
+                    Servicios.IDIOMAS.GetInstancia().CambiarIdioma(idIdioma, traducciones);
+
+                    if (Servicios.SESION.GetInstancia().usuactual != null)
+                    {
+                        BLL.USUARIO gestorUsu = new BLL.USUARIO();
+                        gestorUsu.ActualizarIdiomaUsuario(Servicios.SESION.GetInstancia().usuactual, idIdioma);
+                        Servicios.SESION.GetInstancia().usuactual.IdIdioma = idIdioma;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cambiar el idioma: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void FrmGestionRecetario_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Servicios.IDIOMAS.GetInstancia().Desuscribir(this);
         }
     }
 }

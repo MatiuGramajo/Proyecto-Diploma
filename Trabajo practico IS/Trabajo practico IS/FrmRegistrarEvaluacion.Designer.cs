@@ -38,6 +38,8 @@
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.btnGuardarEvaluacion = new System.Windows.Forms.Button();
             this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
+            this.LBLidiomas = new System.Windows.Forms.Label();
+            this.CBXidiomas = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonal)).BeginInit();
             this.SuspendLayout();
@@ -97,6 +99,7 @@
             // 
             // cmbResultado
             // 
+            this.cmbResultado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbResultado.FormattingEnabled = true;
             this.cmbResultado.Location = new System.Drawing.Point(322, 213);
             this.cmbResultado.Name = "cmbResultado";
@@ -123,7 +126,7 @@
             // 
             // btnVolverAlMenuPrincipal
             // 
-            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(938, 390);
+            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(1014, 390);
             this.btnVolverAlMenuPrincipal.Name = "btnVolverAlMenuPrincipal";
             this.btnVolverAlMenuPrincipal.Size = new System.Drawing.Size(114, 48);
             this.btnVolverAlMenuPrincipal.TabIndex = 9;
@@ -131,11 +134,31 @@
             this.btnVolverAlMenuPrincipal.UseVisualStyleBackColor = true;
             this.btnVolverAlMenuPrincipal.Click += new System.EventHandler(this.btnVolverAlMenuPrincipal_Click);
             // 
+            // LBLidiomas
+            // 
+            this.LBLidiomas.AutoSize = true;
+            this.LBLidiomas.Location = new System.Drawing.Point(1007, 11);
+            this.LBLidiomas.Name = "LBLidiomas";
+            this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
+            this.LBLidiomas.TabIndex = 11;
+            this.LBLidiomas.Text = "Idiomas";
+            // 
+            // CBXidiomas
+            // 
+            this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBXidiomas.FormattingEnabled = true;
+            this.CBXidiomas.Location = new System.Drawing.Point(1007, 27);
+            this.CBXidiomas.Name = "CBXidiomas";
+            this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
+            this.CBXidiomas.TabIndex = 10;
+            // 
             // FrmRegistrarEvaluacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 450);
+            this.ClientSize = new System.Drawing.Size(1140, 450);
+            this.Controls.Add(this.LBLidiomas);
+            this.Controls.Add(this.CBXidiomas);
             this.Controls.Add(this.btnVolverAlMenuPrincipal);
             this.Controls.Add(this.btnGuardarEvaluacion);
             this.Controls.Add(this.txtObservaciones);
@@ -148,6 +171,7 @@
             this.Controls.Add(this.dgvEventos);
             this.Name = "FrmRegistrarEvaluacion";
             this.Text = "FrmRegistrarEvaluacion";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmRegistrarEvaluacion_FormClosed);
             this.Load += new System.EventHandler(this.FrmRegistrarEvaluacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonal)).EndInit();
@@ -168,5 +192,7 @@
         private System.Windows.Forms.TextBox txtObservaciones;
         private System.Windows.Forms.Button btnGuardarEvaluacion;
         private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
+        private System.Windows.Forms.Label LBLidiomas;
+        private System.Windows.Forms.ComboBox CBXidiomas;
     }
 }

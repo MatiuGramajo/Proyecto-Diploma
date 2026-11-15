@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblTotalEventosInfo = new System.Windows.Forms.Label();
-            this.lblAprobadosInfo = new System.Windows.Forms.Label();
-            this.lblRecomendacionInfo = new System.Windows.Forms.Label();
             this.lblDesaprobadosInfo = new System.Windows.Forms.Label();
+            this.lblRecomendacionInfo = new System.Windows.Forms.Label();
+            this.lblAprobadosInfo = new System.Windows.Forms.Label();
+            this.lblTotalEventosInfo = new System.Windows.Forms.Label();
             this.dgvRatios = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnAplicarRatios = new System.Windows.Forms.Button();
             this.btnVolverAlMenu = new System.Windows.Forms.Button();
+            this.LBLidiomas = new System.Windows.Forms.Label();
+            this.CBXidiomas = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRatios)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -55,23 +57,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Metricas";
             // 
-            // lblTotalEventosInfo
+            // lblDesaprobadosInfo
             // 
-            this.lblTotalEventosInfo.AutoSize = true;
-            this.lblTotalEventosInfo.Location = new System.Drawing.Point(21, 43);
-            this.lblTotalEventosInfo.Name = "lblTotalEventosInfo";
-            this.lblTotalEventosInfo.Size = new System.Drawing.Size(35, 13);
-            this.lblTotalEventosInfo.TabIndex = 1;
-            this.lblTotalEventosInfo.Text = "label1";
-            // 
-            // lblAprobadosInfo
-            // 
-            this.lblAprobadosInfo.AutoSize = true;
-            this.lblAprobadosInfo.Location = new System.Drawing.Point(21, 75);
-            this.lblAprobadosInfo.Name = "lblAprobadosInfo";
-            this.lblAprobadosInfo.Size = new System.Drawing.Size(35, 13);
-            this.lblAprobadosInfo.TabIndex = 2;
-            this.lblAprobadosInfo.Text = "label1";
+            this.lblDesaprobadosInfo.AutoSize = true;
+            this.lblDesaprobadosInfo.Location = new System.Drawing.Point(21, 114);
+            this.lblDesaprobadosInfo.Name = "lblDesaprobadosInfo";
+            this.lblDesaprobadosInfo.Size = new System.Drawing.Size(35, 13);
+            this.lblDesaprobadosInfo.TabIndex = 4;
+            this.lblDesaprobadosInfo.Text = "label1";
             // 
             // lblRecomendacionInfo
             // 
@@ -82,20 +75,30 @@
             this.lblRecomendacionInfo.TabIndex = 3;
             this.lblRecomendacionInfo.Text = "label1";
             // 
-            // lblDesaprobadosInfo
+            // lblAprobadosInfo
             // 
-            this.lblDesaprobadosInfo.AutoSize = true;
-            this.lblDesaprobadosInfo.Location = new System.Drawing.Point(21, 114);
-            this.lblDesaprobadosInfo.Name = "lblDesaprobadosInfo";
-            this.lblDesaprobadosInfo.Size = new System.Drawing.Size(35, 13);
-            this.lblDesaprobadosInfo.TabIndex = 4;
-            this.lblDesaprobadosInfo.Text = "label1";
+            this.lblAprobadosInfo.AutoSize = true;
+            this.lblAprobadosInfo.Location = new System.Drawing.Point(21, 75);
+            this.lblAprobadosInfo.Name = "lblAprobadosInfo";
+            this.lblAprobadosInfo.Size = new System.Drawing.Size(35, 13);
+            this.lblAprobadosInfo.TabIndex = 2;
+            this.lblAprobadosInfo.Text = "label1";
+            // 
+            // lblTotalEventosInfo
+            // 
+            this.lblTotalEventosInfo.AutoSize = true;
+            this.lblTotalEventosInfo.Location = new System.Drawing.Point(21, 43);
+            this.lblTotalEventosInfo.Name = "lblTotalEventosInfo";
+            this.lblTotalEventosInfo.Size = new System.Drawing.Size(35, 13);
+            this.lblTotalEventosInfo.TabIndex = 1;
+            this.lblTotalEventosInfo.Text = "label1";
             // 
             // dgvRatios
             // 
             this.dgvRatios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRatios.Location = new System.Drawing.Point(6, 30);
             this.dgvRatios.Name = "dgvRatios";
+            this.dgvRatios.ReadOnly = true;
             this.dgvRatios.Size = new System.Drawing.Size(445, 194);
             this.dgvRatios.TabIndex = 1;
             // 
@@ -122,7 +125,7 @@
             // 
             // btnVolverAlMenu
             // 
-            this.btnVolverAlMenu.Location = new System.Drawing.Point(880, 394);
+            this.btnVolverAlMenu.Location = new System.Drawing.Point(1052, 403);
             this.btnVolverAlMenu.Name = "btnVolverAlMenu";
             this.btnVolverAlMenu.Size = new System.Drawing.Size(110, 35);
             this.btnVolverAlMenu.TabIndex = 3;
@@ -130,22 +133,44 @@
             this.btnVolverAlMenu.UseVisualStyleBackColor = true;
             this.btnVolverAlMenu.Click += new System.EventHandler(this.btnVolverAlMenu_Click);
             // 
+            // LBLidiomas
+            // 
+            this.LBLidiomas.AutoSize = true;
+            this.LBLidiomas.Location = new System.Drawing.Point(1041, 24);
+            this.LBLidiomas.Name = "LBLidiomas";
+            this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
+            this.LBLidiomas.TabIndex = 9;
+            this.LBLidiomas.Text = "Idiomas";
+            // 
+            // CBXidiomas
+            // 
+            this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBXidiomas.FormattingEnabled = true;
+            this.CBXidiomas.Location = new System.Drawing.Point(1041, 40);
+            this.CBXidiomas.Name = "CBXidiomas";
+            this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
+            this.CBXidiomas.TabIndex = 8;
+            // 
             // FrmCalibrarRatios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 450);
+            this.ClientSize = new System.Drawing.Size(1174, 450);
+            this.Controls.Add(this.LBLidiomas);
+            this.Controls.Add(this.CBXidiomas);
             this.Controls.Add(this.btnVolverAlMenu);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmCalibrarRatios";
             this.Text = "FrmCalibrarRatios";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmCalibrarRatios_FormClosed);
             this.Load += new System.EventHandler(this.FrmCalibrarRatios_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRatios)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -160,5 +185,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnAplicarRatios;
         private System.Windows.Forms.Button btnVolverAlMenu;
+        private System.Windows.Forms.Label LBLidiomas;
+        private System.Windows.Forms.ComboBox CBXidiomas;
     }
 }

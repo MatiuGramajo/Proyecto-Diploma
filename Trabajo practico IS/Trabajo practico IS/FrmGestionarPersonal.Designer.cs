@@ -48,6 +48,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtDni = new System.Windows.Forms.TextBox();
             this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
+            this.LBLidiomas = new System.Windows.Forms.Label();
+            this.CBXidiomas = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonal)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +58,7 @@
             this.dgvPersonal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPersonal.Location = new System.Drawing.Point(23, 33);
             this.dgvPersonal.Name = "dgvPersonal";
+            this.dgvPersonal.ReadOnly = true;
             this.dgvPersonal.Size = new System.Drawing.Size(530, 96);
             this.dgvPersonal.TabIndex = 0;
             this.dgvPersonal.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPersonal_CellClick);
@@ -181,6 +184,7 @@
             // 
             // cmbCategoria
             // 
+            this.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCategoria.FormattingEnabled = true;
             this.cmbCategoria.Location = new System.Drawing.Point(23, 463);
             this.cmbCategoria.Name = "cmbCategoria";
@@ -222,11 +226,31 @@
             this.btnVolverAlMenuPrincipal.UseVisualStyleBackColor = true;
             this.btnVolverAlMenuPrincipal.Click += new System.EventHandler(this.btnVolverAlMenuPrincipal_Click);
             // 
+            // LBLidiomas
+            // 
+            this.LBLidiomas.AutoSize = true;
+            this.LBLidiomas.Location = new System.Drawing.Point(651, 17);
+            this.LBLidiomas.Name = "LBLidiomas";
+            this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
+            this.LBLidiomas.TabIndex = 23;
+            this.LBLidiomas.Text = "Idiomas";
+            // 
+            // CBXidiomas
+            // 
+            this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBXidiomas.FormattingEnabled = true;
+            this.CBXidiomas.Location = new System.Drawing.Point(651, 33);
+            this.CBXidiomas.Name = "CBXidiomas";
+            this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
+            this.CBXidiomas.TabIndex = 22;
+            // 
             // FrmGestionarPersonal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 550);
+            this.ClientSize = new System.Drawing.Size(844, 550);
+            this.Controls.Add(this.LBLidiomas);
+            this.Controls.Add(this.CBXidiomas);
             this.Controls.Add(this.btnVolverAlMenuPrincipal);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtDni);
@@ -249,6 +273,7 @@
             this.Controls.Add(this.dgvPersonal);
             this.Name = "FrmGestionarPersonal";
             this.Text = "FrmGestionarPersonal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmGestionarPersonal_FormClosed);
             this.Load += new System.EventHandler(this.FrmGestionarPersonal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonal)).EndInit();
             this.ResumeLayout(false);
@@ -278,5 +303,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtDni;
         private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
+        private System.Windows.Forms.Label LBLidiomas;
+        private System.Windows.Forms.ComboBox CBXidiomas;
     }
 }

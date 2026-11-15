@@ -41,16 +41,19 @@
             this.lblcliente = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.CBXIdiomas = new System.Windows.Forms.ComboBox();
             this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
+            this.LBLidiomas = new System.Windows.Forms.Label();
+            this.CBXidiomas = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.DGVPresupuestosPendientes)).BeginInit();
             this.SuspendLayout();
             // 
             // DGVPresupuestosPendientes
             // 
+            this.DGVPresupuestosPendientes.AllowUserToAddRows = false;
             this.DGVPresupuestosPendientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGVPresupuestosPendientes.Location = new System.Drawing.Point(29, 39);
             this.DGVPresupuestosPendientes.Name = "DGVPresupuestosPendientes";
+            this.DGVPresupuestosPendientes.ReadOnly = true;
             this.DGVPresupuestosPendientes.Size = new System.Drawing.Size(708, 150);
             this.DGVPresupuestosPendientes.TabIndex = 0;
             this.DGVPresupuestosPendientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGVPresupuestosPendientes_CellClick);
@@ -64,10 +67,11 @@
             // 
             // CBXmetodopago
             // 
+            this.CBXmetodopago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBXmetodopago.FormattingEnabled = true;
-            this.CBXmetodopago.Location = new System.Drawing.Point(402, 238);
+            this.CBXmetodopago.Location = new System.Drawing.Point(549, 238);
             this.CBXmetodopago.Name = "CBXmetodopago";
-            this.CBXmetodopago.Size = new System.Drawing.Size(121, 21);
+            this.CBXmetodopago.Size = new System.Drawing.Size(188, 21);
             this.CBXmetodopago.TabIndex = 2;
             // 
             // BTNconfirmarPago
@@ -83,7 +87,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(399, 222);
+            this.label1.Location = new System.Drawing.Point(546, 222);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 13);
             this.label1.TabIndex = 4;
@@ -111,21 +115,24 @@
             // 
             this.TXTtotal.Location = new System.Drawing.Point(29, 384);
             this.TXTtotal.Name = "TXTtotal";
-            this.TXTtotal.Size = new System.Drawing.Size(126, 20);
+            this.TXTtotal.ReadOnly = true;
+            this.TXTtotal.Size = new System.Drawing.Size(247, 20);
             this.TXTtotal.TabIndex = 7;
             // 
             // TXTtipoevento
             // 
             this.TXTtipoevento.Location = new System.Drawing.Point(29, 344);
             this.TXTtipoevento.Name = "TXTtipoevento";
-            this.TXTtipoevento.Size = new System.Drawing.Size(126, 20);
+            this.TXTtipoevento.ReadOnly = true;
+            this.TXTtipoevento.Size = new System.Drawing.Size(247, 20);
             this.TXTtipoevento.TabIndex = 8;
             // 
             // TXTcliente
             // 
             this.TXTcliente.Location = new System.Drawing.Point(29, 302);
             this.TXTcliente.Name = "TXTcliente";
-            this.TXTcliente.Size = new System.Drawing.Size(126, 20);
+            this.TXTcliente.ReadOnly = true;
+            this.TXTcliente.Size = new System.Drawing.Size(247, 20);
             this.TXTcliente.TabIndex = 9;
             // 
             // lblcliente
@@ -155,14 +162,6 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Total";
             // 
-            // CBXIdiomas
-            // 
-            this.CBXIdiomas.FormattingEnabled = true;
-            this.CBXIdiomas.Location = new System.Drawing.Point(835, 39);
-            this.CBXIdiomas.Name = "CBXIdiomas";
-            this.CBXIdiomas.Size = new System.Drawing.Size(121, 21);
-            this.CBXIdiomas.TabIndex = 13;
-            // 
             // btnVolverAlMenuPrincipal
             // 
             this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(846, 380);
@@ -173,13 +172,32 @@
             this.btnVolverAlMenuPrincipal.UseVisualStyleBackColor = true;
             this.btnVolverAlMenuPrincipal.Click += new System.EventHandler(this.btnVolverAlMenuPrincipal_Click);
             // 
+            // LBLidiomas
+            // 
+            this.LBLidiomas.AutoSize = true;
+            this.LBLidiomas.Location = new System.Drawing.Point(835, 23);
+            this.LBLidiomas.Name = "LBLidiomas";
+            this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
+            this.LBLidiomas.TabIndex = 16;
+            this.LBLidiomas.Text = "Idiomas";
+            // 
+            // CBXidiomas
+            // 
+            this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBXidiomas.FormattingEnabled = true;
+            this.CBXidiomas.Location = new System.Drawing.Point(835, 39);
+            this.CBXidiomas.Name = "CBXidiomas";
+            this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
+            this.CBXidiomas.TabIndex = 15;
+            // 
             // FrmRegistrarPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(975, 450);
+            this.Controls.Add(this.LBLidiomas);
+            this.Controls.Add(this.CBXidiomas);
             this.Controls.Add(this.btnVolverAlMenuPrincipal);
-            this.Controls.Add(this.CBXIdiomas);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblcliente);
@@ -195,7 +213,7 @@
             this.Controls.Add(this.DGVPresupuestosPendientes);
             this.Name = "FrmRegistrarPago";
             this.Text = "FrmRegistrarPago";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmRegistrarPago_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmRegistrarPago_FormClosed);
             this.Load += new System.EventHandler(this.FrmRegistrarPago_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGVPresupuestosPendientes)).EndInit();
             this.ResumeLayout(false);
@@ -218,7 +236,8 @@
         private System.Windows.Forms.Label lblcliente;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox CBXIdiomas;
         private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
+        private System.Windows.Forms.Label LBLidiomas;
+        private System.Windows.Forms.ComboBox CBXidiomas;
     }
 }

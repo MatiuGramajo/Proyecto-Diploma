@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Trabajo_practico_IS
 {
-    public partial class FrmFichaTecnica : Form
+    public partial class FrmFichaTecnica : Form, BE.IObserver
     {
         private BLL.RESERVA gestorReserva = new BLL.RESERVA();
         private BLL.SERVICIO_CATERING gestorCatering = new BLL.SERVICIO_CATERING();
@@ -18,6 +18,7 @@ namespace Trabajo_practico_IS
         private BLL.FICHA_TECNICA gestorFicha = new BLL.FICHA_TECNICA();
         private BE.RESERVA reservaSeleccionada;
         private bool cambiandoSeleccionInterna = false;
+        private BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
         public FrmFichaTecnica()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace Trabajo_practico_IS
         {
             CargarEventosReservados();
             DeshabilitarSeccionPlanificacion();
+            InicializarIdioma();
         }
 
         private void CargarPrestadores()
@@ -73,15 +75,92 @@ namespace Trabajo_practico_IS
                 List<BE.RESERVA> Lista = gestorReserva.ListarReservasConfirmadas();
                 dataGridView1.DataSource = null;
                 dataGridView1.DataSource = Lista;
-                if (dataGridView1.Columns["ClienteAsociado"] != null)
-                    dataGridView1.Columns["ClienteAsociado"].Visible = false;
-                if (dataGridView1.Columns["PresupuestoAsociado"] != null)
-                    dataGridView1.Columns["PresupuestoAsociado"].Visible = false;
+
+                if (dataGridView1.Columns.Count > 0)
+                {
+                    dataGridView1.ReadOnly = true;
+                    dataGridView1.AllowUserToAddRows = false;
+                    dataGridView1.AllowUserToDeleteRows = false;
+                    dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                    dataGridView1.MultiSelect = false;
+                    dataGridView1.RowHeadersVisible = false;
+                    dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+                    foreach (DataGridViewColumn col in dataGridView1.Columns)
+                    {
+                        col.Visible = false;
+                    }
+
+                    if (!dataGridView1.Columns.Contains("ColCliente"))
+                        dataGridView1.Columns.Add("ColCliente", "Cliente");
+
+                    if (!dataGridView1.Columns.Contains("ColEvento"))
+                        dataGridView1.Columns.Add("ColEvento", "Tipo de Evento");
+
+                    if (dataGridView1.Columns.Contains("Id_Reserva"))
+                    {
+                        var col = dataGridView1.Columns["Id_Reserva"];
+                        col.Visible = true;
+                        col.HeaderText = "Nro.";
+                        col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                        col.Width = 50;
+                        col.DisplayIndex = 0;
+                    }
+
+                    var colCliente = dataGridView1.Columns["ColCliente"];
+                    colCliente.Visible = true;
+                    colCliente.DisplayIndex = 1;
+
+                    var colEvento = dataGridView1.Columns["ColEvento"];
+                    colEvento.Visible = true;
+                    colEvento.DisplayIndex = 2;
+
+                    if (dataGridView1.Columns.Contains("Fecha_Evento"))
+                    {
+                        var col = dataGridView1.Columns["Fecha_Evento"];
+                        col.Visible = true;
+                        col.HeaderText = "Fecha";
+                        col.DefaultCellStyle.Format = "dd/MM/yyyy";
+                        col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                        col.Width = 85;
+                        col.DisplayIndex = 3;
+                    }
+
+                    if (dataGridView1.Columns.Contains("Estado"))
+                    {
+                        var col = dataGridView1.Columns["Estado"];
+                        col.Visible = true;
+                        col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                        col.Width = 85;
+                        col.DisplayIndex = 4;
+                    }
+
+                    if (dataGridView1.Columns.Contains("Monto_Senia"))
+                    {
+                        var col = dataGridView1.Columns["Monto_Senia"];
+                        col.Visible = true;
+                        col.HeaderText = "Seña Abonada";
+                        col.DefaultCellStyle.Format = "C2";
+                        col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                        col.Width = 105;
+                        col.DisplayIndex = 5;
+                    }
+
+                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    {
+                        if (row.DataBoundItem is BE.RESERVA res)
+                        {
+                            row.Cells["ColCliente"].Value = res.ClienteAsociado != null ? res.ClienteAsociado.Nombre_Completo : "Sin Asignar";
+                            row.Cells["ColEvento"].Value = res.PresupuestoAsociado != null ? res.PresupuestoAsociado.Tipo_Evento : "Evento";
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al cargar los eventos confirmados: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void DeshabilitarSeccionPlanificacion()
@@ -285,6 +364,75 @@ namespace Trabajo_practico_IS
                 this.Close();
 
             }
+        }
+        private void InicializarIdioma()
+        {
+            Servicios.IDIOMAS.GetInstancia().Suscribir(this);
+
+            CBXidiomas.SelectedIndexChanged -= CBXidiomas_SelectedIndexChanged;
+            CBXidiomas.DataSource = GestorIdioma.Listar();
+            CBXidiomas.DisplayMember = "Nombre";
+            CBXidiomas.ValueMember = "Id";
+            CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
+            CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
+
+            ActualizarIdioma();
+        }
+
+        public void ActualizarIdioma()
+        {
+            var traducciones = Servicios.IDIOMAS.GetInstancia().Traducciones;
+            TraducirControles(this.Controls, traducciones);
+
+            if (traducciones.TryGetValue($"{this.Name}_Titulo", out string textoTitulo))
+                this.Text = textoTitulo;
+
+            if (CBXidiomas.Items.Count > 0)
+            {
+                CBXidiomas.SelectedIndexChanged -= CBXidiomas_SelectedIndexChanged;
+                CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
+                CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
+            }
+        }
+
+        private void TraducirControles(Control.ControlCollection controles, Dictionary<string, string> traducciones)
+        {
+            foreach (Control control in controles)
+            {
+                string clave = $"{this.Name}_{control.Name}";
+                if (traducciones.TryGetValue(clave, out string textoTraducido))
+                    control.Text = textoTraducido;
+
+                if (control.HasChildren)
+                    TraducirControles(control.Controls, traducciones);
+            }
+        }
+
+        private void CBXidiomas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CBXidiomas.SelectedValue != null && int.TryParse(CBXidiomas.SelectedValue.ToString(), out int idIdioma))
+                {
+                    var traducciones = GestorIdioma.ObtenerTraducciones(idIdioma);
+                    Servicios.IDIOMAS.GetInstancia().CambiarIdioma(idIdioma, traducciones);
+
+                    if (Servicios.SESION.GetInstancia().usuactual != null)
+                    {
+                        BLL.USUARIO gestorUsu = new BLL.USUARIO();
+                        gestorUsu.ActualizarIdiomaUsuario(Servicios.SESION.GetInstancia().usuactual, idIdioma);
+                        Servicios.SESION.GetInstancia().usuactual.IdIdioma = idIdioma;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cambiar el idioma: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void FrmFichaTecnica_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Servicios.IDIOMAS.GetInstancia().Desuscribir(this);
         }
     }
 }

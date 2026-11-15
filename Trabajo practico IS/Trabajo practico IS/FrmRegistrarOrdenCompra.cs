@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace Trabajo_practico_IS
 {
-    public partial class FrmRegistrarOrdenCompra : Form
+    public partial class FrmRegistrarOrdenCompra : Form, BE.IObserver
     {
         private BLL.PROVEEDOR_INSUMO bllProveedorInsumo = new BLL.PROVEEDOR_INSUMO();
         private BLL.INSUMO bllInsumo = new BLL.INSUMO();
         private BLL.ORDEN_COMPRA bllOrdenCompra = new BLL.ORDEN_COMPRA();
+        private BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
 
         private List<BE.DETALLE_ORDEN_COMPRA> listaDetalles = new List<BE.DETALLE_ORDEN_COMPRA>();
         public FrmRegistrarOrdenCompra()
@@ -25,6 +26,7 @@ namespace Trabajo_practico_IS
         private void FrmRegistrarOrdenCompra_Load(object sender, EventArgs e)
         {
             MostrarFormulario();
+            InicializarIdioma();
         }
 
         private void MostrarFormulario()
@@ -56,19 +58,42 @@ namespace Trabajo_practico_IS
         {
             if (dgvDetalle.Columns.Count == 0) return;
 
-            if (dgvDetalle.Columns["Id_Detalle"] != null) dgvDetalle.Columns["Id_Detalle"].Visible = false;
-            if (dgvDetalle.Columns["Id_Orden"] != null) dgvDetalle.Columns["Id_Orden"].Visible = false;
-            if (dgvDetalle.Columns["Id_OrdenCompra"] != null) dgvDetalle.Columns["Id_OrdenCompra"].Visible = false;
-            if (dgvDetalle.Columns["Cantidad_Recibida"] != null) dgvDetalle.Columns["Cantidad_Recibida"].Visible = false;
+            dgvDetalle.ReadOnly = true;
+            dgvDetalle.AllowUserToAddRows = false;
+            dgvDetalle.AllowUserToDeleteRows = false;
+            dgvDetalle.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvDetalle.MultiSelect = false;
+            dgvDetalle.RowHeadersVisible = false;
+            dgvDetalle.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            if (dgvDetalle.Columns["Id_Insumo"] != null) dgvDetalle.Columns["Id_Insumo"].HeaderText = "Cód. Insumo";
-            if (dgvDetalle.Columns["Nombre_Insumo"] != null) dgvDetalle.Columns["Nombre_Insumo"].HeaderText = "Insumo";
-            if (dgvDetalle.Columns["Cantidad_Solicitada"] != null) dgvDetalle.Columns["Cantidad_Solicitada"].HeaderText = "Cant. Solicitada";
+            foreach (DataGridViewColumn col in dgvDetalle.Columns)
+            {
+                col.Visible = false;
+            }
+
+            if (dgvDetalle.Columns.Contains("Nombre_Insumo"))
+            {
+                var col = dgvDetalle.Columns["Nombre_Insumo"];
+                col.Visible = true;
+                col.HeaderText = "Insumo";
+                col.DisplayIndex = 0; 
+            }
+
+            if (dgvDetalle.Columns.Contains("Cantidad_Solicitada"))
+            {
+                var col = dgvDetalle.Columns["Cantidad_Solicitada"];
+                col.Visible = true;
+                col.HeaderText = "Cant. Solicitada";
+                col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                col.Width = 110;
+                col.DisplayIndex = 1;
+            }
         }
         private void ActualizarGrilla()
         {
             dgvDetalle.DataSource = null;
-            dgvDetalle.DataSource = listaDetalles;
+            dgvDetalle.DataSource = new BindingSource { DataSource = listaDetalles };
             FormatearGrilla();
         }
 
@@ -155,6 +180,75 @@ namespace Trabajo_practico_IS
                 this.Close();
 
             }
+        }
+        private void InicializarIdioma()
+        {
+            Servicios.IDIOMAS.GetInstancia().Suscribir(this);
+
+            CBXidiomas.SelectedIndexChanged -= CBXidiomas_SelectedIndexChanged;
+            CBXidiomas.DataSource = GestorIdioma.Listar();
+            CBXidiomas.DisplayMember = "Nombre";
+            CBXidiomas.ValueMember = "Id";
+            CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
+            CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
+
+            ActualizarIdioma();
+        }
+
+        public void ActualizarIdioma()
+        {
+            var traducciones = Servicios.IDIOMAS.GetInstancia().Traducciones;
+            TraducirControles(this.Controls, traducciones);
+
+            if (traducciones.TryGetValue($"{this.Name}_Titulo", out string textoTitulo))
+                this.Text = textoTitulo;
+
+            if (CBXidiomas.Items.Count > 0)
+            {
+                CBXidiomas.SelectedIndexChanged -= CBXidiomas_SelectedIndexChanged;
+                CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
+                CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
+            }
+        }
+
+        private void TraducirControles(Control.ControlCollection controles, Dictionary<string, string> traducciones)
+        {
+            foreach (Control control in controles)
+            {
+                string clave = $"{this.Name}_{control.Name}";
+                if (traducciones.TryGetValue(clave, out string textoTraducido))
+                    control.Text = textoTraducido;
+
+                if (control.HasChildren)
+                    TraducirControles(control.Controls, traducciones);
+            }
+        }
+
+        private void CBXidiomas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CBXidiomas.SelectedValue != null && int.TryParse(CBXidiomas.SelectedValue.ToString(), out int idIdioma))
+                {
+                    var traducciones = GestorIdioma.ObtenerTraducciones(idIdioma);
+                    Servicios.IDIOMAS.GetInstancia().CambiarIdioma(idIdioma, traducciones);
+
+                    if (Servicios.SESION.GetInstancia().usuactual != null)
+                    {
+                        BLL.USUARIO gestorUsu = new BLL.USUARIO();
+                        gestorUsu.ActualizarIdiomaUsuario(Servicios.SESION.GetInstancia().usuactual, idIdioma);
+                        Servicios.SESION.GetInstancia().usuactual.IdIdioma = idIdioma;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cambiar el idioma: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private void FrmRegistrarOrdenCompra_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Servicios.IDIOMAS.GetInstancia().Desuscribir(this);
         }
     }
 }

@@ -33,6 +33,9 @@
             this.BtnConsultar = new System.Windows.Forms.Button();
             this.BtnIniciarPresupuesto = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
+            this.CBXidiomas = new System.Windows.Forms.ComboBox();
+            this.LBLidiomas = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // monthCalendar1
@@ -62,7 +65,7 @@
             // BtnIniciarPresupuesto
             // 
             this.BtnIniciarPresupuesto.Enabled = false;
-            this.BtnIniciarPresupuesto.Location = new System.Drawing.Point(523, 381);
+            this.BtnIniciarPresupuesto.Location = new System.Drawing.Point(481, 375);
             this.BtnIniciarPresupuesto.Name = "BtnIniciarPresupuesto";
             this.BtnIniciarPresupuesto.Size = new System.Drawing.Size(133, 48);
             this.BtnIniciarPresupuesto.TabIndex = 3;
@@ -79,11 +82,43 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Fechas Alternativas";
             // 
+            // btnVolverAlMenuPrincipal
+            // 
+            this.btnVolverAlMenuPrincipal.Enabled = false;
+            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(802, 386);
+            this.btnVolverAlMenuPrincipal.Name = "btnVolverAlMenuPrincipal";
+            this.btnVolverAlMenuPrincipal.Size = new System.Drawing.Size(111, 37);
+            this.btnVolverAlMenuPrincipal.TabIndex = 5;
+            this.btnVolverAlMenuPrincipal.Text = "Volver al Menu Principal";
+            this.btnVolverAlMenuPrincipal.UseVisualStyleBackColor = true;
+            this.btnVolverAlMenuPrincipal.Click += new System.EventHandler(this.btnVolverAlMenuPrincipal_Click);
+            // 
+            // CBXidiomas
+            // 
+            this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBXidiomas.FormattingEnabled = true;
+            this.CBXidiomas.Location = new System.Drawing.Point(792, 40);
+            this.CBXidiomas.Name = "CBXidiomas";
+            this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
+            this.CBXidiomas.TabIndex = 6;
+            // 
+            // LBLidiomas
+            // 
+            this.LBLidiomas.AutoSize = true;
+            this.LBLidiomas.Location = new System.Drawing.Point(792, 24);
+            this.LBLidiomas.Name = "LBLidiomas";
+            this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
+            this.LBLidiomas.TabIndex = 7;
+            this.LBLidiomas.Text = "Idiomas";
+            // 
             // FrmCalendario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(938, 450);
+            this.Controls.Add(this.LBLidiomas);
+            this.Controls.Add(this.CBXidiomas);
+            this.Controls.Add(this.btnVolverAlMenuPrincipal);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BtnIniciarPresupuesto);
             this.Controls.Add(this.BtnConsultar);
@@ -91,6 +126,7 @@
             this.Controls.Add(this.monthCalendar1);
             this.Name = "FrmCalendario";
             this.Text = "FrmCalendario";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmCalendario_FormClosed);
             this.Load += new System.EventHandler(this.FrmCalendario_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -104,5 +140,8 @@
         private System.Windows.Forms.Button BtnConsultar;
         private System.Windows.Forms.Button BtnIniciarPresupuesto;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
+        private System.Windows.Forms.ComboBox CBXidiomas;
+        private System.Windows.Forms.Label LBLidiomas;
     }
 }

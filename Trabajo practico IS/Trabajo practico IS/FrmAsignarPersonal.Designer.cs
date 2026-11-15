@@ -34,6 +34,8 @@
             this.dgvPersonalDisponible = new System.Windows.Forms.DataGridView();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
+            this.CBXidiomas = new System.Windows.Forms.ComboBox();
+            this.LBLidiomas = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonalDisponible)).BeginInit();
             this.SuspendLayout();
@@ -43,6 +45,7 @@
             this.dgvReservas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvReservas.Location = new System.Drawing.Point(31, 51);
             this.dgvReservas.Name = "dgvReservas";
+            this.dgvReservas.ReadOnly = true;
             this.dgvReservas.Size = new System.Drawing.Size(352, 122);
             this.dgvReservas.TabIndex = 0;
             this.dgvReservas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReservas_CellClick);
@@ -70,6 +73,7 @@
             this.dgvPersonalDisponible.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPersonalDisponible.Location = new System.Drawing.Point(441, 51);
             this.dgvPersonalDisponible.Name = "dgvPersonalDisponible";
+            this.dgvPersonalDisponible.ReadOnly = true;
             this.dgvPersonalDisponible.Size = new System.Drawing.Size(672, 316);
             this.dgvPersonalDisponible.TabIndex = 3;
             // 
@@ -85,7 +89,7 @@
             // 
             // btnVolverAlMenuPrincipal
             // 
-            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(970, 400);
+            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(1245, 399);
             this.btnVolverAlMenuPrincipal.Name = "btnVolverAlMenuPrincipal";
             this.btnVolverAlMenuPrincipal.Size = new System.Drawing.Size(96, 38);
             this.btnVolverAlMenuPrincipal.TabIndex = 5;
@@ -93,11 +97,31 @@
             this.btnVolverAlMenuPrincipal.UseVisualStyleBackColor = true;
             this.btnVolverAlMenuPrincipal.Click += new System.EventHandler(this.btnVolverAlMenuPrincipal_Click);
             // 
+            // CBXidiomas
+            // 
+            this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBXidiomas.FormattingEnabled = true;
+            this.CBXidiomas.Location = new System.Drawing.Point(1220, 51);
+            this.CBXidiomas.Name = "CBXidiomas";
+            this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
+            this.CBXidiomas.TabIndex = 6;
+            // 
+            // LBLidiomas
+            // 
+            this.LBLidiomas.AutoSize = true;
+            this.LBLidiomas.Location = new System.Drawing.Point(1217, 35);
+            this.LBLidiomas.Name = "LBLidiomas";
+            this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
+            this.LBLidiomas.TabIndex = 7;
+            this.LBLidiomas.Text = "Idiomas";
+            // 
             // FrmAsignarPersonal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1125, 450);
+            this.ClientSize = new System.Drawing.Size(1356, 450);
+            this.Controls.Add(this.LBLidiomas);
+            this.Controls.Add(this.CBXidiomas);
             this.Controls.Add(this.btnVolverAlMenuPrincipal);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.dgvPersonalDisponible);
@@ -106,6 +130,7 @@
             this.Controls.Add(this.dgvReservas);
             this.Name = "FrmAsignarPersonal";
             this.Text = "FrmAsignarPersonal";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmAsignarPersonal_FormClosed);
             this.Load += new System.EventHandler(this.FrmAsignarPersonal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonalDisponible)).EndInit();
@@ -122,5 +147,7 @@
         private System.Windows.Forms.DataGridView dgvPersonalDisponible;
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
+        private System.Windows.Forms.ComboBox CBXidiomas;
+        private System.Windows.Forms.Label LBLidiomas;
     }
 }

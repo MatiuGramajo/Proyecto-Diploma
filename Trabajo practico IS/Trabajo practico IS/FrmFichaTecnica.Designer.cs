@@ -50,6 +50,8 @@
             this.BTNguardarficha = new System.Windows.Forms.Button();
             this.BTNvolverAlMenuPrincipal = new System.Windows.Forms.Button();
             this.BTNarrmarfichatecnica = new System.Windows.Forms.Button();
+            this.LBLidiomas = new System.Windows.Forms.Label();
+            this.CBXidiomas = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.GBseleccionarevento.SuspendLayout();
             this.GBplanificarevento.SuspendLayout();
@@ -271,11 +273,31 @@
             this.BTNarrmarfichatecnica.UseVisualStyleBackColor = true;
             this.BTNarrmarfichatecnica.Click += new System.EventHandler(this.BTNarrmarfichatecnica_Click);
             // 
+            // LBLidiomas
+            // 
+            this.LBLidiomas.AutoSize = true;
+            this.LBLidiomas.Location = new System.Drawing.Point(986, 23);
+            this.LBLidiomas.Name = "LBLidiomas";
+            this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
+            this.LBLidiomas.TabIndex = 11;
+            this.LBLidiomas.Text = "Idiomas";
+            // 
+            // CBXidiomas
+            // 
+            this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBXidiomas.FormattingEnabled = true;
+            this.CBXidiomas.Location = new System.Drawing.Point(986, 39);
+            this.CBXidiomas.Name = "CBXidiomas";
+            this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
+            this.CBXidiomas.TabIndex = 10;
+            // 
             // FrmFichaTecnica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1119, 564);
+            this.Controls.Add(this.LBLidiomas);
+            this.Controls.Add(this.CBXidiomas);
             this.Controls.Add(this.BTNarrmarfichatecnica);
             this.Controls.Add(this.BTNvolverAlMenuPrincipal);
             this.Controls.Add(this.BTNguardarficha);
@@ -285,6 +307,7 @@
             this.Controls.Add(this.GBseleccionarevento);
             this.Name = "FrmFichaTecnica";
             this.Text = "FrmFichaTecnica";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmFichaTecnica_FormClosed);
             this.Load += new System.EventHandler(this.FrmFichaTecnica_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.GBseleccionarevento.ResumeLayout(false);
@@ -294,6 +317,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -321,5 +345,7 @@
         private System.Windows.Forms.Label LBLseñapagada2;
         private System.Windows.Forms.Label LBLtipoevento;
         private System.Windows.Forms.Label LBLnombre;
+        private System.Windows.Forms.Label LBLidiomas;
+        private System.Windows.Forms.ComboBox CBXidiomas;
     }
 }

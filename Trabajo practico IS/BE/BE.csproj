@@ -46,12 +46,16 @@
     <Compile Include="CALIBRACION_DTO.cs" />
     <Compile Include="CLIENTE.cs" />
     <Compile Include="COMPONENTE.cs" />
+    <Compile Include="CONVERSION_PRESUPUESTO_DTO.cs" />
+    <Compile Include="DEMANDA_TIPO_EVENTO_DTO.cs" />
     <Compile Include="DETALLE_ORDEN_COMPRA.cs" />
     <Compile Include="DETALLE_RECETARIO.cs" />
+    <Compile Include="DISTRIBUCION_CATEGORIA_DTO.cs" />
     <Compile Include="DOTACION_DTO.cs" />
     <Compile Include="FICHA_TECNICA.cs" />
     <Compile Include="HISTORIAL_USUARIO.cs" />
     <Compile Include="IDIOMA.cs" />
+    <Compile Include="INGRESOS_PROYECTADOS_DTO.cs" />
     <Compile Include="INSUMO.cs" />
     <Compile Include="INVENTARIO.cs" />
     <Compile Include="IObservable.cs" />
@@ -61,15 +65,18 @@
     <Compile Include="PERMISO_COMPUESTO.cs" />
     <Compile Include="PERMISO_SIMPLE.cs" />
     <Compile Include="PERSONAL.cs" />
+    <Compile Include="PERSONAL_ASISTENCIA_DTO.cs" />
     <Compile Include="PRESUPUESTO.cs" />
     <Compile Include="PRESTADOR_SERVICIO.cs" />
     <Compile Include="PROVEEDOR_INSUMO.cs" />
     <Compile Include="REQUERIMIENTO_INSUMO.cs" />
     <Compile Include="RESERVA.cs" />
+    <Compile Include="SALDO_CLIENTE_DTO.cs" />
     <Compile Include="SERVICIO_CATERING.cs" />
     <Compile Include="TRADUCCION.cs" />
     <Compile Include="USUARIO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VOLUMEN_EVENTOS_DTO.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

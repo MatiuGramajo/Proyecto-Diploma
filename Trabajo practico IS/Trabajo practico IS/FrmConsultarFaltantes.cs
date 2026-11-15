@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace Trabajo_practico_IS
 {
-    public partial class FrmConsultarFaltantes : Form
+    public partial class FrmConsultarFaltantes : Form,BE.IObserver
     {
         private BLL.REQUERIMIENTO bllRequerimiento = new BLL.REQUERIMIENTO();
         private BLL.RESERVA bllReserva = new BLL.RESERVA();
         private List<BE.REQUERIMIENTO_INSUMO> listaConsolidada = new List<BE.REQUERIMIENTO_INSUMO>();
         private List<BE.RESERVA> listaEventosPlanificados = new List<BE.RESERVA>();
+        private BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
 
         public FrmConsultarFaltantes()
         {
@@ -24,7 +25,9 @@ namespace Trabajo_practico_IS
 
         private void FrmConsultarFaltantes_Load(object sender, EventArgs e)
         {
+
             MostrarFormulario();
+            InicializarIdioma();
         }
 
         private void MostrarFormulario()
@@ -63,6 +66,7 @@ namespace Trabajo_practico_IS
                 listaEventosPlanificados = bllReserva.ListarReservasPlanificadas(fechaDesde, fechaHasta);
 
                 dgvEventosPlanificados.DataSource = null;
+                dgvEventosPlanificados.Columns.Clear(); 
                 dgvEventosPlanificados.DataSource = listaEventosPlanificados;
 
                 FormatearGrillaEventos();
@@ -77,18 +81,66 @@ namespace Trabajo_practico_IS
         {
             if (dgvEventosPlanificados.Columns.Count == 0) return;
 
-            if (dgvEventosPlanificados.Columns["ClienteAsociado"] != null) dgvEventosPlanificados.Columns["ClienteAsociado"].Visible = false;
-            if (dgvEventosPlanificados.Columns["PresupuestoAsociado"] != null) dgvEventosPlanificados.Columns["PresupuestoAsociado"].Visible = false;
-            if (dgvEventosPlanificados.Columns["Id_Cliente"] != null) dgvEventosPlanificados.Columns["Id_Cliente"].Visible = false;
-            if (dgvEventosPlanificados.Columns["Id_Presupuesto"] != null) dgvEventosPlanificados.Columns["Id_Presupuesto"].Visible = false;
-            if (dgvEventosPlanificados.Columns["Id_Usuario"] != null) dgvEventosPlanificados.Columns["Id_Usuario"].Visible = false;
+            dgvEventosPlanificados.ReadOnly = true;
+            dgvEventosPlanificados.AllowUserToAddRows = false;
+            dgvEventosPlanificados.AllowUserToDeleteRows = false;
+            dgvEventosPlanificados.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvEventosPlanificados.MultiSelect = false;
+            dgvEventosPlanificados.RowHeadersVisible = false;
+            dgvEventosPlanificados.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            dgvEventosPlanificados.Columns["Id_Reserva"].HeaderText = "N° Reserva";
-            dgvEventosPlanificados.Columns["Fecha_Evento"].HeaderText = "Fecha Evento";
-            dgvEventosPlanificados.Columns["Monto_Senia"].HeaderText = "Seña Abonada";
-            dgvEventosPlanificados.Columns["Estado"].HeaderText = "Estado";
-            dgvEventosPlanificados.Columns["Costo_Total_Real"].HeaderText = "Costo Total";
-            dgvEventosPlanificados.Columns["Saldo_Pendiente"].HeaderText = "Saldo Pendiente";
+            foreach (DataGridViewColumn col in dgvEventosPlanificados.Columns)
+            {
+                col.Visible = false;
+            }
+
+            dgvEventosPlanificados.Columns.Add("ColCliente", "Cliente");
+            dgvEventosPlanificados.Columns.Add("ColEvento", "Tipo de Evento");
+
+            if (dgvEventosPlanificados.Columns.Contains("Id_Reserva"))
+            {
+                var col = dgvEventosPlanificados.Columns["Id_Reserva"];
+                col.Visible = true;
+                col.HeaderText = "Nro.";
+                col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                col.Width = 45;
+                col.DisplayIndex = 0;
+            }
+
+            var colCliente = dgvEventosPlanificados.Columns["ColCliente"];
+            colCliente.Visible = true;
+            colCliente.DisplayIndex = 1; 
+
+            var colEvento = dgvEventosPlanificados.Columns["ColEvento"];
+            colEvento.Visible = true;
+            colEvento.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            colEvento.Width = 115;
+            colEvento.DisplayIndex = 2;
+
+            if (dgvEventosPlanificados.Columns.Contains("Fecha_Evento"))
+            {
+                var col = dgvEventosPlanificados.Columns["Fecha_Evento"];
+                col.Visible = true;
+                col.HeaderText = "Fecha";
+                col.DefaultCellStyle.Format = "dd/MM/yyyy";
+                col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                col.Width = 80;
+                col.DisplayIndex = 3;
+            }
+
+            foreach (DataGridViewRow row in dgvEventosPlanificados.Rows)
+            {
+                if (row.DataBoundItem is BE.RESERVA res)
+                {
+                    row.Cells["ColCliente"].Value = res.ClienteAsociado != null
+                        ? res.ClienteAsociado.Nombre_Completo
+                        : $"Cliente #{res.Id_Cliente}";
+
+                    row.Cells["ColEvento"].Value = res.PresupuestoAsociado != null
+                        ? res.PresupuestoAsociado.Tipo_Evento
+                        : "Evento";
+                }
+            }
         }
 
         private void ActualizarEstadoFiltros()
@@ -202,14 +254,47 @@ namespace Trabajo_practico_IS
         {
             if (dgvRequerimientos.Columns.Count == 0) return;
 
-            dgvRequerimientos.Columns["Id_Insumo"].HeaderText = "Código Insumo";
-            dgvRequerimientos.Columns["Nombre_Insumo"].HeaderText = "Insumo";
+            dgvRequerimientos.ReadOnly = true;
+            dgvRequerimientos.AllowUserToAddRows = false;
+            dgvRequerimientos.AllowUserToDeleteRows = false;
+            dgvRequerimientos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvRequerimientos.RowHeadersVisible = false;
+            dgvRequerimientos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            if (dgvRequerimientos.Columns.Contains("Id_Insumo"))
+                dgvRequerimientos.Columns["Id_Insumo"].Visible = false;
+
+            dgvRequerimientos.Columns["Nombre_Insumo"].HeaderText = "Insumo"; 
+
             dgvRequerimientos.Columns["Rubro"].HeaderText = "Rubro";
-            dgvRequerimientos.Columns["Unidad_Medida"].HeaderText = "U. Medida";
-            dgvRequerimientos.Columns["Cantidad_Requerida"].HeaderText = "Cant. Requerida";
-            dgvRequerimientos.Columns["Stock_Actual"].HeaderText = "Stock Actual";
+            dgvRequerimientos.Columns["Rubro"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            dgvRequerimientos.Columns["Rubro"].Width = 75;
+
+            dgvRequerimientos.Columns["Unidad_Medida"].HeaderText = "U. Med.";
+            dgvRequerimientos.Columns["Unidad_Medida"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            dgvRequerimientos.Columns["Unidad_Medida"].Width = 55;
+
+            dgvRequerimientos.Columns["Cantidad_Requerida"].HeaderText = "Requerido";
+            dgvRequerimientos.Columns["Cantidad_Requerida"].DefaultCellStyle.Format = "N2";
+            dgvRequerimientos.Columns["Cantidad_Requerida"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dgvRequerimientos.Columns["Cantidad_Requerida"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            dgvRequerimientos.Columns["Cantidad_Requerida"].Width = 70;
+
+            dgvRequerimientos.Columns["Stock_Actual"].HeaderText = "Stock";
+            dgvRequerimientos.Columns["Stock_Actual"].DefaultCellStyle.Format = "N2";
+            dgvRequerimientos.Columns["Stock_Actual"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dgvRequerimientos.Columns["Stock_Actual"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            dgvRequerimientos.Columns["Stock_Actual"].Width = 65;
+
             dgvRequerimientos.Columns["Cantidad_Faltante"].HeaderText = "Faltante";
+            dgvRequerimientos.Columns["Cantidad_Faltante"].DefaultCellStyle.Format = "N2";
+            dgvRequerimientos.Columns["Cantidad_Faltante"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+            dgvRequerimientos.Columns["Cantidad_Faltante"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            dgvRequerimientos.Columns["Cantidad_Faltante"].Width = 65;
+
             dgvRequerimientos.Columns["Estado_Stock"].HeaderText = "Estado";
+            dgvRequerimientos.Columns["Estado_Stock"].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+            dgvRequerimientos.Columns["Estado_Stock"].Width = 75;
 
             foreach (DataGridViewRow row in dgvRequerimientos.Rows)
             {
@@ -227,6 +312,8 @@ namespace Trabajo_practico_IS
                     }
                 }
             }
+
+            dgvRequerimientos.ClearSelection();
         }
 
         private void chkSoloFaltantes_CheckedChanged(object sender, EventArgs e)
@@ -248,6 +335,76 @@ namespace Trabajo_practico_IS
             {
                 this.Close();
 
+            }
+        }
+
+        private void FrmConsultarFaltantes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Servicios.IDIOMAS.GetInstancia().Desuscribir(this);
+        }
+        private void InicializarIdioma()
+        {
+            Servicios.IDIOMAS.GetInstancia().Suscribir(this);
+
+            CBXidiomas.SelectedIndexChanged -= CBXidiomas_SelectedIndexChanged;
+            CBXidiomas.DataSource = GestorIdioma.Listar();
+            CBXidiomas.DisplayMember = "Nombre";
+            CBXidiomas.ValueMember = "Id";
+            CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
+            CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
+
+            ActualizarIdioma();
+        }
+
+        public void ActualizarIdioma()
+        {
+            var traducciones = Servicios.IDIOMAS.GetInstancia().Traducciones;
+            TraducirControles(this.Controls, traducciones);
+
+            if (traducciones.TryGetValue($"{this.Name}_Titulo", out string textoTitulo))
+                this.Text = textoTitulo;
+
+            if (CBXidiomas.Items.Count > 0)
+            {
+                CBXidiomas.SelectedIndexChanged -= CBXidiomas_SelectedIndexChanged;
+                CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
+                CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
+            }
+        }
+
+        private void TraducirControles(Control.ControlCollection controles, Dictionary<string, string> traducciones)
+        {
+            foreach (Control control in controles)
+            {
+                string clave = $"{this.Name}_{control.Name}";
+                if (traducciones.TryGetValue(clave, out string textoTraducido))
+                    control.Text = textoTraducido;
+
+                if (control.HasChildren)
+                    TraducirControles(control.Controls, traducciones);
+            }
+        }
+
+        private void CBXidiomas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CBXidiomas.SelectedValue != null && int.TryParse(CBXidiomas.SelectedValue.ToString(), out int idIdioma))
+                {
+                    var traducciones = GestorIdioma.ObtenerTraducciones(idIdioma);
+                    Servicios.IDIOMAS.GetInstancia().CambiarIdioma(idIdioma, traducciones);
+
+                    if (Servicios.SESION.GetInstancia().usuactual != null)
+                    {
+                        BLL.USUARIO gestorUsu = new BLL.USUARIO();
+                        gestorUsu.ActualizarIdiomaUsuario(Servicios.SESION.GetInstancia().usuactual, idIdioma);
+                        Servicios.SESION.GetInstancia().usuactual.IdIdioma = idIdioma;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cambiar el idioma: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

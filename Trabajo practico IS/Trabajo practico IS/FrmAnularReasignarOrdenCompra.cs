@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Trabajo_practico_IS
 {
-    public partial class FrmAnularReasignarOrdenCompra : Form
+    public partial class FrmAnularReasignarOrdenCompra : Form, BE.IObserver
     {
         private BLL.ORDEN_COMPRA bllOrdenCompra = new BLL.ORDEN_COMPRA();
         private BLL.PROVEEDOR_INSUMO bllProveedorInsumo = new BLL.PROVEEDOR_INSUMO();
-
+        private BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
         private List<BE.ORDEN_COMPRA> listaOrdenesEmitidas = new List<BE.ORDEN_COMPRA>();
         private BE.ORDEN_COMPRA ordenSeleccionada = null;
         public FrmAnularReasignarOrdenCompra()
@@ -25,6 +25,7 @@ namespace Trabajo_practico_IS
         private void FrmAnularReasignarOrdenCompra_Load(object sender, EventArgs e)
         {
             MostrarFormulario();
+            InicializarIdioma();
         }
 
         private void MostrarFormulario()
@@ -56,11 +57,13 @@ namespace Trabajo_practico_IS
             listaOrdenesEmitidas = bllOrdenCompra.ListarOrdenesEmitidas();
 
             dgvOrdenesEmitidas.DataSource = null;
-            dgvOrdenesEmitidas.DataSource = listaOrdenesEmitidas;
+            dgvOrdenesEmitidas.Columns.Clear();
+            dgvOrdenesEmitidas.DataSource = new BindingSource { DataSource = listaOrdenesEmitidas };
 
             FormatearGrillaOrdenes();
 
             dgvDetalleOrden.DataSource = null;
+            dgvDetalleOrden.Columns.Clear();
             ordenSeleccionada = null;
         }
 
@@ -68,10 +71,60 @@ namespace Trabajo_practico_IS
         {
             if (dgvOrdenesEmitidas.Columns.Count == 0) return;
 
-            if (dgvOrdenesEmitidas.Columns["Id_OrdenCompra"] != null) dgvOrdenesEmitidas.Columns["Id_OrdenCompra"].HeaderText = "N° Orden";
-            if (dgvOrdenesEmitidas.Columns["Id_Proveedor"] != null) dgvOrdenesEmitidas.Columns["Id_Proveedor"].HeaderText = "Cód. Proveedor";
-            if (dgvOrdenesEmitidas.Columns["Fecha_Emision"] != null) dgvOrdenesEmitidas.Columns["Fecha_Emision"].HeaderText = "Fecha Emisión";
-            if (dgvOrdenesEmitidas.Columns["Estado"] != null) dgvOrdenesEmitidas.Columns["Estado"].HeaderText = "Estado";
+            // 1. Configuración de solo lectura y selección completa
+            dgvOrdenesEmitidas.ReadOnly = true;
+            dgvOrdenesEmitidas.AllowUserToAddRows = false;
+            dgvOrdenesEmitidas.AllowUserToDeleteRows = false;
+            dgvOrdenesEmitidas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvOrdenesEmitidas.MultiSelect = false;
+            dgvOrdenesEmitidas.RowHeadersVisible = false;
+            dgvOrdenesEmitidas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // 2. Ocultar todas las columnas por defecto
+            foreach (DataGridViewColumn col in dgvOrdenesEmitidas.Columns)
+            {
+                col.Visible = false;
+            }
+
+            // 3. Agregar columna manual para el nombre del proveedor
+            dgvOrdenesEmitidas.Columns.Add("ColProveedor", "Proveedor");
+
+            // 4. Habilitar, ordenar y formatear solo lo necesario
+            if (dgvOrdenesEmitidas.Columns.Contains("Id_OrdenCompra"))
+            {
+                var col = dgvOrdenesEmitidas.Columns["Id_OrdenCompra"];
+                col.Visible = true;
+                col.HeaderText = "N° Orden";
+                col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                col.Width = 65;
+                col.DisplayIndex = 0;
+            }
+
+            var colProv = dgvOrdenesEmitidas.Columns["ColProveedor"];
+            colProv.Visible = true;
+            colProv.DisplayIndex = 1; // Ocupa el espacio restante automáticamente
+
+            if (dgvOrdenesEmitidas.Columns.Contains("Fecha_Emision"))
+            {
+                var col = dgvOrdenesEmitidas.Columns["Fecha_Emision"];
+                col.Visible = true;
+                col.HeaderText = "Fecha Emisión";
+                col.DefaultCellStyle.Format = "dd/MM/yyyy";
+                col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                col.Width = 90;
+                col.DisplayIndex = 2;
+            }
+
+            // 5. Completar la Razón Social usando la lista ya cargada en cmbProveedores
+            var proveedores = cmbProveedores.DataSource as List<BE.PROVEEDOR_INSUMO>;
+            foreach (DataGridViewRow row in dgvOrdenesEmitidas.Rows)
+            {
+                if (row.DataBoundItem is BE.ORDEN_COMPRA ord)
+                {
+                    var prov = proveedores?.FirstOrDefault(p => p.Id_Proveedor == ord.Id_Proveedor);
+                    row.Cells["ColProveedor"].Value = prov != null ? prov.Razon_Social : $"Proveedor #{ord.Id_Proveedor}";
+                }
+            }
         }
 
         private void ActualizarEstadoControles()
@@ -92,7 +145,8 @@ namespace Trabajo_practico_IS
                 if (ordenSeleccionada != null)
                 {
                     dgvDetalleOrden.DataSource = null;
-                    dgvDetalleOrden.DataSource = ordenSeleccionada.Detalles;
+                    dgvDetalleOrden.Columns.Clear();
+                    dgvDetalleOrden.DataSource = new BindingSource { DataSource = ordenSeleccionada.Detalles };
                     FormatearGrillaDetalle();
                 }
             }
@@ -102,12 +156,40 @@ namespace Trabajo_practico_IS
         {
             if (dgvDetalleOrden.Columns.Count == 0) return;
 
-            if (dgvDetalleOrden.Columns["Id_Detalle"] != null) dgvDetalleOrden.Columns["Id_Detalle"].Visible = false;
-            if (dgvDetalleOrden.Columns["Id_OrdenCompra"] != null) dgvDetalleOrden.Columns["Id_OrdenCompra"].Visible = false;
-            if (dgvDetalleOrden.Columns["Cantidad_Recibida"] != null) dgvDetalleOrden.Columns["Cantidad_Recibida"].Visible = false;
+            // 1. Configuración de solo lectura y ajuste visual
+            dgvDetalleOrden.ReadOnly = true;
+            dgvDetalleOrden.AllowUserToAddRows = false;
+            dgvDetalleOrden.AllowUserToDeleteRows = false;
+            dgvDetalleOrden.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvDetalleOrden.MultiSelect = false;
+            dgvDetalleOrden.RowHeadersVisible = false;
+            dgvDetalleOrden.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            if (dgvDetalleOrden.Columns["Nombre_Insumo"] != null) dgvDetalleOrden.Columns["Nombre_Insumo"].HeaderText = "Insumo";
-            if (dgvDetalleOrden.Columns["Cantidad_Solicitada"] != null) dgvDetalleOrden.Columns["Cantidad_Solicitada"].HeaderText = "Cant. Solicitada";
+            // 2. Ocultar todas las columnas por defecto (incluye Id_Insumo, Id_Detalle, etc.)
+            foreach (DataGridViewColumn col in dgvDetalleOrden.Columns)
+            {
+                col.Visible = false;
+            }
+
+            // 3. Mostrar y ordenar solo Insumo y Cantidad Solicitada
+            if (dgvDetalleOrden.Columns.Contains("Nombre_Insumo"))
+            {
+                var col = dgvDetalleOrden.Columns["Nombre_Insumo"];
+                col.Visible = true;
+                col.HeaderText = "Insumo";
+                col.DisplayIndex = 0; // Ocupa el ancho restante para que no se corte el texto
+            }
+
+            if (dgvDetalleOrden.Columns.Contains("Cantidad_Solicitada"))
+            {
+                var col = dgvDetalleOrden.Columns["Cantidad_Solicitada"];
+                col.Visible = true;
+                col.HeaderText = "Cant. Solicitada";
+                col.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                col.AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
+                col.Width = 105;
+                col.DisplayIndex = 1;
+            }
         }
 
         private void rbAnular_CheckedChanged(object sender, EventArgs e)
@@ -195,6 +277,75 @@ namespace Trabajo_practico_IS
 
             }
 
+        }
+
+        private void InicializarIdioma()
+        {
+            Servicios.IDIOMAS.GetInstancia().Suscribir(this);
+
+            CBXidiomas.SelectedIndexChanged -= CBXidiomas_SelectedIndexChanged;
+            CBXidiomas.DataSource = GestorIdioma.Listar();
+            CBXidiomas.DisplayMember = "Nombre";
+            CBXidiomas.ValueMember = "Id";
+            CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
+            CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
+
+            ActualizarIdioma();
+        }
+
+        public void ActualizarIdioma()
+        {
+            var traducciones = Servicios.IDIOMAS.GetInstancia().Traducciones;
+            TraducirControles(this.Controls, traducciones);
+
+            if (traducciones.TryGetValue($"{this.Name}_Titulo", out string textoTitulo))
+                this.Text = textoTitulo;
+
+            if (CBXidiomas.Items.Count > 0)
+            {
+                CBXidiomas.SelectedIndexChanged -= CBXidiomas_SelectedIndexChanged;
+                CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
+                CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
+            }
+        }
+        private void TraducirControles(Control.ControlCollection controles, Dictionary<string, string> traducciones)
+        {
+            foreach (Control control in controles)
+            {
+                string clave = $"{this.Name}_{control.Name}";
+                if (traducciones.TryGetValue(clave, out string textoTraducido))
+                    control.Text = textoTraducido;
+
+                if (control.HasChildren)
+                    TraducirControles(control.Controls, traducciones);
+            }
+        }
+        private void CBXidiomas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CBXidiomas.SelectedValue != null && int.TryParse(CBXidiomas.SelectedValue.ToString(), out int idIdioma))
+                {
+                    var traducciones = GestorIdioma.ObtenerTraducciones(idIdioma);
+                    Servicios.IDIOMAS.GetInstancia().CambiarIdioma(idIdioma, traducciones);
+
+                    if (Servicios.SESION.GetInstancia().usuactual != null)
+                    {
+                        BLL.USUARIO gestorUsu = new BLL.USUARIO();
+                        gestorUsu.ActualizarIdiomaUsuario(Servicios.SESION.GetInstancia().usuactual, idIdioma);
+                        Servicios.SESION.GetInstancia().usuactual.IdIdioma = idIdioma;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cambiar el idioma: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void FrmAnularReasignarOrdenCompra_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Servicios.IDIOMAS.GetInstancia().Desuscribir(this);
         }
     }
 }

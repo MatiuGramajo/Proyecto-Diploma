@@ -71,7 +71,6 @@ namespace Trabajo_practico_IS
         {
             if (dgvOrdenesEmitidas.Columns.Count == 0) return;
 
-            // 1. Configuración de solo lectura y selección completa
             dgvOrdenesEmitidas.ReadOnly = true;
             dgvOrdenesEmitidas.AllowUserToAddRows = false;
             dgvOrdenesEmitidas.AllowUserToDeleteRows = false;
@@ -80,16 +79,13 @@ namespace Trabajo_practico_IS
             dgvOrdenesEmitidas.RowHeadersVisible = false;
             dgvOrdenesEmitidas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            // 2. Ocultar todas las columnas por defecto
             foreach (DataGridViewColumn col in dgvOrdenesEmitidas.Columns)
             {
                 col.Visible = false;
             }
 
-            // 3. Agregar columna manual para el nombre del proveedor
             dgvOrdenesEmitidas.Columns.Add("ColProveedor", "Proveedor");
 
-            // 4. Habilitar, ordenar y formatear solo lo necesario
             if (dgvOrdenesEmitidas.Columns.Contains("Id_OrdenCompra"))
             {
                 var col = dgvOrdenesEmitidas.Columns["Id_OrdenCompra"];
@@ -102,7 +98,7 @@ namespace Trabajo_practico_IS
 
             var colProv = dgvOrdenesEmitidas.Columns["ColProveedor"];
             colProv.Visible = true;
-            colProv.DisplayIndex = 1; // Ocupa el espacio restante automáticamente
+            colProv.DisplayIndex = 1; 
 
             if (dgvOrdenesEmitidas.Columns.Contains("Fecha_Emision"))
             {
@@ -115,7 +111,6 @@ namespace Trabajo_practico_IS
                 col.DisplayIndex = 2;
             }
 
-            // 5. Completar la Razón Social usando la lista ya cargada en cmbProveedores
             var proveedores = cmbProveedores.DataSource as List<BE.PROVEEDOR_INSUMO>;
             foreach (DataGridViewRow row in dgvOrdenesEmitidas.Rows)
             {
@@ -156,7 +151,6 @@ namespace Trabajo_practico_IS
         {
             if (dgvDetalleOrden.Columns.Count == 0) return;
 
-            // 1. Configuración de solo lectura y ajuste visual
             dgvDetalleOrden.ReadOnly = true;
             dgvDetalleOrden.AllowUserToAddRows = false;
             dgvDetalleOrden.AllowUserToDeleteRows = false;
@@ -165,19 +159,17 @@ namespace Trabajo_practico_IS
             dgvDetalleOrden.RowHeadersVisible = false;
             dgvDetalleOrden.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            // 2. Ocultar todas las columnas por defecto (incluye Id_Insumo, Id_Detalle, etc.)
             foreach (DataGridViewColumn col in dgvDetalleOrden.Columns)
             {
                 col.Visible = false;
             }
 
-            // 3. Mostrar y ordenar solo Insumo y Cantidad Solicitada
             if (dgvDetalleOrden.Columns.Contains("Nombre_Insumo"))
             {
                 var col = dgvDetalleOrden.Columns["Nombre_Insumo"];
                 col.Visible = true;
                 col.HeaderText = "Insumo";
-                col.DisplayIndex = 0; // Ocupa el ancho restante para que no se corte el texto
+                col.DisplayIndex = 0; 
             }
 
             if (dgvDetalleOrden.Columns.Contains("Cantidad_Solicitada"))

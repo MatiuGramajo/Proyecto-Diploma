@@ -14,12 +14,10 @@ namespace DAL
         {
             acceso.Abrir();
 
-            // Creamos la lista de parámetros con el formato de tu clase ACCESO
             List<SqlParameter> parametros = new List<SqlParameter>();
             parametros.Add(acceso.CrearParametro("@Desde", desde));
             parametros.Add(acceso.CrearParametro("@Hasta", hasta));
 
-            // Pasamos los parámetros al método Leer
             DataTable dt = acceso.Leer("OBTENER_SALDOS_PENDIENTES_CLIENTES", parametros);
             acceso.Cerrar();
 
@@ -38,43 +36,7 @@ namespace DAL
             }
             return lista;
         }
-        //public List<BE.SALDO_CLIENTE_DTO> ObtenerSaldosPendientes()
-        //{
-        //    acceso.Abrir();
-        //    DataTable dt = acceso.Leer("OBTENER_SALDOS_PENDIENTES_CLIENTES");
-        //    acceso.Cerrar();
 
-        //    List<BE.SALDO_CLIENTE_DTO> lista = new List<BE.SALDO_CLIENTE_DTO>();
-        //    foreach (DataRow row in dt.Rows)
-        //    {
-        //        lista.Add(new BE.SALDO_CLIENTE_DTO
-        //        {
-        //            Id_Reserva = Convert.ToInt32(row["Id_Reserva"]),
-        //            Cliente = row["Cliente"].ToString(),
-        //            Fecha_Evento = Convert.ToDateTime(row["Fecha_Evento"]),
-        //            Costo_Total = Convert.ToDecimal(row["Costo_Total"]),
-        //            Monto_Senia = Convert.ToDecimal(row["Monto_Senia"]),
-        //            Saldo_Pendiente = Convert.ToDecimal(row["Saldo_Pendiente"])
-        //        });
-        //    }
-        //    return lista;
-        //}
-        //public BE.INGRESOS_PROYECTADOS_DTO ObtenerIngresosProyectados(DateTime desde, DateTime hasta)
-        //{
-        //    acceso.Abrir();
-        //    DataTable dt = acceso.Leer("OBTENER_INGRESOS_FINANCIEROS");
-        //    acceso.Cerrar();
-
-        //    BE.INGRESOS_PROYECTADOS_DTO dto = new BE.INGRESOS_PROYECTADOS_DTO();
-        //    if (dt.Rows.Count > 0)
-        //    {
-        //        DataRow row = dt.Rows[0];
-        //        dto.Total_Cobrado = Convert.ToDecimal(row["TotalCobrado"]);
-        //        dto.Total_Pendiente = Convert.ToDecimal(row["TotalPendiente"]);
-        //        dto.Total_Proyectado = Convert.ToDecimal(row["TotalProyectado"]);
-        //    }
-        //    return dto;
-        //}
         public BE.INGRESOS_PROYECTADOS_DTO ObtenerIngresosProyectados(DateTime desde, DateTime hasta)
         {
             acceso.Abrir();
@@ -118,23 +80,7 @@ namespace DAL
             }
             return dto;
         }
-        //public BE.CONVERSION_PRESUPUESTO_DTO ObtenerConversionPresupuestos()
-        //{
-        //    acceso.Abrir();
-        //    DataTable dt = acceso.Leer("OBTENER_ESTADISTICAS_PRESUPUESTOS");
-        //    acceso.Cerrar();
-
-        //    BE.CONVERSION_PRESUPUESTO_DTO dto = new BE.CONVERSION_PRESUPUESTO_DTO();
-        //    if (dt.Rows.Count > 0)
-        //    {
-        //        DataRow row = dt.Rows[0];
-        //        dto.Cantidad_Aprobados = Convert.ToInt32(row["Aprobados"]);
-        //        dto.Cantidad_Pendientes = Convert.ToInt32(row["Pendientes"]);
-        //        dto.Cantidad_Rechazados = Convert.ToInt32(row["Rechazados"]);
-        //        dto.Total_Presupuestos = Convert.ToInt32(row["Total"]);
-        //    }
-        //    return dto;
-        //}
+       
         public override void Alta(MP_DASHBORD_FINANCIERO obj)
         {
             throw new NotImplementedException();

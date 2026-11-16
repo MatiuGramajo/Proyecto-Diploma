@@ -52,7 +52,7 @@
             this.groupBox1.Controls.Add(this.lblTotalEventosInfo);
             this.groupBox1.Location = new System.Drawing.Point(12, 24);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(478, 203);
+            this.groupBox1.Size = new System.Drawing.Size(549, 203);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Metricas";
@@ -106,7 +106,7 @@
             // 
             this.groupBox2.Controls.Add(this.btnAplicarRatios);
             this.groupBox2.Controls.Add(this.dgvRatios);
-            this.groupBox2.Location = new System.Drawing.Point(539, 40);
+            this.groupBox2.Location = new System.Drawing.Point(567, 24);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(457, 307);
             this.groupBox2.TabIndex = 2;

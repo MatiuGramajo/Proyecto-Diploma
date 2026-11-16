@@ -35,12 +35,31 @@
             this.controlDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controlDePermisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controlDeIdiomasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.restauracionDeBaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.historialDeCambiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionCatalogoDeInsumosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestionRecetarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarFaltantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calendarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarPagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fichaTecnicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.liquidacionFinalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionProveedoresDeInsumosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarOrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.anularReasignarOrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.personalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionarPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignarPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calibrarRatiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarEvaluacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.auditoriaYReportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.metricasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.LBLbienvenida = new System.Windows.Forms.Label();
             this.CBXidiomas = new System.Windows.Forms.ComboBox();
@@ -49,28 +68,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.eventosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.comprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.personalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.auditoriaYReportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calendarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarPagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fichaTecnicaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.liquidacionFinalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestionProveedoresDeInsumosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarOrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.anularReasignarOrdenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarRecepcionDeMercaderiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestionarPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.asignarPersonalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.calibrarRatiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarEvaluacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.BitacoraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.metricasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnLiquidacionFinal = new System.Windows.Forms.Button();
-            this.btnCalibrarRatios = new System.Windows.Forms.Button();
             this.btnRegistrarOrdenCompra = new System.Windows.Forms.Button();
+            this.btnCalibrarRatios = new System.Windows.Forms.Button();
+            this.btnLiquidacionFinal = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -144,6 +144,12 @@
             this.controlDeIdiomasToolStripMenuItem.Text = "Control de idiomas";
             this.controlDeIdiomasToolStripMenuItem.Click += new System.EventHandler(this.controlDeIdiomasToolStripMenuItem_Click);
             // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(258, 24);
+            this.toolStripMenuItem2.Text = "------------------------------------";
+            // 
             // restauracionDeBaseToolStripMenuItem
             // 
             this.restauracionDeBaseToolStripMenuItem.Name = "restauracionDeBaseToolStripMenuItem";
@@ -190,6 +196,147 @@
             this.consultarFaltantesToolStripMenuItem.Size = new System.Drawing.Size(294, 24);
             this.consultarFaltantesToolStripMenuItem.Text = "Consultar Faltantes";
             this.consultarFaltantesToolStripMenuItem.Click += new System.EventHandler(this.consultarFaltantesToolStripMenuItem_Click);
+            // 
+            // eventosToolStripMenuItem
+            // 
+            this.eventosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calendarioToolStripMenuItem,
+            this.registrarPagoToolStripMenuItem,
+            this.fichaTecnicaToolStripMenuItem,
+            this.liquidacionFinalToolStripMenuItem});
+            this.eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
+            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
+            this.eventosToolStripMenuItem.Text = "Eventos";
+            // 
+            // calendarioToolStripMenuItem
+            // 
+            this.calendarioToolStripMenuItem.Name = "calendarioToolStripMenuItem";
+            this.calendarioToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.calendarioToolStripMenuItem.Text = "Calendario";
+            this.calendarioToolStripMenuItem.Click += new System.EventHandler(this.calendarioToolStripMenuItem_Click);
+            // 
+            // registrarPagoToolStripMenuItem
+            // 
+            this.registrarPagoToolStripMenuItem.Name = "registrarPagoToolStripMenuItem";
+            this.registrarPagoToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.registrarPagoToolStripMenuItem.Text = "Registrar Pago";
+            this.registrarPagoToolStripMenuItem.Click += new System.EventHandler(this.registrarPagoToolStripMenuItem_Click);
+            // 
+            // fichaTecnicaToolStripMenuItem
+            // 
+            this.fichaTecnicaToolStripMenuItem.Name = "fichaTecnicaToolStripMenuItem";
+            this.fichaTecnicaToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.fichaTecnicaToolStripMenuItem.Text = "Ficha Tecnica";
+            this.fichaTecnicaToolStripMenuItem.Click += new System.EventHandler(this.fichaTecnicaToolStripMenuItem_Click_1);
+            // 
+            // liquidacionFinalToolStripMenuItem
+            // 
+            this.liquidacionFinalToolStripMenuItem.Name = "liquidacionFinalToolStripMenuItem";
+            this.liquidacionFinalToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.liquidacionFinalToolStripMenuItem.Text = "Liquidacion Final";
+            this.liquidacionFinalToolStripMenuItem.Click += new System.EventHandler(this.liquidacionFinalToolStripMenuItem_Click_1);
+            // 
+            // comprasToolStripMenuItem
+            // 
+            this.comprasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gestionProveedoresDeInsumosToolStripMenuItem,
+            this.registrarOrdenDeCompraToolStripMenuItem,
+            this.anularReasignarOrdenDeCompraToolStripMenuItem,
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem});
+            this.comprasToolStripMenuItem.Name = "comprasToolStripMenuItem";
+            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+            this.comprasToolStripMenuItem.Text = "Compras";
+            // 
+            // gestionProveedoresDeInsumosToolStripMenuItem
+            // 
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Name = "gestionProveedoresDeInsumosToolStripMenuItem";
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Text = "Gestion Proveedores de Insumos";
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Click += new System.EventHandler(this.gestionProveedoresDeInsumosToolStripMenuItem_Click_1);
+            // 
+            // registrarOrdenDeCompraToolStripMenuItem
+            // 
+            this.registrarOrdenDeCompraToolStripMenuItem.Name = "registrarOrdenDeCompraToolStripMenuItem";
+            this.registrarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.registrarOrdenDeCompraToolStripMenuItem.Text = "Registrar Orden de Compra";
+            this.registrarOrdenDeCompraToolStripMenuItem.Click += new System.EventHandler(this.registrarOrdenDeCompraToolStripMenuItem_Click_1);
+            // 
+            // anularReasignarOrdenDeCompraToolStripMenuItem
+            // 
+            this.anularReasignarOrdenDeCompraToolStripMenuItem.Name = "anularReasignarOrdenDeCompraToolStripMenuItem";
+            this.anularReasignarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.anularReasignarOrdenDeCompraToolStripMenuItem.Text = "Anular/Reasignar Orden de Compra";
+            this.anularReasignarOrdenDeCompraToolStripMenuItem.Click += new System.EventHandler(this.anularReasignarOrdenDeCompraToolStripMenuItem_Click_1);
+            // 
+            // registrarRecepcionDeMercaderiaToolStripMenuItem
+            // 
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Name = "registrarRecepcionDeMercaderiaToolStripMenuItem";
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Text = "Registrar Recepcion de Mercaderia";
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Click += new System.EventHandler(this.registrarRecepcionDeMercaderiaToolStripMenuItem_Click_1);
+            // 
+            // personalToolStripMenuItem
+            // 
+            this.personalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gestionarPersonalToolStripMenuItem,
+            this.asignarPersonalToolStripMenuItem,
+            this.calibrarRatiosToolStripMenuItem,
+            this.registrarEvaluacionToolStripMenuItem});
+            this.personalToolStripMenuItem.Name = "personalToolStripMenuItem";
+            this.personalToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
+            this.personalToolStripMenuItem.Text = "Personal";
+            // 
+            // gestionarPersonalToolStripMenuItem
+            // 
+            this.gestionarPersonalToolStripMenuItem.Name = "gestionarPersonalToolStripMenuItem";
+            this.gestionarPersonalToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
+            this.gestionarPersonalToolStripMenuItem.Text = "Gestionar Personal";
+            this.gestionarPersonalToolStripMenuItem.Click += new System.EventHandler(this.gestionarPersonalToolStripMenuItem_Click_1);
+            // 
+            // asignarPersonalToolStripMenuItem
+            // 
+            this.asignarPersonalToolStripMenuItem.Name = "asignarPersonalToolStripMenuItem";
+            this.asignarPersonalToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
+            this.asignarPersonalToolStripMenuItem.Text = "Asignar Personal";
+            this.asignarPersonalToolStripMenuItem.Click += new System.EventHandler(this.asignarPersonalToolStripMenuItem_Click_1);
+            // 
+            // calibrarRatiosToolStripMenuItem
+            // 
+            this.calibrarRatiosToolStripMenuItem.Name = "calibrarRatiosToolStripMenuItem";
+            this.calibrarRatiosToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
+            this.calibrarRatiosToolStripMenuItem.Text = "Calibrar Ratios";
+            this.calibrarRatiosToolStripMenuItem.Click += new System.EventHandler(this.calibrarRatiosToolStripMenuItem_Click_1);
+            // 
+            // registrarEvaluacionToolStripMenuItem
+            // 
+            this.registrarEvaluacionToolStripMenuItem.Name = "registrarEvaluacionToolStripMenuItem";
+            this.registrarEvaluacionToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
+            this.registrarEvaluacionToolStripMenuItem.Text = "Registrar Evaluacion";
+            this.registrarEvaluacionToolStripMenuItem.Click += new System.EventHandler(this.registrarEvaluacionToolStripMenuItem_Click_1);
+            // 
+            // auditoriaYReportesToolStripMenuItem
+            // 
+            this.auditoriaYReportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.BitacoraToolStripMenuItem,
+            this.metricasToolStripMenuItem});
+            this.auditoriaYReportesToolStripMenuItem.Name = "auditoriaYReportesToolStripMenuItem";
+            this.auditoriaYReportesToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
+            this.auditoriaYReportesToolStripMenuItem.Text = "Auditoria y Reportes";
+            // 
+            // BitacoraToolStripMenuItem
+            // 
+            this.BitacoraToolStripMenuItem.Name = "BitacoraToolStripMenuItem";
+            this.BitacoraToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.BitacoraToolStripMenuItem.Tag = "BITACORA";
+            this.BitacoraToolStripMenuItem.Text = "Bitacora";
+            this.BitacoraToolStripMenuItem.Click += new System.EventHandler(this.BitacoraToolStripMenuItem_Click_1);
+            // 
+            // metricasToolStripMenuItem
+            // 
+            this.metricasToolStripMenuItem.Name = "metricasToolStripMenuItem";
+            this.metricasToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.metricasToolStripMenuItem.Text = "Metricas";
+            this.metricasToolStripMenuItem.Click += new System.EventHandler(this.metricasToolStripMenuItem_Click_1);
             // 
             // contextMenuStrip1
             // 
@@ -275,153 +422,19 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Acceso Rapido";
             // 
-            // eventosToolStripMenuItem
+            // btnRegistrarOrdenCompra
             // 
-            this.eventosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.calendarioToolStripMenuItem,
-            this.registrarPagoToolStripMenuItem,
-            this.fichaTecnicaToolStripMenuItem,
-            this.liquidacionFinalToolStripMenuItem});
-            this.eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
-            this.eventosToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
-            this.eventosToolStripMenuItem.Text = "Eventos";
-            // 
-            // comprasToolStripMenuItem
-            // 
-            this.comprasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gestionProveedoresDeInsumosToolStripMenuItem,
-            this.registrarOrdenDeCompraToolStripMenuItem,
-            this.anularReasignarOrdenDeCompraToolStripMenuItem,
-            this.registrarRecepcionDeMercaderiaToolStripMenuItem});
-            this.comprasToolStripMenuItem.Name = "comprasToolStripMenuItem";
-            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
-            this.comprasToolStripMenuItem.Text = "Compras";
-            // 
-            // personalToolStripMenuItem
-            // 
-            this.personalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gestionarPersonalToolStripMenuItem,
-            this.asignarPersonalToolStripMenuItem,
-            this.calibrarRatiosToolStripMenuItem,
-            this.registrarEvaluacionToolStripMenuItem});
-            this.personalToolStripMenuItem.Name = "personalToolStripMenuItem";
-            this.personalToolStripMenuItem.Size = new System.Drawing.Size(83, 24);
-            this.personalToolStripMenuItem.Text = "Personal";
-            // 
-            // auditoriaYReportesToolStripMenuItem
-            // 
-            this.auditoriaYReportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.BitacoraToolStripMenuItem,
-            this.metricasToolStripMenuItem});
-            this.auditoriaYReportesToolStripMenuItem.Name = "auditoriaYReportesToolStripMenuItem";
-            this.auditoriaYReportesToolStripMenuItem.Size = new System.Drawing.Size(168, 24);
-            this.auditoriaYReportesToolStripMenuItem.Text = "Auditoria y Reportes";
-            // 
-            // calendarioToolStripMenuItem
-            // 
-            this.calendarioToolStripMenuItem.Name = "calendarioToolStripMenuItem";
-            this.calendarioToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
-            this.calendarioToolStripMenuItem.Text = "Calendario";
-            this.calendarioToolStripMenuItem.Click += new System.EventHandler(this.calendarioToolStripMenuItem_Click);
-            // 
-            // registrarPagoToolStripMenuItem
-            // 
-            this.registrarPagoToolStripMenuItem.Name = "registrarPagoToolStripMenuItem";
-            this.registrarPagoToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
-            this.registrarPagoToolStripMenuItem.Text = "Registrar Pago";
-            // 
-            // fichaTecnicaToolStripMenuItem
-            // 
-            this.fichaTecnicaToolStripMenuItem.Name = "fichaTecnicaToolStripMenuItem";
-            this.fichaTecnicaToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
-            this.fichaTecnicaToolStripMenuItem.Text = "Ficha Tecnica";
-            // 
-            // liquidacionFinalToolStripMenuItem
-            // 
-            this.liquidacionFinalToolStripMenuItem.Name = "liquidacionFinalToolStripMenuItem";
-            this.liquidacionFinalToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
-            this.liquidacionFinalToolStripMenuItem.Text = "Liquidacion Final";
-            // 
-            // gestionProveedoresDeInsumosToolStripMenuItem
-            // 
-            this.gestionProveedoresDeInsumosToolStripMenuItem.Name = "gestionProveedoresDeInsumosToolStripMenuItem";
-            this.gestionProveedoresDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
-            this.gestionProveedoresDeInsumosToolStripMenuItem.Text = "Gestion Proveedores de Insumos";
-            // 
-            // registrarOrdenDeCompraToolStripMenuItem
-            // 
-            this.registrarOrdenDeCompraToolStripMenuItem.Name = "registrarOrdenDeCompraToolStripMenuItem";
-            this.registrarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
-            this.registrarOrdenDeCompraToolStripMenuItem.Text = "Registrar Orden de Compra";
-            // 
-            // anularReasignarOrdenDeCompraToolStripMenuItem
-            // 
-            this.anularReasignarOrdenDeCompraToolStripMenuItem.Name = "anularReasignarOrdenDeCompraToolStripMenuItem";
-            this.anularReasignarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
-            this.anularReasignarOrdenDeCompraToolStripMenuItem.Text = "Anular/Reasignar Orden de Compra";
-            // 
-            // registrarRecepcionDeMercaderiaToolStripMenuItem
-            // 
-            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Name = "registrarRecepcionDeMercaderiaToolStripMenuItem";
-            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
-            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Text = "Registrar Recepcion de Mercaderia";
-            // 
-            // gestionarPersonalToolStripMenuItem
-            // 
-            this.gestionarPersonalToolStripMenuItem.Name = "gestionarPersonalToolStripMenuItem";
-            this.gestionarPersonalToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
-            this.gestionarPersonalToolStripMenuItem.Text = "Gestionar Personal";
-            // 
-            // asignarPersonalToolStripMenuItem
-            // 
-            this.asignarPersonalToolStripMenuItem.Name = "asignarPersonalToolStripMenuItem";
-            this.asignarPersonalToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
-            this.asignarPersonalToolStripMenuItem.Text = "Asignar Personal";
-            // 
-            // calibrarRatiosToolStripMenuItem
-            // 
-            this.calibrarRatiosToolStripMenuItem.Name = "calibrarRatiosToolStripMenuItem";
-            this.calibrarRatiosToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
-            this.calibrarRatiosToolStripMenuItem.Text = "Calibrar Ratios";
-            // 
-            // registrarEvaluacionToolStripMenuItem
-            // 
-            this.registrarEvaluacionToolStripMenuItem.Name = "registrarEvaluacionToolStripMenuItem";
-            this.registrarEvaluacionToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
-            this.registrarEvaluacionToolStripMenuItem.Text = "Registrar Evaluacion";
-            // 
-            // BitacoraToolStripMenuItem
-            // 
-            this.BitacoraToolStripMenuItem.Name = "BitacoraToolStripMenuItem";
-            this.BitacoraToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.BitacoraToolStripMenuItem.Tag = "BITACORA";
-            this.BitacoraToolStripMenuItem.Text = "Bitacora";
-            // 
-            // metricasToolStripMenuItem
-            // 
-            this.metricasToolStripMenuItem.Name = "metricasToolStripMenuItem";
-            this.metricasToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
-            this.metricasToolStripMenuItem.Text = "Metricas";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(258, 24);
-            this.toolStripMenuItem2.Text = "------------------------------------";
-            // 
-            // btnLiquidacionFinal
-            // 
-            this.btnLiquidacionFinal.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnLiquidacionFinal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLiquidacionFinal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLiquidacionFinal.Location = new System.Drawing.Point(184, 21);
-            this.btnLiquidacionFinal.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLiquidacionFinal.Name = "btnLiquidacionFinal";
-            this.btnLiquidacionFinal.Size = new System.Drawing.Size(146, 58);
-            this.btnLiquidacionFinal.TabIndex = 13;
-            this.btnLiquidacionFinal.Text = "Liquidacion Final";
-            this.btnLiquidacionFinal.UseVisualStyleBackColor = false;
-            this.btnLiquidacionFinal.Click += new System.EventHandler(this.btnLiquidacionFinal_Click);
+            this.btnRegistrarOrdenCompra.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnRegistrarOrdenCompra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarOrdenCompra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRegistrarOrdenCompra.Location = new System.Drawing.Point(550, 21);
+            this.btnRegistrarOrdenCompra.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistrarOrdenCompra.Name = "btnRegistrarOrdenCompra";
+            this.btnRegistrarOrdenCompra.Size = new System.Drawing.Size(146, 58);
+            this.btnRegistrarOrdenCompra.TabIndex = 15;
+            this.btnRegistrarOrdenCompra.Text = "Registrar Orden de Compra";
+            this.btnRegistrarOrdenCompra.UseVisualStyleBackColor = false;
+            this.btnRegistrarOrdenCompra.Click += new System.EventHandler(this.btnRegistrarOrdenCompra_Click);
             // 
             // btnCalibrarRatios
             // 
@@ -437,19 +450,19 @@
             this.btnCalibrarRatios.UseVisualStyleBackColor = false;
             this.btnCalibrarRatios.Click += new System.EventHandler(this.btnCalibrarRatios_Click);
             // 
-            // btnRegistrarOrdenCompra
+            // btnLiquidacionFinal
             // 
-            this.btnRegistrarOrdenCompra.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnRegistrarOrdenCompra.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarOrdenCompra.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegistrarOrdenCompra.Location = new System.Drawing.Point(550, 21);
-            this.btnRegistrarOrdenCompra.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRegistrarOrdenCompra.Name = "btnRegistrarOrdenCompra";
-            this.btnRegistrarOrdenCompra.Size = new System.Drawing.Size(146, 58);
-            this.btnRegistrarOrdenCompra.TabIndex = 15;
-            this.btnRegistrarOrdenCompra.Text = "Registrar Orden de Compra";
-            this.btnRegistrarOrdenCompra.UseVisualStyleBackColor = false;
-            this.btnRegistrarOrdenCompra.Click += new System.EventHandler(this.btnRegistrarOrdenCompra_Click);
+            this.btnLiquidacionFinal.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnLiquidacionFinal.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLiquidacionFinal.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLiquidacionFinal.Location = new System.Drawing.Point(184, 21);
+            this.btnLiquidacionFinal.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLiquidacionFinal.Name = "btnLiquidacionFinal";
+            this.btnLiquidacionFinal.Size = new System.Drawing.Size(146, 58);
+            this.btnLiquidacionFinal.TabIndex = 13;
+            this.btnLiquidacionFinal.Text = "Liquidacion Final";
+            this.btnLiquidacionFinal.UseVisualStyleBackColor = false;
+            this.btnLiquidacionFinal.Click += new System.EventHandler(this.btnLiquidacionFinal_Click);
             // 
             // FrmMenuPrincipal
             // 

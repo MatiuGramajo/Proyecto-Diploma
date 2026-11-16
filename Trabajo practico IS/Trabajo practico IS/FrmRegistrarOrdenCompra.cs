@@ -292,36 +292,7 @@ namespace Trabajo_practico_IS
                     }
                 }
             }
-            //using (OpenFileDialog ofd = new OpenFileDialog())
-            //{
-            //    ofd.Title = "Seleccionar Orden de Compra en XML";
-            //    ofd.Filter = "Archivos XML (*.xml)|*.xml";
-
-            //    if (ofd.ShowDialog() == DialogResult.OK)
-            //    {
-            //        try
-            //        {
-            //            BE.ORDEN_COMPRA ordenImportada = bllOrdenCompra.ImportarOrdenXML(ofd.FileName);
-
-            //            if (ordenImportada == null || ordenImportada.Detalles == null)
-            //            {
-            //                MessageBox.Show("El archivo XML no contiene una Orden de Compra válida.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //                return;
-            //            }
-
-            //            cmbProveedores.SelectedValue = ordenImportada.Id_Proveedor;
-
-            //            listaDetalles = ordenImportada.Detalles;
-            //            ActualizarGrilla();
-
-            //            MessageBox.Show($"Orden N° {ordenImportada.Id_OrdenCompra} cargada correctamente ({listaDetalles.Count} insumos).", "XML Importado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //        }
-            //        catch (Exception ex)
-            //        {
-            //            MessageBox.Show("Error al leer el archivo XML: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //        }
-            //    }
-            //}
+            
         }
     }
 }

@@ -22,7 +22,6 @@ namespace DAL
                 return;
             }
 
-            // 2. Si es la primera consulta del programa, probamos SQLEXPRESS rápido (Timeout=2 seg)
             try
             {
                 cadenaValida = @"Data Source=.\SQLEXPRESS;Initial Catalog=BASE;Integrated Security=True;TrustServerCertificate=True;Connection Timeout=2;";
@@ -31,32 +30,12 @@ namespace DAL
             }
             catch
             {
-                // 3. Si falla en 2 segundos, es tu PC de desarrollo. Guardamos la instancia predeterminada.
                 cadenaValida = @"Data Source=.;Initial Catalog=BASE;Integrated Security=True;TrustServerCertificate=True;";
                 conexion.ConnectionString = cadenaValida;
                 conexion.Open();
             }
 
-            //try
-            //{
-            //    // 1. Primero intenta conectar a la PC del Cliente (SQLEXPRESS)
-            //    conexion = new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=BASE;Integrated Security=True;TrustServerCertificate=True;");
-            //    conexion.Open();
-            //}
-            //catch
-            //{
-            //    // 2. Si falla, asume que es tu PC de Desarrollo y conecta a la predeterminada (.)
-            //    conexion = new SqlConnection(@"Data Source=.;Initial Catalog=BASE;Integrated Security=True;TrustServerCertificate=True;");
-            //    conexion.Open();
-            //}
-            //conexion = new SqlConnection();
-            ////conexion.ConnectionString = "Initial Catalog=BASE;Data Source=.;Integrated Security=SSPI";
-            ////conexion.ConnectionString = @"Data Source=.\SQLEXPRESS01;Initial Catalog=BASE;Integrated Security=True;TrustServerCertificate=True;MultipleActiveResultSets=True;";
-            ////conexion.ConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=BASE;Integrated Security=True;TrustServerCertificate=True;";
-            ////conexion.ConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=BASE;Integrated Security=True;TrustServerCertificate=True;";
-            ////conexion.ConnectionString = @"Data Source=.;Initial Catalog=BASE;Integrated Security=True;TrustServerCertificate=True;";
-            //conexion.ConnectionString = @"Data Source=.;Initial Catalog=BASE;Integrated Security=True;TrustServerCertificate=True;";
-            //conexion.Open();
+
         }
         public void Cerrar()
         {

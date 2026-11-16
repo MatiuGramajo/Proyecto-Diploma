@@ -89,7 +89,6 @@ namespace Trabajo_practico_IS
 
                 if (dataGridView1.Columns.Count > 0)
                 {
-                    // 1. Configuración de solo lectura y selección limpia
                     dataGridView1.ReadOnly = true;
                     dataGridView1.AllowUserToAddRows = false;
                     dataGridView1.AllowUserToDeleteRows = false;
@@ -98,19 +97,17 @@ namespace Trabajo_practico_IS
                     dataGridView1.RowHeadersVisible = false;
                     dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-                    // 2. Ocultar todas las columnas por defecto (ID y datos secundarios)
                     foreach (DataGridViewColumn col in dataGridView1.Columns)
                     {
                         col.Visible = false;
                     }
 
-                    // 3. Habilitar y ordenar solo las columnas clave para identificar al proveedor
                     if (dataGridView1.Columns.Contains("Razon_Social"))
                     {
                         var col = dataGridView1.Columns["Razon_Social"];
                         col.Visible = true;
                         col.HeaderText = "Razón Social";
-                        col.DisplayIndex = 0; // Ocupa el espacio restante automáticamente (Fill)
+                        col.DisplayIndex = 0; 
                     }
 
                     if (dataGridView1.Columns.Contains("Cuit"))

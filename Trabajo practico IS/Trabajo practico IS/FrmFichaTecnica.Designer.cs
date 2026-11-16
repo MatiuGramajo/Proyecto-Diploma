@@ -69,6 +69,7 @@
             // 
             // CBXcatering
             // 
+            this.CBXcatering.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBXcatering.FormattingEnabled = true;
             this.CBXcatering.Location = new System.Drawing.Point(135, 80);
             this.CBXcatering.Name = "CBXcatering";

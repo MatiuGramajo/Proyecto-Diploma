@@ -92,7 +92,6 @@ namespace Trabajo_practico_IS
         {
             if (DGVrecetario.Columns.Count == 0) return;
 
-            // 1. Configuración visual y de solo lectura
             DGVrecetario.ReadOnly = true;
             DGVrecetario.AllowUserToAddRows = false;
             DGVrecetario.AllowUserToDeleteRows = false;
@@ -101,16 +100,14 @@ namespace Trabajo_practico_IS
             DGVrecetario.RowHeadersVisible = false;
             DGVrecetario.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            // 2. Ocultar el ID interno (se mantiene en DataBoundItem para el botón Quitar)
             if (DGVrecetario.Columns.Contains("Id_Insumo"))
                 DGVrecetario.Columns["Id_Insumo"].Visible = false;
 
-            // 3. Encabezados prolijos sin guiones bajos y anchos equilibrados
             if (DGVrecetario.Columns.Contains("Insumo"))
             {
                 var col = DGVrecetario.Columns["Insumo"];
                 col.HeaderText = "Insumo";
-                col.DisplayIndex = 0; // Ocupa todo el ancho libre (Fill)
+                col.DisplayIndex = 0;
             }
 
             if (DGVrecetario.Columns.Contains("Rubro"))

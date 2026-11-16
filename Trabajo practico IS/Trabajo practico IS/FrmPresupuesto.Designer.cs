@@ -57,6 +57,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(313, 41);
             this.comboBox1.Name = "comboBox1";
@@ -104,6 +105,7 @@
             // 
             // cbxclientes
             // 
+            this.cbxclientes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxclientes.FormattingEnabled = true;
             this.cbxclientes.Location = new System.Drawing.Point(6, 40);
             this.cbxclientes.Name = "cbxclientes";

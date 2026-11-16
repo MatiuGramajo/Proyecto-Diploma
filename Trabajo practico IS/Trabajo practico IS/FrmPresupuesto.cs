@@ -35,8 +35,9 @@ namespace Trabajo_practico_IS
 
         private void CargarTiposDeEvento()
         {
+            comboBox1.Items.Clear();
             comboBox1.Items.Add("Casamiento");
-            comboBox1.Items.Add("Cumpleaños de 15");
+            comboBox1.Items.Add("Cumpleaños 15");
             comboBox1.Items.Add("Evento Corporativo");
             comboBox1.SelectedIndex = 0;
         }

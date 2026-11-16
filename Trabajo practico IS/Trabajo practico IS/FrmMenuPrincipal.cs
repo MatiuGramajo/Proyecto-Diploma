@@ -391,6 +391,112 @@ namespace Trabajo_practico_IS
 			frmregistrarordendecompra.ShowDialog();
 			this.Show();
 		}
+
+        private void registrarPagoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmRegistrarPago frmregistrarpago = new FrmRegistrarPago();
+            frmregistrarpago.ShowDialog();
+            this.Show();
+        }
+
+        private void fichaTecnicaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmFichaTecnica frmfichatecnica = new FrmFichaTecnica();
+            frmfichatecnica.ShowDialog();
+            this.Show();
+        }
+
+        private void liquidacionFinalToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmLiquidacionFinal frmliquidacionfinal = new FrmLiquidacionFinal();
+            frmliquidacionfinal.ShowDialog();
+            this.Show();
+        }
+
+        private void gestionProveedoresDeInsumosToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmGestionProveedorInsumo frmgestionprov = new FrmGestionProveedorInsumo();
+            frmgestionprov.ShowDialog();
+            this.Show();
+        }
+
+        private void registrarOrdenDeCompraToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmRegistrarOrdenCompra frmregistrarordendecompra = new FrmRegistrarOrdenCompra();
+            frmregistrarordendecompra.ShowDialog();
+            this.Show();
+        }
+
+        private void anularReasignarOrdenDeCompraToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmRegistrarOrdenCompra frmregistrarordendecompra = new FrmRegistrarOrdenCompra();
+            frmregistrarordendecompra.ShowDialog();
+            this.Show();
+        }
+
+        private void registrarRecepcionDeMercaderiaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmRegistrarRecepcionMercaderia frmregis = new FrmRegistrarRecepcionMercaderia();
+            frmregis.ShowDialog();
+            this.Show();
+        }
+
+        private void gestionarPersonalToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmGestionarPersonal frmgestionarpersonal = new FrmGestionarPersonal();
+            frmgestionarpersonal.ShowDialog();
+            this.Show();
+        }
+
+        private void asignarPersonalToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmAsignarPersonal frmasignar = new FrmAsignarPersonal();
+            frmasignar.ShowDialog();
+            this.Show();
+        }
+
+        private void calibrarRatiosToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmCalibrarRatios frmcalibrar = new FrmCalibrarRatios();
+            frmcalibrar.ShowDialog();
+            this.Show();
+        }
+
+        private void registrarEvaluacionToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmRegistrarEvaluacion frmRegistrarEvaluacion = new FrmRegistrarEvaluacion();
+            frmRegistrarEvaluacion.ShowDialog();
+            this.Show();
+        }
+
+        private void BitacoraToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            FrmBitacora FrmBitacora = new FrmBitacora();
+            FrmBitacora.ShowDialog();
+
+            this.Show();
+        }
+
+        private void metricasToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmDashboardUnificado frmdashboard = new FrmDashboardUnificado();
+            frmdashboard.ShowDialog();
+            this.Show();
+        }
     }
 }
 

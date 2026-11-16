@@ -23,7 +23,7 @@ UninstallDisplayIcon={app}\{#MyAppExeName}
 ChangesAssociations=yes
 DisableProgramGroupPage=yes
 PrivilegesRequired=admin
-OutputBaseFilename=mysetup
+OutputBaseFilename=Setup_JMASolutions
 SolidCompression=yes
 WizardStyle=modern dynamic
 

@@ -127,11 +127,9 @@ namespace Trabajo_practico_IS
 			dgvPersonalDisponible.DataSource = null;
 			dgvPersonalDisponible.Columns.Clear();
 
-			// 1. Habilitar edición solo para poder tildar el CheckBox
 			dgvPersonalDisponible.ReadOnly = false;
 			dgvPersonalDisponible.EditMode = DataGridViewEditMode.EditOnEnter;
 
-			// 2. Agregar columna CheckBox
 			DataGridViewCheckBoxColumn colCheck = new DataGridViewCheckBoxColumn
 			{
 				Name = "Seleccionado",
@@ -143,23 +141,19 @@ namespace Trabajo_practico_IS
 
 			dgvPersonalDisponible.DataSource = listaPersonalDisponible;
 
-			// 3. Bloquear todas las columnas de datos para que solo se edite "Seleccionado"
 			foreach (DataGridViewColumn col in dgvPersonalDisponible.Columns)
 			{
 				col.ReadOnly = (col.Name != "Seleccionado");
 			}
 
-			// Inicializar cada fila en false para evitar estados indeterminados
 			foreach (DataGridViewRow row in dgvPersonalDisponible.Rows)
 			{
 				row.Cells["Seleccionado"].Value = false;
 			}
 
-			// Confirmar el tilde inmediatamente al hacer clic
 			dgvPersonalDisponible.CurrentCellDirtyStateChanged -= dgvPersonalDisponible_CurrentCellDirtyStateChanged;
 			dgvPersonalDisponible.CurrentCellDirtyStateChanged += dgvPersonalDisponible_CurrentCellDirtyStateChanged;
 
-			// Formatear columnas
 			if (dgvPersonalDisponible.Columns["Id_Personal"] != null) dgvPersonalDisponible.Columns["Id_Personal"].Visible = false;
 			if (dgvPersonalDisponible.Columns["Direccion"] != null) dgvPersonalDisponible.Columns["Direccion"].Visible = false;
 			if (dgvPersonalDisponible.Columns["Email"] != null) dgvPersonalDisponible.Columns["Email"].Visible = false;

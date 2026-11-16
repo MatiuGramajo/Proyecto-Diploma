@@ -20,7 +20,7 @@ namespace Trabajo_practico_IS
         private bool idiomaCambiadoManualmente = false;
         public FrmLogIn()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         public void ActualizarIdioma()

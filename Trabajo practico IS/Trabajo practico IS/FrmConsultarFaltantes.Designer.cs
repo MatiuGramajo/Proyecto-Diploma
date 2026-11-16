@@ -63,7 +63,7 @@
             this.groupBox1.Controls.Add(this.lblHasta);
             this.groupBox1.Controls.Add(this.lblDesde);
             this.groupBox1.Controls.Add(this.rbFechas);
-            this.groupBox1.Location = new System.Drawing.Point(524, 21);
+            this.groupBox1.Location = new System.Drawing.Point(486, 21);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(563, 390);
             this.groupBox1.TabIndex = 1;
@@ -177,7 +177,7 @@
             this.groupBox2.Controls.Add(this.chkSoloFaltantes);
             this.groupBox2.Location = new System.Drawing.Point(12, 21);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(497, 291);
+            this.groupBox2.Size = new System.Drawing.Size(468, 291);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Consolidado de Insumos y Requerimientos";
@@ -191,7 +191,7 @@
             this.dgvRequerimientos.Name = "dgvRequerimientos";
             this.dgvRequerimientos.ReadOnly = true;
             this.dgvRequerimientos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRequerimientos.Size = new System.Drawing.Size(462, 158);
+            this.dgvRequerimientos.Size = new System.Drawing.Size(421, 158);
             this.dgvRequerimientos.TabIndex = 1;
             // 
             // chkSoloFaltantes
@@ -207,7 +207,7 @@
             // 
             // btnVolverAlMenuPrincipal
             // 
-            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(1140, 374);
+            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(1071, 374);
             this.btnVolverAlMenuPrincipal.Name = "btnVolverAlMenuPrincipal";
             this.btnVolverAlMenuPrincipal.Size = new System.Drawing.Size(112, 37);
             this.btnVolverAlMenuPrincipal.TabIndex = 11;
@@ -218,7 +218,7 @@
             // LBLidiomas
             // 
             this.LBLidiomas.AutoSize = true;
-            this.LBLidiomas.Location = new System.Drawing.Point(1131, 20);
+            this.LBLidiomas.Location = new System.Drawing.Point(1062, 17);
             this.LBLidiomas.Name = "LBLidiomas";
             this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
             this.LBLidiomas.TabIndex = 13;
@@ -228,7 +228,7 @@
             // 
             this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBXidiomas.FormattingEnabled = true;
-            this.CBXidiomas.Location = new System.Drawing.Point(1131, 36);
+            this.CBXidiomas.Location = new System.Drawing.Point(1062, 33);
             this.CBXidiomas.Name = "CBXidiomas";
             this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
             this.CBXidiomas.TabIndex = 12;
@@ -244,7 +244,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmConsultarFaltantes";
-            this.Text = "FrmConsultarFaltantes";
+            this.Text = "Consultar Faltantes";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmConsultarFaltantes_FormClosed);
             this.Load += new System.EventHandler(this.FrmConsultarFaltantes_Load);
             this.groupBox1.ResumeLayout(false);

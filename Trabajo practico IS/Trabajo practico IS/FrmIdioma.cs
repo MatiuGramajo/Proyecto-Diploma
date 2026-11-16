@@ -17,7 +17,7 @@ namespace Trabajo_practico_IS
         public FrmIdioma()
         {
 
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void button1_Click(object sender, EventArgs e)

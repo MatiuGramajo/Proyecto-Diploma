@@ -22,7 +22,7 @@ namespace Trabajo_practico_IS
         private BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
         public FrmGestionRecetario()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void FrmGestionRecetario_Load(object sender, EventArgs e)

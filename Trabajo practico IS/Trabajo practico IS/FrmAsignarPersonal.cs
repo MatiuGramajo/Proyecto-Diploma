@@ -20,7 +20,7 @@ namespace Trabajo_practico_IS
         private List<BE.PERSONAL> listaPersonalDisponible = new List<BE.PERSONAL>();
         public FrmAsignarPersonal()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void FrmAsignarPersonal_Load(object sender, EventArgs e)
@@ -124,30 +124,53 @@ namespace Trabajo_practico_IS
 
         private void CargarGrillaPersonal()
         {
-            dgvPersonalDisponible.DataSource = null;
-            dgvPersonalDisponible.Columns.Clear();
+			dgvPersonalDisponible.DataSource = null;
+			dgvPersonalDisponible.Columns.Clear();
 
-            DataGridViewCheckBoxColumn colCheck = new DataGridViewCheckBoxColumn
-            {
-                Name = "Seleccionado",
-                HeaderText = "Asignar",
-                Width = 60
-            };
-            dgvPersonalDisponible.Columns.Add(colCheck);
+			// 1. Habilitar edición solo para poder tildar el CheckBox
+			dgvPersonalDisponible.ReadOnly = false;
+			dgvPersonalDisponible.EditMode = DataGridViewEditMode.EditOnEnter;
 
-            dgvPersonalDisponible.DataSource = listaPersonalDisponible;
+			// 2. Agregar columna CheckBox
+			DataGridViewCheckBoxColumn colCheck = new DataGridViewCheckBoxColumn
+			{
+				Name = "Seleccionado",
+				HeaderText = "Asignar",
+				Width = 60,
+				ReadOnly = false
+			};
+			dgvPersonalDisponible.Columns.Add(colCheck);
 
-            if (dgvPersonalDisponible.Columns["Id_Personal"] != null) dgvPersonalDisponible.Columns["Id_Personal"].Visible = false;
-            if (dgvPersonalDisponible.Columns["Direccion"] != null) dgvPersonalDisponible.Columns["Direccion"].Visible = false;
-            if (dgvPersonalDisponible.Columns["Email"] != null) dgvPersonalDisponible.Columns["Email"].Visible = false;
-            if (dgvPersonalDisponible.Columns["Estado"] != null) dgvPersonalDisponible.Columns["Estado"].Visible = false;
+			dgvPersonalDisponible.DataSource = listaPersonalDisponible;
 
-            if (dgvPersonalDisponible.Columns["Dni"] != null) dgvPersonalDisponible.Columns["Dni"].HeaderText = "DNI";
-            if (dgvPersonalDisponible.Columns["Apellido"] != null) dgvPersonalDisponible.Columns["Apellido"].HeaderText = "Apellido";
-            if (dgvPersonalDisponible.Columns["Nombre"] != null) dgvPersonalDisponible.Columns["Nombre"].HeaderText = "Nombre";
-            if (dgvPersonalDisponible.Columns["Categoria"] != null) dgvPersonalDisponible.Columns["Categoria"].HeaderText = "Categoría";
-            if (dgvPersonalDisponible.Columns["Telefono"] != null) dgvPersonalDisponible.Columns["Telefono"].HeaderText = "Teléfono";
-        }
+			// 3. Bloquear todas las columnas de datos para que solo se edite "Seleccionado"
+			foreach (DataGridViewColumn col in dgvPersonalDisponible.Columns)
+			{
+				col.ReadOnly = (col.Name != "Seleccionado");
+			}
+
+			// Inicializar cada fila en false para evitar estados indeterminados
+			foreach (DataGridViewRow row in dgvPersonalDisponible.Rows)
+			{
+				row.Cells["Seleccionado"].Value = false;
+			}
+
+			// Confirmar el tilde inmediatamente al hacer clic
+			dgvPersonalDisponible.CurrentCellDirtyStateChanged -= dgvPersonalDisponible_CurrentCellDirtyStateChanged;
+			dgvPersonalDisponible.CurrentCellDirtyStateChanged += dgvPersonalDisponible_CurrentCellDirtyStateChanged;
+
+			// Formatear columnas
+			if (dgvPersonalDisponible.Columns["Id_Personal"] != null) dgvPersonalDisponible.Columns["Id_Personal"].Visible = false;
+			if (dgvPersonalDisponible.Columns["Direccion"] != null) dgvPersonalDisponible.Columns["Direccion"].Visible = false;
+			if (dgvPersonalDisponible.Columns["Email"] != null) dgvPersonalDisponible.Columns["Email"].Visible = false;
+			if (dgvPersonalDisponible.Columns["Estado"] != null) dgvPersonalDisponible.Columns["Estado"].Visible = false;
+
+			if (dgvPersonalDisponible.Columns["Dni"] != null) dgvPersonalDisponible.Columns["Dni"].HeaderText = "DNI";
+			if (dgvPersonalDisponible.Columns["Apellido"] != null) dgvPersonalDisponible.Columns["Apellido"].HeaderText = "Apellido";
+			if (dgvPersonalDisponible.Columns["Nombre"] != null) dgvPersonalDisponible.Columns["Nombre"].HeaderText = "Nombre";
+			if (dgvPersonalDisponible.Columns["Categoria"] != null) dgvPersonalDisponible.Columns["Categoria"].HeaderText = "Categoría";
+			if (dgvPersonalDisponible.Columns["Telefono"] != null) dgvPersonalDisponible.Columns["Telefono"].HeaderText = "Teléfono";
+		}
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
@@ -267,5 +290,13 @@ namespace Trabajo_practico_IS
         {
             Servicios.IDIOMAS.GetInstancia().Desuscribir(this);
         }
+
+        private void dgvPersonalDisponible_CurrentCellDirtyStateChanged(object sender, EventArgs e)
+        {
+			if (dgvPersonalDisponible.IsCurrentCellDirty)
+			{
+				dgvPersonalDisponible.CommitEdit(DataGridViewDataErrorContexts.Commit);
+			}
+		}
     }
 }

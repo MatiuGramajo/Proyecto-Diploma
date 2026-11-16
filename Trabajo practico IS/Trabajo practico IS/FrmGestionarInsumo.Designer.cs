@@ -268,7 +268,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmGestionarInsumo";
-            this.Text = "FrmGestionarInsumo";
+            this.Text = "Gestion de Insumos";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmGestionarInsumo_FormClosed);
             this.Load += new System.EventHandler(this.FrmGestionarInsumo_Load);
             this.groupBox1.ResumeLayout(false);

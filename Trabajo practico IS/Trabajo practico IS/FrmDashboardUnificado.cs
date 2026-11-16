@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,11 +18,12 @@ namespace Trabajo_practico_IS
         private BLL.DASHBOARD_PERSONAL bllPersonal = new BLL.DASHBOARD_PERSONAL();
         private BLL.DASHBOARD_DEMANDA bllDemanda = new BLL.DASHBOARD_DEMANDA();
         private BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
+        private Servicios.GESTOR_PDF gestorPdf = new Servicios.GESTOR_PDF();
 
 
         public FrmDashboardUnificado()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void FrmDashboardUnificado_Load(object sender, EventArgs e)
@@ -35,7 +37,6 @@ namespace Trabajo_practico_IS
             dtpFechaDesde.Value = new DateTime(DateTime.Now.Year, 1, 1);
             dtpFechaHasta.Value = DateTime.Now;
 
-            // Cargar áreas principales
             cmbArea.Items.Clear();
             cmbArea.Items.Add("Financiero");
             cmbArea.Items.Add("Personal");
@@ -84,13 +85,12 @@ namespace Trabajo_practico_IS
             try
             {
                 DateTime desde = dtpFechaDesde.Value.Date;
-                DateTime hasta = dtpFechaHasta.Value.Date.AddDays(1).AddSeconds(-1); // Incluye todo el último día
+                DateTime hasta = dtpFechaHasta.Value.Date.AddDays(1).AddSeconds(-1); 
 
                 string metricaSeleccionada = cmbMetrica.SelectedItem.ToString();
 
                 switch (metricaSeleccionada)
                 {
-                    // --- ÁREA FINANCIERA ---
                     case "Saldos Pendientes por Cliente":
                         RenderizarSaldosPendientesGrid(desde, hasta);
                         break;
@@ -101,7 +101,6 @@ namespace Trabajo_practico_IS
                         RenderizarConversionPresupuestos(desde, hasta);
                         break;
 
-                    // --- ÁREA PERSONAL ---
                     case "Top Personal por Asistencia":
                         RenderizarTopPersonalAsistencia(desde, hasta);
                         break;
@@ -109,7 +108,6 @@ namespace Trabajo_practico_IS
                         RenderizarDistribucionCategoriaPersonal(desde, hasta);
                         break;
 
-                    // --- ÁREA OCUPACIÓN Y DEMANDA ---
                     case "Volumen de Eventos por Mes":
                         RenderizarVolumenEventosMes(desde, hasta);
                         break;
@@ -387,6 +385,77 @@ namespace Trabajo_practico_IS
         private void FrmDashboardUnificado_FormClosed(object sender, FormClosedEventArgs e)
         {
             Servicios.IDIOMAS.GetInstancia().Desuscribir(this);
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            if (cmbArea.SelectedItem == null || cmbMetrica.SelectedItem == null)
+            {
+                MessageBox.Show("Primero seleccione un área y una métrica para consultar.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string area = cmbArea.SelectedItem.ToString();
+            string metrica = cmbMetrica.SelectedItem.ToString();
+            DateTime desde = dtpFechaDesde.Value.Date;
+            DateTime hasta = dtpFechaHasta.Value.Date;
+
+            try
+            {
+                if (chartPrincipal.Visible && chartPrincipal.Series.Count > 0)
+                {
+                    using (MemoryStream ms = new MemoryStream())
+                    {
+                        chartPrincipal.SaveImage(ms, ChartImageFormat.Png);
+                        gestorPdf.GenerarReporteDashboardGrafico(area, metrica, desde, hasta, ms.ToArray());
+                    }
+                }
+                else if (dgvDetalle.Visible && dgvDetalle.Rows.Count > 0)
+                {
+                    var columnasVisibles = dgvDetalle.Columns
+                        .Cast<DataGridViewColumn>()
+                        .Where(c => c.Visible)
+                        .OrderBy(c => c.DisplayIndex)
+                        .ToList();
+
+                    List<string> encabezados = columnasVisibles.Select(c => c.HeaderText).ToList();
+                    List<List<string>> filas = new List<List<string>>();
+
+                    foreach (DataGridViewRow row in dgvDetalle.Rows)
+                    {
+                        if (row.IsNewRow) continue;
+
+                        List<string> celdas = columnasVisibles
+                            .Select(c => row.Cells[c.Index].FormattedValue?.ToString() ?? "")
+                            .ToList();
+
+                        filas.Add(celdas);
+                    }
+
+                    gestorPdf.GenerarReporteDashboardTabla(area, metrica, desde, hasta, encabezados, filas);
+                }
+                else
+                {
+                    MessageBox.Show("No hay datos visualizados en el dashboard para imprimir.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al imprimir el dashboard: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void BTNvolveralmenuprincipal_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("¿Desea volver al menu principal?", "Atención",
+   MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+
+            }
         }
     }
 }

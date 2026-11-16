@@ -17,7 +17,7 @@ namespace Trabajo_practico_IS
         private BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
         public FrmRegistrarEvaluacion()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void FrmRegistrarEvaluacion_Load(object sender, EventArgs e)
@@ -63,7 +63,7 @@ namespace Trabajo_practico_IS
         {
             try
             {
-                List<BE.RESERVA> listaPendientes = gestorReserva.ListarPendientesEvaluacion();
+                List<BE.RESERVA> listaPendientes = gestorReserva.ListarReservasPendientesEvaluacion();
 
                 dgvEventos.DataSource = null;
                 dgvEventos.Columns.Clear();
@@ -250,7 +250,7 @@ namespace Trabajo_practico_IS
                 reservaSeleccionada.Evaluacion_Personal = cmbResultado.Text.Equals("Aprobado", StringComparison.OrdinalIgnoreCase) ? 1 : 0;
                 reservaSeleccionada.Observaciones_Personal = txtObservaciones.Text.Trim();
 
-                gestorReserva.GuardarEvaluacion(reservaSeleccionada);
+                gestorReserva.GuardarReservaEvaluacion(reservaSeleccionada);
 
                 MessageBox.Show("Evaluación registrada y evento finalizado con exito", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

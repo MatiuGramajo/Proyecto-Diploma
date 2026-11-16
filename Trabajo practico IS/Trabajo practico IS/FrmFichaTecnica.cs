@@ -21,7 +21,7 @@ namespace Trabajo_practico_IS
         private BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
         public FrmFichaTecnica()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void FrmFichaTecnica_Load(object sender, EventArgs e)

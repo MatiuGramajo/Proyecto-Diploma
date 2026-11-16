@@ -162,7 +162,7 @@
             this.Controls.Add(this.txtdni);
             this.Controls.Add(this.txtnombre);
             this.Name = "FrmRegistrarCliente";
-            this.Text = "FrmRegistrarCliente";
+            this.Text = "Registrar Cliente";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmRegistrarCliente_FormClosed);
             this.Load += new System.EventHandler(this.FrmRegistrarCliente_Load);
             this.ResumeLayout(false);

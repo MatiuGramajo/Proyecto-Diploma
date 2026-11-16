@@ -190,7 +190,7 @@
             this.Controls.Add(this.dgvDetalleOrden);
             this.Controls.Add(this.dgvOrdenesEmitidas);
             this.Name = "FrmAnularReasignarOrdenCompra";
-            this.Text = "FrmAnularReasignarOrdenCompra";
+            this.Text = "Anular/Reasignar Orden de Compra";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmAnularReasignarOrdenCompra_FormClosed);
             this.Load += new System.EventHandler(this.FrmAnularReasignarOrdenCompra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrdenesEmitidas)).EndInit();

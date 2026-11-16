@@ -214,7 +214,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmPresupuesto";
-            this.Text = "FrmPresupuesto";
+            this.Text = "Presupuesto";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmPresupuesto_FormClosed);
             this.Load += new System.EventHandler(this.FrmPresupuesto_Load);
             this.groupBox1.ResumeLayout(false);

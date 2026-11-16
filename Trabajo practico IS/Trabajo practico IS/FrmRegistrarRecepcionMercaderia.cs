@@ -21,7 +21,7 @@ namespace Trabajo_practico_IS
 
         public FrmRegistrarRecepcionMercaderia()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
             dgvDetalleOrden.DataError += dgvDetalleOrden_DataError;
         }
 
@@ -222,7 +222,7 @@ namespace Trabajo_practico_IS
 
             try
             {
-                bllOrdenCompra.RegistrarRecepcion(ordenSeleccionada);
+                bllOrdenCompra.RegistrarRecepcionInsumo(ordenSeleccionada);
 
                 MessageBox.Show("Recepción de mercadería registrada y stock actualizado con éxito.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

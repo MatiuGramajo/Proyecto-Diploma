@@ -57,8 +57,7 @@ namespace BLL
             return ConsolidarDemantaYCalcularFaltantes(datosEventos, listaInsumos);
         }
 
-        private List<BE.REQUERIMIENTO_INSUMO> ConsolidarDemantaYCalcularFaltantes(
-            List<(BE.RESERVA reserva, List<BE.DETALLE_RECETARIO> receta, int comensales)> datosEventos,
+        private List<BE.REQUERIMIENTO_INSUMO> ConsolidarDemantaYCalcularFaltantes(List<(BE.RESERVA reserva, List<BE.DETALLE_RECETARIO> receta, int comensales)> datosEventos,
             List<BE.INSUMO> listaInsumos)
         {
             Dictionary<int, decimal> demandaAcumulada = new Dictionary<int, decimal>();

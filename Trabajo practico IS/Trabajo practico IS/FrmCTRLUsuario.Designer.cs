@@ -59,7 +59,7 @@
             // TXT_CtrlUsuUsuario
             // 
             this.TXT_CtrlUsuUsuario.Location = new System.Drawing.Point(12, 48);
-            this.TXT_CtrlUsuUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXT_CtrlUsuUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_CtrlUsuUsuario.Name = "TXT_CtrlUsuUsuario";
             this.TXT_CtrlUsuUsuario.Size = new System.Drawing.Size(264, 23);
             this.TXT_CtrlUsuUsuario.TabIndex = 0;
@@ -67,7 +67,7 @@
             // TXT_CtrlUsuContraseña
             // 
             this.TXT_CtrlUsuContraseña.Location = new System.Drawing.Point(12, 103);
-            this.TXT_CtrlUsuContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXT_CtrlUsuContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_CtrlUsuContraseña.Name = "TXT_CtrlUsuContraseña";
             this.TXT_CtrlUsuContraseña.Size = new System.Drawing.Size(264, 23);
             this.TXT_CtrlUsuContraseña.TabIndex = 1;
@@ -75,7 +75,7 @@
             // TXT_CtrlUsuDNI
             // 
             this.TXT_CtrlUsuDNI.Location = new System.Drawing.Point(12, 159);
-            this.TXT_CtrlUsuDNI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXT_CtrlUsuDNI.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_CtrlUsuDNI.Name = "TXT_CtrlUsuDNI";
             this.TXT_CtrlUsuDNI.Size = new System.Drawing.Size(264, 23);
             this.TXT_CtrlUsuDNI.TabIndex = 2;
@@ -83,7 +83,7 @@
             // TXT_CtrlUsuEmail
             // 
             this.TXT_CtrlUsuEmail.Location = new System.Drawing.Point(12, 214);
-            this.TXT_CtrlUsuEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXT_CtrlUsuEmail.Margin = new System.Windows.Forms.Padding(4);
             this.TXT_CtrlUsuEmail.Name = "TXT_CtrlUsuEmail";
             this.TXT_CtrlUsuEmail.Size = new System.Drawing.Size(264, 23);
             this.TXT_CtrlUsuEmail.TabIndex = 3;
@@ -134,7 +134,7 @@
             this.BTNCtrlUsuAlta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCtrlUsuAlta.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BTNCtrlUsuAlta.Location = new System.Drawing.Point(327, 392);
-            this.BTNCtrlUsuAlta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNCtrlUsuAlta.Margin = new System.Windows.Forms.Padding(4);
             this.BTNCtrlUsuAlta.Name = "BTNCtrlUsuAlta";
             this.BTNCtrlUsuAlta.Size = new System.Drawing.Size(145, 33);
             this.BTNCtrlUsuAlta.TabIndex = 10;
@@ -148,7 +148,7 @@
             this.BTNCtrlUsuBaja.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCtrlUsuBaja.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BTNCtrlUsuBaja.Location = new System.Drawing.Point(484, 392);
-            this.BTNCtrlUsuBaja.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNCtrlUsuBaja.Margin = new System.Windows.Forms.Padding(4);
             this.BTNCtrlUsuBaja.Name = "BTNCtrlUsuBaja";
             this.BTNCtrlUsuBaja.Size = new System.Drawing.Size(145, 33);
             this.BTNCtrlUsuBaja.TabIndex = 11;
@@ -162,7 +162,7 @@
             this.BTNCtrlUsuModificar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCtrlUsuModificar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BTNCtrlUsuModificar.Location = new System.Drawing.Point(641, 392);
-            this.BTNCtrlUsuModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNCtrlUsuModificar.Margin = new System.Windows.Forms.Padding(4);
             this.BTNCtrlUsuModificar.Name = "BTNCtrlUsuModificar";
             this.BTNCtrlUsuModificar.Size = new System.Drawing.Size(145, 33);
             this.BTNCtrlUsuModificar.TabIndex = 12;
@@ -176,7 +176,7 @@
             this.BTNCtrlUsuVolverMenu.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCtrlUsuVolverMenu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BTNCtrlUsuVolverMenu.Location = new System.Drawing.Point(946, 620);
-            this.BTNCtrlUsuVolverMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNCtrlUsuVolverMenu.Margin = new System.Windows.Forms.Padding(4);
             this.BTNCtrlUsuVolverMenu.Name = "BTNCtrlUsuVolverMenu";
             this.BTNCtrlUsuVolverMenu.Size = new System.Drawing.Size(145, 33);
             this.BTNCtrlUsuVolverMenu.TabIndex = 13;
@@ -189,7 +189,7 @@
             this.DGV_CtrlUsuUsuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DGV_CtrlUsuUsuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGV_CtrlUsuUsuarios.Location = new System.Drawing.Point(12, 30);
-            this.DGV_CtrlUsuUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DGV_CtrlUsuUsuarios.Margin = new System.Windows.Forms.Padding(4);
             this.DGV_CtrlUsuUsuarios.Name = "DGV_CtrlUsuUsuarios";
             this.DGV_CtrlUsuUsuarios.Size = new System.Drawing.Size(904, 274);
             this.DGV_CtrlUsuUsuarios.TabIndex = 14;
@@ -201,7 +201,7 @@
             this.BTNCtrlUsuDesbloquear.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCtrlUsuDesbloquear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BTNCtrlUsuDesbloquear.Location = new System.Drawing.Point(946, 392);
-            this.BTNCtrlUsuDesbloquear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNCtrlUsuDesbloquear.Margin = new System.Windows.Forms.Padding(4);
             this.BTNCtrlUsuDesbloquear.Name = "BTNCtrlUsuDesbloquear";
             this.BTNCtrlUsuDesbloquear.Size = new System.Drawing.Size(145, 33);
             this.BTNCtrlUsuDesbloquear.TabIndex = 17;
@@ -214,7 +214,7 @@
             this.CKXmostrarbloqueados.AutoSize = true;
             this.CKXmostrarbloqueados.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CKXmostrarbloqueados.Location = new System.Drawing.Point(551, 352);
-            this.CKXmostrarbloqueados.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CKXmostrarbloqueados.Margin = new System.Windows.Forms.Padding(4);
             this.CKXmostrarbloqueados.Name = "CKXmostrarbloqueados";
             this.CKXmostrarbloqueados.Size = new System.Drawing.Size(154, 21);
             this.CKXmostrarbloqueados.TabIndex = 18;
@@ -237,7 +237,7 @@
             this.Cb_CTRLUsuarioRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cb_CTRLUsuarioRol.FormattingEnabled = true;
             this.Cb_CTRLUsuarioRol.Location = new System.Drawing.Point(12, 270);
-            this.Cb_CTRLUsuarioRol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Cb_CTRLUsuarioRol.Margin = new System.Windows.Forms.Padding(4);
             this.Cb_CTRLUsuarioRol.Name = "Cb_CTRLUsuarioRol";
             this.Cb_CTRLUsuarioRol.Size = new System.Drawing.Size(264, 25);
             this.Cb_CTRLUsuarioRol.TabIndex = 20;
@@ -248,7 +248,7 @@
             this.CBXidiomas.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CBXidiomas.FormattingEnabled = true;
             this.CBXidiomas.Location = new System.Drawing.Point(976, 33);
-            this.CBXidiomas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CBXidiomas.Margin = new System.Windows.Forms.Padding(4);
             this.CBXidiomas.Name = "CBXidiomas";
             this.CBXidiomas.Size = new System.Drawing.Size(135, 25);
             this.CBXidiomas.TabIndex = 21;
@@ -270,9 +270,9 @@
             this.GB_Usuarios.Controls.Add(this.DGV_CtrlUsuUsuarios);
             this.GB_Usuarios.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.GB_Usuarios.Location = new System.Drawing.Point(14, 15);
-            this.GB_Usuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GB_Usuarios.Margin = new System.Windows.Forms.Padding(4);
             this.GB_Usuarios.Name = "GB_Usuarios";
-            this.GB_Usuarios.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GB_Usuarios.Padding = new System.Windows.Forms.Padding(4);
             this.GB_Usuarios.Size = new System.Drawing.Size(929, 320);
             this.GB_Usuarios.TabIndex = 23;
             this.GB_Usuarios.TabStop = false;
@@ -292,9 +292,9 @@
             this.GB_Datos.Controls.Add(this.LBLemail);
             this.GB_Datos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GB_Datos.Location = new System.Drawing.Point(14, 342);
-            this.GB_Datos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GB_Datos.Margin = new System.Windows.Forms.Padding(4);
             this.GB_Datos.Name = "GB_Datos";
-            this.GB_Datos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GB_Datos.Padding = new System.Windows.Forms.Padding(4);
             this.GB_Datos.Size = new System.Drawing.Size(300, 314);
             this.GB_Datos.TabIndex = 24;
             this.GB_Datos.TabStop = false;
@@ -305,7 +305,7 @@
             this.CKXmostrarInactivos.AutoSize = true;
             this.CKXmostrarInactivos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CKXmostrarInactivos.Location = new System.Drawing.Point(328, 352);
-            this.CKXmostrarInactivos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CKXmostrarInactivos.Margin = new System.Windows.Forms.Padding(4);
             this.CKXmostrarInactivos.Name = "CKXmostrarInactivos";
             this.CKXmostrarInactivos.Size = new System.Drawing.Size(136, 21);
             this.CKXmostrarInactivos.TabIndex = 25;
@@ -319,7 +319,7 @@
             this.BTNCtrlUsuReactivar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNCtrlUsuReactivar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BTNCtrlUsuReactivar.Location = new System.Drawing.Point(793, 392);
-            this.BTNCtrlUsuReactivar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTNCtrlUsuReactivar.Margin = new System.Windows.Forms.Padding(4);
             this.BTNCtrlUsuReactivar.Name = "BTNCtrlUsuReactivar";
             this.BTNCtrlUsuReactivar.Size = new System.Drawing.Size(145, 33);
             this.BTNCtrlUsuReactivar.TabIndex = 26;
@@ -346,10 +346,10 @@
             this.Controls.Add(this.BTNCtrlUsuAlta);
             this.Controls.Add(this.GB_Datos);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmCTRLUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmCTRLUsuario";
+            this.Text = "Control de Usuarios";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmCTRLUsuario_FormClosed);
             this.Load += new System.EventHandler(this.FrmCTRLUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGV_CtrlUsuUsuarios)).EndInit();

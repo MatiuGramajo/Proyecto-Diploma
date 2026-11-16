@@ -23,7 +23,7 @@ namespace Trabajo_practico_IS
 
         public FrmCTRLUsuario()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void FrmCTRLUsuario_Load(object sender, EventArgs e)

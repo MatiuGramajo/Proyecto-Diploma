@@ -162,7 +162,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmCalibrarRatios";
-            this.Text = "FrmCalibrarRatios";
+            this.Text = "Calibrar Ratios";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmCalibrarRatios_FormClosed);
             this.Load += new System.EventHandler(this.FrmCalibrarRatios_Load);
             this.groupBox1.ResumeLayout(false);

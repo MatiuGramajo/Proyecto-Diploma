@@ -36,6 +36,8 @@
             this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
             this.CBXidiomas = new System.Windows.Forms.ComboBox();
             this.LBLidiomas = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonalDisponible)).BeginInit();
             this.SuspendLayout();
@@ -43,17 +45,18 @@
             // dgvReservas
             // 
             this.dgvReservas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReservas.Location = new System.Drawing.Point(31, 51);
+            this.dgvReservas.Location = new System.Drawing.Point(15, 51);
             this.dgvReservas.Name = "dgvReservas";
             this.dgvReservas.ReadOnly = true;
-            this.dgvReservas.Size = new System.Drawing.Size(352, 122);
+            this.dgvReservas.Size = new System.Drawing.Size(294, 122);
             this.dgvReservas.TabIndex = 0;
             this.dgvReservas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReservas_CellClick);
             // 
             // lblInvitadosInfo
             // 
             this.lblInvitadosInfo.AutoSize = true;
-            this.lblInvitadosInfo.Location = new System.Drawing.Point(28, 219);
+            this.lblInvitadosInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInvitadosInfo.Location = new System.Drawing.Point(12, 216);
             this.lblInvitadosInfo.Name = "lblInvitadosInfo";
             this.lblInvitadosInfo.Size = new System.Drawing.Size(35, 13);
             this.lblInvitadosInfo.TabIndex = 1;
@@ -62,7 +65,8 @@
             // lblRequerimientos
             // 
             this.lblRequerimientos.AutoSize = true;
-            this.lblRequerimientos.Location = new System.Drawing.Point(28, 258);
+            this.lblRequerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRequerimientos.Location = new System.Drawing.Point(12, 255);
             this.lblRequerimientos.Name = "lblRequerimientos";
             this.lblRequerimientos.Size = new System.Drawing.Size(35, 13);
             this.lblRequerimientos.TabIndex = 2;
@@ -71,25 +75,26 @@
             // dgvPersonalDisponible
             // 
             this.dgvPersonalDisponible.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPersonalDisponible.Location = new System.Drawing.Point(441, 51);
+            this.dgvPersonalDisponible.Location = new System.Drawing.Point(434, 51);
             this.dgvPersonalDisponible.Name = "dgvPersonalDisponible";
             this.dgvPersonalDisponible.ReadOnly = true;
-            this.dgvPersonalDisponible.Size = new System.Drawing.Size(672, 316);
+            this.dgvPersonalDisponible.Size = new System.Drawing.Size(558, 316);
             this.dgvPersonalDisponible.TabIndex = 3;
+            this.dgvPersonalDisponible.CurrentCellDirtyStateChanged += new System.EventHandler(this.dgvPersonalDisponible_CurrentCellDirtyStateChanged);
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(749, 400);
+            this.btnConfirmar.Location = new System.Drawing.Point(682, 401);
             this.btnConfirmar.Name = "btnConfirmar";
             this.btnConfirmar.Size = new System.Drawing.Size(100, 37);
             this.btnConfirmar.TabIndex = 4;
-            this.btnConfirmar.Text = "Confirmarr";
+            this.btnConfirmar.Text = "Confirmar";
             this.btnConfirmar.UseVisualStyleBackColor = true;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // btnVolverAlMenuPrincipal
             // 
-            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(1245, 399);
+            this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(1059, 401);
             this.btnVolverAlMenuPrincipal.Name = "btnVolverAlMenuPrincipal";
             this.btnVolverAlMenuPrincipal.Size = new System.Drawing.Size(96, 38);
             this.btnVolverAlMenuPrincipal.TabIndex = 5;
@@ -101,7 +106,7 @@
             // 
             this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBXidiomas.FormattingEnabled = true;
-            this.CBXidiomas.Location = new System.Drawing.Point(1220, 51);
+            this.CBXidiomas.Location = new System.Drawing.Point(1034, 51);
             this.CBXidiomas.Name = "CBXidiomas";
             this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
             this.CBXidiomas.TabIndex = 6;
@@ -109,17 +114,37 @@
             // LBLidiomas
             // 
             this.LBLidiomas.AutoSize = true;
-            this.LBLidiomas.Location = new System.Drawing.Point(1217, 35);
+            this.LBLidiomas.Location = new System.Drawing.Point(1031, 35);
             this.LBLidiomas.Name = "LBLidiomas";
             this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
             this.LBLidiomas.TabIndex = 7;
             this.LBLidiomas.Text = "Idiomas";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(431, 35);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Personal Disponible";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Reservas";
+            // 
             // FrmAsignarPersonal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1356, 450);
+            this.ClientSize = new System.Drawing.Size(1167, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.LBLidiomas);
             this.Controls.Add(this.CBXidiomas);
             this.Controls.Add(this.btnVolverAlMenuPrincipal);
@@ -129,7 +154,7 @@
             this.Controls.Add(this.lblInvitadosInfo);
             this.Controls.Add(this.dgvReservas);
             this.Name = "FrmAsignarPersonal";
-            this.Text = "FrmAsignarPersonal";
+            this.Text = "Asignar Personal";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmAsignarPersonal_FormClosed);
             this.Load += new System.EventHandler(this.FrmAsignarPersonal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservas)).EndInit();
@@ -149,5 +174,7 @@
         private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
         private System.Windows.Forms.ComboBox CBXidiomas;
         private System.Windows.Forms.Label LBLidiomas;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

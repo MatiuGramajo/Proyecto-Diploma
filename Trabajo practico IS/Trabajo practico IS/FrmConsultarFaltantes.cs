@@ -20,7 +20,7 @@ namespace Trabajo_practico_IS
 
         public FrmConsultarFaltantes()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void FrmConsultarFaltantes_Load(object sender, EventArgs e)

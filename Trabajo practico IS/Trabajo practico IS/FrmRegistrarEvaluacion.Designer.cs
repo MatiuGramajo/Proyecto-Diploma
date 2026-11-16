@@ -170,7 +170,7 @@
             this.Controls.Add(this.dgvPersonal);
             this.Controls.Add(this.dgvEventos);
             this.Name = "FrmRegistrarEvaluacion";
-            this.Text = "FrmRegistrarEvaluacion";
+            this.Text = "Registrar Evaluacion";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmRegistrarEvaluacion_FormClosed);
             this.Load += new System.EventHandler(this.FrmRegistrarEvaluacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEventos)).EndInit();

@@ -23,7 +23,7 @@ namespace Trabajo_practico_IS
 
         public FrmCTRLPermiso()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void FrmCTRLPermiso_Load(object sender, EventArgs e)

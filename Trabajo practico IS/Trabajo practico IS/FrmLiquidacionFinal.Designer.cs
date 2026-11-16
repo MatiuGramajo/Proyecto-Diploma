@@ -145,7 +145,6 @@
             // 
             // BTNvolveralmenuprincipal
             // 
-            this.BTNvolveralmenuprincipal.Enabled = false;
             this.BTNvolveralmenuprincipal.Location = new System.Drawing.Point(970, 386);
             this.BTNvolveralmenuprincipal.Name = "BTNvolveralmenuprincipal";
             this.BTNvolveralmenuprincipal.Size = new System.Drawing.Size(104, 39);
@@ -184,7 +183,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmLiquidacionFinal";
-            this.Text = "FrmLiquidacionFinal";
+            this.Text = "Liquidacion Final";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmLiquidacionFinal_FormClosed);
             this.Load += new System.EventHandler(this.FrmLiquidacionFinal_Load);
             this.groupBox1.ResumeLayout(false);

@@ -18,7 +18,7 @@ namespace Trabajo_practico_IS
         private BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
         public FrmGestionarPersonal()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void FrmGestionarPersonal_Load(object sender, EventArgs e)

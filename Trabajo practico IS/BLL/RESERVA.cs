@@ -52,7 +52,7 @@ namespace BLL
 
             gestorPDF.GenerarComprobantePDF(reservaSeleccionada);
         }
-        public List<BE.RESERVA> ListarPendientesEvaluacion()
+        public List<BE.RESERVA> ListarReservasPendientesEvaluacion()
         {
             return mpReserva.ListarPendientesEvaluacion();
         }
@@ -62,7 +62,7 @@ namespace BLL
             return mpReserva.ObtenerPersonalAsignado(idReserva);
         }
 
-        public void GuardarEvaluacion(BE.RESERVA objReserva)
+        public void GuardarReservaEvaluacion(BE.RESERVA objReserva)
         {
             if (objReserva == null)
             {

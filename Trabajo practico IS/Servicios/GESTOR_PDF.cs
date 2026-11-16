@@ -120,5 +120,118 @@ namespace Servicios
                 throw new Exception("Error al generar el comprobante PDF: " + ex.Message, ex);
             }
         }
+        public void GenerarReporteDashboardGrafico(string area, string metrica, DateTime desde, DateTime hasta, byte[] imagenGrafico)
+        {
+            try
+            {
+                string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "ReportesDashboard");
+                if (!Directory.Exists(folderPath))
+                    Directory.CreateDirectory(folderPath);
+
+                string nombreLimpio = string.Join("_", metrica.Split(Path.GetInvalidFileNameChars()));
+                string filePath = Path.Combine(folderPath, $"Dashboard_{nombreLimpio}_{DateTime.Now:yyyyMMdd_HHmmss}.pdf");
+
+                using (FileStream fs = new FileStream(filePath, FileMode.Create))
+                {
+                    Document doc = new Document(PageSize.A4, 25, 25, 30, 30);
+                    PdfWriter.GetInstance(doc, fs);
+                    doc.Open();
+
+                    AgregarEncabezadoDashboard(doc, area, metrica, desde, hasta);
+
+                    iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(imagenGrafico);
+                    img.ScaleToFit(540f, 360f);
+                    img.Alignment = Element.ALIGN_CENTER;
+                    doc.Add(img);
+
+                    doc.Close();
+                }
+
+                Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al generar el PDF del dashboard: " + ex.Message, ex);
+            }
+        }
+
+        public void GenerarReporteDashboardTabla(string area, string metrica, DateTime desde, DateTime hasta, List<string> encabezados, List<List<string>> filas)
+        {
+            try
+            {
+                string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "ReportesDashboard");
+                if (!Directory.Exists(folderPath))
+                    Directory.CreateDirectory(folderPath);
+
+                string nombreLimpio = string.Join("_", metrica.Split(Path.GetInvalidFileNameChars()));
+                string filePath = Path.Combine(folderPath, $"Dashboard_{nombreLimpio}_{DateTime.Now:yyyyMMdd_HHmmss}.pdf");
+
+                using (FileStream fs = new FileStream(filePath, FileMode.Create))
+                {
+                    Document doc = new Document(PageSize.A4, 25, 25, 30, 30);
+                    PdfWriter.GetInstance(doc, fs);
+                    doc.Open();
+
+                    AgregarEncabezadoDashboard(doc, area, metrica, desde, hasta);
+
+                    Font headerFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 9, BaseColor.WHITE);
+                    Font cellFont = FontFactory.GetFont(FontFactory.HELVETICA, 9, BaseColor.BLACK);
+
+                    PdfPTable table = new PdfPTable(encabezados.Count)
+                    {
+                        WidthPercentage = 100
+                    };
+
+                    foreach (string tituloCol in encabezados)
+                    {
+                        PdfPCell cell = new PdfPCell(new Phrase(tituloCol, headerFont))
+                        {
+                            BackgroundColor = new BaseColor(52, 73, 94),
+                            HorizontalAlignment = Element.ALIGN_CENTER,
+                            Padding = 6
+                        };
+                        table.AddCell(cell);
+                    }
+
+                    foreach (var fila in filas)
+                    {
+                        foreach (string valor in fila)
+                        {
+                            PdfPCell cell = new PdfPCell(new Phrase(valor ?? "", cellFont))
+                            {
+                                HorizontalAlignment = valor != null && valor.StartsWith("$") ? Element.ALIGN_RIGHT : Element.ALIGN_LEFT,
+                                Padding = 5
+                            };
+                            table.AddCell(cell);
+                        }
+                    }
+
+                    doc.Add(table);
+                    doc.Close();
+                }
+
+                Process.Start(new ProcessStartInfo(filePath) { UseShellExecute = true });
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al generar el PDF de la tabla del dashboard: " + ex.Message, ex);
+            }
+        }
+
+        private void AgregarEncabezadoDashboard(Document doc, string area, string metrica, DateTime desde, DateTime hasta)
+        {
+            Font tituloFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 16, BaseColor.BLACK);
+            Font subTituloFont = FontFactory.GetFont(FontFactory.HELVETICA_BOLD, 12, BaseColor.DARK_GRAY);
+            Font infoFont = FontFactory.GetFont(FontFactory.HELVETICA, 10, BaseColor.GRAY);
+
+            doc.Add(new Paragraph("REPORTE DE INDICADORES DE GESTIÓN", tituloFont) { Alignment = Element.ALIGN_CENTER });
+            doc.Add(new Paragraph($"{area.ToUpper()} - {metrica}", subTituloFont) { Alignment = Element.ALIGN_CENTER });
+            doc.Add(new Chunk("\n"));
+
+            doc.Add(new Paragraph($"Período analizado: {desde:dd/MM/yyyy} al {hasta:dd/MM/yyyy}", infoFont));
+            doc.Add(new Paragraph($"Fecha de emisión: {DateTime.Now:dd/MM/yyyy HH:mm}", infoFont));
+            doc.Add(new Paragraph("----------------------------------------------------------------------------------------------------------------------------------"));
+            doc.Add(new Chunk("\n"));
+        }
     }
 }

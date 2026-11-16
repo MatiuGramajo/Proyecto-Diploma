@@ -84,7 +84,6 @@
             // 
             // btnVolverAlMenuPrincipal
             // 
-            this.btnVolverAlMenuPrincipal.Enabled = false;
             this.btnVolverAlMenuPrincipal.Location = new System.Drawing.Point(802, 386);
             this.btnVolverAlMenuPrincipal.Name = "btnVolverAlMenuPrincipal";
             this.btnVolverAlMenuPrincipal.Size = new System.Drawing.Size(111, 37);
@@ -125,7 +124,7 @@
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.monthCalendar1);
             this.Name = "FrmCalendario";
-            this.Text = "FrmCalendario";
+            this.Text = "Calendario";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmCalendario_FormClosed);
             this.Load += new System.EventHandler(this.FrmCalendario_Load);
             this.ResumeLayout(false);

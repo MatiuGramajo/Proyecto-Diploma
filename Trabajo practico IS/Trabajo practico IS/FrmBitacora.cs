@@ -17,7 +17,7 @@ namespace Trabajo_practico_IS
         BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
         public FrmBitacora()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
         public void EnlazarUsuarios()
         {

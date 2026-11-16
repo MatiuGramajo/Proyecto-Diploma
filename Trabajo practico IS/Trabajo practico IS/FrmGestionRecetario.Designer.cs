@@ -234,7 +234,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmGestionRecetario";
-            this.Text = "FrmGestionRecetario";
+            this.Text = "Gestion de Recetario";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmGestionRecetario_FormClosed);
             this.Load += new System.EventHandler(this.FrmGestionRecetario_Load);
             this.groupBox1.ResumeLayout(false);

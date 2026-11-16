@@ -51,7 +51,7 @@ namespace BLL
                 }
             }
 
-            mpAsignacion.GuardarAsignacion(idReserva, listaPersonalAsignado);
+            mpAsignacion.Guardar(idReserva, listaPersonalAsignado);
         }
     }
 }

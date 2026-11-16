@@ -21,7 +21,7 @@ namespace Trabajo_practico_IS
         private BE.PRESUPUESTO presupuestoSeleccionado;
         public FrmRegistrarPago()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
             ConfigurarFormularioBase();
             DGVPresupuestosPendientes.Visible = true;
 
@@ -29,7 +29,7 @@ namespace Trabajo_practico_IS
         }
         public FrmRegistrarPago(BE.PRESUPUESTO presupuestoRecienCreado)
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
             ConfigurarFormularioBase();
             this.presupuestoSeleccionado = presupuestoRecienCreado;
             DGVPresupuestosPendientes.Visible = false;

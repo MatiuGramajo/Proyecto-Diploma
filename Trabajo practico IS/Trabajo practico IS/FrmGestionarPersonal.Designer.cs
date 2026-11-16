@@ -272,7 +272,7 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.dgvPersonal);
             this.Name = "FrmGestionarPersonal";
-            this.Text = "FrmGestionarPersonal";
+            this.Text = "Gestion de Personal";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmGestionarPersonal_FormClosed);
             this.Load += new System.EventHandler(this.FrmGestionarPersonal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPersonal)).EndInit();

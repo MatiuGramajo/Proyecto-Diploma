@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EstiloUI.cs" />
     <Compile Include="FrmAnularReasignarOrdenCompra.cs">
       <SubType>Form</SubType>
     </Compile>

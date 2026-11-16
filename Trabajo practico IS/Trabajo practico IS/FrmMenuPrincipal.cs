@@ -22,7 +22,7 @@ namespace Trabajo_practico_IS
 
         public FrmMenuPrincipal()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -359,6 +359,38 @@ namespace Trabajo_practico_IS
             frmdashboard.ShowDialog();
             this.Show();    
         }
+
+        private void calendarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+			this.Hide();
+			FrmCalendario frmCalendario = new FrmCalendario();
+			frmCalendario.ShowDialog();
+			this.Show();
+		}
+
+        private void btnLiquidacionFinal_Click(object sender, EventArgs e)
+        {
+			this.Hide();
+			FrmLiquidacionFinal frmliquidacionfinal = new FrmLiquidacionFinal();
+			frmliquidacionfinal.ShowDialog();
+			this.Show();
+		}
+
+        private void btnCalibrarRatios_Click(object sender, EventArgs e)
+        {
+			this.Hide();
+			FrmCalibrarRatios frmcalibrar = new FrmCalibrarRatios();
+			frmcalibrar.ShowDialog();
+			this.Show();
+		}
+
+        private void btnRegistrarOrdenCompra_Click(object sender, EventArgs e)
+        {
+			this.Hide();
+			FrmRegistrarOrdenCompra frmregistrarordendecompra = new FrmRegistrarOrdenCompra();
+			frmregistrarordendecompra.ShowDialog();
+			this.Show();
+		}
     }
 }
 

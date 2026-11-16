@@ -139,7 +139,7 @@
             this.Controls.Add(this.dgvDetalleOrden);
             this.Controls.Add(this.dgvOrdenesEmitidas);
             this.Name = "FrmRegistrarRecepcionMercaderia";
-            this.Text = "FrmRegistrarRecepcionMercaderia";
+            this.Text = "Registrar Recepcion de Mercaderia";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmRegistrarRecepcionMercaderia_FormClosed);
             this.Load += new System.EventHandler(this.FrmRegistrarRecepcionMercaderia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrdenesEmitidas)).EndInit();

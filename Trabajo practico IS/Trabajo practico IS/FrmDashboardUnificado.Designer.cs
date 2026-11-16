@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pnlFiltros = new System.Windows.Forms.Panel();
+            this.btnImprimir = new System.Windows.Forms.Button();
+            this.LBLidiomas = new System.Windows.Forms.Label();
+            this.CBXidiomas = new System.Windows.Forms.ComboBox();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.dtpFechaHasta = new System.Windows.Forms.DateTimePicker();
             this.dtpFechaDesde = new System.Windows.Forms.DateTimePicker();
@@ -44,8 +47,7 @@
             this.pnlContenedor = new System.Windows.Forms.Panel();
             this.dgvDetalle = new System.Windows.Forms.DataGridView();
             this.chartPrincipal = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.LBLidiomas = new System.Windows.Forms.Label();
-            this.CBXidiomas = new System.Windows.Forms.ComboBox();
+            this.BTNvolveralmenuprincipal = new System.Windows.Forms.Button();
             this.pnlFiltros.SuspendLayout();
             this.pnlContenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
@@ -54,6 +56,8 @@
             // 
             // pnlFiltros
             // 
+            this.pnlFiltros.Controls.Add(this.BTNvolveralmenuprincipal);
+            this.pnlFiltros.Controls.Add(this.btnImprimir);
             this.pnlFiltros.Controls.Add(this.LBLidiomas);
             this.pnlFiltros.Controls.Add(this.CBXidiomas);
             this.pnlFiltros.Controls.Add(this.btnConsultar);
@@ -68,12 +72,40 @@
             this.pnlFiltros.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlFiltros.Location = new System.Drawing.Point(0, 0);
             this.pnlFiltros.Name = "pnlFiltros";
-            this.pnlFiltros.Size = new System.Drawing.Size(1036, 355);
+            this.pnlFiltros.Size = new System.Drawing.Size(1036, 307);
             this.pnlFiltros.TabIndex = 2;
+            // 
+            // btnImprimir
+            // 
+            this.btnImprimir.Location = new System.Drawing.Point(621, 223);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(105, 32);
+            this.btnImprimir.TabIndex = 20;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
+            // LBLidiomas
+            // 
+            this.LBLidiomas.AutoSize = true;
+            this.LBLidiomas.Location = new System.Drawing.Point(903, 27);
+            this.LBLidiomas.Name = "LBLidiomas";
+            this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
+            this.LBLidiomas.TabIndex = 19;
+            this.LBLidiomas.Text = "Idiomas";
+            // 
+            // CBXidiomas
+            // 
+            this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBXidiomas.FormattingEnabled = true;
+            this.CBXidiomas.Location = new System.Drawing.Point(903, 43);
+            this.CBXidiomas.Name = "CBXidiomas";
+            this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
+            this.CBXidiomas.TabIndex = 18;
             // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(421, 273);
+            this.btnConsultar.Location = new System.Drawing.Point(386, 223);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(105, 32);
             this.btnConsultar.TabIndex = 17;
@@ -84,7 +116,7 @@
             // dtpFechaHasta
             // 
             this.dtpFechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaHasta.Location = new System.Drawing.Point(514, 194);
+            this.dtpFechaHasta.Location = new System.Drawing.Point(600, 168);
             this.dtpFechaHasta.Name = "dtpFechaHasta";
             this.dtpFechaHasta.Size = new System.Drawing.Size(126, 20);
             this.dtpFechaHasta.TabIndex = 16;
@@ -92,7 +124,7 @@
             // dtpFechaDesde
             // 
             this.dtpFechaDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaDesde.Location = new System.Drawing.Point(300, 194);
+            this.dtpFechaDesde.Location = new System.Drawing.Point(386, 168);
             this.dtpFechaDesde.Name = "dtpFechaDesde";
             this.dtpFechaDesde.Size = new System.Drawing.Size(126, 20);
             this.dtpFechaDesde.TabIndex = 15;
@@ -100,7 +132,7 @@
             // lblHasta
             // 
             this.lblHasta.AutoSize = true;
-            this.lblHasta.Location = new System.Drawing.Point(511, 147);
+            this.lblHasta.Location = new System.Drawing.Point(597, 139);
             this.lblHasta.Name = "lblHasta";
             this.lblHasta.Size = new System.Drawing.Size(38, 13);
             this.lblHasta.TabIndex = 14;
@@ -109,7 +141,7 @@
             // lblDesde
             // 
             this.lblDesde.AutoSize = true;
-            this.lblDesde.Location = new System.Drawing.Point(297, 147);
+            this.lblDesde.Location = new System.Drawing.Point(383, 139);
             this.lblDesde.Name = "lblDesde";
             this.lblDesde.Size = new System.Drawing.Size(41, 13);
             this.lblDesde.TabIndex = 13;
@@ -158,9 +190,9 @@
             this.pnlContenedor.Controls.Add(this.dgvDetalle);
             this.pnlContenedor.Controls.Add(this.chartPrincipal);
             this.pnlContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContenedor.Location = new System.Drawing.Point(0, 355);
+            this.pnlContenedor.Location = new System.Drawing.Point(0, 307);
             this.pnlContenedor.Name = "pnlContenedor";
-            this.pnlContenedor.Size = new System.Drawing.Size(1036, 337);
+            this.pnlContenedor.Size = new System.Drawing.Size(1036, 385);
             this.pnlContenedor.TabIndex = 18;
             // 
             // dgvDetalle
@@ -170,44 +202,36 @@
             this.dgvDetalle.Location = new System.Drawing.Point(0, 0);
             this.dgvDetalle.Name = "dgvDetalle";
             this.dgvDetalle.ReadOnly = true;
-            this.dgvDetalle.Size = new System.Drawing.Size(1036, 337);
+            this.dgvDetalle.Size = new System.Drawing.Size(1036, 385);
             this.dgvDetalle.TabIndex = 1;
             this.dgvDetalle.Visible = false;
             // 
             // chartPrincipal
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartPrincipal.ChartAreas.Add(chartArea2);
+            chartArea4.Name = "ChartArea1";
+            this.chartPrincipal.ChartAreas.Add(chartArea4);
             this.chartPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chartPrincipal.Legends.Add(legend2);
+            legend4.Name = "Legend1";
+            this.chartPrincipal.Legends.Add(legend4);
             this.chartPrincipal.Location = new System.Drawing.Point(0, 0);
             this.chartPrincipal.Name = "chartPrincipal";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartPrincipal.Series.Add(series2);
-            this.chartPrincipal.Size = new System.Drawing.Size(1036, 337);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chartPrincipal.Series.Add(series4);
+            this.chartPrincipal.Size = new System.Drawing.Size(1036, 385);
             this.chartPrincipal.TabIndex = 0;
             this.chartPrincipal.Text = "chart1";
             // 
-            // LBLidiomas
+            // BTNvolveralmenuprincipal
             // 
-            this.LBLidiomas.AutoSize = true;
-            this.LBLidiomas.Location = new System.Drawing.Point(903, 27);
-            this.LBLidiomas.Name = "LBLidiomas";
-            this.LBLidiomas.Size = new System.Drawing.Size(43, 13);
-            this.LBLidiomas.TabIndex = 19;
-            this.LBLidiomas.Text = "Idiomas";
-            // 
-            // CBXidiomas
-            // 
-            this.CBXidiomas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBXidiomas.FormattingEnabled = true;
-            this.CBXidiomas.Location = new System.Drawing.Point(903, 43);
-            this.CBXidiomas.Name = "CBXidiomas";
-            this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
-            this.CBXidiomas.TabIndex = 18;
+            this.BTNvolveralmenuprincipal.Location = new System.Drawing.Point(920, 216);
+            this.BTNvolveralmenuprincipal.Name = "BTNvolveralmenuprincipal";
+            this.BTNvolveralmenuprincipal.Size = new System.Drawing.Size(104, 39);
+            this.BTNvolveralmenuprincipal.TabIndex = 21;
+            this.BTNvolveralmenuprincipal.Text = "Volver al menu principal";
+            this.BTNvolveralmenuprincipal.UseVisualStyleBackColor = true;
+            this.BTNvolveralmenuprincipal.Click += new System.EventHandler(this.BTNvolveralmenuprincipal_Click);
             // 
             // FrmDashboardUnificado
             // 
@@ -217,7 +241,7 @@
             this.Controls.Add(this.pnlContenedor);
             this.Controls.Add(this.pnlFiltros);
             this.Name = "FrmDashboardUnificado";
-            this.Text = "FrmDashboardUnificado";
+            this.Text = "Metricas";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmDashboardUnificado_FormClosed);
             this.Load += new System.EventHandler(this.FrmDashboardUnificado_Load);
             this.pnlFiltros.ResumeLayout(false);
@@ -246,5 +270,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chartPrincipal;
         private System.Windows.Forms.Label LBLidiomas;
         private System.Windows.Forms.ComboBox CBXidiomas;
+        private System.Windows.Forms.Button btnImprimir;
+        private System.Windows.Forms.Button BTNvolveralmenuprincipal;
     }
 }

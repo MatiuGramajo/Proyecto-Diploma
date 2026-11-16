@@ -20,7 +20,7 @@ namespace Trabajo_practico_IS
         private BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
         public FrmPresupuesto(DateTime fechaDelEvento)
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
             this.fechaSeleccionada = fechaDelEvento;
             try
             {

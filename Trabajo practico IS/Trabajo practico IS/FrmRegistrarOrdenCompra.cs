@@ -20,7 +20,7 @@ namespace Trabajo_practico_IS
         private List<BE.DETALLE_ORDEN_COMPRA> listaDetalles = new List<BE.DETALLE_ORDEN_COMPRA>();
         public FrmRegistrarOrdenCompra()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void FrmRegistrarOrdenCompra_Load(object sender, EventArgs e)
@@ -249,6 +249,79 @@ namespace Trabajo_practico_IS
         private void FrmRegistrarOrdenCompra_FormClosed(object sender, FormClosedEventArgs e)
         {
             Servicios.IDIOMAS.GetInstancia().Desuscribir(this);
+        }
+
+        private void btnImportarXML_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Title = "Seleccionar Orden de Compra en XML";
+                ofd.Filter = "Archivos XML (*.xml)|*.xml";
+
+                string carpetaOrdenes = System.IO.Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
+                    "OrdenesDeCompra"
+                );
+
+                if (System.IO.Directory.Exists(carpetaOrdenes))
+                {
+                    ofd.InitialDirectory = carpetaOrdenes;
+                }
+
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        BE.ORDEN_COMPRA ordenImportada = bllOrdenCompra.ImportarOrdenXML(ofd.FileName);
+
+                        if (ordenImportada == null || ordenImportada.Detalles == null)
+                        {
+                            MessageBox.Show("El archivo XML no contiene una Orden de Compra válida.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return;
+                        }
+
+                        cmbProveedores.SelectedValue = ordenImportada.Id_Proveedor;
+                        listaDetalles = ordenImportada.Detalles;
+                        ActualizarGrilla();
+
+                        MessageBox.Show($"Orden N° {ordenImportada.Id_OrdenCompra} cargada correctamente ({listaDetalles.Count} insumos).", "XML Importado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al leer el archivo XML: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            //using (OpenFileDialog ofd = new OpenFileDialog())
+            //{
+            //    ofd.Title = "Seleccionar Orden de Compra en XML";
+            //    ofd.Filter = "Archivos XML (*.xml)|*.xml";
+
+            //    if (ofd.ShowDialog() == DialogResult.OK)
+            //    {
+            //        try
+            //        {
+            //            BE.ORDEN_COMPRA ordenImportada = bllOrdenCompra.ImportarOrdenXML(ofd.FileName);
+
+            //            if (ordenImportada == null || ordenImportada.Detalles == null)
+            //            {
+            //                MessageBox.Show("El archivo XML no contiene una Orden de Compra válida.", "Atención", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //                return;
+            //            }
+
+            //            cmbProveedores.SelectedValue = ordenImportada.Id_Proveedor;
+
+            //            listaDetalles = ordenImportada.Detalles;
+            //            ActualizarGrilla();
+
+            //            MessageBox.Show($"Orden N° {ordenImportada.Id_OrdenCompra} cargada correctamente ({listaDetalles.Count} insumos).", "XML Importado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //        }
+            //        catch (Exception ex)
+            //        {
+            //            MessageBox.Show("Error al leer el archivo XML: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //        }
+            //    }
+            //}
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Trabajo_practico_IS
         private BE.ORDEN_COMPRA ordenSeleccionada = null;
         public FrmAnularReasignarOrdenCompra()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void FrmAnularReasignarOrdenCompra_Load(object sender, EventArgs e)

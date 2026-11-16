@@ -287,7 +287,7 @@
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmGestionProveedorInsumo";
-            this.Text = "FrmGestionProveedorInsumo";
+            this.Text = "Gestion de Proveedores de Insumos";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmGestionProveedorInsumo_FormClosed);
             this.Load += new System.EventHandler(this.FrmGestionProveedorInsumo_Load);
             this.groupBox1.ResumeLayout(false);

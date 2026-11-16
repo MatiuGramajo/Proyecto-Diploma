@@ -17,7 +17,7 @@ namespace Trabajo_practico_IS
         private BLL.IDIOMA GestorIdioma = new BLL.IDIOMA();
         public FrmGestionProveedorInsumo()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

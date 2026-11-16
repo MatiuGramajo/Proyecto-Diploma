@@ -40,6 +40,7 @@
             this.btnVolverAlMenuPrincipal = new System.Windows.Forms.Button();
             this.LBLidiomas = new System.Windows.Forms.Label();
             this.CBXidiomas = new System.Windows.Forms.ComboBox();
+            this.btnImportarXML = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,7 +71,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(44, 355);
+            this.btnAgregar.Location = new System.Drawing.Point(37, 355);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(96, 40);
             this.btnAgregar.TabIndex = 3;
@@ -151,11 +152,22 @@
             this.CBXidiomas.Size = new System.Drawing.Size(121, 21);
             this.CBXidiomas.TabIndex = 10;
             // 
+            // btnImportarXML
+            // 
+            this.btnImportarXML.Location = new System.Drawing.Point(416, 355);
+            this.btnImportarXML.Name = "btnImportarXML";
+            this.btnImportarXML.Size = new System.Drawing.Size(96, 40);
+            this.btnImportarXML.TabIndex = 12;
+            this.btnImportarXML.Text = "Importar XML";
+            this.btnImportarXML.UseVisualStyleBackColor = true;
+            this.btnImportarXML.Click += new System.EventHandler(this.btnImportarXML_Click);
+            // 
             // FrmRegistrarOrdenCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(876, 450);
+            this.Controls.Add(this.btnImportarXML);
             this.Controls.Add(this.LBLidiomas);
             this.Controls.Add(this.CBXidiomas);
             this.Controls.Add(this.btnVolverAlMenuPrincipal);
@@ -169,7 +181,7 @@
             this.Controls.Add(this.cmbInsumos);
             this.Controls.Add(this.cmbProveedores);
             this.Name = "FrmRegistrarOrdenCompra";
-            this.Text = "FrmRegistrarOrdenCompra";
+            this.Text = "Registrar Orden de Compra";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmRegistrarOrdenCompra_FormClosed);
             this.Load += new System.EventHandler(this.FrmRegistrarOrdenCompra_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();
@@ -192,5 +204,6 @@
         private System.Windows.Forms.Button btnVolverAlMenuPrincipal;
         private System.Windows.Forms.Label LBLidiomas;
         private System.Windows.Forms.ComboBox CBXidiomas;
+        private System.Windows.Forms.Button btnImportarXML;
     }
 }

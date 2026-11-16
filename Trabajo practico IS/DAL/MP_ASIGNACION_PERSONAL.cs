@@ -10,7 +10,7 @@ namespace DAL
 {
     public class MP_ASIGNACION_PERSONAL : MAPPER<BE.ASIGNACION_PERSONAL>
     {
-        public void GuardarAsignacion(int idReserva, List<BE.PERSONAL> listaPersonalAsignado)
+        public void Guardar(int idReserva, List<BE.PERSONAL> listaPersonalAsignado)
         {
             acceso.Abrir();
 

@@ -50,6 +50,7 @@
     <Compile Include="ENCRIPTADOR.cs" />
     <Compile Include="Excepciones\IntegridadDatosException.cs" />
     <Compile Include="GESTOR_PDF.cs" />
+    <Compile Include="GESTOR_SERIALIZACION.cs" />
     <Compile Include="IDIOMAS.cs" />
     <Compile Include="SESION.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

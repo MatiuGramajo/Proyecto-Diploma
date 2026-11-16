@@ -3,164 +3,280 @@
   "WorkspaceRootPath": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarrecepcionmercaderia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarrecepcionmercaderia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmrestauracionbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmrestauracionbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarrecepcionmercaderia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarrecepcionmercaderia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|c:\\users\\matias\\onedrive\\escritorio\\proyecto diploma\\proyecto-diploma\\trabajo practico is\\trabajo practico is\\frmrestauracionbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmrestauracionbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|c:\\users\\matias\\onedrive\\escritorio\\proyecto diploma\\proyecto-diploma\\trabajo practico is\\trabajo practico is\\frmregistrarevaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarevaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarevaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarevaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmpresupuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmpresupuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmpresupuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmpresupuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmliquidacionfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmliquidacionfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmliquidacionfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmliquidacionfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmgestionrecetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmgestionrecetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|c:\\users\\matias\\onedrive\\escritorio\\proyecto diploma\\proyecto-diploma\\trabajo practico is\\trabajo practico is\\frmidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmidioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmgestionrecetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmgestionrecetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmgestionproveedorinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmgestionproveedorinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmgestionproveedorinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmgestionproveedorinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmgestionarpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmgestionarpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmgestionarpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmgestionarpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmgestionarinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmgestionarinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmgestionarinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmgestionarinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmfichatecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmfichatecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmfichatecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmfichatecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmdashboardunificado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmdashboardunificado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmdashboardunificado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmdashboardunificado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmconsultarfaltantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmconsultarfaltantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|c:\\users\\matias\\onedrive\\escritorio\\proyecto diploma\\proyecto-diploma\\trabajo practico is\\trabajo practico is\\frmctrlusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmctrlusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmconsultarfaltantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|c:\\users\\matias\\onedrive\\escritorio\\proyecto diploma\\proyecto-diploma\\trabajo practico is\\trabajo practico is\\frmctrlpermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmctrlpermiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|c:\\users\\matias\\onedrive\\escritorio\\proyecto diploma\\proyecto-diploma\\trabajo practico is\\trabajo practico is\\frmconsultarfaltantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmconsultarfaltantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmcalibrarratios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmcalibrarratios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmcalibrarratios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmcalibrarratios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmcalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmcalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmcalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmcalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmasignarpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmasignarpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmanularreasignarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmanularreasignarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmasignarpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmasignarpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmanularreasignarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmanularreasignarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmcalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmcalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmanularreasignarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmanularreasignarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|c:\\users\\matias\\onedrive\\escritorio\\proyecto diploma\\proyecto-diploma\\trabajo practico is\\trabajo practico is\\estiloui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\estiloui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmasignarpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmasignarpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmdashboardunificado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmdashboardunificado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmliquidacionfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmliquidacionfinal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\requerimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\requerimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\recetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\recetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\asignacion_personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\asignacion_personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_asignacion_personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_asignacion_personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\parametro_ratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\parametro_ratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_parametro_ratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_parametro_ratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\proveedor_insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\proveedor_insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_recetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_recetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\pago_se\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\pago_se\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\ficha_tecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\ficha_tecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_ficha_tecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_ficha_tecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\presupuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\presupuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|c:\\users\\matias\\onedrive\\escritorio\\proyecto diploma\\proyecto-diploma\\trabajo practico is\\trabajo practico is\\frmdashboardunificado.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmdashboardunificado.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60E06DBC-C563-402D-9C36-F066A6F42B05}|Servicios\\SERVICIOS.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\servicios\\gestor_pdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60E06DBC-C563-402D-9C36-F066A6F42B05}|Servicios\\SERVICIOS.csproj|solutionrelative:servicios\\gestor_pdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\be\\orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|solutionrelative:be\\orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\be\\detalle_orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|solutionrelative:be\\detalle_orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\be\\parametro_ratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|solutionrelative:be\\parametro_ratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarrecepcionmercaderia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarrecepcionmercaderia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarpago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarevaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarevaluacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmregistrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmpresupuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmpresupuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmgestionrecetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmgestionrecetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmgestionproveedorinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmgestionproveedorinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmgestionarpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmgestionarpersonal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmgestionarinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmgestionarinsumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmfichatecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmfichatecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmcalibrarratios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmcalibrarratios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmcalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmcalendario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmanularreasignarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmanularreasignarordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmbitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmbitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|c:\\users\\matias\\onedrive\\escritorio\\proyecto diploma\\proyecto-diploma\\trabajo practico is\\trabajo practico is\\frmbitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmbitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmbitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_dashboard_financiero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -185,10 +301,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_dashboard_personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_dashboard_personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmmenuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\dashboard_demanda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -235,18 +347,6 @@
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmhistorial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\proveedor_insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\proveedor_insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60E06DBC-C563-402D-9C36-F066A6F42B05}|Servicios\\SERVICIOS.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\servicios\\gestor_pdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60E06DBC-C563-402D-9C36-F066A6F42B05}|Servicios\\SERVICIOS.csproj|solutionrelative:servicios\\gestor_pdf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{60E06DBC-C563-402D-9C36-F066A6F42B05}|Servicios\\SERVICIOS.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\servicios\\encriptador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60E06DBC-C563-402D-9C36-F066A6F42B05}|Servicios\\SERVICIOS.csproj|solutionrelative:servicios\\encriptador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -257,14 +357,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_servicio_catering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_servicio_catering.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_recetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_recetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_proveedor_insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -287,40 +379,20 @@
       "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_parametro_ratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_parametro_ratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_pago_se\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_pago_se\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_idioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_idioma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_ficha_tecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_ficha_tecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_bitacora.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mp_asignacion_personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|solutionrelative:dal\\mp_asignacion_personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BFDD0171-D0D0-47A2-8A81-6D313876A593}|DAL\\DAL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\dal\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -335,52 +407,8 @@
       "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\restauracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\requerimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\requerimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\presupuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\presupuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\permiso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\parametro_ratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\parametro_ratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\pago_se\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\pago_se\u00F1a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\insumo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\ficha_tecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\ficha_tecnica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\asignacion_personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\asignacion_personal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\be\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -419,14 +447,6 @@
       "RelativeMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|solutionrelative:be\\permiso_compuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\be\\parametro_ratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|solutionrelative:be\\parametro_ratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\be\\orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|solutionrelative:be\\orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\be\\iobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|solutionrelative:be\\iobserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -459,10 +479,6 @@
       "RelativeMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|solutionrelative:be\\detalle_recetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\be\\detalle_orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|solutionrelative:be\\detalle_orden_compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\be\\componente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F763691-160D-4551-B313-B637AE077DEE}|BE\\BE.csproj|solutionrelative:be\\componente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -485,10 +501,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\trabajo practico is\\frmasignarpersonal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4AD8818F-5276-4D5F-B67F-6AA2A4E43C6D}|Trabajo practico IS\\GUI.csproj|solutionrelative:trabajo practico is\\frmasignarpersonal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\bll\\recetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{51B8901E-3BB8-4181-A9F2-1E91A4EBA7BA}|BLL\\BLL.csproj|solutionrelative:bll\\recetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\PROVEEDOR_EXTERNO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -518,7 +530,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 23,
               "Title": "FrmMenuPrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmMenuPrincipal.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmMenuPrincipal.cs",
@@ -526,7 +538,8 @@
               "RelativeToolTip": "Trabajo practico IS\\FrmMenuPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-12T18:35:43.649Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Bookmark",
@@ -539,15 +552,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FrmRegistrarPago.cs",
+              "Title": "FrmRegistrarPago.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarPago.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRegistrarPago.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarPago.cs",
-              "RelativeToolTip": "Trabajo practico IS\\FrmRegistrarPago.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAwwOQAAAA/AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarPago.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmRegistrarPago.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T18:46:34.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-24T23:27:56.306Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -564,6 +576,645 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FrmRestauracionBase.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRestauracionBase.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRestauracionBase.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRestauracionBase.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmRestauracionBase.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-15T04:45:40.457Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmRegistrarOrdenCompra.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarOrdenCompra.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRegistrarOrdenCompra.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarOrdenCompra.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmRegistrarOrdenCompra.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T00:26:33.374Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmRegistrarEvaluacion.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarEvaluacion.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRegistrarEvaluacion.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarEvaluacion.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmRegistrarEvaluacion.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T13:54:06.167Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmRegistrarCliente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarCliente.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRegistrarCliente.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarCliente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmRegistrarCliente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T19:59:12.002Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmPresupuesto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmPresupuesto.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmPresupuesto.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmPresupuesto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmPresupuesto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T01:39:39.378Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmLiquidacionFinal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmLiquidacionFinal.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmLiquidacionFinal.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmLiquidacionFinal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmLiquidacionFinal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T18:41:33.646Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmIdioma.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmIdioma.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmIdioma.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmIdioma.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmIdioma.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T16:59:33.104Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FrmGestionRecetario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionRecetario.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmGestionRecetario.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionRecetario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmGestionRecetario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T18:40:49.878Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrmGestionProveedorInsumo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionProveedorInsumo.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmGestionProveedorInsumo.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionProveedorInsumo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmGestionProveedorInsumo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T00:37:35.926Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmHistorial.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmHistorial.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmHistorial.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmHistorial.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmHistorial.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T20:06:00.404Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FrmGestionarPersonal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionarPersonal.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmGestionarPersonal.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionarPersonal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmGestionarPersonal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T14:41:00.412Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FrmGestionarInsumo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionarInsumo.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmGestionarInsumo.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionarInsumo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmGestionarInsumo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T11:37:03.669Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FrmFichaTecnica.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmFichaTecnica.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmFichaTecnica.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmFichaTecnica.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmFichaTecnica.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T18:27:13.835Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FrmDashboardUnificado.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmDashboardUnificado.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmDashboardUnificado.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmDashboardUnificado.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmDashboardUnificado.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T21:09:49.774Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FrmCTRLUsuario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCTRLUsuario.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmCTRLUsuario.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCTRLUsuario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmCTRLUsuario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T16:58:13.157Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FrmCTRLPermiso.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCTRLPermiso.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmCTRLPermiso.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCTRLPermiso.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmCTRLPermiso.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T16:58:03.326Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FrmConsultarFaltantes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmConsultarFaltantes.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmConsultarFaltantes.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmConsultarFaltantes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmConsultarFaltantes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T16:57:57.169Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FrmAsignarPersonal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAsignarPersonal.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmAsignarPersonal.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAsignarPersonal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmAsignarPersonal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T12:07:08.721Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FrmAnularReasignarOrdenCompra.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAnularReasignarOrdenCompra.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmAnularReasignarOrdenCompra.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAnularReasignarOrdenCompra.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmAnularReasignarOrdenCompra.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T02:35:32.991Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FrmCalibrarRatios.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCalibrarRatios.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmCalibrarRatios.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCalibrarRatios.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmCalibrarRatios.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T16:56:59.056Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FrmCalendario.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCalendario.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmCalendario.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCalendario.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Trabajo practico IS\\FrmCalendario.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-17T22:32:26.333Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FrmAsignarPersonal.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAsignarPersonal.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmAsignarPersonal.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAsignarPersonal.cs",
+              "RelativeToolTip": "Trabajo practico IS\\FrmAsignarPersonal.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAAAJwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T12:07:11.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "EstiloUI.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\EstiloUI.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\EstiloUI.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\EstiloUI.cs",
+              "RelativeToolTip": "Trabajo practico IS\\EstiloUI.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAQwFoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T14:16:15.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FrmMenuPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmMenuPrincipal.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmMenuPrincipal.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmMenuPrincipal.cs",
+              "RelativeToolTip": "Trabajo practico IS\\FrmMenuPrincipal.cs",
+              "ViewState": "AgIAAHMBAAAAAAAAAADgv4wBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T18:55:24.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FrmDashboardUnificado.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmDashboardUnificado.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmDashboardUnificado.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmDashboardUnificado.cs",
+              "RelativeToolTip": "Trabajo practico IS\\FrmDashboardUnificado.cs",
+              "ViewState": "AgIAAKgBAAAAAAAAAAAAALkBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T21:19:25.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FrmLiquidacionFinal.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmLiquidacionFinal.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmLiquidacionFinal.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmLiquidacionFinal.cs",
+              "RelativeToolTip": "Trabajo practico IS\\FrmLiquidacionFinal.cs",
+              "ViewState": "AgIAAAABAAAAAAAAAAAUwAcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T21:49:06.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "REQUERIMIENTO.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\REQUERIMIENTO.cs",
+              "RelativeDocumentMoniker": "BLL\\REQUERIMIENTO.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\REQUERIMIENTO.cs",
+              "RelativeToolTip": "BLL\\REQUERIMIENTO.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAxwFMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T18:31:29.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RECETARIO.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\RECETARIO.cs",
+              "RelativeDocumentMoniker": "BLL\\RECETARIO.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\RECETARIO.cs",
+              "RelativeToolTip": "BLL\\RECETARIO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T08:06:46.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "RESERVA.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\RESERVA.cs",
+              "RelativeDocumentMoniker": "BLL\\RESERVA.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\RESERVA.cs",
+              "RelativeToolTip": "BLL\\RESERVA.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwDgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T18:05:41.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ASIGNACION_PERSONAL.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\ASIGNACION_PERSONAL.cs",
+              "RelativeDocumentMoniker": "BLL\\ASIGNACION_PERSONAL.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\ASIGNACION_PERSONAL.cs",
+              "RelativeToolTip": "BLL\\ASIGNACION_PERSONAL.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T11:49:41.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MP_ASIGNACION_PERSONAL.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_ASIGNACION_PERSONAL.cs",
+              "RelativeDocumentMoniker": "DAL\\MP_ASIGNACION_PERSONAL.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_ASIGNACION_PERSONAL.cs",
+              "RelativeToolTip": "DAL\\MP_ASIGNACION_PERSONAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T11:47:52.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PERSONAL.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PERSONAL.cs",
+              "RelativeDocumentMoniker": "BLL\\PERSONAL.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PERSONAL.cs",
+              "RelativeToolTip": "BLL\\PERSONAL.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBAAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T14:54:17.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PARAMETRO_RATIO.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PARAMETRO_RATIO.cs",
+              "RelativeDocumentMoniker": "BLL\\PARAMETRO_RATIO.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PARAMETRO_RATIO.cs",
+              "RelativeToolTip": "BLL\\PARAMETRO_RATIO.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAqwFAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T11:49:00.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "MP_PARAMETRO_RATIO.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_PARAMETRO_RATIO.cs",
+              "RelativeDocumentMoniker": "DAL\\MP_PARAMETRO_RATIO.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_PARAMETRO_RATIO.cs",
+              "RelativeToolTip": "DAL\\MP_PARAMETRO_RATIO.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAqwDwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T11:46:22.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "INSUMO.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\INSUMO.cs",
+              "RelativeDocumentMoniker": "BLL\\INSUMO.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\INSUMO.cs",
+              "RelativeToolTip": "BLL\\INSUMO.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T11:31:50.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "MP_INSUMO.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_INSUMO.cs",
+              "RelativeDocumentMoniker": "DAL\\MP_INSUMO.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_INSUMO.cs",
+              "RelativeToolTip": "DAL\\MP_INSUMO.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwCAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T11:27:14.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ORDEN_COMPRA.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\ORDEN_COMPRA.cs",
+              "RelativeDocumentMoniker": "BLL\\ORDEN_COMPRA.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\ORDEN_COMPRA.cs",
+              "RelativeToolTip": "BLL\\ORDEN_COMPRA.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACgAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T18:15:17.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "MP_ORDEN_COMPRA.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_ORDEN_COMPRA.cs",
+              "RelativeDocumentMoniker": "DAL\\MP_ORDEN_COMPRA.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_ORDEN_COMPRA.cs",
+              "RelativeToolTip": "DAL\\MP_ORDEN_COMPRA.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T19:33:33.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "PROVEEDOR_INSUMO.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PROVEEDOR_INSUMO.cs",
+              "RelativeDocumentMoniker": "BLL\\PROVEEDOR_INSUMO.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PROVEEDOR_INSUMO.cs",
+              "RelativeToolTip": "BLL\\PROVEEDOR_INSUMO.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T00:36:33.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "MP_RECETARIO.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_RECETARIO.cs",
+              "RelativeDocumentMoniker": "DAL\\MP_RECETARIO.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_RECETARIO.cs",
+              "RelativeToolTip": "DAL\\MP_RECETARIO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-31T08:05:42.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "PAGO_SE\u00D1A.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PAGO_SE\u00D1A.cs",
+              "RelativeDocumentMoniker": "BLL\\PAGO_SE\u00D1A.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PAGO_SE\u00D1A.cs",
+              "RelativeToolTip": "BLL\\PAGO_SE\u00D1A.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T18:08:27.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CLIENTE.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\CLIENTE.cs",
+              "RelativeDocumentMoniker": "BLL\\CLIENTE.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\CLIENTE.cs",
+              "RelativeToolTip": "BLL\\CLIENTE.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAvwBoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T19:32:35.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "FICHA_TECNICA.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\FICHA_TECNICA.cs",
+              "RelativeDocumentMoniker": "BLL\\FICHA_TECNICA.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\FICHA_TECNICA.cs",
+              "RelativeToolTip": "BLL\\FICHA_TECNICA.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T18:10:42.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "MP_FICHA_TECNICA.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_FICHA_TECNICA.cs",
+              "RelativeDocumentMoniker": "DAL\\MP_FICHA_TECNICA.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_FICHA_TECNICA.cs",
+              "RelativeToolTip": "DAL\\MP_FICHA_TECNICA.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAQwDgAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T19:01:40.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "PRESUPUESTO.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PRESUPUESTO.cs",
+              "RelativeDocumentMoniker": "BLL\\PRESUPUESTO.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PRESUPUESTO.cs",
+              "RelativeToolTip": "BLL\\PRESUPUESTO.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T18:07:02.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "FrmDashboardUnificado.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmDashboardUnificado.Designer.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmDashboardUnificado.Designer.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmDashboardUnificado.Designer.cs",
+              "RelativeToolTip": "Trabajo practico IS\\FrmDashboardUnificado.Designer.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAQwAMBAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T02:34:34.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "GESTOR_PDF.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Servicios\\GESTOR_PDF.cs",
+              "RelativeDocumentMoniker": "Servicios\\GESTOR_PDF.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Servicios\\GESTOR_PDF.cs",
+              "RelativeToolTip": "Servicios\\GESTOR_PDF.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T20:14:56.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ORDEN_COMPRA.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\ORDEN_COMPRA.cs",
+              "RelativeDocumentMoniker": "BE\\ORDEN_COMPRA.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\ORDEN_COMPRA.cs",
+              "RelativeToolTip": "BE\\ORDEN_COMPRA.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowDUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T17:21:27.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "DETALLE_ORDEN_COMPRA.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\DETALLE_ORDEN_COMPRA.cs",
+              "RelativeDocumentMoniker": "BE\\DETALLE_ORDEN_COMPRA.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\DETALLE_ORDEN_COMPRA.cs",
+              "RelativeToolTip": "BE\\DETALLE_ORDEN_COMPRA.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T17:45:58.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "FrmRegistrarOrdenCompra.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarOrdenCompra.cs",
+              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRegistrarOrdenCompra.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarOrdenCompra.cs",
+              "RelativeToolTip": "Trabajo practico IS\\FrmRegistrarOrdenCompra.cs",
+              "ViewState": "AgIAAPUAAAAAAAAAAAAAAAQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T00:28:55.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "PARAMETRO_RATIO.cs",
+              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\PARAMETRO_RATIO.cs",
+              "RelativeDocumentMoniker": "BE\\PARAMETRO_RATIO.cs",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\PARAMETRO_RATIO.cs",
+              "RelativeToolTip": "BE\\PARAMETRO_RATIO.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T11:43:19.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
               "Title": "FrmRegistrarRecepcionMercaderia.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarRecepcionMercaderia.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRegistrarRecepcionMercaderia.cs",
@@ -576,56 +1227,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmRegistrarPago.cs [Dise\u00F1o]",
+              "DocumentIndex": 55,
+              "Title": "FrmRegistrarPago.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarPago.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRegistrarPago.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarPago.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmRegistrarPago.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarPago.cs",
+              "RelativeToolTip": "Trabajo practico IS\\FrmRegistrarPago.cs",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAwwOQAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T23:27:56.306Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmRestauracionBase.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRestauracionBase.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRestauracionBase.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRestauracionBase.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmRestauracionBase.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-15T04:45:40.457Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FrmRegistrarOrdenCompra.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarOrdenCompra.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRegistrarOrdenCompra.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarOrdenCompra.cs",
-              "RelativeToolTip": "Trabajo practico IS\\FrmRegistrarOrdenCompra.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T00:28:55.365Z",
+              "WhenOpened": "2026-11-02T18:46:34.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrmRegistrarOrdenCompra.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarOrdenCompra.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRegistrarOrdenCompra.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarOrdenCompra.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmRegistrarOrdenCompra.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T00:26:33.374Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 56,
               "Title": "FrmRegistrarEvaluacion.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarEvaluacion.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRegistrarEvaluacion.cs",
@@ -638,19 +1253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FrmRegistrarEvaluacion.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarEvaluacion.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRegistrarEvaluacion.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarEvaluacion.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmRegistrarEvaluacion.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T13:54:06.167Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 57,
               "Title": "FrmRegistrarCliente.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarCliente.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRegistrarCliente.cs",
@@ -663,19 +1266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FrmRegistrarCliente.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarCliente.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRegistrarCliente.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRegistrarCliente.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmRegistrarCliente.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T19:59:12.002Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 58,
               "Title": "FrmPresupuesto.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmPresupuesto.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmPresupuesto.cs",
@@ -688,44 +1279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FrmPresupuesto.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmPresupuesto.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmPresupuesto.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmPresupuesto.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmPresupuesto.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-18T01:39:39.378Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FrmLiquidacionFinal.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmLiquidacionFinal.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmLiquidacionFinal.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmLiquidacionFinal.cs",
-              "RelativeToolTip": "Trabajo practico IS\\FrmLiquidacionFinal.cs",
-              "ViewState": "AgIAAPIAAAAAAAAAAAArwAMBAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T21:49:06.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FrmLiquidacionFinal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmLiquidacionFinal.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmLiquidacionFinal.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmLiquidacionFinal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmLiquidacionFinal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T18:41:33.646Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 59,
               "Title": "FrmGestionRecetario.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionRecetario.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmGestionRecetario.cs",
@@ -738,19 +1292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FrmGestionRecetario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionRecetario.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmGestionRecetario.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionRecetario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmGestionRecetario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T18:40:49.878Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 60,
               "Title": "FrmGestionProveedorInsumo.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionProveedorInsumo.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmGestionProveedorInsumo.cs",
@@ -763,19 +1305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FrmGestionProveedorInsumo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionProveedorInsumo.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmGestionProveedorInsumo.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionProveedorInsumo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmGestionProveedorInsumo.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T00:37:35.926Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 61,
               "Title": "FrmGestionarPersonal.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionarPersonal.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmGestionarPersonal.cs",
@@ -788,19 +1318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FrmGestionarPersonal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionarPersonal.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmGestionarPersonal.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionarPersonal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmGestionarPersonal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T14:41:00.412Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 62,
               "Title": "FrmGestionarInsumo.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionarInsumo.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmGestionarInsumo.cs",
@@ -813,19 +1331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "FrmGestionarInsumo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionarInsumo.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmGestionarInsumo.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmGestionarInsumo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmGestionarInsumo.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:37:03.669Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 63,
               "Title": "FrmFichaTecnica.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmFichaTecnica.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmFichaTecnica.cs",
@@ -838,69 +1344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FrmFichaTecnica.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmFichaTecnica.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmFichaTecnica.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmFichaTecnica.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmFichaTecnica.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-27T18:27:13.835Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "FrmDashboardUnificado.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmDashboardUnificado.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmDashboardUnificado.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmDashboardUnificado.cs",
-              "RelativeToolTip": "Trabajo practico IS\\FrmDashboardUnificado.cs",
-              "ViewState": "AgIAAHMBAAAAAAAAAAArwIQBAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:19:25.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "FrmDashboardUnificado.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmDashboardUnificado.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmDashboardUnificado.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmDashboardUnificado.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmDashboardUnificado.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T21:09:49.774Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "FrmConsultarFaltantes.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmConsultarFaltantes.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmConsultarFaltantes.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmConsultarFaltantes.cs",
-              "RelativeToolTip": "Trabajo practico IS\\FrmConsultarFaltantes.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T18:49:54.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "FrmConsultarFaltantes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmConsultarFaltantes.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmConsultarFaltantes.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmConsultarFaltantes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmConsultarFaltantes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T18:39:57.517Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 64,
               "Title": "FrmCalibrarRatios.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCalibrarRatios.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmCalibrarRatios.cs",
@@ -913,19 +1357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "FrmCalibrarRatios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCalibrarRatios.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmCalibrarRatios.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCalibrarRatios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmCalibrarRatios.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T16:56:59.056Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 65,
               "Title": "FrmCalendario.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCalendario.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmCalendario.cs",
@@ -938,44 +1370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "FrmCalendario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCalendario.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmCalendario.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCalendario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmCalendario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-17T22:32:26.333Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "FrmAsignarPersonal.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAsignarPersonal.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmAsignarPersonal.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAsignarPersonal.cs",
-              "RelativeToolTip": "Trabajo practico IS\\FrmAsignarPersonal.cs",
-              "ViewState": "AgIAAPwAAAAAAAAAAAAwwAsBAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T12:07:11.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "FrmAsignarPersonal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAsignarPersonal.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmAsignarPersonal.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAsignarPersonal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmAsignarPersonal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T12:07:08.721Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 66,
               "Title": "FrmAnularReasignarOrdenCompra.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAnularReasignarOrdenCompra.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmAnularReasignarOrdenCompra.cs",
@@ -988,19 +1383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "FrmAnularReasignarOrdenCompra.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAnularReasignarOrdenCompra.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmAnularReasignarOrdenCompra.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAnularReasignarOrdenCompra.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmAnularReasignarOrdenCompra.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T02:35:32.991Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 67,
               "Title": "FrmBitacora.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmBitacora.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmBitacora.cs",
@@ -1013,7 +1396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 68,
               "Title": "FrmBitacora.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmBitacora.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmBitacora.cs",
@@ -1025,7 +1408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 70,
               "Title": "ACCESO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\ACCESO.cs",
               "RelativeDocumentMoniker": "DAL\\ACCESO.cs",
@@ -1037,7 +1420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 69,
               "Title": "MP_DASHBOARD_FINANCIERO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_DASHBOARD_FINANCIERO.cs",
               "RelativeDocumentMoniker": "DAL\\MP_DASHBOARD_FINANCIERO.cs",
@@ -1049,7 +1432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 71,
               "Title": "DASHBOARD_FINANCIERO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\DASHBOARD_FINANCIERO.cs",
               "RelativeDocumentMoniker": "BLL\\DASHBOARD_FINANCIERO.cs",
@@ -1061,7 +1444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 72,
               "Title": "INGRESOS_PROYECTADOS_DTO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\INGRESOS_PROYECTADOS_DTO.cs",
               "RelativeDocumentMoniker": "BE\\INGRESOS_PROYECTADOS_DTO.cs",
@@ -1073,7 +1456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 73,
               "Title": "MP_DASHBOARD_DEMANDA.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_DASHBOARD_DEMANDA.cs",
               "RelativeDocumentMoniker": "DAL\\MP_DASHBOARD_DEMANDA.cs",
@@ -1085,7 +1468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 74,
               "Title": "MP_DASHBOARD_PERSONAL.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_DASHBOARD_PERSONAL.cs",
               "RelativeDocumentMoniker": "DAL\\MP_DASHBOARD_PERSONAL.cs",
@@ -1097,19 +1480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "FrmMenuPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmMenuPrincipal.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmMenuPrincipal.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmMenuPrincipal.cs",
-              "RelativeToolTip": "Trabajo practico IS\\FrmMenuPrincipal.cs",
-              "ViewState": "AgIAAFIBAAAAAAAAAAAxwGQBAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T18:55:24.075Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 75,
               "Title": "DASHBOARD_DEMANDA.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\DASHBOARD_DEMANDA.cs",
               "RelativeDocumentMoniker": "BLL\\DASHBOARD_DEMANDA.cs",
@@ -1121,7 +1492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 76,
               "Title": "DEMANDA_TIPO_EVENTO_DTO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\DEMANDA_TIPO_EVENTO_DTO.cs",
               "RelativeDocumentMoniker": "BE\\DEMANDA_TIPO_EVENTO_DTO.cs",
@@ -1133,7 +1504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 77,
               "Title": "VOLUMEN_EVENTOS_DTO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\VOLUMEN_EVENTOS_DTO.cs",
               "RelativeDocumentMoniker": "BE\\VOLUMEN_EVENTOS_DTO.cs",
@@ -1145,7 +1516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 78,
               "Title": "DASHBOARD_PERSONAL.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\DASHBOARD_PERSONAL.cs",
               "RelativeDocumentMoniker": "BLL\\DASHBOARD_PERSONAL.cs",
@@ -1157,7 +1528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 79,
               "Title": "DISTRIBUCION_CATEGORIA_DTO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\DISTRIBUCION_CATEGORIA_DTO.cs",
               "RelativeDocumentMoniker": "BE\\DISTRIBUCION_CATEGORIA_DTO.cs",
@@ -1169,7 +1540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 80,
               "Title": "PERSONAL_ASISTENCIA_DTO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\PERSONAL_ASISTENCIA_DTO.cs",
               "RelativeDocumentMoniker": "BE\\PERSONAL_ASISTENCIA_DTO.cs",
@@ -1181,7 +1552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 82,
               "Title": "CONVERSION_PRESUPUESTO_DTO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\CONVERSION_PRESUPUESTO_DTO.cs",
               "RelativeDocumentMoniker": "BE\\CONVERSION_PRESUPUESTO_DTO.cs",
@@ -1193,7 +1564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 81,
               "Title": "MP_CLIENTE.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_CLIENTE.cs",
               "RelativeDocumentMoniker": "DAL\\MP_CLIENTE.cs",
@@ -1205,7 +1576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 83,
               "Title": "SALDO_CLIENTE_DTO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\SALDO_CLIENTE_DTO.cs",
               "RelativeDocumentMoniker": "BE\\SALDO_CLIENTE_DTO.cs",
@@ -1217,7 +1588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 84,
               "Title": "ASIGNACION_PERSONAL.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\ASIGNACION_PERSONAL.cs",
               "RelativeDocumentMoniker": "BE\\ASIGNACION_PERSONAL.cs",
@@ -1229,19 +1600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "PROVEEDOR_INSUMO.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PROVEEDOR_INSUMO.cs",
-              "RelativeDocumentMoniker": "BLL\\PROVEEDOR_INSUMO.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PROVEEDOR_INSUMO.cs",
-              "RelativeToolTip": "BLL\\PROVEEDOR_INSUMO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T00:36:33.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 85,
               "Title": "FrmHistorial.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmHistorial.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmHistorial.cs",
@@ -1249,34 +1608,12 @@
               "RelativeToolTip": "Trabajo practico IS\\FrmHistorial.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAAwHAAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T20:06:26.907Z"
+              "WhenOpened": "2026-11-02T20:06:26.907Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "FrmHistorial.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmHistorial.cs",
-              "RelativeDocumentMoniker": "Trabajo practico IS\\FrmHistorial.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmHistorial.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Trabajo practico IS\\FrmHistorial.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T20:06:00.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "GESTOR_PDF.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Servicios\\GESTOR_PDF.cs",
-              "RelativeDocumentMoniker": "Servicios\\GESTOR_PDF.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Servicios\\GESTOR_PDF.cs",
-              "RelativeToolTip": "Servicios\\GESTOR_PDF.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAgwE0AAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T20:14:56.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 87,
               "Title": "FrmRestauracionBase.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmRestauracionBase.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmRestauracionBase.cs",
@@ -1289,7 +1626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 86,
               "Title": "ENCRIPTADOR.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Servicios\\ENCRIPTADOR.cs",
               "RelativeDocumentMoniker": "Servicios\\ENCRIPTADOR.cs",
@@ -1301,7 +1638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 88,
               "Title": "MP_SERVICIO_CATERING.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_SERVICIO_CATERING.cs",
               "RelativeDocumentMoniker": "DAL\\MP_SERVICIO_CATERING.cs",
@@ -1313,31 +1650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "MP_RESERVA.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_RESERVA.cs",
-              "RelativeDocumentMoniker": "DAL\\MP_RESERVA.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_RESERVA.cs",
-              "RelativeToolTip": "DAL\\MP_RESERVA.cs",
-              "ViewState": "AgIAAAoBAAAAAAAAAAAswBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T18:30:32.081Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "MP_RECETARIO.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_RECETARIO.cs",
-              "RelativeDocumentMoniker": "DAL\\MP_RECETARIO.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_RECETARIO.cs",
-              "RelativeToolTip": "DAL\\MP_RECETARIO.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAgwAYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T08:05:42.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 89,
               "Title": "MP_PROVEEDOR_INSUMO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_PROVEEDOR_INSUMO.cs",
               "RelativeDocumentMoniker": "DAL\\MP_PROVEEDOR_INSUMO.cs",
@@ -1349,7 +1662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 90,
               "Title": "MP_PRESUPUESTO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_PRESUPUESTO.cs",
               "RelativeDocumentMoniker": "DAL\\MP_PRESUPUESTO.cs",
@@ -1361,7 +1674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 91,
               "Title": "MP_PRESTADOR_SERVICIO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_PRESTADOR_SERVICIO.cs",
               "RelativeDocumentMoniker": "DAL\\MP_PRESTADOR_SERVICIO.cs",
@@ -1373,7 +1686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 93,
               "Title": "MP_PERMISO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_PERMISO.cs",
               "RelativeDocumentMoniker": "DAL\\MP_PERMISO.cs",
@@ -1385,19 +1698,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "MP_PARAMETRO_RATIO.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_PARAMETRO_RATIO.cs",
-              "RelativeDocumentMoniker": "DAL\\MP_PARAMETRO_RATIO.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_PARAMETRO_RATIO.cs",
-              "RelativeToolTip": "DAL\\MP_PARAMETRO_RATIO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T11:46:22.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 92,
               "Title": "MP_PERSONAL.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_PERSONAL.cs",
               "RelativeDocumentMoniker": "DAL\\MP_PERSONAL.cs",
@@ -1409,7 +1710,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 94,
               "Title": "MP_PAGO_SE\u00D1A.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_PAGO_SE\u00D1A.cs",
               "RelativeDocumentMoniker": "DAL\\MP_PAGO_SE\u00D1A.cs",
@@ -1421,19 +1722,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
-              "Title": "MP_ORDEN_COMPRA.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_ORDEN_COMPRA.cs",
-              "RelativeDocumentMoniker": "DAL\\MP_ORDEN_COMPRA.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_ORDEN_COMPRA.cs",
-              "RelativeToolTip": "DAL\\MP_ORDEN_COMPRA.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAIwE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T19:33:33.931Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 95,
               "Title": "MP_INVENTARIO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_INVENTARIO.cs",
               "RelativeDocumentMoniker": "DAL\\MP_INVENTARIO.cs",
@@ -1445,19 +1734,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
-              "Title": "MP_INSUMO.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_INSUMO.cs",
-              "RelativeDocumentMoniker": "DAL\\MP_INSUMO.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_INSUMO.cs",
-              "RelativeToolTip": "DAL\\MP_INSUMO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:27:14.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 96,
               "Title": "MP_IDIOMA.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_IDIOMA.cs",
               "RelativeDocumentMoniker": "DAL\\MP_IDIOMA.cs",
@@ -1469,7 +1746,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 97,
               "Title": "MP_BITACORA.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_BITACORA.cs",
               "RelativeDocumentMoniker": "DAL\\MP_BITACORA.cs",
@@ -1481,19 +1758,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
-              "Title": "MP_FICHA_TECNICA.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_FICHA_TECNICA.cs",
-              "RelativeDocumentMoniker": "DAL\\MP_FICHA_TECNICA.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_FICHA_TECNICA.cs",
-              "RelativeToolTip": "DAL\\MP_FICHA_TECNICA.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAA0wBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T19:01:40.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 98,
               "Title": "MAPPER.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MAPPER.cs",
               "RelativeDocumentMoniker": "DAL\\MAPPER.cs",
@@ -1505,7 +1770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 99,
               "Title": "USUARIO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\USUARIO.cs",
               "RelativeDocumentMoniker": "BLL\\USUARIO.cs",
@@ -1517,19 +1782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
-              "Title": "MP_ASIGNACION_PERSONAL.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_ASIGNACION_PERSONAL.cs",
-              "RelativeDocumentMoniker": "DAL\\MP_ASIGNACION_PERSONAL.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_ASIGNACION_PERSONAL.cs",
-              "RelativeToolTip": "DAL\\MP_ASIGNACION_PERSONAL.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAgwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T11:47:52.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 100,
               "Title": "RESTAURACION.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\RESTAURACION.cs",
               "RelativeDocumentMoniker": "BLL\\RESTAURACION.cs",
@@ -1541,55 +1794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
-              "Title": "RESERVA.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\RESERVA.cs",
-              "RelativeDocumentMoniker": "BLL\\RESERVA.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\RESERVA.cs",
-              "RelativeToolTip": "BLL\\RESERVA.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T18:05:41.242Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 84,
-              "Title": "REQUERIMIENTO.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\REQUERIMIENTO.cs",
-              "RelativeDocumentMoniker": "BLL\\REQUERIMIENTO.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\REQUERIMIENTO.cs",
-              "RelativeToolTip": "BLL\\REQUERIMIENTO.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAqwCMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T18:31:29.711Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 85,
-              "Title": "PRESUPUESTO.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PRESUPUESTO.cs",
-              "RelativeDocumentMoniker": "BLL\\PRESUPUESTO.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PRESUPUESTO.cs",
-              "RelativeToolTip": "BLL\\PRESUPUESTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T18:07:02.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 86,
-              "Title": "PERSONAL.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PERSONAL.cs",
-              "RelativeDocumentMoniker": "BLL\\PERSONAL.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PERSONAL.cs",
-              "RelativeToolTip": "BLL\\PERSONAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-01T14:54:17.343Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 101,
               "Title": "PERMISO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PERMISO.cs",
               "RelativeDocumentMoniker": "BLL\\PERMISO.cs",
@@ -1601,91 +1806,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
-              "Title": "PARAMETRO_RATIO.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PARAMETRO_RATIO.cs",
-              "RelativeDocumentMoniker": "BLL\\PARAMETRO_RATIO.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PARAMETRO_RATIO.cs",
-              "RelativeToolTip": "BLL\\PARAMETRO_RATIO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T11:49:00.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 89,
-              "Title": "PAGO_SE\u00D1A.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PAGO_SE\u00D1A.cs",
-              "RelativeDocumentMoniker": "BLL\\PAGO_SE\u00D1A.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\PAGO_SE\u00D1A.cs",
-              "RelativeToolTip": "BLL\\PAGO_SE\u00D1A.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T18:08:27.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 90,
-              "Title": "ORDEN_COMPRA.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\ORDEN_COMPRA.cs",
-              "RelativeDocumentMoniker": "BLL\\ORDEN_COMPRA.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\ORDEN_COMPRA.cs",
-              "RelativeToolTip": "BLL\\ORDEN_COMPRA.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T18:15:17.993Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 91,
-              "Title": "INSUMO.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\INSUMO.cs",
-              "RelativeDocumentMoniker": "BLL\\INSUMO.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\INSUMO.cs",
-              "RelativeToolTip": "BLL\\INSUMO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-30T11:31:50.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 92,
-              "Title": "FICHA_TECNICA.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\FICHA_TECNICA.cs",
-              "RelativeDocumentMoniker": "BLL\\FICHA_TECNICA.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\FICHA_TECNICA.cs",
-              "RelativeToolTip": "BLL\\FICHA_TECNICA.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T18:10:42.791Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 93,
-              "Title": "CLIENTE.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\CLIENTE.cs",
-              "RelativeDocumentMoniker": "BLL\\CLIENTE.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\CLIENTE.cs",
-              "RelativeToolTip": "BLL\\CLIENTE.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAvwBoAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T19:32:35.661Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 94,
-              "Title": "ASIGNACION_PERSONAL.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\ASIGNACION_PERSONAL.cs",
-              "RelativeDocumentMoniker": "BLL\\ASIGNACION_PERSONAL.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\ASIGNACION_PERSONAL.cs",
-              "RelativeToolTip": "BLL\\ASIGNACION_PERSONAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T11:49:41.33Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 102,
               "Title": "USUARIO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\USUARIO.cs",
               "RelativeDocumentMoniker": "BE\\USUARIO.cs",
@@ -1697,7 +1818,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 103,
               "Title": "SERVICIO_CATERING.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\SERVICIO_CATERING.cs",
               "RelativeDocumentMoniker": "BE\\SERVICIO_CATERING.cs",
@@ -1709,7 +1830,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 104,
               "Title": "RESERVA.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\RESERVA.cs",
               "RelativeDocumentMoniker": "BE\\RESERVA.cs",
@@ -1721,7 +1842,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 105,
               "Title": "REQUERIMIENTO_INSUMO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\REQUERIMIENTO_INSUMO.cs",
               "RelativeDocumentMoniker": "BE\\REQUERIMIENTO_INSUMO.cs",
@@ -1733,7 +1854,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 106,
               "Title": "PROVEEDOR_INSUMO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\PROVEEDOR_INSUMO.cs",
               "RelativeDocumentMoniker": "BE\\PROVEEDOR_INSUMO.cs",
@@ -1745,7 +1866,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 107,
               "Title": "PRESUPUESTO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\PRESUPUESTO.cs",
               "RelativeDocumentMoniker": "BE\\PRESUPUESTO.cs",
@@ -1757,7 +1878,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 108,
               "Title": "PERSONAL.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\PERSONAL.cs",
               "RelativeDocumentMoniker": "BE\\PERSONAL.cs",
@@ -1769,7 +1890,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 109,
               "Title": "PERMISO_SIMPLE.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\PERMISO_SIMPLE.cs",
               "RelativeDocumentMoniker": "BE\\PERMISO_SIMPLE.cs",
@@ -1781,7 +1902,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 110,
               "Title": "PERMISO_COMPUESTO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\PERMISO_COMPUESTO.cs",
               "RelativeDocumentMoniker": "BE\\PERMISO_COMPUESTO.cs",
@@ -1793,31 +1914,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
-              "Title": "PARAMETRO_RATIO.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\PARAMETRO_RATIO.cs",
-              "RelativeDocumentMoniker": "BE\\PARAMETRO_RATIO.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\PARAMETRO_RATIO.cs",
-              "RelativeToolTip": "BE\\PARAMETRO_RATIO.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T11:43:19.431Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 105,
-              "Title": "ORDEN_COMPRA.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\ORDEN_COMPRA.cs",
-              "RelativeDocumentMoniker": "BE\\ORDEN_COMPRA.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\ORDEN_COMPRA.cs",
-              "RelativeToolTip": "BE\\ORDEN_COMPRA.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-04T17:21:27.677Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 111,
               "Title": "IObserver.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\IObserver.cs",
               "RelativeDocumentMoniker": "BE\\IObserver.cs",
@@ -1829,7 +1926,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 112,
               "Title": "IObservable.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\IObservable.cs",
               "RelativeDocumentMoniker": "BE\\IObservable.cs",
@@ -1841,7 +1938,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 113,
               "Title": "INVENTARIO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\INVENTARIO.cs",
               "RelativeDocumentMoniker": "BE\\INVENTARIO.cs",
@@ -1853,7 +1950,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 114,
               "Title": "INSUMO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\INSUMO.cs",
               "RelativeDocumentMoniker": "BE\\INSUMO.cs",
@@ -1865,7 +1962,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 115,
               "Title": "HISTORIAL_USUARIO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\HISTORIAL_USUARIO.cs",
               "RelativeDocumentMoniker": "BE\\HISTORIAL_USUARIO.cs",
@@ -1877,7 +1974,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 116,
               "Title": "FICHA_TECNICA.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\FICHA_TECNICA.cs",
               "RelativeDocumentMoniker": "BE\\FICHA_TECNICA.cs",
@@ -1889,7 +1986,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 117,
               "Title": "DOTACION_DTO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\DOTACION_DTO.cs",
               "RelativeDocumentMoniker": "BE\\DOTACION_DTO.cs",
@@ -1901,7 +1998,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 118,
               "Title": "DETALLE_RECETARIO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\DETALLE_RECETARIO.cs",
               "RelativeDocumentMoniker": "BE\\DETALLE_RECETARIO.cs",
@@ -1913,19 +2010,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
-              "Title": "DETALLE_ORDEN_COMPRA.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\DETALLE_ORDEN_COMPRA.cs",
-              "RelativeDocumentMoniker": "BE\\DETALLE_ORDEN_COMPRA.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\DETALLE_ORDEN_COMPRA.cs",
-              "RelativeToolTip": "BE\\DETALLE_ORDEN_COMPRA.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-05T17:45:58.257Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 119,
               "Title": "COMPONENTE.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\COMPONENTE.cs",
               "RelativeDocumentMoniker": "BE\\COMPONENTE.cs",
@@ -1937,7 +2022,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 120,
               "Title": "CLIENTE.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\CLIENTE.cs",
               "RelativeDocumentMoniker": "BE\\CLIENTE.cs",
@@ -1949,7 +2034,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 121,
               "Title": "CALIBRACION_DTO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\CALIBRACION_DTO.cs",
               "RelativeDocumentMoniker": "BE\\CALIBRACION_DTO.cs",
@@ -1961,7 +2046,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 122,
               "Title": "BITACORA.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\BITACORA.cs",
               "RelativeDocumentMoniker": "BE\\BITACORA.cs",
@@ -1973,7 +2058,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 123,
               "Title": "FrmCTRLUsuario.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmCTRLUsuario.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmCTRLUsuario.cs",
@@ -1981,11 +2066,12 @@
               "RelativeToolTip": "Trabajo practico IS\\FrmCTRLUsuario.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAzwD8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-02T18:45:02.061Z"
+              "WhenOpened": "2026-11-02T18:45:02.061Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 124,
               "Title": "FrmAsignarPersonal.Designer.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\Trabajo practico IS\\FrmAsignarPersonal.Designer.cs",
               "RelativeDocumentMoniker": "Trabajo practico IS\\FrmAsignarPersonal.Designer.cs",
@@ -1998,19 +2084,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
-              "Title": "RECETARIO.cs",
-              "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\RECETARIO.cs",
-              "RelativeDocumentMoniker": "BLL\\RECETARIO.cs",
-              "ToolTip": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\RECETARIO.cs",
-              "RelativeToolTip": "BLL\\RECETARIO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-31T08:06:46.824Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 125,
               "Title": "PROVEEDOR_EXTERNO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BE\\PROVEEDOR_EXTERNO.cs",
               "RelativeDocumentMoniker": "BE\\PROVEEDOR_EXTERNO.cs",
@@ -2021,7 +2095,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 126,
               "Title": "MP_PROVEEDOR_EXTERNO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\MP_PROVEEDOR_EXTERNO.cs",
               "RelativeDocumentMoniker": "BLL\\MP_PROVEEDOR_EXTERNO.cs",
@@ -2032,7 +2106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 127,
               "Title": "MP_SERVICIO_CATERING.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\BLL\\MP_SERVICIO_CATERING.cs",
               "RelativeDocumentMoniker": "BLL\\MP_SERVICIO_CATERING.cs",
@@ -2043,7 +2117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 128,
               "Title": "MP_PROVEEDOR_EXTERNO.cs",
               "DocumentMoniker": "C:\\Users\\matias\\OneDrive\\Escritorio\\Proyecto Diploma\\Proyecto-Diploma\\Trabajo practico IS\\DAL\\MP_PROVEEDOR_EXTERNO.cs",
               "RelativeDocumentMoniker": "DAL\\MP_PROVEEDOR_EXTERNO.cs",

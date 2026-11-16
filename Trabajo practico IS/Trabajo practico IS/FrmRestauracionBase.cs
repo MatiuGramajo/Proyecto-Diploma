@@ -18,7 +18,7 @@ namespace Trabajo_practico_IS
         private bool _reiniciando = false;
         public FrmRestauracionBase(string mensajeError)
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
             LBMensajeError.Text = mensajeError;
             _esEmergencia = true;
             BTNHacerBackUp.Enabled = false;
@@ -26,7 +26,7 @@ namespace Trabajo_practico_IS
 
         public FrmRestauracionBase()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
             LBMensajeError.Text = "Estado: Base de datos íntegra. Acceso manual de administración.";
             _esEmergencia = false;
             BTNHacerBackUp.Enabled = true;

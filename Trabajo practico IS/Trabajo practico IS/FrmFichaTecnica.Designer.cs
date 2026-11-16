@@ -306,7 +306,7 @@
             this.Controls.Add(this.GBplanificarevento);
             this.Controls.Add(this.GBseleccionarevento);
             this.Name = "FrmFichaTecnica";
-            this.Text = "FrmFichaTecnica";
+            this.Text = "Ficha Tecnica";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmFichaTecnica_FormClosed);
             this.Load += new System.EventHandler(this.FrmFichaTecnica_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

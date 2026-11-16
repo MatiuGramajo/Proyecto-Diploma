@@ -76,7 +76,7 @@
             // 
             // BTNconfirmarPago
             // 
-            this.BTNconfirmarPago.Location = new System.Drawing.Point(651, 366);
+            this.BTNconfirmarPago.Location = new System.Drawing.Point(650, 380);
             this.BTNconfirmarPago.Name = "BTNconfirmarPago";
             this.BTNconfirmarPago.Size = new System.Drawing.Size(98, 38);
             this.BTNconfirmarPago.TabIndex = 3;
@@ -212,7 +212,7 @@
             this.Controls.Add(this.TXTmonto);
             this.Controls.Add(this.DGVPresupuestosPendientes);
             this.Name = "FrmRegistrarPago";
-            this.Text = "FrmRegistrarPago";
+            this.Text = "Registrar Pago";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmRegistrarPago_FormClosed);
             this.Load += new System.EventHandler(this.FrmRegistrarPago_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DGVPresupuestosPendientes)).EndInit();

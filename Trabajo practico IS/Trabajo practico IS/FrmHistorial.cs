@@ -16,7 +16,7 @@ namespace Trabajo_practico_IS
         BLL.IDIOMA gestorIdioma = new BLL.IDIOMA();
         public FrmHistorial()
         {
-            InitializeComponent();
+            InitializeComponent(); EstiloUI.Aplicar(this);
             DGVHistorial.SelectionChanged += DGVHistorial_SelectionChanged;
         }
 

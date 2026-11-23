@@ -71,6 +71,7 @@
             this.btnRegistrarOrdenCompra = new System.Windows.Forms.Button();
             this.btnCalibrarRatios = new System.Windows.Forms.Button();
             this.btnLiquidacionFinal = new System.Windows.Forms.Button();
+            this.registrarClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -180,6 +181,7 @@
             // 
             this.gestionCatalogoDeInsumosToolStripMenuItem.Name = "gestionCatalogoDeInsumosToolStripMenuItem";
             this.gestionCatalogoDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(294, 24);
+            this.gestionCatalogoDeInsumosToolStripMenuItem.Tag = "ABM_INSUMOS";
             this.gestionCatalogoDeInsumosToolStripMenuItem.Text = "Gestion Catalogo de Insumos";
             this.gestionCatalogoDeInsumosToolStripMenuItem.Click += new System.EventHandler(this.gestionCatalogoDeInsumosToolStripMenuItem_Click);
             // 
@@ -187,6 +189,7 @@
             // 
             this.gestionRecetarioToolStripMenuItem.Name = "gestionRecetarioToolStripMenuItem";
             this.gestionRecetarioToolStripMenuItem.Size = new System.Drawing.Size(294, 24);
+            this.gestionRecetarioToolStripMenuItem.Tag = "GESTION_RECETARIO";
             this.gestionRecetarioToolStripMenuItem.Text = "Gestion Recetario";
             this.gestionRecetarioToolStripMenuItem.Click += new System.EventHandler(this.gestionRecetarioToolStripMenuItem_Click);
             // 
@@ -194,6 +197,7 @@
             // 
             this.consultarFaltantesToolStripMenuItem.Name = "consultarFaltantesToolStripMenuItem";
             this.consultarFaltantesToolStripMenuItem.Size = new System.Drawing.Size(294, 24);
+            this.consultarFaltantesToolStripMenuItem.Tag = "CONSULTAR_STOCK";
             this.consultarFaltantesToolStripMenuItem.Text = "Consultar Faltantes";
             this.consultarFaltantesToolStripMenuItem.Click += new System.EventHandler(this.consultarFaltantesToolStripMenuItem_Click);
             // 
@@ -203,7 +207,8 @@
             this.calendarioToolStripMenuItem,
             this.registrarPagoToolStripMenuItem,
             this.fichaTecnicaToolStripMenuItem,
-            this.liquidacionFinalToolStripMenuItem});
+            this.liquidacionFinalToolStripMenuItem,
+            this.registrarClienteToolStripMenuItem});
             this.eventosToolStripMenuItem.Name = "eventosToolStripMenuItem";
             this.eventosToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
             this.eventosToolStripMenuItem.Text = "Eventos";
@@ -212,6 +217,7 @@
             // 
             this.calendarioToolStripMenuItem.Name = "calendarioToolStripMenuItem";
             this.calendarioToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.calendarioToolStripMenuItem.Tag = "GESTION_CALENDARIO";
             this.calendarioToolStripMenuItem.Text = "Calendario";
             this.calendarioToolStripMenuItem.Click += new System.EventHandler(this.calendarioToolStripMenuItem_Click);
             // 
@@ -219,6 +225,7 @@
             // 
             this.registrarPagoToolStripMenuItem.Name = "registrarPagoToolStripMenuItem";
             this.registrarPagoToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.registrarPagoToolStripMenuItem.Tag = "GESTION_PAGO";
             this.registrarPagoToolStripMenuItem.Text = "Registrar Pago";
             this.registrarPagoToolStripMenuItem.Click += new System.EventHandler(this.registrarPagoToolStripMenuItem_Click);
             // 
@@ -226,6 +233,7 @@
             // 
             this.fichaTecnicaToolStripMenuItem.Name = "fichaTecnicaToolStripMenuItem";
             this.fichaTecnicaToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.fichaTecnicaToolStripMenuItem.Tag = "GESTION_FICHA_TECNICA";
             this.fichaTecnicaToolStripMenuItem.Text = "Ficha Tecnica";
             this.fichaTecnicaToolStripMenuItem.Click += new System.EventHandler(this.fichaTecnicaToolStripMenuItem_Click_1);
             // 
@@ -233,6 +241,7 @@
             // 
             this.liquidacionFinalToolStripMenuItem.Name = "liquidacionFinalToolStripMenuItem";
             this.liquidacionFinalToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.liquidacionFinalToolStripMenuItem.Tag = "GESTION_LIQUIDACION_FINAL";
             this.liquidacionFinalToolStripMenuItem.Text = "Liquidacion Final";
             this.liquidacionFinalToolStripMenuItem.Click += new System.EventHandler(this.liquidacionFinalToolStripMenuItem_Click_1);
             // 
@@ -251,6 +260,7 @@
             // 
             this.gestionProveedoresDeInsumosToolStripMenuItem.Name = "gestionProveedoresDeInsumosToolStripMenuItem";
             this.gestionProveedoresDeInsumosToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.gestionProveedoresDeInsumosToolStripMenuItem.Tag = "ABM_PROVEEDOR_INSUMO";
             this.gestionProveedoresDeInsumosToolStripMenuItem.Text = "Gestion Proveedores de Insumos";
             this.gestionProveedoresDeInsumosToolStripMenuItem.Click += new System.EventHandler(this.gestionProveedoresDeInsumosToolStripMenuItem_Click_1);
             // 
@@ -258,6 +268,7 @@
             // 
             this.registrarOrdenDeCompraToolStripMenuItem.Name = "registrarOrdenDeCompraToolStripMenuItem";
             this.registrarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.registrarOrdenDeCompraToolStripMenuItem.Tag = "GESTION_ORDEN_COMPRA";
             this.registrarOrdenDeCompraToolStripMenuItem.Text = "Registrar Orden de Compra";
             this.registrarOrdenDeCompraToolStripMenuItem.Click += new System.EventHandler(this.registrarOrdenDeCompraToolStripMenuItem_Click_1);
             // 
@@ -265,6 +276,7 @@
             // 
             this.anularReasignarOrdenDeCompraToolStripMenuItem.Name = "anularReasignarOrdenDeCompraToolStripMenuItem";
             this.anularReasignarOrdenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.anularReasignarOrdenDeCompraToolStripMenuItem.Tag = "GESTION_ANULAR_REASIGNAR_ORDEN_COMPRA";
             this.anularReasignarOrdenDeCompraToolStripMenuItem.Text = "Anular/Reasignar Orden de Compra";
             this.anularReasignarOrdenDeCompraToolStripMenuItem.Click += new System.EventHandler(this.anularReasignarOrdenDeCompraToolStripMenuItem_Click_1);
             // 
@@ -272,6 +284,7 @@
             // 
             this.registrarRecepcionDeMercaderiaToolStripMenuItem.Name = "registrarRecepcionDeMercaderiaToolStripMenuItem";
             this.registrarRecepcionDeMercaderiaToolStripMenuItem.Size = new System.Drawing.Size(343, 24);
+            this.registrarRecepcionDeMercaderiaToolStripMenuItem.Tag = "GESTION_RECEPCIONAR_STOCK";
             this.registrarRecepcionDeMercaderiaToolStripMenuItem.Text = "Registrar Recepcion de Mercaderia";
             this.registrarRecepcionDeMercaderiaToolStripMenuItem.Click += new System.EventHandler(this.registrarRecepcionDeMercaderiaToolStripMenuItem_Click_1);
             // 
@@ -290,6 +303,7 @@
             // 
             this.gestionarPersonalToolStripMenuItem.Name = "gestionarPersonalToolStripMenuItem";
             this.gestionarPersonalToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
+            this.gestionarPersonalToolStripMenuItem.Tag = "ABM_PERSONAL";
             this.gestionarPersonalToolStripMenuItem.Text = "Gestionar Personal";
             this.gestionarPersonalToolStripMenuItem.Click += new System.EventHandler(this.gestionarPersonalToolStripMenuItem_Click_1);
             // 
@@ -297,6 +311,7 @@
             // 
             this.asignarPersonalToolStripMenuItem.Name = "asignarPersonalToolStripMenuItem";
             this.asignarPersonalToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
+            this.asignarPersonalToolStripMenuItem.Tag = "GESTION_PERSONAL";
             this.asignarPersonalToolStripMenuItem.Text = "Asignar Personal";
             this.asignarPersonalToolStripMenuItem.Click += new System.EventHandler(this.asignarPersonalToolStripMenuItem_Click_1);
             // 
@@ -304,6 +319,7 @@
             // 
             this.calibrarRatiosToolStripMenuItem.Name = "calibrarRatiosToolStripMenuItem";
             this.calibrarRatiosToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
+            this.calibrarRatiosToolStripMenuItem.Tag = "GESTION_RATIOS";
             this.calibrarRatiosToolStripMenuItem.Text = "Calibrar Ratios";
             this.calibrarRatiosToolStripMenuItem.Click += new System.EventHandler(this.calibrarRatiosToolStripMenuItem_Click_1);
             // 
@@ -311,6 +327,7 @@
             // 
             this.registrarEvaluacionToolStripMenuItem.Name = "registrarEvaluacionToolStripMenuItem";
             this.registrarEvaluacionToolStripMenuItem.Size = new System.Drawing.Size(227, 24);
+            this.registrarEvaluacionToolStripMenuItem.Tag = "GESTION_EVALUACION";
             this.registrarEvaluacionToolStripMenuItem.Text = "Registrar Evaluacion";
             this.registrarEvaluacionToolStripMenuItem.Click += new System.EventHandler(this.registrarEvaluacionToolStripMenuItem_Click_1);
             // 
@@ -326,7 +343,7 @@
             // BitacoraToolStripMenuItem
             // 
             this.BitacoraToolStripMenuItem.Name = "BitacoraToolStripMenuItem";
-            this.BitacoraToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.BitacoraToolStripMenuItem.Size = new System.Drawing.Size(142, 24);
             this.BitacoraToolStripMenuItem.Tag = "BITACORA";
             this.BitacoraToolStripMenuItem.Text = "Bitacora";
             this.BitacoraToolStripMenuItem.Click += new System.EventHandler(this.BitacoraToolStripMenuItem_Click_1);
@@ -335,6 +352,7 @@
             // 
             this.metricasToolStripMenuItem.Name = "metricasToolStripMenuItem";
             this.metricasToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.metricasToolStripMenuItem.Tag = "VER_DASHBOARD";
             this.metricasToolStripMenuItem.Text = "Metricas";
             this.metricasToolStripMenuItem.Click += new System.EventHandler(this.metricasToolStripMenuItem_Click_1);
             // 
@@ -420,6 +438,7 @@
             this.groupBox1.Size = new System.Drawing.Size(716, 100);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Tag = "ADMIN";
             this.groupBox1.Text = "Acceso Rapido";
             // 
             // btnRegistrarOrdenCompra
@@ -463,6 +482,14 @@
             this.btnLiquidacionFinal.Text = "Liquidacion Final";
             this.btnLiquidacionFinal.UseVisualStyleBackColor = false;
             this.btnLiquidacionFinal.Click += new System.EventHandler(this.btnLiquidacionFinal_Click);
+            // 
+            // registrarClienteToolStripMenuItem
+            // 
+            this.registrarClienteToolStripMenuItem.Name = "registrarClienteToolStripMenuItem";
+            this.registrarClienteToolStripMenuItem.Size = new System.Drawing.Size(198, 24);
+            this.registrarClienteToolStripMenuItem.Tag = "ABM_CLIENTE";
+            this.registrarClienteToolStripMenuItem.Text = "Registrar Cliente";
+            this.registrarClienteToolStripMenuItem.Click += new System.EventHandler(this.registrarClienteToolStripMenuItem_Click);
             // 
             // FrmMenuPrincipal
             // 
@@ -540,6 +567,7 @@
         private System.Windows.Forms.Button btnRegistrarOrdenCompra;
         private System.Windows.Forms.Button btnCalibrarRatios;
         private System.Windows.Forms.Button btnLiquidacionFinal;
+        private System.Windows.Forms.ToolStripMenuItem registrarClienteToolStripMenuItem;
     }
 }
 

@@ -43,6 +43,7 @@ namespace BLL
         {
             return mpReserva.ListarEventosPlanificados(fechaDesde, fechaHasta);
         }
+
         public void RegistrarLiquidacion(BE.RESERVA reservaSeleccionada, string metodoPago)
         {
             mpReserva.SaldarReserva(reservaSeleccionada.Id_Reserva);
@@ -50,7 +51,7 @@ namespace BLL
             reservaSeleccionada.Saldo_Pendiente = 0;
             reservaSeleccionada.Estado = "Saldado";
 
-            gestorPDF.GenerarComprobantePDF(reservaSeleccionada);
+            gestorPDF.GenerarComprobantePDF(reservaSeleccionada, metodoPago);
         }
         public List<BE.RESERVA> ListarReservasPendientesEvaluacion()
         {
@@ -76,5 +77,6 @@ namespace BLL
 
             mpReserva.GuardarEvaluacion(objReserva);
         }
+
     }
 }

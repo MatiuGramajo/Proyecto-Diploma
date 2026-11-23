@@ -14,6 +14,7 @@ namespace BLL
         private Servicios.GESTOR_PDF gestorPDF = new Servicios.GESTOR_PDF();
         private BLL.INSUMO bllInsumo = new BLL.INSUMO();
         private Servicios.GESTOR_SERIALIZACION gestorXML = new Servicios.GESTOR_SERIALIZACION();
+
         public void RegistrarOrdenCompra(BE.ORDEN_COMPRA nuevaOrden)
         {
             nuevaOrden.Estado = "Emitida";
@@ -21,7 +22,12 @@ namespace BLL
 
             mpOrdenCompra.Alta(nuevaOrden);
 
-            gestorPDF.GenerarComprobantePDF(nuevaOrden);
+            var bllProveedor = new BLL.PROVEEDOR_INSUMO();
+            var proveedor = bllProveedor.ListarProveedores()
+                .Find(p => p.Id_Proveedor == nuevaOrden.Id_Proveedor);
+
+            gestorPDF.GenerarComprobantePDF(nuevaOrden, proveedor);
+
             string carpeta = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "OrdenesDeCompra");
             string rutaXml = Path.Combine(carpeta, $"OrdenCompra_{nuevaOrden.Id_OrdenCompra}_{DateTime.Now:yyyyMMdd_HHmmss}.xml");
             gestorXML.SerializarXML(nuevaOrden, rutaXml);

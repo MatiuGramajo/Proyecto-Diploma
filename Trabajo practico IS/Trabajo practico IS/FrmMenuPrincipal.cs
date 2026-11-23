@@ -36,7 +36,8 @@ namespace Trabajo_practico_IS
             CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
             CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
             ActualizarIdioma();
-            Utilidades.GES_PERMISOS_GUI.AplicarPermisos(this);
+            //Utilidades.GES_PERMISOS_GUI.AplicarPermisos(this);
+            Utilidades.Trabajo_practico_IS.Utilidades.GES_PERMISOS_GUI.AplicarPermisos(this);
         }
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
@@ -495,6 +496,19 @@ namespace Trabajo_practico_IS
             this.Hide();
             FrmDashboardUnificado frmdashboard = new FrmDashboardUnificado();
             frmdashboard.ShowDialog();
+            this.Show();
+        }
+
+        private void presupuestoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registrarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmRegistrarCliente frmregistrarcliente = new FrmRegistrarCliente();
+            frmregistrarcliente.ShowDialog();
             this.Show();
         }
     }

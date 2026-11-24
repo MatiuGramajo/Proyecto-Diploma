@@ -41,7 +41,7 @@
             // 
             this.TxtBoxUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.TxtBoxUsuario.Location = new System.Drawing.Point(53, 57);
-            this.TxtBoxUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtBoxUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.TxtBoxUsuario.Name = "TxtBoxUsuario";
             this.TxtBoxUsuario.Size = new System.Drawing.Size(116, 23);
             this.TxtBoxUsuario.TabIndex = 0;
@@ -50,8 +50,9 @@
             // 
             this.TxtBoxPassword.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.TxtBoxPassword.Location = new System.Drawing.Point(53, 143);
-            this.TxtBoxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TxtBoxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.TxtBoxPassword.Name = "TxtBoxPassword";
+            this.TxtBoxPassword.PasswordChar = '*';
             this.TxtBoxPassword.Size = new System.Drawing.Size(116, 23);
             this.TxtBoxPassword.TabIndex = 1;
             // 
@@ -61,7 +62,7 @@
             this.BTN_IniciarSesion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTN_IniciarSesion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BTN_IniciarSesion.Location = new System.Drawing.Point(59, 186);
-            this.BTN_IniciarSesion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTN_IniciarSesion.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_IniciarSesion.Name = "BTN_IniciarSesion";
             this.BTN_IniciarSesion.Size = new System.Drawing.Size(105, 28);
             this.BTN_IniciarSesion.TabIndex = 2;
@@ -97,7 +98,7 @@
             this.CBXIdiomas.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CBXIdiomas.FormattingEnabled = true;
             this.CBXIdiomas.Location = new System.Drawing.Point(218, 34);
-            this.CBXIdiomas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CBXIdiomas.Margin = new System.Windows.Forms.Padding(4);
             this.CBXIdiomas.Name = "CBXIdiomas";
             this.CBXIdiomas.Size = new System.Drawing.Size(140, 25);
             this.CBXIdiomas.TabIndex = 6;
@@ -129,7 +130,7 @@
             this.Controls.Add(this.TxtBoxPassword);
             this.Controls.Add(this.TxtBoxUsuario);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmLogIn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Sesion";

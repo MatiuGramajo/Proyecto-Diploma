@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 namespace BE
 {
@@ -68,14 +69,21 @@ namespace BE
         }
 
         private int idIdioma;
-
+        [Browsable(false)] 
         public int IdIdioma
         {
             get { return idIdioma; }
             set { idIdioma = value; }
         }
+        private string nombreIdioma;
 
-		private string dvh;
+        [DisplayName("Idioma")] 
+        public string NombreIdioma
+        {
+            get { return nombreIdioma; }
+            set { nombreIdioma = value; }
+        }
+        private string dvh;
 
 		public string DVH
 		{

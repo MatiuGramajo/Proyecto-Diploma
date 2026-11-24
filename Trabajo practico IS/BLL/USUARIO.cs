@@ -1,4 +1,5 @@
-﻿using DAL;
+﻿using BE;
+using DAL;
 using Servicios;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace BLL
     public class USUARIO
     {
         MP_USUARIO mapper = new MP_USUARIO();
+        DAL.MP_IDIOMA mapperIdioma = new DAL.MP_IDIOMA(); 
         BLL.BITACORA gestorBitacora= new BLL.BITACORA();
         BLL.PERMISO gestorPermisos = new BLL.PERMISO();
         BLL.DIGITO_VERIFICADOR GestorDV = new BLL.DIGITO_VERIFICADOR();
@@ -115,9 +117,27 @@ namespace BLL
 
         public List<BE.USUARIO> Listar()
         {
-            return mapper.Listar();
+            List<BE.USUARIO> usuarios = mapper.Listar();
+            CompletarNombresIdioma(usuarios);
+            return usuarios;
         }
+        private void CompletarNombresIdioma(List<BE.USUARIO> usuarios)
+        {
+            List<BE.IDIOMA> idiomas = mapperIdioma.Listar();
+            Dictionary<int, string> dicIdiomas = idiomas.ToDictionary(i => i.Id, i => i.Nombre);
 
+            foreach (BE.USUARIO usu in usuarios)
+            {
+                if (dicIdiomas.TryGetValue(usu.IdIdioma, out string nombre))
+                {
+                    usu.NombreIdioma = nombre;
+                }
+                else
+                {
+                    usu.NombreIdioma = "Sin idioma";
+                }
+            }
+        }
         public void Reactivar(BE.USUARIO usuario)
         {
             List<BE.USUARIO> todosLosUsuarios = mapper.Listar();

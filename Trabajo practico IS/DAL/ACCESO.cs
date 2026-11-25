@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-
 namespace DAL
 {
     public class ACCESO
@@ -137,21 +136,51 @@ namespace DAL
 
         private static bool BaseDatosLista(SqlConnection connMaster)
         {
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string rutaScript = Path.Combine(baseDir, "InstalacionDB.sql");
+            string rutaFlag = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
+                "JMA Solutions",
+                "reinstalar.flag");
+
+            // Si el instalador dejó la bandera de reinstalación, forzamos recrear la base
+            if (File.Exists(rutaFlag))
+                return false;
+
             string sqlCheck = @"
-                SELECT CASE 
-                    WHEN DB_ID(N'BASE') IS NOT NULL 
-                     AND COL_LENGTH(N'BASE.dbo.USUARIO', N'CONTRASEÑA') IS NOT NULL 
-                    THEN 1 ELSE 0 
-                END";
+                SELECT create_date 
+                FROM sys.databases 
+                WHERE name = N'BASE' 
+                  AND COL_LENGTH(N'BASE.dbo.USUARIO', N'CONTRASEÑA') IS NOT NULL";
 
             using (SqlCommand cmd = new SqlCommand(sqlCheck, connMaster))
             {
-                return Convert.ToInt32(cmd.ExecuteScalar()) == 1;
+                object resultado = cmd.ExecuteScalar();
+                if (resultado == null || resultado == DBNull.Value)
+                    return false;
+
+                // Si el InstalacionDB.sql copiado es más nuevo que la base actual, forzamos recrearla
+                if (File.Exists(rutaScript))
+                {
+                    DateTime fechaCreacionBD = Convert.ToDateTime(resultado);
+                    DateTime fechaScript = File.GetLastWriteTime(rutaScript);
+
+                    if (fechaScript > fechaCreacionBD)
+                        return false;
+                }
+
+                return true;
             }
         }
+
         private static void CrearBaseDesdeScript(SqlConnection connMaster)
         {
-            string rutaScript = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "InstalacionDB.sql");
+            string baseDir = AppDomain.CurrentDomain.BaseDirectory;
+            string rutaScript = Path.Combine(baseDir, "InstalacionDB.sql");
+            string rutaFlag = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
+                "JMA Solutions",
+                "reinstalar.flag");
 
             if (!File.Exists(rutaScript))
                 throw new FileNotFoundException("No se encontró el archivo InstalacionDB.sql junto al ejecutable.", rutaScript);
@@ -208,9 +237,15 @@ namespace DAL
                     cmd.ExecuteNonQuery();
                 }
             }
+
+            // Borramos la bandera para que en los próximos arranques normales NO borre los datos
+            try
+            {
+                if (File.Exists(rutaFlag))
+                    File.Delete(rutaFlag);
+            }
+            catch { }
         }
-
-
         private static string LeerScriptConEncodingSeguro(string ruta)
         {
             byte[] bytes = File.ReadAllBytes(ruta);
@@ -233,6 +268,7 @@ namespace DAL
                 return Encoding.GetEncoding(1252).GetString(bytes);
             }
         }
+
         public void Cerrar()
         {
             conexion.Close();
@@ -255,7 +291,7 @@ namespace DAL
             return cmd;
         }
 
-        public SqlParameter CrearParametro(string nombre,string valor)
+        public SqlParameter CrearParametro(string nombre, string valor)
         {
             SqlParameter param = new SqlParameter();
             param.DbType = System.Data.DbType.String;
@@ -263,8 +299,8 @@ namespace DAL
             param.ParameterName = nombre;
 
             return param;
-
         }
+
         public SqlParameter CrearParametro(string nombre, DateTime valor)
         {
             SqlParameter param = new SqlParameter();
@@ -273,8 +309,8 @@ namespace DAL
             param.ParameterName = nombre;
 
             return param;
-
         }
+
         public SqlParameter CrearParametro(string nombre, bool valor)
         {
             SqlParameter param = new SqlParameter();
@@ -283,7 +319,6 @@ namespace DAL
             param.ParameterName = nombre;
 
             return param;
-
         }
 
         public SqlParameter CrearParametro(string nombre, int valor)
@@ -305,14 +340,17 @@ namespace DAL
 
             return param;
         }
+
         public SqlParameter CrearParametro(string nombre, long valor)
         {
             SqlParameter param = new SqlParameter();
-            param.DbType = System.Data.DbType.Int64; 
+            param.DbType = System.Data.DbType.Int64;
             param.Value = valor;
             param.ParameterName = nombre;
+
             return param;
         }
+
         public int Escribir(string query, List<SqlParameter> parametros = null)
         {
             SqlCommand cmd = CrearComando(query, parametros);
@@ -320,15 +358,14 @@ namespace DAL
 
             try
             {
-               filas= cmd.ExecuteNonQuery();
+                filas = cmd.ExecuteNonQuery();
             }
-                catch (Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception("Error en la base de datos : " + ex.Message);
             }
             finally
             {
-
                 cmd.Parameters.Clear();
                 cmd = null;
             }
@@ -340,7 +377,7 @@ namespace DAL
         {
             DataTable tabla = new DataTable();
             SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.SelectCommand = CrearComando(query,parametros);
+            adapter.SelectCommand = CrearComando(query, parametros);
             adapter.Fill(tabla);
             return tabla;
         }
@@ -359,7 +396,5 @@ namespace DAL
             SqlDataReader reader = comando.ExecuteReader();
             return reader;
         }
-
-
     }
 }

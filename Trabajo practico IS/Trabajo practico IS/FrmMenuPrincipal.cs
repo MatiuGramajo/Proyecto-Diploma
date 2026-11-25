@@ -36,7 +36,6 @@ namespace Trabajo_practico_IS
             CBXidiomas.SelectedValue = Servicios.IDIOMAS.GetInstancia().IdIdiomaActual;
             CBXidiomas.SelectedIndexChanged += CBXidiomas_SelectedIndexChanged;
             ActualizarIdioma();
-            //Utilidades.GES_PERMISOS_GUI.AplicarPermisos(this);
             Utilidades.Trabajo_practico_IS.Utilidades.GES_PERMISOS_GUI.AplicarPermisos(this);
         }
         private void BtnCerrarSesion_Click(object sender, EventArgs e)

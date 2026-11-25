@@ -140,7 +140,7 @@ namespace BLL
                                         where int.Parse(fila["Id_Hijo"].ToString()) == p.Id
                                         select fila).Any();
 
-                if (!esHijoDeAlguien && p.EsCompuesto) // <-- Esta es la línea modificada
+                if (!esHijoDeAlguien && p.EsCompuesto) 
                 {
                     raices.Add(p);
                 }
@@ -149,48 +149,7 @@ namespace BLL
             return raices;
         }
 
-        //public List<BE.COMPONENTE> ObtenerArbolCompleto()
-        //{
-        //    List<BE.COMPONENTE> todosLosPermisos = mapperPermiso.Listar();
-        //    DataTable tablaRelaciones = mapperPermiso.ObtenerTablaRelacionesAuxiliar();
-        //    foreach (var nodo in todosLosPermisos)
-        //    {
-        //        var filasHijos = from DataRow fila in tablaRelaciones.Rows
-        //                         where int.Parse(fila["Id_Padre"].ToString()) == nodo.Id
-        //                         select fila;
-
-        //        foreach (DataRow fila in filasHijos)
-        //        {
-        //            int idHijo = int.Parse(fila["Id_Hijo"].ToString());
-
-        //            BE.COMPONENTE hijoEncontrado = (from p in todosLosPermisos
-        //                                            where p.Id == idHijo
-        //                                            select p).FirstOrDefault();
-
-        //            if (hijoEncontrado != null)
-        //            {
-        //                nodo.AgregarHijo(hijoEncontrado);
-        //            }
-        //        }
-        //    }
-
-        //    List<BE.COMPONENTE> raices = new List<BE.COMPONENTE>();
-        //    foreach (var p in todosLosPermisos)
-        //    {
-        //        bool esHijoDeAlguien = (from DataRow fila in tablaRelaciones.Rows
-        //                                where int.Parse(fila["Id_Hijo"].ToString()) == p.Id
-        //                                select fila).Any();
-
-        //        if (!esHijoDeAlguien)
-        //        {
-        //            raices.Add(p);
-        //        }
-        //    }
-
-        //    return raices;
-
-        //}
-
+     
         public List<BE.COMPONENTE> ObtenerPermisosUsuario(int idUsuario)
         {
             List<int> idsAsignados = mapperPermiso.ObtenerIdsPermisosUsuario(idUsuario);

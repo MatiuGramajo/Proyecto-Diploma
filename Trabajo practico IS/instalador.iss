@@ -26,6 +26,7 @@ PrivilegesRequired=admin
 OutputBaseFilename=Setup_JMASolutions
 SolidCompression=yes
 WizardStyle=modern dynamic
+CloseApplications=force
 
 [Messages]
 SetupAppTitle=JMASolution Setup
@@ -55,11 +56,8 @@ Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; Tasks: de
 [Run]
 ; Si el usuario decide continuar aunque no tenga SQL, estas líneas intentarán crear la base de datos asumiendo que configurará algo manual después
 Filename: "{cmd}"; Parameters: "/C net start MSSQLSERVER & net start MSSQL$SQLEXPRESS & net start MSSQL$SQLEXPRESS01"; Flags: runhidden; StatusMsg: "Iniciando servicio de base de datos..."
-Filename: "sqlcmd.exe"; Parameters: "-S . -E -f 65001 -i ""{app}\InstalacionDB.sql"""; StatusMsg: "Configurando base de datos en instancia local..."; Flags: runhidden waituntilterminated skipifdoesntexist
-Filename: "sqlcmd.exe"; Parameters: "-S .\SQLEXPRESS -E -f 65001 -i ""{app}\InstalacionDB.sql"""; StatusMsg: "Configurando base de datos en SQLEXPRESS..."; Flags: runhidden waituntilterminated skipifdoesntexist
-Filename: "sqlcmd.exe"; Parameters: "-S .\SQLEXPRESS01 -E -f 65001 -i ""{app}\InstalacionDB.sql"""; StatusMsg: "Configurando base de datos en SQLEXPRESS01..."; Flags: runhidden waituntilterminated skipifdoesntexist
+Filename: "{cmd}"; Parameters: "/C echo 1 > ""{app}\reinstalar.flag"""; Flags: runhidden waituntilterminated; StatusMsg: "Preparando base de datos..."
 Filename: "{app}\{#MyAppExeName}"; Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; Flags: nowait postinstall skipifsilent
-
 [Code]
 const
   SC_MANAGER_CONNECT = $0001;
